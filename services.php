@@ -32,15 +32,11 @@
             href="67ad72477c605912a4af72eb/css/kontix.webflow.shared.0408f50e8.min.css"
             rel="stylesheet"
             type="text/css"
-            integrity="sha384-BAj1Do/PiHmWSq/XutlQXGFQ2GWLolTyskXeYOdZsHJZVkSvGYsBqpAdcOCIQOWQ"
-            crossorigin="anonymous"
         />
         <link
             href="67ad72477c605912a4af72eb/css/kontix.webflow.67dd651f2ee1c33e120e658a.c9f135406.opt.min.css"
             rel="stylesheet"
             type="text/css"
-            integrity="sha384-yfE1QGif3TdjQD2tDNhqT3I3rb/HztQ6bMZIDvUhUcvQV8erjoj2TKG6VXTcGVcX"
-            crossorigin="anonymous"
         />
         <style>
             @media (min-width: 992px) {
