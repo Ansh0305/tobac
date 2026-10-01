@@ -1350,7 +1350,7 @@
         <script
             src="js/jquery-3.5.1.min.dc5e7f18c8.js?site=67ad72477c605912a4af72eb"
             type="text/javascript"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            
             crossorigin="anonymous"
         ></script>
         <script>
@@ -1360,7 +1360,7 @@
         <script
             src="67ad72477c605912a4af72eb/js/webflow.8c3c7a7b.98f16f3db6b689ff.js"
             type="text/javascript"
-            integrity="sha384-vCkcyTRRgvEMQNx9Dg/YrD+O/OJohIPm8YjWNBlLoQDNPZgfG9w9e6ZcKXNuRikK"
+           
             crossorigin="anonymous"
         ></script>
        
