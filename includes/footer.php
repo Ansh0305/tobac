@@ -1,4 +1,4 @@
- <section class="footer-one-wrap position-relative">
+<section class="footer-one-wrap position-relative">
     <div class="footer-one position-relative">
         <div class="w-layout-blockcontainer footer-container w-container">
 
@@ -199,7 +199,3 @@
     </div>
 
 </section>
-        <script src="js/jquery-3.5.1.min.dc5e7f18c8.js?site=67ad72477c605912a4af72eb" type="text/javascript"></script>
-        <script src="67ad72477c605912a4af72eb/js/webflow.8c3c7a7b.98f16f3db6b689ff.js" type="text/javascript"></script>
-    </body>
-</html>
