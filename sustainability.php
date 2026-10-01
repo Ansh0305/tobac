@@ -1,7 +1,7 @@
 <!doctype html>
 <!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Tue Jul 14 2026 04:21:42 GMT+0000 (Coordinated Universal Time) -->
 <html
-    data-wf-domain="kontix.webflow.io"
+   
     lang="en"
 >
     <head>
@@ -2314,13 +2314,6 @@
             integrity="sha384-VSS9pJ8PWnsKn3srS7pwWcCoDjz9BY6SeIbq69VDOqZ1L4Vm2Q9pS6mxkdKUk6WC"
             crossorigin="anonymous"
         ></script>
-        <script>
-            window.Webflow = window.Webflow || [];
-            window.Webflow.push(function () {
-                document.documentElement.removeAttribute("data-wf-page");
-                document.documentElement.removeAttribute("data-wf-site");
-            });
-        </script>
         <script>
             /*!
              * Radiant Vault — floating upsell widget (config-driven)

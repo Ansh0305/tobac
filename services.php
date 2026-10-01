@@ -1,9 +1,5 @@
 <!doctype html>
-<!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Tue Jul 14 2026 04:21:42 GMT+0000 (Coordinated Universal Time) -->
-<html
-    data-wf-domain="kontix.webflow.io"
-    lang="en"
->
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous" />
