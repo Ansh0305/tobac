@@ -2,8 +2,6 @@
 <!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Tue Jul 14 2026 04:21:42 GMT+0000 (Coordinated Universal Time) -->
 <html
     data-wf-domain="kontix.webflow.io"
-    data-wf-page="67e0e33cad0b1753fb5235bf"
-    data-wf-site="67ad72477c605912a4af72eb"
     lang="en"
 >
     <head>
@@ -1379,12 +1377,23 @@
             integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
             crossorigin="anonymous"
         ></script>
+        <script>
+            document.documentElement.setAttribute("data-wf-page", "67e0e33cad0b1753fb5235bf");
+            document.documentElement.setAttribute("data-wf-site", "67ad72477c605912a4af72eb");
+        </script>
         <script
             src="67ad72477c605912a4af72eb/js/webflow.8c3c7a7b.98f16f3db6b689ff.js"
             type="text/javascript"
             integrity="sha384-vCkcyTRRgvEMQNx9Dg/YrD+O/OJohIPm8YjWNBlLoQDNPZgfG9w9e6ZcKXNuRikK"
             crossorigin="anonymous"
         ></script>
+        <script>
+            window.Webflow = window.Webflow || [];
+            window.Webflow.push(function () {
+                document.documentElement.removeAttribute("data-wf-page");
+                document.documentElement.removeAttribute("data-wf-site");
+            });
+        </script>
         <script>
             /*!
              * Radiant Vault — floating upsell widget (config-driven)
