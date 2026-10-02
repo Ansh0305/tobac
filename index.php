@@ -1609,17 +1609,62 @@
    PROCESS DESCRIPTION
    --------------------------------------------------------- */
 
+.reliable-construction-subtext-bottom-padding {
+    padding-bottom: 10px !important;
+    cursor: pointer !important;
+}
+
+.reliable-construction-subtext-bottom-padding .heading-style-h5 {
+    font-size: 17px !important;
+    line-height: 1.3 !important;
+    white-space: nowrap !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.reliable-construction-subtext-glow-line {
+    transition: width 0.3s ease !important;
+}
+
+/* ---------------------------------------------------------
+   PROCESS DESCRIPTION
+   --------------------------------------------------------- */
+
 .reliable-construction-para-main-wrapper {
     max-width: 590px !important;
 }
 
 .reliable-construction-para-wrapper {
     max-width: 540px !important;
+    position: relative !important;
+    min-height: 75px !important;
 }
 
 .reliable-construction-para {
     font-size: 15px !important;
     line-height: 1.65 !important;
+    transition: opacity 0.3s ease, transform 0.3s ease !important;
+}
+
+.reliable-construction-para.tab-pane {
+    width: 100% !important;
+}
+
+.reliable-construction-para.tab-pane.active {
+    position: relative !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    pointer-events: auto !important;
+    display: block !important;
+}
+
+.reliable-construction-para.tab-pane.inactive {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    opacity: 0 !important;
+    transform: translateY(12px) !important;
+    pointer-events: none !important;
+    display: block !important;
 }
 
 /* ---------------------------------------------------------
@@ -3926,11 +3971,11 @@
         >
             <div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
                 <div class="button-text">
-                    Explore Our Services
+                    Explore Our Capabilities
                 </div>
 
                 <div class="button-text two">
-                    Explore Our Services
+                    Explore Our Capabilities
                 </div>
             </div>
 
@@ -3960,12 +4005,12 @@
                     <div class="feature-wrapper">
                         <div class="feature-left-part">
                             <div class="overflow-hidden feature-heading-wrapper mobile-text-center" style="margin-bottom: 0px !important;">
-                                <h2 class="no-margin color-black">Advanced Processing. Every Stage Controlled</h2>
+                                <h2 class="no-margin color-black">Catalogue</h2>
                             </div>
                             <div class="feature-card-content">
                                 <div data-w-id="cb2e62d1-0778-0ad1-57a2-72a9a1798795" class="feature-card-text one">
                                     <div class="heading-style-h4 color-black text-no-wrap">
-                                        Tobacco Leaf Processing
+                                    Mysore FCV
                                     </div>
                                     <img
                                         src="67ad72477c605912a4af72eb/68a80569fb754984ca482d08_Vector%20%2891%29.svg"
@@ -3978,7 +4023,7 @@
                                     />
                                 </div>
                                 <div data-w-id="fb196b32-c1c4-e9d6-8dbf-60b7aed7b537" class="feature-card-text two">
-                                    <div class="heading-style-h4 color-black text-no-wrap">Multi-Stage Threshing</div>
+                                    <div class="heading-style-h4 color-black text-no-wrap">TRAD FCV</div>
                                     <img
                                         src="67ad72477c605912a4af72eb/68a80569fb754984ca482d08_Vector%20%2891%29.svg"
                                         loading="lazy"
@@ -3991,7 +4036,7 @@
                                 </div>
                                 <div data-w-id="a4808b38-293f-76c2-32cb-c6a138c0f3d4" class="feature-card-text active">
                                     <div class="heading-style-h4 color-black text-no-wrap">
-                                        Lamina &amp; Stem Separation
+                                    NLS FCV
                                     </div>
                                     <img
                                         src="67ad72477c605912a4af72eb/68a80569fb754984ca482d08_Vector%20%2891%29.svg"
@@ -4004,7 +4049,7 @@
                                     />
                                 </div>
                                 <div data-w-id="2f668eff-5085-9f88-ec5a-67f3cd01f2f5" class="feature-card-text four">
-                                    <div class="heading-style-h4 color-black text-no-wrap">Drying &amp; Moisture Control</div>
+                                    <div class="heading-style-h4 color-black text-no-wrap">Vinukonda Burley</div>
                                     <img
                                         src="67ad72477c605912a4af72eb/68a80569fb754984ca482d08_Vector%20%2891%29.svg"
                                         loading="lazy"
@@ -4014,6 +4059,41 @@
                                         data-w-id="2f668eff-5085-9f88-ec5a-67f3cd01f2f8"
                                         class="feature-arrow-icon-four"
                                     />
+                                </div>
+                            </div>
+                            <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffd0" style="margin-top: 35px;">
+                                <div
+                                    data-wf--button-style-one--variant="base"
+                                    data-w-id="a1dfbf13-2114-c851-1b8e-eda5fda5e771"
+                                    class="button-style-one-wrap overflow-hidden"
+                                >
+                                    <a
+                                        href="javascript:void(0);"
+                                        class="button-style-one position-relative overflow-hidden w-inline-block"
+                                    >
+                                        <div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
+                                            <div class="button-text">
+                                                EXPLORE THE GRADE CATALOGUE
+                                            </div>
+
+                                            <div class="button-text two">
+                                                EXPLORE THE GRADE CATALOGUE
+                                            </div>
+                                        </div>
+
+                                        <div class="button-style-one-icon position-relative">
+                                            <img
+                                                width="8"
+                                                height="9"
+                                                alt=""
+                                                src="67ad72477c605912a4af72eb/67af1b78eef99645a9f0bfd8_Arrow%206.svg"
+                                                loading="lazy"
+                                                class="button-one-arrow"
+                                            />
+                                        </div>
+
+                                        <div class="button-style-one-background position-absolute"></div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -4161,10 +4241,11 @@
                                     data-wf--sub-heading--variant="white-sub-heading"
                                     class="sub-heading w-variant-f1a14dd4-f30f-c0f4-d5f6-6802c309e3c1"
                                 >
-                                    PROCESSING EXCELLENCE
+                                A Bio-Steam-Powered Processing Operation
                                 </div>
-                                <div class="image-card-two-title-wrap">
-                                    <h3 class="no-margin">Advanced processing built for consistency</h3>
+                                <div class="image-card-two-title-wrap" style="max-width: 480px; margin-top: 10px; margin-bottom: 20px;">
+                                    <h3 class="no-margin" style="font-size: 22px; line-height: 1.3;">Bio-Steam Powered Processing</h3>
+                                    <p style="font-size: 14.5px; line-height: 1.5; color: rgba(255, 255, 255, 0.88); margin-top: 8px; margin-bottom: 0;">Tabac Leaf Enterprises operates its tobacco processing facilities using bio-steam generated through briquettes rather than coal. This approach reflects our focus on alternative fuel use and responsible industrial practices.</p>
                                 </div>
                                 <div
                                     data-w-id="32a080e7-e635-fd07-ca0b-ba724ec0d900"
@@ -4177,7 +4258,7 @@
                                             class="button-style-one-wrap w-variant-6e2385dc-4996-d9d5-515e-70517806a760 overflow-hidden"
                                         >
                                             <a
-                                                href="javascript:void(0);"
+                                                href="services.php"
                                                 class="button-style-one w-variant-6e2385dc-4996-d9d5-515e-70517806a760 position-relative overflow-hidden w-inline-block"
                                                 ><div
                                                     class="w-layout-vflex button-text-wrap position-relative overflow-hidden"
@@ -4242,10 +4323,11 @@
                                     data-wf--sub-heading--variant="white-sub-heading"
                                     class="sub-heading w-variant-f1a14dd4-f30f-c0f4-d5f6-6802c309e3c1"
                                 >
-                                    INDUSTRIAL CAPABILITY
+                                A Distinctive Approach to Tobacco Processing
                                 </div>
-                                <div class="image-card-two-title-wrap">
-                                    <h3 class="no-margin">Built for industrial-scale tobacco processing</h3>
+                                <div class="image-card-two-title-wrap" style="max-width: 480px; margin-top: 10px; margin-bottom: 20px;">
+                                    <h3 class="no-margin" style="font-size: 22px; line-height: 1.3;">India's Only Bio-Steam Processor</h3>
+                                    <p style="font-size: 14.5px; line-height: 1.5; color: rgba(255, 255, 255, 0.88); margin-top: 8px; margin-bottom: 0;">Tabac Leaf Enterprises is positioned as the only company in India using bio-steam generated through briquettes for tobacco processing.</p>
                                 </div>
                                 <div
                                     data-w-id="32a080e7-e635-fd07-ca0b-ba724ec0d917"
@@ -4258,7 +4340,7 @@
                                             class="button-style-one-wrap w-variant-6e2385dc-4996-d9d5-515e-70517806a760 overflow-hidden"
                                         >
                                             <a
-                                                href="javascript:void(0);"
+                                                href="operations.php"
                                                 class="button-style-one w-variant-6e2385dc-4996-d9d5-515e-70517806a760 position-relative overflow-hidden w-inline-block"
                                                 ><div
                                                     class="w-layout-vflex button-text-wrap position-relative overflow-hidden"
@@ -4455,17 +4537,17 @@
                     <div class="reliable-construction-left-part">
                         <div class="overflow-hidden">
                             <div data-w-id="a03bfe86-fd76-2f47-73b6-952ebbc7fb54" style="opacity: 0">
-                                <div data-wf--sub-heading--variant="base" class="sub-heading">OUR PROCESS</div>
+                                <div data-wf--sub-heading--variant="base" class="sub-heading">Processing Partnerships</div>
                             </div>
                         </div>
                         <div class="timeline-two-heading-wrap">
                             <h2 data-w-id="3d6e7e08-0aa3-fcea-dc0a-8a547fe973a9" class="no-margin">
-                                A Controlled Tobacco Processing Cycle from Leaf to Finished Product
+                            Supporting Major Industry Requirements
                             </h2>
                         </div>
                         <div class="overflow-hidden">
                             <div data-w-id="52a55b34-5290-9c20-a95d-49ebb1381fad">
-                                From carefully selected tobacco leaves to finished products, every stage is managed with precision, consistency, and quality control. Our process combines experienced handling, controlled processing, efficient threshing, and rigorous quality checks to deliver dependable tobacco products
+                                Tabac Leaf Enterprises works with leading tobacco industry partners, including Godfrey Phillips India and Philip Morris. Our facilities support large-scale processing requirements through industrial infrastructure, operational experience, and coordinated execution.
                             </div>
                         </div>
                         <div
@@ -4474,31 +4556,25 @@
                             class="reliable-construction-bottom-container"
                         >
                             <div class="reliable-construction-subtext-wrapper">
-                                <div class="position-relative reliable-construction-subtext-bottom-padding">
-                                    <div style="opacity: 1" class="heading-style-h5 active">Leaf Receiving</div>
+                                <div class="position-relative reliable-construction-subtext-bottom-padding tab-nav-item active" data-tab="0">
+                                    <div class="heading-style-h5 active">Godfrey Phillips India</div>
                                     <div
-                                        style="width: 100%"
                                         class="reliable-construction-subtext-glow-line active"
+                                        style="width: 100%;"
                                     ></div>
                                 </div>
-                                <div
-                                    data-w-id="6a9dbb97-1dec-5de8-f24c-00211260779b"
-                                    class="position-relative reliable-construction-subtext-bottom-padding"
-                                >
-                                    <div style="opacity: 0.5" class="heading-style-h5 inactive">Multi-Stage Threshing</div>
+                                <div class="position-relative reliable-construction-subtext-bottom-padding tab-nav-item" data-tab="1">
+                                    <div class="heading-style-h5 inactive" style="opacity: 0.5;">Philip Morris</div>
                                     <div
-                                        style="width: 0%"
                                         class="reliable-construction-subtext-glow-line inactive"
+                                        style="width: 0%;"
                                     ></div>
                                 </div>
-                                <div
-                                    data-w-id="73e1fc07-bacd-2f24-e28a-af163c6cea60"
-                                    class="position-relative reliable-construction-subtext-bottom-padding"
-                                >
-                                    <div style="opacity: 0.5" class="heading-style-h5 inactive">Quality Control</div>
+                                <div class="position-relative reliable-construction-subtext-bottom-padding tab-nav-item" data-tab="2">
+                                    <div class="heading-style-h5 inactive" style="opacity: 0.5;">Industrial Scale</div>
                                     <div
-                                        style="width: 0%"
                                         class="reliable-construction-subtext-glow-line inactive"
+                                        style="width: 0%;"
                                     ></div>
                                 </div>
                             </div>
@@ -4514,49 +4590,22 @@
                                 </div>
                                 <div class="reliable-construction-para-wrapper position-relative overflow-hidden">
                                     <div
-                                        style="
-                                            -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                        "
-                                        class="reliable-construction-para active"
+                                        class="reliable-construction-para tab-pane active"
+                                        data-tab-content="0"
                                     >
-                                       Tobacco leaves are received and prepared through controlled handling, conditioning and moisture management to establish suitable processing conditions before threshing
+                                        A major processing partnership supporting tobacco processing operations, consistent grading, and coordinated execution.
                                     </div>
                                     <div
-                                        style="
-                                            -webkit-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                        "
-                                        class="reliable-construction-para inactive"
+                                        class="reliable-construction-para tab-pane inactive"
+                                        data-tab-content="1"
                                     >
-                                       
+                                        Processing partner supporting specialized requirements, operational compliance, and strict international quality standards.
                                     </div>
                                     <div
-                                        style="
-                                            -webkit-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                        "
-                                        class="reliable-construction-para inactive"
+                                        class="reliable-construction-para tab-pane inactive"
+                                        data-tab-content="2"
                                     >
-                                        Processed material undergoes drying and moisture control, followed by inspection, quality checks and packing for organized storage and further handling
+                                        Industrial-scale infrastructure and dedicated processing lines engineered to manage large enterprise supply demands with consistency and speed.
                                     </div>
                                 </div>
                             </div>
@@ -4757,14 +4806,14 @@
             <div class="video-text-box">
                 <div class="video-one-title-wrap padding-left">
                     <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffca">
-                        <div data-wf--sub-heading--variant="base" class="sub-heading">Let's connect</div>
+                        <div data-wf--sub-heading--variant="base" class="sub-heading">LET'S CONNECT</div>
                     </div>
                     <div class="video-title mobile-text-center change">
                         <h2
                             data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffce"
                             class="heading-two-gap-top-bottom no-margin"
                         >
-                            Advanced Tobacco Processing. Built for Consistency and Scale
+                            Advanced Processing. Proven Capability. Consistent Quality.
                         </h2>
                     </div>
                     <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffd0" style="margin-top: 10px;">
@@ -4774,11 +4823,11 @@
                             class="button-style-one-wrap overflow-hidden"
                         >
                             <a
-                                href="javascript:void(0);"
+                                href="contact.php"
                                 class="button-style-one position-relative overflow-hidden w-inline-block"
                                 ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
-                                    <div class="button-text">Explore Our Capabilities</div>
-                                    <div class="button-text two">Explore Our Capabilities</div>
+                                    <div class="button-text">CONTACT OUR TEAM</div>
+                                    <div class="button-text two">CONTACT OUR TEAM</div>
                                 </div>
                                 <div class="button-style-one-icon position-relative">
                                     <img
@@ -4802,5 +4851,38 @@
        <?php require __DIR__ . "/includes/footer.php"; ?>
         <script src="js/jquery-3.5.1.min.dc5e7f18c8.js?site=67ad72477c605912a4af72eb" type="text/javascript"></script>
         <script src="67ad72477c605912a4af72eb/js/webflow.8c3c7a7b.98f16f3db6b689ff.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function() {
+                var $triggers = $('.reliable-construction-subtext-wrapper .tab-nav-item');
+                var $contents = $('.reliable-construction-para-wrapper .tab-pane');
+
+                $triggers.on('click mouseenter', function() {
+                    var tabIndex = $(this).data('tab');
+
+                    $triggers.each(function() {
+                        var isActive = $(this).data('tab') === tabIndex;
+                        var $heading = $(this).find('.heading-style-h5');
+                        var $line = $(this).find('.reliable-construction-subtext-glow-line');
+
+                        if (isActive) {
+                            $heading.css('opacity', '1').removeClass('inactive').addClass('active');
+                            $line.css('width', '100%').removeClass('inactive').addClass('active');
+                        } else {
+                            $heading.css('opacity', '0.5').removeClass('active').addClass('inactive');
+                            $line.css('width', '0%').removeClass('active').addClass('inactive');
+                        }
+                    });
+
+                    $contents.each(function() {
+                        var isMatch = $(this).data('tab-content') === tabIndex;
+                        if (isMatch) {
+                            $(this).removeClass('inactive').addClass('active');
+                        } else {
+                            $(this).removeClass('active').addClass('inactive');
+                        }
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
