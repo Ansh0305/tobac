@@ -2802,9 +2802,7 @@
                         "
                         class="color-white hero-three-title-text one"
                     >
-                        Premium Indian Tobacco
-                        
-                        Leaves - Global Export
+                    Five Decades of Tobacco Expertise. Built for Scale.
                     </h1>
                 </div>
 
