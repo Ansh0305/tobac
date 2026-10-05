@@ -174,7 +174,7 @@
                                 style="opacity: 0"
                                 class="service-hero-subheading-top-gap"
                             >
-                                <div data-wf--sub-heading--variant="base" class="sub-heading">service three</div>
+                                <div data-wf--sub-heading--variant="base" class="sub-heading">CATALOGUE</div>
                             </div>
                             <div class="heading-one-gap-top overflow-hidden">
                                 <h1
@@ -191,7 +191,7 @@
                                     "
                                     class="no-margin service-hero-v3-heading"
                                 >
-                                    Innovative building solutions for every project
+                                    Tobacco Grades. Processing Capability.
                                 </h1>
                             </div>
                         </div>
@@ -202,8 +202,7 @@
                                     style="opacity: 0"
                                     class="color-white"
                                 >
-                                    Lorem ipsum dolor sit amet consectetur dolor nec nec blandit nullam parturient
-                                    viverra id
+                                    Explore Tabac Leaf Enterprises’ tobacco grade portfolio and processing machinery capabilities. Our catalogue provides variety-wise grade descriptions, packing details and indicative chemistry ranges, alongside an overview of the machinery and systems supporting our industrial processing operations.
                                 </div>
                             </div>
                             <div data-w-id="ef35296e-9680-2069-3a07-4d37c4acdca8" style="opacity: 0">
@@ -213,17 +212,17 @@
                                     class="button-style-one-wrap overflow-hidden"
                                 >
                                     <a
-                                        href="contact.php"
+                                        href="#tobacco-grades"
                                         class="button-style-one position-relative overflow-hidden w-inline-block"
                                         ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
-                                            <div class="button-text">Start your project</div>
-                                            <div class="button-text two">Start your project</div>
+                                            <div class="button-text">EXPLORE CATALOGUE</div>
+                                            <div class="button-text two">EXPLORE CATALOGUE</div>
                                         </div>
                                         <div class="button-style-one-icon position-relative">
                                             <img
                                                 width="8"
                                                 height="9"
-                                                alt="Kontix-home-two-innovative-building-solution-arrow-icon-webflow-ecommerce-template"
+                                                alt="Arrow"
                                                 src="67ad72477c605912a4af72eb/67af1b78eef99645a9f0bfd8_Arrow%206.svg"
                                                 loading="lazy"
                                                 class="button-one-arrow"
@@ -245,16 +244,16 @@
             </div>
             <div data-w-id="5fecc0f7-94f6-abed-461d-aeb5a8580bd1" class="image-blurry-overlay"></div>
         </section>
-        <section id="About-Work" class="three-service">
+        <section id="tobacco-grades" class="three-service">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="w-layout-hflex home-two-about-us-main">
                     <div class="service-one-content">
                         <div data-w-id="e5e44faa-d973-948c-d8fb-a7e44592a628" style="opacity: 0">
                             <div
-                                data-wf--sub-heading--variant="white-sub-heading"
-                                class="sub-heading w-variant-f1a14dd4-f30f-c0f4-d5f6-6802c309e3c1"
+                                data-wf--sub-heading--variant="base"
+                                class="sub-heading"
                             >
-                                workers support
+                                Variety-Wise Grades
                             </div>
                         </div>
                         <div class="overflow-hidden heading-two-gap-top-bottom">
@@ -272,7 +271,7 @@
                                 "
                                 class="no-margin service-three-heading"
                             >
-                                Your vision, our expertise, built to last
+                                Tobacco Grade Catalogue
                             </h2>
                         </div>
                         <div class="overflow-hidden">
@@ -281,8 +280,7 @@
                                 style="opacity: 0"
                                 class="no-margin service-three-text"
                             >
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ex, consequat sed eros
-                                non, eleifend laoreet nibh. In vel ante
+                                Explore our tobacco grades across four categories. Each category includes grade descriptions, packing information and indicative nicotine and sugar ranges for reference.
                             </p>
                         </div>
                         <div
@@ -299,14 +297,14 @@
                                     href="contact.php"
                                     class="button-style-one position-relative overflow-hidden w-inline-block"
                                     ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
-                                        <div class="button-text">View more</div>
-                                        <div class="button-text two">View more</div>
+                                        <div class="button-text">REQUEST GRADE SPECS</div>
+                                        <div class="button-text two">REQUEST GRADE SPECS</div>
                                     </div>
                                     <div class="button-style-one-icon position-relative">
                                         <img
                                             width="8"
                                             height="9"
-                                            alt="Kontix-home-two-innovative-building-solution-arrow-icon-webflow-ecommerce-template"
+                                            alt="Arrow"
                                             src="67ad72477c605912a4af72eb/67af1b78eef99645a9f0bfd8_Arrow%206.svg"
                                             loading="lazy"
                                             class="button-one-arrow"
@@ -323,21 +321,24 @@
                         class="w-layout-grid home-two-about-us"
                     >
                         <a
-                            href="services.php"
+                            href="contact.php"
                             data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7ac"
                             class="service-three-card one w-inline-block"
                             ><div class="service-three-card-image-block">
                                 <img
                                     width="50"
                                     height="50"
-                                    alt="Kontix-service-three-site-project-planning-icon-webflow-ecommerce-template"
+                                    alt="Mysore FCV Tobacco Grade Icon"
                                     src="67ad72477c605912a4af72eb/68ad79329238d61bc337e3b0_Vector%20-%202025-08-26T143628.668.svg"
                                     class="card-icon-black"
                                 />
-                                <div class="heading-style-h4 work-card-heading">Project planning</div>
+                                <div class="heading-style-h4 work-card-heading">Mysore FCV</div>
                                 <p class="color-white">
-                                    Mauris gravi da bibendum. Suspendisse non sollic udin odio. Maecenas
+                                    Mysore FCV includes a range of lugs, cutters, leaf and primings with varying colour, body and maturity characteristics. The catalogue covers ripe, mature and immature tobacco profiles, supported by grade-wise packing and chemistry information.
                                 </p>
+                                <div style="margin-top: 14px; font-size: 13px; font-weight: 600; color: var(--yellow); letter-spacing: 0.5px; text-transform: uppercase; display: flex; align-items: center; justify-content: space-between;">
+                                    <span>VIEW MYSORE FCV GRADES</span>
+                                </div>
                                 <div
                                     data-w-id="44dc7f5f-60f3-984d-f44a-9a2cccc0295e"
                                     class="service-three-arrow-wrapper"
@@ -347,27 +348,30 @@
                                         loading="lazy"
                                         width="13"
                                         height="12"
-                                        alt="Kontix-home-three-building-the-future-arrow-icon-webflow-ecommerce-template"
+                                        alt="Arrow"
                                         data-w-id="4e5fa2f8-b0f2-7b2e-5ecd-d65df4187276"
                                         class="service-three-arrow"
                                     />
                                 </div></div></a
                         ><a
-                            href="services.php"
+                            href="contact.php"
                             data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7ba"
                             class="service-three-card two w-inline-block"
                             ><div class="service-three-card-image-block">
                                 <img
                                     width="47"
                                     height="39"
-                                    alt="Kontix-service-three-building-construction-planning-icon-webflow-ecommerce-template"
+                                    alt="TRAD FCV Tobacco Grade Icon"
                                     src="67ad72477c605912a4af72eb/68ad7932bc8da259e11d9d3c_Vector%20-%202025-08-26T143634.841.svg"
                                     class="card-icon-black"
                                 />
-                                <div class="heading-style-h4 work-card-heading">Building construction</div>
+                                <div class="heading-style-h4 work-card-heading">TRAD FCV</div>
                                 <p class="color-white">
-                                    Mauris gravi da bibendum. Suspendisse non sollic udin odio. Maecenas
+                                    Traditional FCV includes leaf, cutters, lugs and primings across different colour, body and maturity profiles. Grade descriptions provide information on physical characteristics, packing details and indicative chemistry ranges.
                                 </p>
+                                <div style="margin-top: 14px; font-size: 13px; font-weight: 600; color: var(--yellow); letter-spacing: 0.5px; text-transform: uppercase; display: flex; align-items: center; justify-content: space-between;">
+                                    <span>VIEW TRAD FCV GRADES</span>
+                                </div>
                                 <div
                                     data-w-id="34ceee97-be65-6f49-8b23-025ac07510f3"
                                     class="service-three-arrow-wrapper"
@@ -377,27 +381,30 @@
                                         loading="lazy"
                                         width="13"
                                         height="12"
-                                        alt="Kontix-home-three-building-the-future-arrow-icon-webflow-ecommerce-template"
+                                        alt="Arrow"
                                         data-w-id="34ceee97-be65-6f49-8b23-025ac07510f4"
                                         class="service-three-arrow"
                                     />
                                 </div></div></a
                         ><a
-                            href="services.php"
+                            href="contact.php"
                             data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7c8"
                             class="service-three-card three w-inline-block"
                             ><div class="service-three-card-image-block">
                                 <img
                                     width="46"
                                     height="46"
-                                    alt="Kontix-service-three-site-developement-planning-icon-webflow-ecommerce-template"
+                                    alt="NLS FCV Tobacco Grade Icon"
                                     src="67ad72477c605912a4af72eb/68ad793279a4dfb19c2085e0_Vector%20-%202025-08-26T143645.309.svg"
                                     class="card-icon-black"
                                 />
-                                <div class="heading-style-h4 work-card-heading">Site development</div>
+                                <div class="heading-style-h4 work-card-heading">NLS FCV</div>
                                 <p class="color-white">
-                                    Mauris gravi da bibendum. Suspendisse non sollic udin odio. Maecenas
+                                    NLS FCV features leaf, lugs, cutters and primings with different colour, body, grain and maturity characteristics. The catalogue provides grade descriptions and indicative nicotine and sugar ranges for reference.
                                 </p>
+                                <div style="margin-top: 14px; font-size: 13px; font-weight: 600; color: var(--yellow); letter-spacing: 0.5px; text-transform: uppercase; display: flex; align-items: center; justify-content: space-between;">
+                                    <span>VIEW NLS FCV GRADES</span>
+                                </div>
                                 <div
                                     data-w-id="d8720e7c-016c-ebdd-83e7-ce1e3344a06a"
                                     class="service-three-arrow-wrapper"
@@ -407,27 +414,30 @@
                                         loading="lazy"
                                         width="13"
                                         height="12"
-                                        alt="Kontix-home-three-building-the-future-arrow-icon-webflow-ecommerce-template"
+                                        alt="Arrow"
                                         data-w-id="d8720e7c-016c-ebdd-83e7-ce1e3344a06b"
                                         class="service-three-arrow"
                                     />
                                 </div></div></a
                         ><a
-                            href="services.php"
+                            href="contact.php"
                             data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7d6"
                             class="service-three-card four w-inline-block"
                             ><div class="service-three-card-image-block">
                                 <img
                                     width="43"
                                     height="39"
-                                    alt="Kontix-service-three-modern-technology-icon-webflow-ecommerce-template"
+                                    alt="Vinukonda Burley Tobacco Grade Icon"
                                     src="67ad72477c605912a4af72eb/68ad7932b6ae6edcd7eabe7f_Vector%20-%202025-08-26T143650.592.svg"
                                     class="card-icon-black"
                                 />
-                                <div class="heading-style-h4 work-card-heading">Modern technology</div>
+                                <div class="heading-style-h4 work-card-heading">Vinukonda Burley</div>
                                 <p class="color-white">
-                                    Mauris gravi da bibendum. Suspendisse non sollic udin odio. Maecenas
+                                    Vinukonda Burley includes leaf and tips, lugs, cutters and primings across different colour and maturity profiles. Grade details include physical descriptions, packing information and indicative chemistry ranges.
                                 </p>
+                                <div style="margin-top: 14px; font-size: 13px; font-weight: 600; color: var(--yellow); letter-spacing: 0.5px; text-transform: uppercase; display: flex; align-items: center; justify-content: space-between;">
+                                    <span>VIEW VINUKONDA BURLEY GRADES</span>
+                                </div>
                                 <div
                                     data-w-id="a4346801-6d7f-6bd5-2a74-fbe88070efb8"
                                     class="service-three-arrow-wrapper"
@@ -437,11 +447,12 @@
                                         loading="lazy"
                                         width="13"
                                         height="12"
-                                        alt="Kontix-home-three-building-the-future-arrow-icon-webflow-ecommerce-template"
+                                        alt="Arrow"
                                         data-w-id="a4346801-6d7f-6bd5-2a74-fbe88070efb9"
                                         class="service-three-arrow"
                                     />
-                                </div></div
+                                </div>
+                            </div
                         ></a>
                     </div>
                 </div>
