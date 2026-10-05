@@ -213,7 +213,7 @@
                                     class="button-style-one-wrap overflow-hidden"
                                 >
                                     <a
-                                        href="service-two.html"
+                                        href="contact.php"
                                         class="button-style-one position-relative overflow-hidden w-inline-block"
                                         ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
                                             <div class="button-text">Start your project</div>
@@ -296,7 +296,7 @@
                                 class="button-style-one-wrap overflow-hidden"
                             >
                                 <a
-                                    href="contact-three.html"
+                                    href="contact.php"
                                     class="button-style-one position-relative overflow-hidden w-inline-block"
                                     ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
                                         <div class="button-text">View more</div>
@@ -323,7 +323,7 @@
                         class="w-layout-grid home-two-about-us"
                     >
                         <a
-                            href="service-two.html"
+                            href="services.php"
                             data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7ac"
                             class="service-three-card one w-inline-block"
                             ><div class="service-three-card-image-block">
@@ -353,7 +353,7 @@
                                     />
                                 </div></div></a
                         ><a
-                            href="service-one.html"
+                            href="services.php"
                             data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7ba"
                             class="service-three-card two w-inline-block"
                             ><div class="service-three-card-image-block">
@@ -383,7 +383,7 @@
                                     />
                                 </div></div></a
                         ><a
-                            href="service-one.html"
+                            href="services.php"
                             data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7c8"
                             class="service-three-card three w-inline-block"
                             ><div class="service-three-card-image-block">
@@ -413,7 +413,7 @@
                                     />
                                 </div></div></a
                         ><a
-                            href="service-two.html"
+                            href="services.php"
                             data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7d6"
                             class="service-three-card four w-inline-block"
                             ><div class="service-three-card-image-block">
@@ -576,7 +576,7 @@
                                 class="button-style-one-wrap overflow-hidden"
                             >
                                 <a
-                                    href="about-two.html"
+                                    href="aboutus.php"
                                     class="button-style-one position-relative overflow-hidden w-inline-block"
                                     ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
                                         <div class="button-text">View more</div>
@@ -830,7 +830,7 @@
                                     </div>
                                     <div class="heading-style-h3 color-white">Exterior finishing</div>
                                 </div>
-                                <a href="service-one.html" class="preservation-arrow-wrapper one w-inline-block"
+                                <a href="services.php" class="preservation-arrow-wrapper one w-inline-block"
                                     ><img
                                         src="67ad72477c605912a4af72eb/68749ece601a251f2eb40b39_Group%201597883626.svg"
                                         loading="lazy"
@@ -892,7 +892,7 @@
                                     </div>
                                     <div class="heading-style-h3 color-white">Custom building</div>
                                 </div>
-                                <a href="service-two.html" class="preservation-arrow-wrapper two w-inline-block"
+                                <a href="services.php" class="preservation-arrow-wrapper two w-inline-block"
                                     ><img
                                         src="67ad72477c605912a4af72eb/68749ece601a251f2eb40b39_Group%201597883626.svg"
                                         loading="lazy"
@@ -1015,7 +1015,7 @@
                                         data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee5b"
                                         class="team-white-overlay"
                                     ></div>
-                                    <a href="team/patricia-smith.html" class="link-block w-inline-block"
+                                    <a href="contact.php" class="link-block w-inline-block"
                                         ><div class="link-text">This is some text inside of a div block.</div></a
                                     >
                                 </div>
@@ -1093,7 +1093,7 @@
                                         data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee5b"
                                         class="team-white-overlay"
                                     ></div>
-                                    <a href="team/terry-dias.html" class="link-block w-inline-block"
+                                    <a href="contact.php" class="link-block w-inline-block"
                                         ><div class="link-text">This is some text inside of a div block.</div></a
                                     >
                                 </div>
@@ -1171,7 +1171,7 @@
                                         data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee5b"
                                         class="team-white-overlay"
                                     ></div>
-                                    <a href="team/martin-philips.html" class="link-block w-inline-block"
+                                    <a href="contact.php" class="link-block w-inline-block"
                                         ><div class="link-text">This is some text inside of a div block.</div></a
                                     >
                                 </div>
@@ -1310,7 +1310,7 @@
                             class="button-style-one-wrap overflow-hidden"
                         >
                             <a
-                                href="contact-one.html"
+                                href="contact.php"
                                 class="button-style-one position-relative overflow-hidden w-inline-block"
                                 ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
                                     <div class="button-text">Request a quote</div>
@@ -1337,8 +1337,6 @@
         <script
             src="js/jquery-3.5.1.min.dc5e7f18c8.js?site=67ad72477c605912a4af72eb"
             type="text/javascript"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-            crossorigin="anonymous"
         ></script>
         <script>
             document.documentElement.setAttribute("data-wf-page", "67e0e33cad0b1753fb5235bf");
@@ -1347,16 +1345,7 @@
         <script
             src="67ad72477c605912a4af72eb/js/webflow.8c3c7a7b.98f16f3db6b689ff.js"
             type="text/javascript"
-            integrity="sha384-vCkcyTRRgvEMQNx9Dg/YrD+O/OJohIPm8YjWNBlLoQDNPZgfG9w9e6ZcKXNuRikK"
-            crossorigin="anonymous"
         ></script>
-        <script>
-            window.Webflow = window.Webflow || [];
-            window.Webflow.push(function () {
-                document.documentElement.removeAttribute("data-wf-page");
-                document.documentElement.removeAttribute("data-wf-site");
-            });
-        </script>
        
     </body>
 </html>
