@@ -169,7 +169,7 @@
                                 style="opacity: 0"
                                 class="service-hero-subheading-top-gap"
                             >
-                                <div data-wf--sub-heading--variant="base" class="sub-heading">service two</div>
+                                <div data-wf--sub-heading--variant="base" class="sub-heading">OUR SERVICES</div>
                             </div>
                             <div class="heading-one-gap-top overflow-hidden">
                                 <h1
@@ -186,7 +186,7 @@
                                     "
                                     class="no-margin service-hero-heading"
                                 >
-                                    Construction solutions backed by experience
+                                Integrated Capabilities Across the Tobacco Value Chain
                                 </h1>
                             </div>
                         </div>
@@ -197,8 +197,7 @@
                                     style="opacity: 0"
                                     class="color-white"
                                 >
-                                    Lorem ipsum dolor sit amet consectetur dolor nec nec blandit nullam parturient
-                                    viverra id
+                                From processing to transportation and exports, Tabac Leaf Enterprises brings together industry experience and operational infrastructure to support the movement and processing of tobacco. Our services are built around efficient operations, coordinated logistics and long-term industry partnerships.
                                 </div>
                             </div>
                             <div data-w-id="ef7fda13-cda3-cc44-61e7-3d883fd656bf" style="opacity: 0">
@@ -208,11 +207,11 @@
                                     class="button-style-one-wrap overflow-hidden"
                                 >
                                     <a
-                                        href="service-three.html"
+                                        href="contact.php"
                                         class="button-style-one position-relative overflow-hidden w-inline-block"
                                         ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
-                                            <div class="button-text">Start your project</div>
-                                            <div class="button-text two">Start your project</div>
+                                            <div class="button-text">CONTACT OUR TEAM</div>
+                                            <div class="button-text two">CONTACT OUR TEAM</div>
                                         </div>
                                         <div class="button-style-one-icon position-relative">
                                             <img
@@ -240,6 +239,10 @@
             </div>
             <div data-w-id="5fecc0f7-94f6-abed-461d-aeb5a8580bd1" class="image-blurry-overlay"></div>
         </section>
+        <?php /* =========================================================
+           UNUSED TEMPLATE SECTIONS
+           (Client Logos, Overview/Counters, Video Modal, Modern Construction)
+           =========================================================
         <section data-w-id="aa2b0fac-4f9d-849c-aced-c91b4cf76241" class="client-section-one">
             <div class="client-one-marquee-main">
                 <div class="w-layout-blockcontainer container w-container">
@@ -868,6 +871,7 @@
                 </div>
             </div>
         </section>
+        */ ?>
         <section data-w-id="b1d58735-ece6-6503-cc21-56e406bc49c2" class="service-two-service-section">
             <div class="w-layout-vflex service-two-service-sticky-wrap full-width">
                 <div class="service-two-service-sticky-card overflow-hidden full-width one position-absolute">
@@ -876,7 +880,7 @@
                             <img
                                 width="975"
                                 height="1080"
-                                alt="Kontix-home-one-blueprint-to-reality-image-webflow-ecommerce-template"
+                                alt="Tobacco Processing Facilities - Tabac Leaf Enterprises"
                                 src="67ad72477c605912a4af72eb/67e1404ab4df10e903428fa6_Service-two-sticky-04.avif"
                                 loading="lazy"
                                 srcset="
@@ -888,7 +892,7 @@
                                 class="service-two-service-image"
                             />
                             <div class="service-two-image-text-wrap">
-                                <div class="service-three-image-text">Elevation</div>
+                                <div class="service-three-image-text">Processing</div>
                             </div>
                             <div class="service-image-overlay"></div>
                         </div>
@@ -898,7 +902,7 @@
                                 style="opacity: 0"
                                 class="overflow-hidden"
                             >
-                                <div data-wf--sub-heading--variant="base" class="sub-heading">Our work</div>
+                                <div data-wf--sub-heading--variant="base" class="sub-heading">TOBACCO PROCESSING</div>
                             </div>
                             <div class="overflow-hidden heading-two-gap-top-bottom service-two-service-heading">
                                 <h2
@@ -915,7 +919,7 @@
                                     "
                                     class="no-margin"
                                 >
-                                    Corporate &amp; industrial infrastructure
+                                    Industrial Processing. Operational Precision.
                                 </h2>
                             </div>
                             <div class="overflow-hidden">
@@ -924,8 +928,7 @@
                                     style="opacity: 0"
                                     class="no-margin color-white"
                                 >
-                                    Lorem ipsum dolor sit amet consectetur. Pellentesque purus rhoncus lobortis integer
-                                    nullam metus odio tristique. Sit egestas id ornare viverra orci sed
+                                    Tobacco processing is at the core of our business. Our facilities in Tangutur, Prakasam District, Andhra Pradesh, support large-scale processing requirements through established infrastructure and process-focused operations.
                                 </p>
                             </div>
                             <ul
@@ -934,19 +937,21 @@
                                 role="list"
                                 class="service-two-service-list heading-two-gap-top-bottom"
                             >
-                                <li>
-                                    <div class="color-white">
-                                        Lorem ipsum dolor sit amet consectetur. Pellentesque purus rhoncus lobortis
-                                        integer
-                                    </div>
-                                </li>
-                                <li><div class="color-white">Lorem ipsum dolor sit amet consectetur</div></li>
-                                <li>
-                                    <div class="color-white">
-                                        Lorem ipsum dolor sit amet consectetur purus rhoncus lobortis integer
-                                    </div>
-                                </li>
+                                <li><div class="color-white">Tobacco threshing and leaf processing</div></li>
+                                <li><div class="color-white">Lamina and stem separation</div></li>
+                                <li><div class="color-white">Conditioning and blending</div></li>
+                                <li><div class="color-white">Drying and moisture control</div></li>
+                                <li><div class="color-white">Quality inspection and handling</div></li>
+                                <li><div class="color-white">Packing and storage</div></li>
                             </ul>
+                            <div class="overflow-hidden" style="margin-bottom: 20px;">
+                                <p class="color-white" style="font-size: 14px; opacity: 0.9; margin-bottom: 6px;">
+                                    Our operations are designed to support consistent processing and meet applicable customer specifications.
+                                </p>
+                                <div style="font-size: 13px; color: var(--yellow); letter-spacing: 0.5px; font-weight: 500;">
+                                    Key Focus: Processing Capability | Operational Control | Consistent Quality
+                                </div>
+                            </div>
                             <div data-w-id="c26961aa-15be-dd47-dd69-5ae806066419" style="opacity: 0">
                                 <div
                                     data-wf--button-style-one--variant="base"
@@ -954,11 +959,11 @@
                                     class="button-style-one-wrap overflow-hidden"
                                 >
                                     <a
-                                        href="service-one.html"
+                                        href="contact.php"
                                         class="button-style-one position-relative overflow-hidden w-inline-block"
                                         ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
-                                            <div class="button-text">Discover more</div>
-                                            <div class="button-text two">Discover more</div>
+                                            <div class="button-text">Contact Our Team</div>
+                                            <div class="button-text two">Contact Our Team</div>
                                         </div>
                                         <div class="button-style-one-icon position-relative">
                                             <img
@@ -983,7 +988,7 @@
                             <img
                                 width="975"
                                 height="1080"
-                                alt="Kontix-home-one-quality-construction-image-webflow-ecommerce-template"
+                                alt="Transportation and Logistics - Tabac Leaf Enterprises"
                                 src="67ad72477c605912a4af72eb/688073449b5e710eeb5e2f95_Group%201597883635%20%281%29.webp"
                                 loading="lazy"
                                 srcset="
@@ -997,37 +1002,33 @@
                                 class="service-two-service-image"
                             />
                             <div class="service-two-image-text-wrap">
-                                <div class="service-three-image-text">Remodeling</div>
+                                <div class="service-three-image-text">Transport</div>
                             </div>
                             <div class="service-image-overlay"></div>
                         </div>
                         <div class="w-layout-vflex service-two-service-container">
                             <div class="overflow-hidden">
-                                <div data-wf--sub-heading--variant="base" class="sub-heading">What we do</div>
+                                <div data-wf--sub-heading--variant="base" class="sub-heading">TRANSPORTATION</div>
                             </div>
                             <div class="overflow-hidden heading-two-gap-top-bottom service-two-service-heading">
-                                <h2 class="no-margin">Expertise in every beam and brick</h2>
+                                <h2 class="no-margin">Connected Logistics. From Farm to Factory.</h2>
                             </div>
                             <div class="overflow-hidden">
                                 <p class="color-white no-margin">
-                                    Lorem ipsum dolor sit amet consectetur. Pellentesque purus rhoncus lobortis integer
-                                    nullam metus odio tristique. Sit egestas id ornare viverra orci sed
+                                    Our internal transportation system supports the movement of tobacco from farms to processing facilities. By coordinating transportation with our processing and storage operations, we support material movement across the tobacco value chain.
                                 </p>
                             </div>
                             <ul role="list" class="service-two-service-list heading-two-gap-top-bottom">
-                                <li>
-                                    <div class="color-white">
-                                        Lorem ipsum dolor sit amet consectetur. Pellentesque purus rhoncus lobortis
-                                        integer
-                                    </div>
-                                </li>
-                                <li><div class="color-white">Lorem ipsum dolor sit amet consectetur</div></li>
-                                <li>
-                                    <div class="color-white">
-                                        Lorem ipsum dolor sit amet consectetur purus rhoncus lobortis integer
-                                    </div>
-                                </li>
+                                <li><div class="color-white">Farm-to-factory transportation</div></li>
+                                <li><div class="color-white">Coordinated movement to processing facilities</div></li>
+                                <li><div class="color-white">Support for storage and warehousing operations</div></li>
+                                <li><div class="color-white">Integrated logistics planning</div></li>
                             </ul>
+                            <div class="overflow-hidden" style="margin-bottom: 20px;">
+                                <div style="font-size: 13px; color: var(--yellow); letter-spacing: 0.5px; font-weight: 500;">
+                                    Key Focus: Coordination | Material Movement | Operational Efficiency
+                                </div>
+                            </div>
                             <div>
                                 <div
                                     data-wf--button-style-one--variant="base"
@@ -1035,11 +1036,11 @@
                                     class="button-style-one-wrap overflow-hidden"
                                 >
                                     <a
-                                        href="service-three.html"
+                                        href="contact.php"
                                         class="button-style-one position-relative overflow-hidden w-inline-block"
                                         ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
-                                            <div class="button-text">Discover more</div>
-                                            <div class="button-text two">Discover more</div>
+                                            <div class="button-text">Contact Our Team</div>
+                                            <div class="button-text two">Contact Our Team</div>
                                         </div>
                                         <div class="button-style-one-icon position-relative">
                                             <img
@@ -1064,7 +1065,7 @@
                             <img
                                 width="975"
                                 height="1080"
-                                alt="Kontix-service-two-our-solutions-image-webflow-ecommerce-template"
+                                alt="Export Operations - Tabac Leaf Enterprises"
                                 src="67ad72477c605912a4af72eb/68807344e0fe82b376d29a13_Mask%20group%20-%202025-07-23T105701.824.webp"
                                 loading="lazy"
                                 srcset="
@@ -1078,37 +1079,33 @@
                                 class="service-two-service-image"
                             />
                             <div class="service-two-image-text-wrap">
-                                <div class="service-three-image-text">Renovation</div>
+                                <div class="service-three-image-text">Exporting</div>
                             </div>
                             <div class="service-image-overlay"></div>
                         </div>
                         <div class="w-layout-vflex service-two-service-container">
                             <div class="overflow-hidden">
-                                <div data-wf--sub-heading--variant="base" class="sub-heading">Our solutions</div>
+                                <div data-wf--sub-heading--variant="base" class="sub-heading">EXPORTING</div>
                             </div>
                             <div class="overflow-hidden heading-two-gap-top-bottom service-two-service-heading">
-                                <h2 class="no-margin">Solutions that stand the test of time</h2>
+                                <h2 class="no-margin">Connecting Tobacco Supply with Global Markets</h2>
                             </div>
                             <div class="overflow-hidden">
                                 <p class="no-margin color-white">
-                                    Lorem ipsum dolor sit amet consectetur. Pellentesque purus rhoncus lobortis integer
-                                    nullam metus odio tristique. Sit egestas id ornare viverra orci sed
+                                    Tabac Leaf Enterprises brings experience across tobacco growing, processing and exports. Our export operations are supported by product knowledge, processing infrastructure and coordinated logistics. We work to support customer requirements through clear communication, grade specifications and business coordination.
                                 </p>
                             </div>
                             <ul role="list" class="service-two-service-list heading-two-gap-top-bottom">
-                                <li>
-                                    <div class="color-white">
-                                        Lorem ipsum dolor sit amet consectetur. Pellentesque purus rhoncus lobortis
-                                        integer
-                                    </div>
-                                </li>
-                                <li><div class="color-white">Lorem ipsum dolor sit amet consectetur</div></li>
-                                <li>
-                                    <div class="color-white">
-                                        Lorem ipsum dolor sit amet consectetur purus rhoncus lobortis integer
-                                    </div>
-                                </li>
+                                <li><div class="color-white">Tobacco grade and product enquiries</div></li>
+                                <li><div class="color-white">Coordination of product specifications</div></li>
+                                <li><div class="color-white">Processing and logistics support</div></li>
+                                <li><div class="color-white">Business and export partnership enquiries</div></li>
                             </ul>
+                            <div class="overflow-hidden" style="margin-bottom: 20px;">
+                                <div style="font-size: 13px; color: var(--yellow); letter-spacing: 0.5px; font-weight: 500;">
+                                    Key Focus: Product Knowledge | Customer Requirements | Industry Partnerships
+                                </div>
+                            </div>
                             <div>
                                 <div
                                     data-wf--button-style-one--variant="base"
@@ -1116,11 +1113,11 @@
                                     class="button-style-one-wrap overflow-hidden"
                                 >
                                     <a
-                                        href="service-one.html"
+                                        href="contact.php"
                                         class="button-style-one position-relative overflow-hidden w-inline-block"
                                         ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
-                                            <div class="button-text">Discover more</div>
-                                            <div class="button-text two">Discover more</div>
+                                            <div class="button-text">Contact Our Team</div>
+                                            <div class="button-text two">Contact Our Team</div>
                                         </div>
                                         <div class="button-style-one-icon position-relative">
                                             <img
@@ -1145,7 +1142,7 @@
                             <img
                                 width="975"
                                 height="1080"
-                                alt="Kontix-about-three-building-the-future-image-two-webflow-ecommerce-template"
+                                alt="Integrated Tobacco Value Chain - Tabac Leaf Enterprises"
                                 src="67ad72477c605912a4af72eb/688875277e6f4b2bd8e7dfda_Mask%20group%20-%202025-07-29T124503.208%20%281%29.webp"
                                 loading="lazy"
                                 srcset="
@@ -1156,37 +1153,34 @@
                                 class="service-two-service-image"
                             />
                             <div class="service-two-image-text-wrap">
-                                <div class="service-three-image-text">Excavation</div>
+                                <div class="service-three-image-text">Integrated Approach</div>
                             </div>
                             <div class="service-image-overlay"></div>
                         </div>
                         <div class="w-layout-vflex service-two-service-container">
                             <div class="overflow-hidden">
-                                <div data-wf--sub-heading--variant="base" class="sub-heading">Our specialties</div>
+                                <div data-wf--sub-heading--variant="base" class="sub-heading">OUR INTEGRATED APPROACH</div>
                             </div>
                             <div class="overflow-hidden heading-two-gap-top-bottom service-two-service-heading">
-                                <h2 class="no-margin">Residential building construction</h2>
+                                <h2 class="no-margin">One Connected Value Chain</h2>
                             </div>
                             <div class="overflow-hidden">
                                 <p class="color-white no-margin">
-                                    Lorem ipsum dolor sit amet consectetur. Pellentesque purus rhoncus lobortis integer
-                                    nullam metus odio tristique. Sit egestas id ornare viverra orci sed
+                                    Our processing, transportation and warehousing capabilities work together to support coordinated operations. This integrated approach helps connect tobacco movement and processing activities within one operational framework.
                                 </p>
                             </div>
                             <ul role="list" class="service-two-service-list heading-two-gap-top-bottom">
-                                <li>
-                                    <div class="color-white">
-                                        Lorem ipsum dolor sit amet consectetur. Pellentesque purus rhoncus lobortis
-                                        integer
-                                    </div>
-                                </li>
-                                <li><div class="color-white">Lorem ipsum dolor sit amet consectetur</div></li>
-                                <li>
-                                    <div class="color-white">
-                                        Lorem ipsum dolor sit amet consectetur purus rhoncus lobortis integer
-                                    </div>
-                                </li>
+                                <li><div class="color-white"><strong style="color: var(--yellow);">Farm:</strong> Primary sourcing &amp; farm-level coordination</div></li>
+                                <li><div class="color-white"><strong style="color: var(--yellow);">Transportation:</strong> Internal fleet &amp; farm-to-factory logistics</div></li>
+                                <li><div class="color-white"><strong style="color: var(--yellow);">Processing:</strong> Threshing, separation &amp; moisture control</div></li>
+                                <li><div class="color-white"><strong style="color: var(--yellow);">Storage:</strong> Regulated climate warehousing &amp; packaging</div></li>
+                                <li><div class="color-white"><strong style="color: var(--yellow);">Export:</strong> Global market supply &amp; grade fulfillment</div></li>
                             </ul>
+                            <div class="overflow-hidden" style="margin-bottom: 20px;">
+                                <div style="font-size: 13px; color: var(--yellow); letter-spacing: 0.5px; font-weight: 500;">
+                                    Farm &rarr; Transportation &rarr; Processing &rarr; Storage &rarr; Export
+                                </div>
+                            </div>
                             <div>
                                 <div
                                     data-wf--button-style-one--variant="base"
@@ -1194,11 +1188,11 @@
                                     class="button-style-one-wrap overflow-hidden"
                                 >
                                     <a
-                                        href="service-three.html"
+                                        href="contact.php"
                                         class="button-style-one position-relative overflow-hidden w-inline-block"
                                         ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
-                                            <div class="button-text">Discover more</div>
-                                            <div class="button-text two">Discover more</div>
+                                            <div class="button-text">Contact Our Team</div>
+                                            <div class="button-text two">Contact Our Team</div>
                                         </div>
                                         <div class="button-style-one-icon position-relative">
                                             <img
@@ -1219,6 +1213,10 @@
                 </div>
             </div>
         </section>
+        <?php /* =========================================================
+           TEMPORARILY COMMENTED OUT: UNUSED TEMPLATE SECTIONS
+           (About One / Specialty Cards, Innovation / Progress Bars, Marquee)
+           =========================================================
         <section class="about-one change-background-color">
             <div class="w-layout-blockcontainer container w-container">
                 <div
@@ -1617,6 +1615,7 @@
                 </div>
             </div>
         </section>
+        */ ?>
         <section class="video-section">
             <footer
                 data-poster-url="https://cdn.prod.website-files.com/67ad72477c605912a4af72eb%2F688b00deb1c6c73cb675c865_footer-video%20%281%29-poster-00001.jpg"
@@ -1729,15 +1728,20 @@
             <div class="video-text-box">
                 <div class="video-one-title-wrap padding-left">
                     <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffca">
-                        <div data-wf--sub-heading--variant="base" class="sub-heading">Let’s connect</div>
+                        <div data-wf--sub-heading--variant="base" class="sub-heading">LET’S CONNECT</div>
                     </div>
                     <div class="video-title mobile-text-center change">
                         <h2
                             data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffce"
                             class="heading-two-gap-top-bottom no-margin"
                         >
-                            Start your vision today with expert construction
+                            Explore a Processing or Business Partnership
                         </h2>
+                    </div>
+                    <div style="margin-bottom: 24px;">
+                        <p class="no-margin color-white" style="opacity: 0.85; font-size: 15px; line-height: 1.6;">
+                            Connect with Tabac Leaf Enterprises for enquiries related to tobacco processing, transportation, exports and grade specifications.
+                        </p>
                     </div>
                     <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffd0">
                         <div
@@ -1746,11 +1750,11 @@
                             class="button-style-one-wrap overflow-hidden"
                         >
                             <a
-                                href="contact-one.html"
+                                href="contact.php"
                                 class="button-style-one position-relative overflow-hidden w-inline-block"
                                 ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
-                                    <div class="button-text">Request a quote</div>
-                                    <div class="button-text two">Request a quote</div>
+                                    <div class="button-text">CONTACT OUR TEAM</div>
+                                    <div class="button-text two">CONTACT OUR TEAM</div>
                                 </div>
                                 <div class="button-style-one-icon position-relative">
                                     <img
@@ -1766,6 +1770,9 @@
                             ></a>
                         </div>
                     </div>
+                    <div style="margin-top: 18px; font-size: 13px; color: var(--yellow); letter-spacing: 0.5px; font-weight: 500;">
+                        Advanced Processing. Proven Capability. Consistent Quality.
+                    </div>
                 </div>
             </div>
         </section>
@@ -1773,8 +1780,6 @@
         <script
             src="js/jquery-3.5.1.min.dc5e7f18c8.js?site=67ad72477c605912a4af72eb"
             type="text/javascript"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-            crossorigin="anonymous"
         ></script>
         <script>
             document.documentElement.setAttribute("data-wf-page", "67dd651f2ee1c33e120e658a");
@@ -1783,16 +1788,7 @@
         <script
             src="67ad72477c605912a4af72eb/js/webflow.8c3c7a7b.98f16f3db6b689ff.js"
             type="text/javascript"
-            integrity="sha384-vCkcyTRRgvEMQNx9Dg/YrD+O/OJohIPm8YjWNBlLoQDNPZgfG9w9e6ZcKXNuRikK"
-            crossorigin="anonymous"
         ></script>
-        <script>
-            window.Webflow = window.Webflow || [];
-            window.Webflow.push(function () {
-                document.documentElement.removeAttribute("data-wf-page");
-                document.documentElement.removeAttribute("data-wf-site");
-            });
-        </script>
        
     </body>
 </html>
