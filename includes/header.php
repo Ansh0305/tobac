@@ -1,3 +1,4 @@
+<?php $base = isset($base_path) ? $base_path : ''; ?>
 <style>
 .tobac-logo {
     width: 185px !important;
@@ -46,9 +47,9 @@
             <div class="w-layout-grid header-grid-two">
 
                 <!-- LOGO -->
-                <a href="index.php" class="logo w-nav-brand">
+                <a href="<?php echo $base; ?>index.php" class="logo w-nav-brand">
                     <img
-                        src="assets/images/tobaclogo.png"
+                        src="<?php echo $base; ?>assets/images/tobaclogo.png"
                         alt="Tobac Enterprises"
                         loading="eager"
                         class="brand tobac-logo"
@@ -59,32 +60,32 @@
               <nav role="navigation" class="navbar-menu w-nav-menu">
 
     <!-- Home -->
-    <a href="index.php" class="nav-menu w-nav-link">
+    <a href="<?php echo $base; ?>index.php" class="nav-menu w-nav-link">
         <div class="nav-text">Home</div>
     </a>
 
     <!-- About Us -->
-    <a href="aboutus.php" class="nav-menu w-nav-link">
+    <a href="<?php echo $base; ?>aboutus.php" class="nav-menu w-nav-link">
         <div class="nav-text">About Us</div>
     </a>
 
     <!-- Services -->
-    <a href="services.php" class="nav-menu w-nav-link">
+    <a href="<?php echo $base; ?>services.php" class="nav-menu w-nav-link">
         <div class="nav-text">Services</div>
     </a>
 
     <!-- Operations -->
-    <a href="operations.php" class="nav-menu w-nav-link">
+    <a href="<?php echo $base; ?>operations.php" class="nav-menu w-nav-link">
         <div class="nav-text">Operations</div>
     </a>
 
     <!-- Sustainability -->
-    <a href="sustainability.php" class="nav-menu w-nav-link">
+    <a href="<?php echo $base; ?>sustainability.php" class="nav-menu w-nav-link">
         <div class="nav-text">Sustainability</div>
     </a>
 
     <!-- Contact -->
-    <a href="contact.php" class="nav-menu w-nav-link">
+    <a href="<?php echo $base; ?>contact.php" class="nav-menu w-nav-link">
         <div class="nav-text">Contact</div>
     </a>
 
@@ -99,14 +100,14 @@
 
         <div class="hamburger-image-div full-width">
             <img
-                src="assets/images/tobaclogo.png"
+                src="<?php echo $base; ?>assets/images/tobaclogo.png"
                 loading="lazy"
                 width="300"
                 height="200"
                 alt="Tobac Enterprises"
                 srcset="
-                    assets/images/tobaclogo.png 500w,
-                    assets/images/tobaclogo.png 740w
+                    <?php echo $base; ?>assets/images/tobaclogo.png 500w,
+                    <?php echo $base; ?>assets/images/tobaclogo.png 740w
                 "
                 sizes="(max-width: 479px) 100vw, 300px"
                 class="full-width border-radius-10"
