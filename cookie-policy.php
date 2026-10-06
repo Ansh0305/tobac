@@ -209,7 +209,7 @@
                             Last Updated: October 2026
                         </div>
                         <p class="legal-intro">
-                            This Cookie Policy explains how Tabac Leaf Enterprises (“Tabac Leaf Enterprises”, “we”, “us”, or “our”) may use cookies and similar technologies on this website.
+                            This Cookie Policy explains how Tabac Leaf Enterprises may use cookies and similar technologies on this website.
                         </p>
                     </div>
 
