@@ -111,6 +111,370 @@
                 }
             }
         </style>
+        <style>
+/* =========================================================
+   VIDEO / CTA SECTION
+   COMPACT PREMIUM LAYOUT
+   ========================================================= */
+
+/* Main section */
+.video-section {
+    position: relative !important;
+    width: 100% !important;
+    overflow: hidden !important;
+}
+
+/* Remove full-screen behavior and ensure comfortable vertical space */
+.video-section .video-section-two.full-height {
+    height: 600px !important;
+    min-height: 600px !important;
+    max-height: 600px !important;
+    overflow: hidden !important;
+}
+
+/* =========================================================
+   YOUTUBE BACKGROUND
+   ========================================================= */
+
+.video-section .youtube-video-background {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden !important;
+}
+
+.video-section .youtube-video-background iframe {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    width: 100vw !important;
+    height: 56.25vw !important;
+    min-width: 177.78vh !important;
+    min-height: 100% !important;
+    transform: translate(-50%, -50%) !important;
+    border: 0 !important;
+    pointer-events: none !important;
+}
+
+/* =========================================================
+   DARK OVERLAY
+   ========================================================= */
+
+.video-section .youtube-video-overlay {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.62) 0%,
+            rgba(0, 0, 0, 0.38) 50%,
+            rgba(0, 0, 0, 0.60) 100%
+        ) !important;
+}
+
+/* =========================================================
+   CONTENT AREA
+   ========================================================= */
+
+.video-section .video-text-box {
+    position: absolute !important;
+    inset: auto !important;
+    top: 50% !important;
+    bottom: auto !important;
+    transform: translateY(-50%) !important;
+    right: 8% !important;
+    left: auto !important;
+    width: 480px !important;
+    max-width: 480px !important;
+    margin: 0 !important;
+    z-index: 4 !important;
+}
+
+/* Clear Webflow title-wrap bottom padding (180px) that was forcing content to the top */
+.video-section .video-one-title-wrap {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* Label */
+.video-section .video-one-title-wrap .sub-heading {
+    font-size: 12px !important;
+    line-height: 1.2 !important;
+    letter-spacing: 1.2px !important;
+    margin-bottom: 12px !important;
+}
+
+/* Heading */
+.video-section .video-title {
+    margin: 0 !important;
+}
+
+.video-section .video-title h2 {
+    font-size: 40px !important;
+    line-height: 1.12 !important;
+    letter-spacing: -1px !important;
+    margin: 0 !important;
+    max-width: 470px !important;
+}
+
+/* Heading spacing */
+.video-section .heading-two-gap-top-bottom {
+    margin-top: 0 !important;
+    margin-bottom: 25px !important;
+}
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.video-section .button-style-one-wrap {
+    margin-top: 0 !important;
+}
+
+.video-section .button-style-one {
+    min-height: 52px !important;
+    padding: 0 20px !important;
+}
+
+.video-section .button-text {
+    font-size: 14px !important;
+}
+
+/* =========================================================
+   PLAY BUTTON
+   ========================================================= */
+
+.video-section .lottie-button-wrapper {
+    left: 12% !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+/* Play circle */
+.video-section .youtube-watch-button {
+    width: 64px !important;
+    height: 64px !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.30) !important;
+}
+
+/* Play icon */
+.video-section .youtube-watch-button span {
+    border-top-width: 9px !important;
+    border-bottom-width: 9px !important;
+    border-left-width: 14px !important;
+    margin-left: 4px !important;
+}
+
+/* =========================================================
+   DECORATIVE LINES
+   ========================================================= */
+
+.video-section .video-section-apearence {
+    pointer-events: none !important;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+    .video-section .video-section-two.full-height {
+        height: 560px !important;
+        min-height: 560px !important;
+        max-height: 560px !important;
+    }
+
+    .video-section .video-text-box {
+        position: absolute !important;
+        inset: auto !important;
+        top: 50% !important;
+        bottom: auto !important;
+        transform: translateY(-50%) !important;
+        right: 6% !important;
+        left: auto !important;
+        width: 420px !important;
+        max-width: 420px !important;
+        margin: 0 !important;
+    }
+
+    .video-section .video-one-title-wrap {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .video-section .video-title h2 {
+        font-size: 34px !important;
+        line-height: 1.12 !important;
+    }
+
+    .video-section .lottie-button-wrapper {
+        left: 8% !important;
+    }
+
+    .video-section .youtube-watch-button {
+        width: 58px !important;
+        height: 58px !important;
+    }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+    .video-section .video-section-two.full-height {
+        height: 580px !important;
+        min-height: 580px !important;
+        max-height: 580px !important;
+    }
+
+    .video-section .video-text-box {
+        position: absolute !important;
+        inset: auto !important;
+        top: auto !important;
+        bottom: 30px !important;
+        transform: none !important;
+        right: 24px !important;
+        left: 24px !important;
+        width: auto !important;
+        max-width: none !important;
+        margin: 0 !important;
+    }
+
+    .video-section .video-one-title-wrap {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .video-section .video-title h2 {
+        font-size: 30px !important;
+        line-height: 1.12 !important;
+        letter-spacing: -0.7px !important;
+    }
+
+    .video-section .video-one-title-wrap .sub-heading {
+        font-size: 11px !important;
+    }
+
+    .video-section .lottie-button-wrapper {
+        left: 24px !important;
+        top: 42% !important;
+    }
+
+    .video-section .youtube-watch-button {
+        width: 56px !important;
+        height: 56px !important;
+    }
+
+    .video-section .youtube-video-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.20) 0%,
+                rgba(0, 0, 0, 0.40) 45%,
+                rgba(0, 0, 0, 0.78) 100%
+            ) !important;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 479px) {
+    .video-section .video-section-two.full-height {
+        height: 500px !important;
+        min-height: 500px !important;
+        max-height: 500px !important;
+    }
+
+    .video-section .video-text-box {
+        right: 20px !important;
+        left: 20px !important;
+        bottom: 30px !important;
+    }
+
+    .video-section .video-title h2 {
+        font-size: 27px !important;
+        line-height: 1.14 !important;
+    }
+
+    .video-section .heading-two-gap-top-bottom {
+        margin-bottom: 20px !important;
+    }
+
+    .video-section .youtube-watch-button {
+        width: 52px !important;
+        height: 52px !important;
+    }
+
+    .video-section .lottie-button-wrapper {
+        left: 20px !important;
+    }
+}
+
+/* =========================================================
+   PAGE SECTION SPACING
+   ========================================================= */
+
+.service-two-service-section {
+    margin-top: 60px !important;
+    margin-bottom: 80px !important;
+}
+
+.video-section {
+    margin-top: 0 !important;
+    margin-bottom: 80px !important;
+}
+
+@media (max-width: 991px) {
+    .service-two-service-section {
+        margin-top: 40px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .video-section {
+        margin-bottom: 50px !important;
+    }
+}
+
+/* =========================================================
+   SERVICE CARDS: WATERMARK TEXT CONTAINMENT
+   ========================================================= */
+
+/* Strictly contain all visual elements inside the image box */
+.service-two-service-image-box {
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+/* Strictly confine the rotated watermark container */
+.service-two-image-text-wrap {
+    overflow: hidden !important;
+    pointer-events: none !important;
+}
+
+/* Prevent text from wrapping to multiple lines and spattering outside */
+.service-three-image-text {
+    white-space: nowrap !important;
+    word-break: keep-all !important;
+    pointer-events: none !important;
+    user-select: none !important;
+}
+
+@media (min-width: 992px) {
+    .service-two-image-text-wrap {
+        max-width: 180px !important;
+    }
+
+    .service-three-image-text {
+        font-size: 110px !important;
+        line-height: 1 !important;
+        letter-spacing: -6px !important;
+    }
+}
+        </style>
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
         <script src="ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -158,7 +522,7 @@
             data-w-id="cdc768ec-aa89-764f-7048-810d906b54cb"
             class="service-v2-hero position-relative overflow-hidden"
         >
-            <div class="about-hero-bg position-absolute service-two-bg banner-apearence"></div>
+            <div class="about-hero-bg position-absolute service-two-bg banner-apearence" style="background-image: linear-gradient(#0f0f0f, #0f0f0f1a 62%, #0f0f0f00), linear-gradient(#0f0f0f00, #0f0f0f5e 44%, #0f0f0ff2), url('assets/images/services-hero-tobacco.jpg'); background-position: 0 0, 0 0, 50%; background-repeat: repeat, repeat, no-repeat; background-size: auto, auto, cover;"></div>
             <div class="about-hero-content position-relative">
                 <div class="w-layout-blockcontainer container w-container">
                     <div class="service-hero-information">
@@ -880,14 +1244,9 @@
                             <img
                                 width="975"
                                 height="1080"
-                                alt="Tobacco Processing Facilities - Tabac Leaf Enterprises"
-                                src="67ad72477c605912a4af72eb/67e1404ab4df10e903428fa6_Service-two-sticky-04.avif"
+                                alt="Industrial Tobacco Threshing and Processing Facilities - Tabac Leaf Enterprises"
+                                src="assets/images/services-tobacco-processing.jpg"
                                 loading="lazy"
-                                srcset="
-                                    67ad72477c605912a4af72eb/67e1404ab4df10e903428fa6_Service-two-sticky-04-p-500.avif  500w,
-                                    67ad72477c605912a4af72eb/67e1404ab4df10e903428fa6_Service-two-sticky-04-p-800.avif  800w,
-                                    67ad72477c605912a4af72eb/67e1404ab4df10e903428fa6_Service-two-sticky-04.avif       1950w
-                                "
                                 sizes="(max-width: 991px) 100vw, 975px"
                                 class="service-two-service-image"
                             />
@@ -988,16 +1347,9 @@
                             <img
                                 width="975"
                                 height="1080"
-                                alt="Transportation and Logistics - Tabac Leaf Enterprises"
-                                src="67ad72477c605912a4af72eb/688073449b5e710eeb5e2f95_Group%201597883635%20%281%29.webp"
+                                alt="Tobacco Transportation and Logistics Fleet - Tabac Leaf Enterprises"
+                                src="assets/images/services-tobacco-transport.jpg"
                                 loading="lazy"
-                                srcset="
-                                    67ad72477c605912a4af72eb/688073449b5e710eeb5e2f95_Group%201597883635%20%281%29-p-500.webp   500w,
-                                    67ad72477c605912a4af72eb/688073449b5e710eeb5e2f95_Group%201597883635%20%281%29-p-800.webp   800w,
-                                    67ad72477c605912a4af72eb/688073449b5e710eeb5e2f95_Group%201597883635%20%281%29-p-1080.webp 1080w,
-                                    67ad72477c605912a4af72eb/688073449b5e710eeb5e2f95_Group%201597883635%20%281%29-p-1600.webp 1600w,
-                                    67ad72477c605912a4af72eb/688073449b5e710eeb5e2f95_Group%201597883635%20%281%29.webp        1920w
-                                "
                                 sizes="(max-width: 991px) 100vw, 975px"
                                 class="service-two-service-image"
                             />
@@ -1065,16 +1417,9 @@
                             <img
                                 width="975"
                                 height="1080"
-                                alt="Export Operations - Tabac Leaf Enterprises"
-                                src="67ad72477c605912a4af72eb/68807344e0fe82b376d29a13_Mask%20group%20-%202025-07-23T105701.824.webp"
+                                alt="International Tobacco Export Warehouse - Tabac Leaf Enterprises"
+                                src="assets/images/services-tobacco-export.jpg"
                                 loading="lazy"
-                                srcset="
-                                    67ad72477c605912a4af72eb/68807344e0fe82b376d29a13_Mask%20group%20-%202025-07-23T105701.824-p-500.webp   500w,
-                                    67ad72477c605912a4af72eb/68807344e0fe82b376d29a13_Mask%20group%20-%202025-07-23T105701.824-p-800.webp   800w,
-                                    67ad72477c605912a4af72eb/68807344e0fe82b376d29a13_Mask%20group%20-%202025-07-23T105701.824-p-1080.webp 1080w,
-                                    67ad72477c605912a4af72eb/68807344e0fe82b376d29a13_Mask%20group%20-%202025-07-23T105701.824-p-1600.webp 1600w,
-                                    67ad72477c605912a4af72eb/68807344e0fe82b376d29a13_Mask%20group%20-%202025-07-23T105701.824.webp        1920w
-                                "
                                 sizes="(max-width: 991px) 100vw, 975px"
                                 class="service-two-service-image"
                             />
@@ -1143,17 +1488,13 @@
                                 width="975"
                                 height="1080"
                                 alt="Integrated Tobacco Value Chain - Tabac Leaf Enterprises"
-                                src="67ad72477c605912a4af72eb/688875277e6f4b2bd8e7dfda_Mask%20group%20-%202025-07-29T124503.208%20%281%29.webp"
+                                src="assets/images/services-tobacco-integrated.jpg"
                                 loading="lazy"
-                                srcset="
-                                    67ad72477c605912a4af72eb/688875277e6f4b2bd8e7dfda_Mask%20group%20-%202025-07-29T124503.208%20%281%29-p-500.png  500w,
-                                    67ad72477c605912a4af72eb/688875277e6f4b2bd8e7dfda_Mask%20group%20-%202025-07-29T124503.208%20%281%29.webp      1920w
-                                "
                                 sizes="(max-width: 991px) 100vw, 975px"
                                 class="service-two-service-image"
                             />
                             <div class="service-two-image-text-wrap">
-                                <div class="service-three-image-text">Integrated Approach</div>
+                                <div class="service-three-image-text">Integration</div>
                             </div>
                             <div class="service-image-overlay"></div>
                         </div>
@@ -1617,114 +1958,158 @@
         </section>
         */ ?>
         <section class="video-section">
-            <footer
-                data-poster-url="https://cdn.prod.website-files.com/67ad72477c605912a4af72eb%2F688b00deb1c6c73cb675c865_footer-video%20%281%29-poster-00001.jpg"
-                data-video-urls="https://cdn.prod.website-files.com/67ad72477c605912a4af72eb%2F688b00deb1c6c73cb675c865_footer-video%20%281%29-transcode.mp4,https://cdn.prod.website-files.com/67ad72477c605912a4af72eb%2F688b00deb1c6c73cb675c865_footer-video%20%281%29-transcode.webm"
-                data-autoplay="true"
-                data-loop="true"
-                data-wf-ignore="true"
-                class="video-section-two full-height remove-padding w-background-video w-background-video-atom"
-            >
-                <video
-                    id="88c81948-5fd7-346a-cfd2-4aae1ae9ffb2-video"
-                    autoplay=""
-                    loop=""
-                    style="
-                        background-image: url(&quot;67ad72477c605912a4af72eb688b00deb1c6c73cb675c865_footer-video (1)-poster-00001-1.jpg&quot;);
-                    "
-                    muted=""
-                    playsinline=""
-                    data-wf-ignore="true"
-                    data-object-fit="cover"
+           <footer
+    class="video-section-two full-height remove-padding w-background-video w-background-video-atom"
+    style="position: relative; overflow: hidden;"
+>
+
+    <!-- YouTube Background Video -->
+    <div
+        class="youtube-video-background"
+        style="
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+            background-image: url('https://img.youtube.com/vi/n91nMszHV5c/maxresdefault.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        "
+    >
+
+        <iframe
+    src="https://www.youtube.com/embed/n91nMszHV5c?autoplay=1&mute=1&loop=1&playlist=n91nMszHV5c&controls=0&rel=0&modestbranding=1&playsinline=1&cc_load_policy=0"
+    title="Tobac Enterprises Industrial Tobacco Processing"
+    frameborder="0"
+    allow="autoplay; encrypted-media; picture-in-picture"
+    allowfullscreen
+    style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 56.25vw;
+        min-height: 100vh;
+        min-width: 177.78vh;
+        transform: translate(-50%, -50%);
+        border: 0;
+        pointer-events: none;
+    "
+></iframe>
+
+    </div>
+
+
+    <!-- Dark Overlay -->
+    <div
+        class="youtube-video-overlay"
+        style="
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(0, 0, 0, 0.72) 0%,
+                    rgba(0, 0, 0, 0.48) 50%,
+                    rgba(0, 0, 0, 0.65) 100%
+                );
+            pointer-events: none;
+        "
+    ></div>
+
+
+    <!-- Video Content -->
+    <div
+        class="w-layout-blockcontainer container w-container"
+        style="position: relative; z-index: 2;"
+    >
+
+        <div class="video-two-video-wrapper">
+
+            <div class="viide-two-video-line position-relative">
+
+                <!-- YouTube Play / Watch Button -->
+                <div
+                    class="lottie-button-wrapper position-absolute"
+                    style="z-index: 5;"
                 >
-                    <source
-                        src="67ad72477c605912a4af72eb688b00deb1c6c73cb675c865_footer-video%20%281%29-transcode.mp4"
-                        data-wf-ignore="true"
-                    />
-                    <source
-                        src="67ad72477c605912a4af72eb688b00deb1c6c73cb675c865_footer-video%20%281%29-transcode.webm"
-                        data-wf-ignore="true"
-                    />
-                </video>
-                <div class="w-layout-blockcontainer container w-container">
-                    <div class="video-two-video-wrapper">
-                        <div class="viide-two-video-line position-relative">
-                            <div
-                                data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffb6"
-                                class="lottie-button-wrapper position-absolute"
-                            >
-                                <noscript
-                                    ><style>
-                                        [data-wf-bgvideo-fallback-img] {
-                                            display: none;
-                                        }
-                                        @media (prefers-reduced-motion: reduce) {
-                                            [data-wf-bgvideo-fallback-img] {
-                                                position: absolute;
-                                                z-index: -100;
-                                                display: inline-block;
-                                                height: 100%;
-                                                width: 100%;
-                                                object-fit: cover;
-                                            }
-                                        }</style
-                                    ><img
-                                        data-wf-bgvideo-fallback-img="true"
-                                        src="67ad72477c605912a4af72eb688b00deb1c6c73cb675c865_footer-video%20%281%29-poster-00001-1.jpg"
-                                        alt=""
-                                /></noscript>
-                                <div aria-live="polite">
-                                    <button
-                                        type="button"
-                                        data-w-bg-video-control="true"
-                                        aria-controls="88c81948-5fd7-346a-cfd2-4aae1ae9ffb2-video"
-                                        class="w-backgroundvideo-backgroundvideoplaypausebutton play-pause-button position-relative w-background-video--control"
-                                    >
-                                        <span class="lottie-play-button"
-                                            ><img
-                                                width="14"
-                                                height="31"
-                                                alt="Pause video"
-                                                src="67ad72477c605912a4af72eb/67b413d1e38e4ea89b967b85_pause-icon.svg"
-                                                loading="lazy"
-                                                class="video-two-play-icon" /></span
-                                        ><span hidden="" class="play-button"
-                                            ><img
-                                                width="18"
-                                                height="24"
-                                                alt="Play video"
-                                                src="67ad72477c605912a4af72eb/67add5869df939f040a352a7_pay-icon.svg"
-                                                loading="lazy"
-                                                class="video-two-play-icon"
-                                        /></span>
-                                    </button>
-                                </div>
-                                <div
-                                    class="lottie-animation"
-                                    data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffbc"
-                                    data-animation-type="lottie"
-                                    data-src="https://cdn.prod.website-files.com/67ad72477c605912a4af72eb/68875dd2a602d21135a0cc98_btnB1lHDpv.json"
-                                    data-loop="1"
-                                    data-direction="1"
-                                    data-autoplay="1"
-                                    data-is-ix2-target="0"
-                                    data-renderer="svg"
-                                    data-default-duration="0"
-                                    data-duration="4"
-                                    data-loading="eager"
-                                ></div>
-                            </div>
-                        </div>
-                    </div>
+
+                    <a
+                        href="https://www.youtube.com/watch?v=n91nMszHV5c"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Watch Tobac Enterprises video on YouTube"
+                        class="youtube-watch-button"
+                        style="
+                            width: 76px;
+                            height: 76px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            background: rgba(255, 255, 255, 0.95);
+                            text-decoration: none;
+                            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+                        "
+                    >
+
+                        <span
+                            style="
+                                display: block;
+                                width: 0;
+                                height: 0;
+                                border-top: 11px solid transparent;
+                                border-bottom: 11px solid transparent;
+                                border-left: 17px solid #000;
+                                margin-left: 5px;
+                            "
+                        ></span>
+
+                    </a>
+
                 </div>
-            </footer>
-            <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffbd" class="video-section-apearence">
-                <div class="video-line"><div class="video-line-overlay _1"></div></div>
-                <div class="video-line"><div class="video-line-overlay _2"></div></div>
-                <div class="video-line"><div class="video-line-overlay _3"></div></div>
-                <div class="video-line"><div class="video-line-overlay _4"></div></div>
-                <div class="video-line"><div class="video-line-overlay _5"></div></div>
+
             </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Decorative Animation -->
+    <div
+        class="video-section-apearence"
+        style="position: relative; z-index: 3;"
+    >
+
+        <div class="video-line">
+            <div class="video-line-overlay _1"></div>
+        </div>
+
+        <div class="video-line">
+            <div class="video-line-overlay _2"></div>
+        </div>
+
+        <div class="video-line">
+            <div class="video-line-overlay _3"></div>
+        </div>
+
+        <div class="video-line">
+            <div class="video-line-overlay _4"></div>
+        </div>
+
+        <div class="video-line">
+            <div class="video-line-overlay _5"></div>
+        </div>
+
+    </div>
+
+</footer>
+
             <div class="video-text-box">
                 <div class="video-one-title-wrap padding-left">
                     <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffca">
