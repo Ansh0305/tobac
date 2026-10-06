@@ -115,6 +115,131 @@
                     height: 0%;
                 }
             }
+            .machinery-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px 16px;
+                width: 100%;
+            }
+            @media (max-width: 767px) {
+                .machinery-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+            .machinery-item {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 12px 14px;
+                background: rgba(255, 255, 255, 0.04);
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                border-radius: 8px;
+                transition: all 0.3s ease;
+            }
+            .machinery-item:hover {
+                background: rgba(221, 185, 105, 0.08);
+                border-color: rgba(221, 185, 105, 0.4);
+            }
+            .sequence-grid {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 16px;
+                width: 100%;
+                margin-top: 50px;
+            }
+            @media (max-width: 991px) {
+                .sequence-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            @media (max-width: 479px) {
+                .sequence-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+            .sequence-card {
+                background: #ffffff;
+                border: 1px solid rgba(0, 0, 0, 0.07);
+                border-radius: 10px;
+                padding: 22px 16px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                position: relative;
+                transition: all 0.3s ease;
+            }
+            .sequence-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+                border-color: var(--yellow, #ddb969);
+            }
+            .sequence-badge {
+                color: var(--yellow, #c59b3f);
+                font-size: 11px;
+                font-weight: 700;
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+                margin-bottom: 8px;
+            }
+            .sequence-title {
+                color: #111827;
+                font-size: 15px;
+                font-weight: 600;
+                font-family: Montserrat, sans-serif;
+                line-height: 1.3;
+                margin-bottom: 8px;
+            }
+            .sequence-desc {
+                color: #555e6d;
+                font-size: 12.5px;
+                line-height: 1.5;
+                font-family: Inter, sans-serif;
+            }
+            @media (min-width: 992px) {
+                .preservation--sticky-height {
+                    padding-top: 45px !important;
+                    padding-bottom: 45px !important;
+                }
+                .preservation-heading-wrapper {
+                    display: flex !important;
+                    flex-direction: column !important;
+                    align-items: center !important;
+                    text-align: center !important;
+                    width: 100% !important;
+                }
+                .preservation-heading-wrapper .heading-two-gap-top {
+                    margin-top: 22px !important;
+                }
+                .no-margin.preservation-heading {
+                    padding-bottom: 8px !important;
+                    text-align: center !important;
+                    margin-left: auto !important;
+                    margin-right: auto !important;
+                }
+                .preservation-main-card-wrapper {
+                    padding-top: 10px !important;
+                    padding-bottom: 10px !important;
+                }
+                .preservation-right-wrapper {
+                    padding-top: 5px !important;
+                    padding-bottom: 5px !important;
+                    justify-content: flex-start !important;
+                    gap: 16px !important;
+                }
+                .preservation-heading-content {
+                    gap: 8px !important;
+                }
+                .preservation-image-wrapper img {
+                    max-height: 270px !important;
+                    object-fit: cover !important;
+                }
+                .preservation-list-item li {
+                    margin-bottom: 8px !important;
+                    font-size: 14px !important;
+                    line-height: 1.45 !important;
+                }
+            }
         </style>
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
@@ -458,7 +583,7 @@
                 </div>
             </div>
         </section>
-        <section data-w-id="8c7c7b76-c387-43ad-1c1f-8521b7840472" class="three-service-innovation">
+        <section id="processing-machinery" data-w-id="8c7c7b76-c387-43ad-1c1f-8521b7840472" class="three-service-innovation">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="w-layout-hflex over-view-two-wrap two-about-innovation-wrap">
                     <div class="service-three-about-image-wrap border-radius-10">
@@ -488,10 +613,10 @@
                     <div class="planning-one-information two mobile-text-center">
                         <div>
                             <div
-                                data-wf--sub-heading--variant="white-sub-heading"
-                                class="sub-heading w-variant-f1a14dd4-f30f-c0f4-d5f6-6802c309e3c1"
+                                data-wf--sub-heading--variant="base"
+                                class="sub-heading"
                             >
-                                workers support
+                                Engineered for Tobacco Processing
                             </div>
                         </div>
                         <div class="overflow-hidden heading-two-gap-top-bottom">
@@ -509,7 +634,7 @@
                                 "
                                 class="no-margin service-three-innovation-heading"
                             >
-                                Your vision, our expertise, built to last
+                                Industrial Processing Machinery &amp; Systems
                             </h2>
                         </div>
                         <div class="overflow-hidden">
@@ -518,65 +643,70 @@
                                 style="opacity: 0"
                                 class="no-margin color-white"
                             >
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ex, consequat sed eros
-                                non, eleifend laoreet nibh. In vel ante
+                                Tabac Leaf Enterprises’ processing operations are supported by industrial machinery and integrated systems designed for tobacco handling, threshing, separation, drying and packing. Our machinery and infrastructure support coordinated processing operations across the facilities.
                             </p>
                         </div>
-                        <div class="w-layout-vflex planning-box-wrapper-copy">
-                            <div
-                                data-w-id="95c5dbdc-61a8-4749-988c-a8391e94fcaf"
-                                style="
-                                    -webkit-transform: translate3d(0, 130%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                        rotateZ(0) skew(-10deg, 6deg);
-                                    -moz-transform: translate3d(0, 130%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                        rotateZ(0) skew(-10deg, 6deg);
-                                    -ms-transform: translate3d(0, 130%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                        rotateZ(0) skew(-10deg, 6deg);
-                                    transform: translate3d(0, 130%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                                        skew(-10deg, 6deg);
-                                "
-                                class="solution-wrapper-two"
-                            >
-                                <div class="service-icon-box">
-                                    <img
-                                        width="22"
-                                        height="22"
-                                        alt="Kontix-pricing-empowering-your-business-icon-webflow-ecommerce-template"
-                                        src="67ad72477c605912a4af72eb/67b86b6dd874c045dc2757d6_deactive-check.svg"
-                                        loading="lazy"
-                                        class="check-one"
-                                    />
+                        <div class="w-layout-vflex planning-box-wrapper-copy" style="margin-top: 25px; margin-bottom: 25px;">
+                            <div class="machinery-grid">
+                                <div class="machinery-item">
+                                    <div style="width: 20px; min-width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; background: rgba(221, 185, 105, 0.15); border-radius: 50%;">
+                                        <img width="12" height="12" alt="Check" src="67ad72477c605912a4af72eb/67b86b6dd874c045dc2757d6_deactive-check.svg" loading="lazy" style="filter: brightness(0) saturate(100%) invert(84%) sepia(29%) saturate(718%) hue-rotate(352deg) brightness(93%) contrast(89%);" />
+                                    </div>
+                                    <div style="color: #ffffff; font-size: 13.5px; font-weight: 500; font-family: Montserrat, sans-serif; line-height: 1.3;">Tobacco Threshing Systems</div>
                                 </div>
-                                <div class="heading-style-h5">
-                                    Transform your vision into reality with expert craftsmanship
+                                <div class="machinery-item">
+                                    <div style="width: 20px; min-width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; background: rgba(221, 185, 105, 0.15); border-radius: 50%;">
+                                        <img width="12" height="12" alt="Check" src="67ad72477c605912a4af72eb/67b86b6dd874c045dc2757d6_deactive-check.svg" loading="lazy" style="filter: brightness(0) saturate(100%) invert(84%) sepia(29%) saturate(718%) hue-rotate(352deg) brightness(93%) contrast(89%);" />
+                                    </div>
+                                    <div style="color: #ffffff; font-size: 13.5px; font-weight: 500; font-family: Montserrat, sans-serif; line-height: 1.3;">Lamina &amp; Stem Separation Systems</div>
                                 </div>
-                            </div>
-                            <div
-                                data-w-id="6022cc82-4ecf-d1c7-ecd6-f44c5081b7f4"
-                                style="
-                                    -webkit-transform: translate3d(0, 130%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                        rotateZ(0) skew(-10deg, 6deg);
-                                    -moz-transform: translate3d(0, 130%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                        rotateZ(0) skew(-10deg, 6deg);
-                                    -ms-transform: translate3d(0, 130%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                        rotateZ(0) skew(-10deg, 6deg);
-                                    transform: translate3d(0, 130%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                                        skew(-10deg, 6deg);
-                                "
-                                class="solution-wrapper-two no-border bottom-no-padding-margin"
-                            >
-                                <div class="service-icon-box">
-                                    <img
-                                        width="22"
-                                        height="22"
-                                        alt="Kontix-pricing-empowering-your-business-icon-webflow-ecommerce-template"
-                                        src="67ad72477c605912a4af72eb/67b86b6dd874c045dc2757d6_deactive-check.svg"
-                                        loading="lazy"
-                                        class="check-one"
-                                    />
+                                <div class="machinery-item">
+                                    <div style="width: 20px; min-width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; background: rgba(221, 185, 105, 0.15); border-radius: 50%;">
+                                        <img width="12" height="12" alt="Check" src="67ad72477c605912a4af72eb/67b86b6dd874c045dc2757d6_deactive-check.svg" loading="lazy" style="filter: brightness(0) saturate(100%) invert(84%) sepia(29%) saturate(718%) hue-rotate(352deg) brightness(93%) contrast(89%);" />
+                                    </div>
+                                    <div style="color: #ffffff; font-size: 13.5px; font-weight: 500; font-family: Montserrat, sans-serif; line-height: 1.3;">Conditioning Systems</div>
                                 </div>
-                                <div class="heading-style-h5">
-                                    Build strong foundations with our trusted construction solutions
+                                <div class="machinery-item">
+                                    <div style="width: 20px; min-width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; background: rgba(221, 185, 105, 0.15); border-radius: 50%;">
+                                        <img width="12" height="12" alt="Check" src="67ad72477c605912a4af72eb/67b86b6dd874c045dc2757d6_deactive-check.svg" loading="lazy" style="filter: brightness(0) saturate(100%) invert(84%) sepia(29%) saturate(718%) hue-rotate(352deg) brightness(93%) contrast(89%);" />
+                                    </div>
+                                    <div style="color: #ffffff; font-size: 13.5px; font-weight: 500; font-family: Montserrat, sans-serif; line-height: 1.3;">Blending Systems</div>
+                                </div>
+                                <div class="machinery-item">
+                                    <div style="width: 20px; min-width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; background: rgba(221, 185, 105, 0.15); border-radius: 50%;">
+                                        <img width="12" height="12" alt="Check" src="67ad72477c605912a4af72eb/67b86b6dd874c045dc2757d6_deactive-check.svg" loading="lazy" style="filter: brightness(0) saturate(100%) invert(84%) sepia(29%) saturate(718%) hue-rotate(352deg) brightness(93%) contrast(89%);" />
+                                    </div>
+                                    <div style="color: #ffffff; font-size: 13.5px; font-weight: 500; font-family: Montserrat, sans-serif; line-height: 1.3;">Drying &amp; Moisture-Control Systems</div>
+                                </div>
+                                <div class="machinery-item">
+                                    <div style="width: 20px; min-width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; background: rgba(221, 185, 105, 0.15); border-radius: 50%;">
+                                        <img width="12" height="12" alt="Check" src="67ad72477c605912a4af72eb/67b86b6dd874c045dc2757d6_deactive-check.svg" loading="lazy" style="filter: brightness(0) saturate(100%) invert(84%) sepia(29%) saturate(718%) hue-rotate(352deg) brightness(93%) contrast(89%);" />
+                                    </div>
+                                    <div style="color: #ffffff; font-size: 13.5px; font-weight: 500; font-family: Montserrat, sans-serif; line-height: 1.3;">Metal Detection Systems</div>
+                                </div>
+                                <div class="machinery-item">
+                                    <div style="width: 20px; min-width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; background: rgba(221, 185, 105, 0.15); border-radius: 50%;">
+                                        <img width="12" height="12" alt="Check" src="67ad72477c605912a4af72eb/67b86b6dd874c045dc2757d6_deactive-check.svg" loading="lazy" style="filter: brightness(0) saturate(100%) invert(84%) sepia(29%) saturate(718%) hue-rotate(352deg) brightness(93%) contrast(89%);" />
+                                    </div>
+                                    <div style="color: #ffffff; font-size: 13.5px; font-weight: 500; font-family: Montserrat, sans-serif; line-height: 1.3;">Packing Systems</div>
+                                </div>
+                                <div class="machinery-item">
+                                    <div style="width: 20px; min-width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; background: rgba(221, 185, 105, 0.15); border-radius: 50%;">
+                                        <img width="12" height="12" alt="Check" src="67ad72477c605912a4af72eb/67b86b6dd874c045dc2757d6_deactive-check.svg" loading="lazy" style="filter: brightness(0) saturate(100%) invert(84%) sepia(29%) saturate(718%) hue-rotate(352deg) brightness(93%) contrast(89%);" />
+                                    </div>
+                                    <div style="color: #ffffff; font-size: 13.5px; font-weight: 500; font-family: Montserrat, sans-serif; line-height: 1.3;">PLC/SCADA Process Control</div>
+                                </div>
+                                <div class="machinery-item">
+                                    <div style="width: 20px; min-width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; background: rgba(221, 185, 105, 0.15); border-radius: 50%;">
+                                        <img width="12" height="12" alt="Check" src="67ad72477c605912a4af72eb/67b86b6dd874c045dc2757d6_deactive-check.svg" loading="lazy" style="filter: brightness(0) saturate(100%) invert(84%) sepia(29%) saturate(718%) hue-rotate(352deg) brightness(93%) contrast(89%);" />
+                                    </div>
+                                    <div style="color: #ffffff; font-size: 13.5px; font-weight: 500; font-family: Montserrat, sans-serif; line-height: 1.3;">Dust-Collection Systems</div>
+                                </div>
+                                <div class="machinery-item">
+                                    <div style="width: 20px; min-width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; background: rgba(221, 185, 105, 0.15); border-radius: 50%;">
+                                        <img width="12" height="12" alt="Check" src="67ad72477c605912a4af72eb/67b86b6dd874c045dc2757d6_deactive-check.svg" loading="lazy" style="filter: brightness(0) saturate(100%) invert(84%) sepia(29%) saturate(718%) hue-rotate(352deg) brightness(93%) contrast(89%);" />
+                                    </div>
+                                    <div style="color: #ffffff; font-size: 13.5px; font-weight: 500; font-family: Montserrat, sans-serif; line-height: 1.3;">Laboratory &amp; Quality-Control Facilities</div>
                                 </div>
                             </div>
                         </div>
@@ -587,17 +717,17 @@
                                 class="button-style-one-wrap overflow-hidden"
                             >
                                 <a
-                                    href="aboutus.php"
+                                    href="#processing-sequence"
                                     class="button-style-one position-relative overflow-hidden w-inline-block"
                                     ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
-                                        <div class="button-text">View more</div>
-                                        <div class="button-text two">View more</div>
+                                        <div class="button-text">EXPLORE PROCESS SEQUENCE</div>
+                                        <div class="button-text two">EXPLORE PROCESS SEQUENCE</div>
                                     </div>
                                     <div class="button-style-one-icon position-relative">
                                         <img
                                             width="8"
                                             height="9"
-                                            alt="Kontix-home-two-innovative-building-solution-arrow-icon-webflow-ecommerce-template"
+                                            alt="Arrow"
                                             src="67ad72477c605912a4af72eb/67af1b78eef99645a9f0bfd8_Arrow%206.svg"
                                             loading="lazy"
                                             class="button-one-arrow"
@@ -611,15 +741,15 @@
                 </div>
             </div>
         </section>
-        <section class="service-two-misson-section">
+        <section id="processing-sequence" class="service-two-misson-section">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="text-align-center">
                     <div data-w-id="5568203c-d611-e342-b8ad-239c0a971de9" style="opacity: 0">
                         <div
-                            data-wf--sub-heading--variant="dark-sub-heading"
-                            class="sub-heading w-variant-8339cfd4-9c83-eaae-331a-5682dc1da52c"
+                            data-wf--sub-heading--variant="base"
+                            class="sub-heading"
                         >
-                            watch video
+                            INTEGRATED WORKFLOW
                         </div>
                     </div>
                     <div class="overflow-hidden heading-two-gap-top">
@@ -637,149 +767,110 @@
                             "
                             class="no-margin service-v2-video-heading color-black"
                         >
-                            Trusted construction solutions For every project scale
+                            Integrated Processing Sequence
                         </h2>
                     </div>
+                    <div style="max-width: 780px; margin: 20px auto 0 auto; color: #555e6d; font-size: 16px; line-height: 1.6; font-family: Inter, sans-serif;">
+                        From raw leaf intake to final packed storage, our systematic 10-stage processing sequence ensures continuous quality control, uniform moisture management, and precise separation at every phase.
+                    </div>
                 </div>
+
+                <div class="sequence-grid">
+                    <div class="sequence-card">
+                        <div class="sequence-badge">Stage 01</div>
+                        <div class="sequence-title">Leaf Receiving</div>
+                        <div class="sequence-desc">Graded raw leaf intake, consignment inspection, and lot moisture verification.</div>
+                    </div>
+                    <div class="sequence-card">
+                        <div class="sequence-badge">Stage 02</div>
+                        <div class="sequence-title">Conditioning</div>
+                        <div class="sequence-desc">Direct conditioning cylinders with controlled steam for pliable leaf handling.</div>
+                    </div>
+                    <div class="sequence-card">
+                        <div class="sequence-badge">Stage 03</div>
+                        <div class="sequence-title">Blending</div>
+                        <div class="sequence-desc">Precise recipe-driven formulation across grades for consistent chemistry.</div>
+                    </div>
+                    <div class="sequence-card">
+                        <div class="sequence-badge">Stage 04</div>
+                        <div class="sequence-title">Multi-Stage Threshing</div>
+                        <div class="sequence-desc">Progressive mechanical threshing separating lamina cleanly from stems.</div>
+                    </div>
+                    <div class="sequence-card">
+                        <div class="sequence-badge">Stage 05</div>
+                        <div class="sequence-title">Lamina &amp; Stem Separation</div>
+                        <div class="sequence-desc">Aerodynamic counter-flow air separation and classification systems.</div>
+                    </div>
+                    <div class="sequence-card">
+                        <div class="sequence-badge">Stage 06</div>
+                        <div class="sequence-title">Drying</div>
+                        <div class="sequence-desc">Multi-zone apron redrying with uniform target moisture retention.</div>
+                    </div>
+                    <div class="sequence-card">
+                        <div class="sequence-badge">Stage 07</div>
+                        <div class="sequence-title">Inspection</div>
+                        <div class="sequence-desc">In-line visual and optical examination for particle sizing and leaf purity.</div>
+                    </div>
+                    <div class="sequence-card">
+                        <div class="sequence-badge">Stage 08</div>
+                        <div class="sequence-title">Metal Detection</div>
+                        <div class="sequence-desc">High-sensitivity industrial detection ensuring zero metallic contaminants.</div>
+                    </div>
+                    <div class="sequence-card">
+                        <div class="sequence-badge">Stage 09</div>
+                        <div class="sequence-title">Packing</div>
+                        <div class="sequence-desc">High-density hydraulic bale packing in export-standard C-48 carton boxes.</div>
+                    </div>
+                    <div class="sequence-card">
+                        <div class="sequence-badge">Stage 10</div>
+                        <div class="sequence-title">Storage</div>
+                        <div class="sequence-desc">Climate-monitored, ventilated warehouse storage ready for global dispatch.</div>
+                    </div>
+                </div>
+
+                <?php /* Unused template video and placeholder cards
                 <div
                     data-w-id="5568203c-d611-e342-b8ad-239c0a971def"
                     style="opacity: 0"
                     class="w-layout-hflex video-two-wrapper position-relative"
                 >
-                    <div
-                        
-                        class="video-two w-background-video w-background-video-atom"
-                    >
-                       <noscript
-                            ><style>
-                                [data-wf-bgvideo-fallback-img] {
-                                    display: none;
-                                }
-                                @media (prefers-reduced-motion: reduce) {
-                                    [data-wf-bgvideo-fallback-img] {
-                                        position: absolute;
-                                        z-index: -100;
-                                        display: inline-block;
-                                        height: 100%;
-                                        width: 100%;
-                                        object-fit: cover;
-                                    }
-                                }</style
-                            ><img
-                                data-wf-bgvideo-fallback-img="true"
-                                src="67ad72477c605912a4af72eb6887662dc028951b445a61b4_hero-2-kontix-poster-00001.jpg"
-                                alt=""
-                        /></noscript>
-                        <div aria-live="polite">
-                            <button
-                                type="button"
-                                data-w-bg-video-control="true"
-                                aria-controls="5568203c-d611-e342-b8ad-239c0a971df0-video"
-                                class="w-backgroundvideo-backgroundvideoplaypausebutton video-two-play-button w-background-video--control"
-                            >
-                                <span
-                                    ><img
-                                        src="67ad72477c605912a4af72eb/688769448e453eb88635b1fe_Group%201597883640%20%281%29.svg"
-                                        loading="lazy"
-                                        width="25"
-                                        height="33"
-                                        alt="Pause video" /></span
-                                ><span hidden=""
-                                    ><img
-                                        loading="lazy"
-                                        width="26"
-                                        height="30"
-                                        src="67ad72477c605912a4af72eb/688769bddadc44683205ec96_Polygon%202.svg"
-                                        alt="Play video"
-                                /></span>
-                            </button>
-                        </div>
+                    <div class="video-two w-background-video w-background-video-atom">
+                       <noscript><style>[data-wf-bgvideo-fallback-img] { display: none; }</style><img data-wf-bgvideo-fallback-img="true" src="67ad72477c605912a4af72eb6887662dc028951b445a61b4_hero-2-kontix-poster-00001.jpg" alt="" /></noscript>
                     </div>
-                    <div class="video-two-wrapper-main"></div>
                 </div>
                 <div class="modern-construction-wrapper add-padding">
-                    <div
-                        data-w-id="0d1b6b34-425a-042d-f05a-46c7bc9ed6b0"
-                        style="opacity: 0"
-                        class="modern-construction-card"
-                    >
-                        <img
-                            src="67ad72477c605912a4af72eb/6874e8d451ee2a9d7c63b529_Vector%20%2819%29.svg"
-                            loading="lazy"
-                            width="79"
-                            height="82"
-                            alt="Kontix-home-one-creating-strong-foundations-icon-two-webflow-ecommerce-template"
-                            class="rt-big-icon"
-                        />
-                        <div class="modern-construction-card-one-text text-align-center">
-                            <div class="heading-style-h4 color-black">Emergency services</div>
-                            <div class="color-black">
-                                Lorem ipsum dolor sit amet pharetra sapien lectus habitasse hendrerit nibh
-                            </div>
-                        </div>
+                    <div class="modern-construction-card">
+                        <div class="heading-style-h4 color-black">Emergency services</div>
                     </div>
-                    <div data-w-id="0d1b6b34-425a-042d-f05a-46c7bc9ed6b7" style="opacity: 0" class="grey-border"></div>
-                    <div
-                        data-w-id="0d1b6b34-425a-042d-f05a-46c7bc9ed6b8"
-                        style="opacity: 0"
-                        class="modern-construction-card"
-                    >
-                        <img
-                            src="67ad72477c605912a4af72eb/68a6f29d06e4b0e24e9ff3b0_Vector%20%2873%29.svg"
-                            loading="lazy"
-                            width="79"
-                            height="82"
-                            alt="Kontix-home-one-100%-secure-icon-webflow-ecommerce-template"
-                            class="rt-big-icon"
-                        />
-                        <div class="modern-construction-card-one-text text-align-center">
-                            <div class="heading-style-h4 color-black">100% secure</div>
-                            <div class="color-black">
-                                Lorem ipsum dolor sit amet pharetra sapien lectus habitasse hendrerit nibh
-                            </div>
-                        </div>
+                    <div class="grey-border"></div>
+                    <div class="modern-construction-card">
+                        <div class="heading-style-h4 color-black">100% secure</div>
                     </div>
-                    <div data-w-id="0d1b6b34-425a-042d-f05a-46c7bc9ed6bf" style="opacity: 0" class="grey-border"></div>
-                    <div
-                        data-w-id="0d1b6b34-425a-042d-f05a-46c7bc9ed6c0"
-                        style="opacity: 0"
-                        class="modern-construction-card"
-                    >
-                        <img
-                            src="67ad72477c605912a4af72eb/68a6f29d2d11acf80787b302_Vector%20%2874%29.svg"
-                            loading="lazy"
-                            width="82"
-                            height="82"
-                            alt="Kontix-home-one-awards-won-icon-webflow-ecommerce-template"
-                            class="rt-big-icon"
-                        />
-                        <div class="modern-construction-card-one-text text-align-center">
-                            <div class="heading-style-h4 color-black">Awards won</div>
-                            <div class="color-black">
-                                Lorem ipsum dolor sit amet pharetra sapien lectus habitasse hendrerit nibh
-                            </div>
-                        </div>
+                    <div class="grey-border"></div>
+                    <div class="modern-construction-card">
+                        <div class="heading-style-h4 color-black">Awards won</div>
                     </div>
                 </div>
+                */ ?>
             </div>
         </section>
-        <section data-w-id="9e2e38a6-49cc-2f2c-4377-6a033da82ad7" class="preservation">
+        <section id="processing-infrastructure" data-w-id="9e2e38a6-49cc-2f2c-4377-6a033da82ad7" class="preservation">
             <div class="preservation--sticky-height overflow-hidden">
                 <div class="w-layout-blockcontainer container full-container w-container">
-                    <div class="preservation-heading-wrapper">
+                    <div class="preservation-heading-wrapper text-align-center" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; width: 100%;">
                         <div
                             data-w-id="9e2e38a6-49cc-2f2c-4377-6a033da82adb"
                             style="opacity: 0"
                             class="overflow-hidden"
                         >
                             <div
-                                data-wf--sub-heading--variant="white-sub-heading"
-                                class="sub-heading w-variant-f1a14dd4-f30f-c0f4-d5f6-6802c309e3c1"
+                                data-wf--sub-heading--variant="base"
+                                class="sub-heading"
                             >
-                                Strong Foundations
+                                PROCESSING INFRASTRUCTURE
                             </div>
                         </div>
-                        <div class="heading-two-gap-top overflow-hidden">
+                        <div class="heading-two-gap-top overflow-hidden" style="width: 100%; margin-top: 22px !important;">
                             <h2
                                 data-w-id="9e2e38a6-49cc-2f2c-4377-6a033da82adf"
                                 style="
@@ -791,11 +882,17 @@
                                         rotateZ(0) skew(-19deg, 0);
                                     transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
                                         skew(-19deg, 0);
+                                    text-align: center;
+                                    margin-left: auto;
+                                    margin-right: auto;
                                 "
-                                class="no-margin preservation-heading"
+                                class="no-margin preservation-heading text-align-center"
                             >
-                                Innovative solutions for modern construction needs
+                                Built for Industrial Operations
                             </h2>
+                        </div>
+                        <div style="max-width: 780px; margin: 8px auto 18px auto; color: rgba(255, 255, 255, 0.82); font-size: 14.5px; line-height: 1.5; font-family: Inter, sans-serif; text-align: center;">
+                            Tabac Leaf Enterprises operates two dedicated processing facilities in Tangutur, Prakasam District, Andhra Pradesh. Together, the facilities have a stated processing capacity of 100 million, supported by industrial utilities, dust collection, fire-protection systems, laboratory facilities and PLC/SCADA process-control infrastructure.
                         </div>
                     </div>
                     <div
@@ -810,7 +907,7 @@
                                     loading="lazy"
                                     width="630"
                                     height="330"
-                                    alt="Kontix-home-one-strong-foundations-image-webflow-ecommerce-template"
+                                    alt="B.K. Threshers Processing Facility"
                                     srcset="
                                         67ad72477c605912a4af72eb/68749f6c20e992e58e737946_Mask%20group%20-%202025-07-14T114015.102-p-500.webp   500w,
                                         67ad72477c605912a4af72eb/68749f6c20e992e58e737946_Mask%20group%20-%202025-07-14T114015.102-p-800.webp   800w,
@@ -834,27 +931,27 @@
                             <div class="w-layout-hflex preservation-right-top-content">
                                 <div class="preservation-heading-content">
                                     <div
-                                        data-wf--sub-heading--variant="white-sub-heading"
-                                        class="sub-heading w-variant-f1a14dd4-f30f-c0f4-d5f6-6802c309e3c1"
+                                        data-wf--sub-heading--variant="base"
+                                        class="sub-heading"
                                     >
-                                        Exterior perfection
+                                        TANGUTUR • FACILITY 01
                                     </div>
-                                    <div class="heading-style-h3 color-white">Exterior finishing</div>
+                                    <div class="heading-style-h3 color-white">B.K. Threshers Private Limited</div>
                                 </div>
-                                <a href="services.php" class="preservation-arrow-wrapper one w-inline-block"
+                                <a href="contact.php" class="preservation-arrow-wrapper one w-inline-block"
                                     ><img
                                         src="67ad72477c605912a4af72eb/68749ece601a251f2eb40b39_Group%201597883626.svg"
                                         loading="lazy"
                                         width="11"
                                         height="11"
-                                        alt="Kontix-home-two-innovative-building-arrow-icon-webflow-ecommerce-template"
+                                        alt="Arrow"
                                 /></a>
                                 <div class="preservation-list-item-wrapper overflow-hidden preservation-list">
                                     <ul role="list" class="color-white preservation-list-item">
-                                        <li>Material options</li>
-                                        <li>Insulation &amp; efficiency</li>
-                                        <li>Moisture control</li>
-                                        <li>Color &amp; texture variety</li>
+                                        <li>High-capacity tobacco threshing &amp; processing lines</li>
+                                        <li>Lamina &amp; stem aerodynamic separation systems</li>
+                                        <li>Automated PLC / SCADA process-control infrastructure</li>
+                                        <li>Industrial dust collection &amp; fire-protection systems</li>
                                     </ul>
                                 </div>
                             </div>
@@ -872,7 +969,7 @@
                                     loading="lazy"
                                     width="630"
                                     height="330"
-                                    alt="Kontix-home-one-quality-construction-image-two-webflow-ecommerce-template"
+                                    alt="Tabac Leaf Enterprises Processing Facility"
                                     srcset="
                                         67ad72477c605912a4af72eb/6874a1877186f18bd7fb9060_Mask%20group%20-%202025-07-14T114921.653-p-500.webp   500w,
                                         67ad72477c605912a4af72eb/6874a1877186f18bd7fb9060_Mask%20group%20-%202025-07-14T114921.653-p-800.webp   800w,
@@ -896,27 +993,27 @@
                             <div class="w-layout-hflex preservation-right-top-content">
                                 <div class="preservation-heading-content">
                                     <div
-                                        data-wf--sub-heading--variant="white-sub-heading"
-                                        class="sub-heading w-variant-f1a14dd4-f30f-c0f4-d5f6-6802c309e3c1"
+                                        data-wf--sub-heading--variant="base"
+                                        class="sub-heading"
                                     >
-                                        Personalized Spaces
+                                        TANGUTUR • FACILITY 02
                                     </div>
-                                    <div class="heading-style-h3 color-white">Custom building</div>
+                                    <div class="heading-style-h3 color-white">Tabac Leaf Enterprises</div>
                                 </div>
-                                <a href="services.php" class="preservation-arrow-wrapper two w-inline-block"
+                                <a href="contact.php" class="preservation-arrow-wrapper two w-inline-block"
                                     ><img
                                         src="67ad72477c605912a4af72eb/68749ece601a251f2eb40b39_Group%201597883626.svg"
                                         loading="lazy"
                                         width="11"
                                         height="11"
-                                        alt="Kontix-home-two-innovative-building-arrow-icon-webflow-ecommerce-template"
+                                        alt="Arrow"
                                 /></a>
                                 <div class="preservation-list-item-wrapper overflow-hidden preservation-list">
                                     <ul role="list" class="color-white preservation-list-item one">
-                                        <li>Full custom homes</li>
-                                        <li>Eco-friendly custom homes</li>
-                                        <li>Modern farmhouse</li>
-                                        <li>Luxury custom homes</li>
+                                        <li>Comprehensive leaf conditioning, grading &amp; blending lines</li>
+                                        <li>Precision apron drying &amp; automated moisture regulation</li>
+                                        <li>Dedicated analytical laboratory &amp; quality-control facilities</li>
+                                        <li>Export-standard C-48 carton packing &amp; secure storage</li>
                                     </ul>
                                 </div>
                             </div>
@@ -925,6 +1022,7 @@
                 </div>
             </div>
         </section>
+        <?php /* Unused Team Section
         <section class="team-one change-top-bottom-padding">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="w-layout-vflex team-one-main-wrap">
@@ -951,247 +1049,10 @@
                             </h2>
                         </div>
                     </div>
-                    <div class="team-one-grid-wrapper w-dyn-list">
-                        <div role="list" class="team-one-grid w-dyn-items">
-                            <div role="listitem" class="w-dyn-item">
-                                <div
-                                    data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee4e"
-                                    class="team-card-one position-relative overflow-hidden border-radius-10"
-                                >
-                                    <div class="team-card-one-image position-relative">
-                                        <img
-                                            width="407"
-                                            height="573"
-                                            alt=""
-                                            src="67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07.webp"
-                                            loading="lazy"
-                                            sizes="(max-width: 479px) 100vw, 407px"
-                                            srcset="
-                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07-p-500.webp 500w,
-                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07-p-800.webp 800w,
-                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07.webp       814w
-                                            "
-                                            class="full-width border-radius-10 image-effect"
-                                        />
-                                        <div
-                                            data-wf--image-apearence--variant="base"
-                                            data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
-                                            class="image-effect-wrapper overflow-hidden"
-                                        >
-                                            <div class="inside-overlay"></div>
-                                            <div class="outside-overlay"></div>
-                                        </div>
-                                    </div>
-                                    <div class="team-black-overlay">
-                                        <div class="heading-style-h5">Patricia Smith</div>
-                                        <div class="color-white">Construction Superintendent</div>
-                                        <div
-                                            data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee54"
-                                            class="team-social-icon-main-wrapper"
-                                        >
-                                            <a
-                                                data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee55"
-                                                href="https://facebook.com"
-                                                class="team-social-icon-wrapper w-inline-block"
-                                                ><img
-                                                    src="67ad72477c605912a4af72eb/687643be47c8e168d5a0b004_Mask%20group%20%282%29.svg"
-                                                    loading="lazy"
-                                                    data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee56"
-                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
-                                                    class="team-icon" /></a
-                                            ><a
-                                                data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee57"
-                                                href="https://x.com"
-                                                class="team-social-icon-wrapper w-inline-block"
-                                                ><img
-                                                    src="67ad72477c605912a4af72eb/68764426623f1b898c9e3de6_Mask%20group%20%284%29.svg"
-                                                    loading="lazy"
-                                                    data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee58"
-                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
-                                                    class="team-icon" /></a
-                                            ><a
-                                                data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee59"
-                                                href="https://instagram.com"
-                                                class="team-social-icon-wrapper w-inline-block"
-                                                ><img
-                                                    src="67ad72477c605912a4af72eb/6876440c03276f755f93aeef_Mask%20group%20%283%29.svg"
-                                                    loading="lazy"
-                                                    data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee5a"
-                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
-                                                    class="team-icon"
-                                            /></a>
-                                        </div>
-                                    </div>
-                                    <div
-                                        data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee5b"
-                                        class="team-white-overlay"
-                                    ></div>
-                                    <a href="contact.php" class="link-block w-inline-block"
-                                        ><div class="link-text">This is some text inside of a div block.</div></a
-                                    >
-                                </div>
-                            </div>
-                            <div role="listitem" class="w-dyn-item">
-                                <div
-                                    data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee4e"
-                                    class="team-card-one position-relative overflow-hidden border-radius-10"
-                                >
-                                    <div class="team-card-one-image position-relative">
-                                        <img
-                                            width="407"
-                                            height="573"
-                                            alt=""
-                                            src="67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08.webp"
-                                            loading="lazy"
-                                            sizes="(max-width: 479px) 100vw, 407px"
-                                            srcset="
-                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-500.webp 500w,
-                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-800.webp 800w,
-                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08.webp       814w
-                                            "
-                                            class="full-width border-radius-10 image-effect"
-                                        />
-                                        <div
-                                            data-wf--image-apearence--variant="base"
-                                            data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
-                                            class="image-effect-wrapper overflow-hidden"
-                                        >
-                                            <div class="inside-overlay"></div>
-                                            <div class="outside-overlay"></div>
-                                        </div>
-                                    </div>
-                                    <div class="team-black-overlay">
-                                        <div class="heading-style-h5">Terry Dias</div>
-                                        <div class="color-white">Structural Engineer</div>
-                                        <div
-                                            data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee54"
-                                            class="team-social-icon-main-wrapper"
-                                        >
-                                            <a
-                                                data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee55"
-                                                href="https://facebook.com"
-                                                class="team-social-icon-wrapper w-inline-block"
-                                                ><img
-                                                    src="67ad72477c605912a4af72eb/687643be47c8e168d5a0b004_Mask%20group%20%282%29.svg"
-                                                    loading="lazy"
-                                                    data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee56"
-                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
-                                                    class="team-icon" /></a
-                                            ><a
-                                                data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee57"
-                                                href="https://x.com"
-                                                class="team-social-icon-wrapper w-inline-block"
-                                                ><img
-                                                    src="67ad72477c605912a4af72eb/68764426623f1b898c9e3de6_Mask%20group%20%284%29.svg"
-                                                    loading="lazy"
-                                                    data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee58"
-                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
-                                                    class="team-icon" /></a
-                                            ><a
-                                                data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee59"
-                                                href="https://instagram.com"
-                                                class="team-social-icon-wrapper w-inline-block"
-                                                ><img
-                                                    src="67ad72477c605912a4af72eb/6876440c03276f755f93aeef_Mask%20group%20%283%29.svg"
-                                                    loading="lazy"
-                                                    data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee5a"
-                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
-                                                    class="team-icon"
-                                            /></a>
-                                        </div>
-                                    </div>
-                                    <div
-                                        data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee5b"
-                                        class="team-white-overlay"
-                                    ></div>
-                                    <a href="contact.php" class="link-block w-inline-block"
-                                        ><div class="link-text">This is some text inside of a div block.</div></a
-                                    >
-                                </div>
-                            </div>
-                            <div role="listitem" class="w-dyn-item">
-                                <div
-                                    data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee4e"
-                                    class="team-card-one position-relative overflow-hidden border-radius-10"
-                                >
-                                    <div class="team-card-one-image position-relative">
-                                        <img
-                                            width="407"
-                                            height="573"
-                                            alt=""
-                                            src="67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09.webp"
-                                            loading="lazy"
-                                            sizes="(max-width: 479px) 100vw, 407px"
-                                            srcset="
-                                                67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09-p-500.webp 500w,
-                                                67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09-p-800.webp 800w,
-                                                67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09.webp       814w
-                                            "
-                                            class="full-width border-radius-10 image-effect"
-                                        />
-                                        <div
-                                            data-wf--image-apearence--variant="base"
-                                            data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
-                                            class="image-effect-wrapper overflow-hidden"
-                                        >
-                                            <div class="inside-overlay"></div>
-                                            <div class="outside-overlay"></div>
-                                        </div>
-                                    </div>
-                                    <div class="team-black-overlay">
-                                        <div class="heading-style-h5">Martin Philips</div>
-                                        <div class="color-white">Construction Engineer</div>
-                                        <div
-                                            data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee54"
-                                            class="team-social-icon-main-wrapper"
-                                        >
-                                            <a
-                                                data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee55"
-                                                href="https://facebook.com"
-                                                class="team-social-icon-wrapper w-inline-block"
-                                                ><img
-                                                    src="67ad72477c605912a4af72eb/687643be47c8e168d5a0b004_Mask%20group%20%282%29.svg"
-                                                    loading="lazy"
-                                                    data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee56"
-                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
-                                                    class="team-icon" /></a
-                                            ><a
-                                                data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee57"
-                                                href="https://x.com"
-                                                class="team-social-icon-wrapper w-inline-block"
-                                                ><img
-                                                    src="67ad72477c605912a4af72eb/68764426623f1b898c9e3de6_Mask%20group%20%284%29.svg"
-                                                    loading="lazy"
-                                                    data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee58"
-                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
-                                                    class="team-icon" /></a
-                                            ><a
-                                                data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee59"
-                                                href="https://instagram.com"
-                                                class="team-social-icon-wrapper w-inline-block"
-                                                ><img
-                                                    src="67ad72477c605912a4af72eb/6876440c03276f755f93aeef_Mask%20group%20%283%29.svg"
-                                                    loading="lazy"
-                                                    data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee5a"
-                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
-                                                    class="team-icon"
-                                            /></a>
-                                        </div>
-                                    </div>
-                                    <div
-                                        data-w-id="311d03e2-fa08-615c-4345-f125f6c4ee5b"
-                                        class="team-white-overlay"
-                                    ></div>
-                                    <a href="contact.php" class="link-block w-inline-block"
-                                        ><div class="link-text">This is some text inside of a div block.</div></a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
+        */ ?>
         <section class="video-section">
             <footer
                 data-poster-url=""
@@ -1304,15 +1165,18 @@
             <div class="video-text-box">
                 <div class="video-one-title-wrap padding-left">
                     <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffca">
-                        <div data-wf--sub-heading--variant="base" class="sub-heading">Let’s connect</div>
+                        <div data-wf--sub-heading--variant="base" class="sub-heading">CATALOGUE ENQUIRIES</div>
                     </div>
                     <div class="video-title mobile-text-center change">
                         <h2
                             data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffce"
                             class="heading-two-gap-top-bottom no-margin"
                         >
-                            Start your vision today with expert construction
+                            Looking for Grade or Processing Information?
                         </h2>
+                    </div>
+                    <div style="color: rgba(255, 255, 255, 0.85); font-size: 15px; line-height: 1.6; margin-bottom: 25px; font-family: Inter, sans-serif;">
+                        For enquiries related to tobacco grades, specifications, processing capabilities or machinery information, connect with our team.
                     </div>
                     <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffd0">
                         <div
@@ -1324,14 +1188,14 @@
                                 href="contact.php"
                                 class="button-style-one position-relative overflow-hidden w-inline-block"
                                 ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
-                                    <div class="button-text">Request a quote</div>
-                                    <div class="button-text two">Request a quote</div>
+                                    <div class="button-text">SEND AN ENQUIRY</div>
+                                    <div class="button-text two">SEND AN ENQUIRY</div>
                                 </div>
                                 <div class="button-style-one-icon position-relative">
                                     <img
                                         width="8"
                                         height="9"
-                                        alt="Kontix-home-two-innovative-building-solution-arrow-icon-webflow-ecommerce-template"
+                                        alt="Arrow"
                                         src="67ad72477c605912a4af72eb/67af1b78eef99645a9f0bfd8_Arrow%206.svg"
                                         loading="lazy"
                                         class="button-one-arrow"
@@ -1340,6 +1204,9 @@
                                 <div class="button-style-one-background position-absolute"></div
                             ></a>
                         </div>
+                    </div>
+                    <div style="color: var(--yellow, #ddb969); font-size: 13.5px; font-weight: 500; letter-spacing: 0.5px; margin-top: 25px; font-family: Montserrat, sans-serif;">
+                        Advanced Processing. Proven Capability. Consistent Quality.
                     </div>
                 </div>
             </div>
