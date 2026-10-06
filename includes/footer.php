@@ -1,3 +1,4 @@
+<?php $base = isset($base_path) ? $base_path : ''; ?>
 <style>
 .copyright-section {
     display: flex !important;
@@ -72,10 +73,10 @@
                     id="w-node-_6afda5bf-67eb-78ae-ea2a-d26c7b63ec92-7b63ec8e"
                     class="footer-col-one"
                 >
-                    <a href="index.php" class="w-inline-block">
+                    <a href="<?php echo $base; ?>index.php" class="w-inline-block">
                         <img
                             loading="lazy"
-                            src="assets/images/tobaclogo.png"
+                            src="<?php echo $base; ?>assets/images/tobaclogo.png"
                             alt="Tobac Enterprises logo"
                             style="width: 230px;"
                         />
@@ -93,7 +94,7 @@
                     <div class="footer-col-two">
 
                         <a
-                            href="index.php"
+                            href="<?php echo $base; ?>index.php"
                             class="footer-menu-item w-inline-block"
                         >
                             <div class="heading-style-h6 color-white footer-menu-item-text">
@@ -102,7 +103,7 @@
                         </a>
 
                         <a
-                            href="aboutus.php"
+                            href="<?php echo $base; ?>aboutus.php"
                             class="footer-menu-item w-inline-block"
                         >
                             <div class="heading-style-h6 color-white footer-menu-item-text">
@@ -111,7 +112,7 @@
                         </a>
 
                         <a
-                            href="services.php"
+                            href="<?php echo $base; ?>services.php"
                             class="footer-menu-item w-inline-block"
                         >
                             <div class="heading-style-h6 color-white footer-menu-item-text">
@@ -120,7 +121,7 @@
                         </a>
 
                         <a
-                            href="operations.php"
+                            href="<?php echo $base; ?>operations.php"
                             class="footer-menu-item w-inline-block"
                         >
                             <div class="heading-style-h6 color-white footer-menu-item-text">
@@ -129,7 +130,7 @@
                         </a>
 
                         <a
-                            href="sustainability.php"
+                            href="<?php echo $base; ?>sustainability.php"
                             class="footer-menu-item w-inline-block"
                         >
                             <div class="heading-style-h6 color-white footer-menu-item-text">
@@ -138,7 +139,7 @@
                         </a>
 
                         <a
-                            href="contact.php"
+                            href="<?php echo $base; ?>contact.php"
                             class="footer-menu-item w-inline-block"
                         >
                             <div class="heading-style-h6 color-white footer-menu-item-text">
@@ -147,11 +148,11 @@
                         </a>
 
                         <a
-                            href="blog.php"
+                            href="<?php echo $base; ?>blog.php"
                             class="footer-menu-item w-inline-block"
                         >
                             <div class="heading-style-h6 color-white footer-menu-item-text">
-                                Blog
+                                Blogs
                             </div>
                         </a>
 
@@ -222,7 +223,7 @@
                         <div class="w-layout-hflex copy-right-menu">
 
                             <a
-                                href="privacy-policy.php"
+                                href="<?php echo $base; ?>privacy-policy.php"
                                 class="copy-write-menu-item w-inline-block"
                             >
                                 <div class="text-capitalize footer-menu-item-text">
@@ -231,7 +232,7 @@
                             </a>
 
                             <a
-                                href="terms-conditions.php"
+                                href="<?php echo $base; ?>terms-conditions.php"
                                 class="copy-write-menu-item w-inline-block"
                             >
                                 <div class="text-capitalize footer-menu-item-text">
@@ -240,7 +241,7 @@
                             </a>
 
                             <a
-                                href="cookie-policy.php"
+                                href="<?php echo $base; ?>cookie-policy.php"
                                 class="copy-write-menu-item remove-right-border w-inline-block"
                             >
                                 <div class="text-capitalize footer-menu-item-text">
@@ -265,11 +266,11 @@
             width="290"
             height="687"
             alt="Tobac Enterprises tobacco processing facility"
-            src="assets/images/Tobacco-Leaf-Processing.webp"
+            src="<?php echo $base; ?>assets/images/Tobacco-Leaf-Processing.webp"
             loading="lazy"
             srcset="
-                assets/images/Tobacco-Leaf-Processing.webp 500w,
-                assets/images/Tobacco-Leaf-Processing.webp 580w
+                <?php echo $base; ?>assets/images/Tobacco-Leaf-Processing.webp 500w,
+                <?php echo $base; ?>assets/images/Tobacco-Leaf-Processing.webp 580w
             "
             sizes="(max-width: 479px) 100vw, 290px"
         />
