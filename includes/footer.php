@@ -146,6 +146,15 @@
                             </div>
                         </a>
 
+                        <a
+                            href="blog.php"
+                            class="footer-menu-item w-inline-block"
+                        >
+                            <div class="heading-style-h6 color-white footer-menu-item-text">
+                                Blog
+                            </div>
+                        </a>
+
                     </div>
                 </div>
 
