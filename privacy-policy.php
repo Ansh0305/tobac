@@ -209,7 +209,7 @@
                             Last Updated: October 2026
                         </div>
                         <p class="legal-intro">
-                            Tabac Leaf Enterprises (“Tabac Leaf Enterprises”, “we”, “us”, or “our”) respects your privacy and is committed to protecting personal information that may be provided through this website.
+                            Tabac Leaf Enterprises respects your privacy and is committed to protecting personal information that may be provided through this website.
                         </p>
                         <p class="legal-text" style="margin-bottom: 0;">
                             This Privacy Policy explains what information we may collect, how we may use it, how we protect it and the choices available to you.
