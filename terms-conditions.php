@@ -201,7 +201,7 @@
                             Last Updated: October 2026
                         </div>
                         <p class="legal-intro">
-                            Welcome to the website of Tabac Leaf Enterprises (“Tabac Leaf Enterprises”, “we”, “us”, or “our”).
+                            Welcome to our website of Tabac Leaf Enterprises.
                         </p>
                         <p class="legal-text" style="margin-bottom: 0;">
                             By accessing, browsing or using this website, you acknowledge that you have read, understood and agreed to these Terms &amp; Conditions. If you do not agree with these terms, please discontinue use of the website.
