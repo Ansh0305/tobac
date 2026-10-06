@@ -311,7 +311,7 @@
                 }
             }
         </style>
-        <style>
+        <style> 
     /* Tobac Enterprises Header Logo */
     .tobac-logo {
         width: 185px !important;
@@ -351,7 +351,7 @@
 <style>
 
     /* =========================================================
-   HERO HEADING — MATCH "WHY TABAC ENTERPRISES" TYPOGRAPHY
+   HERO HEADING -  MATCH "WHY TABAC ENTERPRISES" TYPOGRAPHY
    ========================================================= */
 
 .home-two-hero-section .hero-three-title-text {
@@ -1220,7 +1220,7 @@
 
 <style>
 /* =========================================================
-   OUR APPROACH — COMPACT PREMIUM VERSION
+   OUR APPROACH -  COMPACT PREMIUM VERSION
    ========================================================= */
 
 .about-two {
@@ -1609,17 +1609,62 @@
    PROCESS DESCRIPTION
    --------------------------------------------------------- */
 
+.reliable-construction-subtext-bottom-padding {
+    padding-bottom: 10px !important;
+    cursor: pointer !important;
+}
+
+.reliable-construction-subtext-bottom-padding .heading-style-h5 {
+    font-size: 17px !important;
+    line-height: 1.3 !important;
+    white-space: nowrap !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.reliable-construction-subtext-glow-line {
+    transition: width 0.3s ease !important;
+}
+
+/* ---------------------------------------------------------
+   PROCESS DESCRIPTION
+   --------------------------------------------------------- */
+
 .reliable-construction-para-main-wrapper {
     max-width: 590px !important;
 }
 
 .reliable-construction-para-wrapper {
     max-width: 540px !important;
+    position: relative !important;
+    min-height: 75px !important;
 }
 
 .reliable-construction-para {
     font-size: 15px !important;
     line-height: 1.65 !important;
+    transition: opacity 0.3s ease, transform 0.3s ease !important;
+}
+
+.reliable-construction-para.tab-pane {
+    width: 100% !important;
+}
+
+.reliable-construction-para.tab-pane.active {
+    position: relative !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    pointer-events: auto !important;
+    display: block !important;
+}
+
+.reliable-construction-para.tab-pane.inactive {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    opacity: 0 !important;
+    transform: translateY(12px) !important;
+    pointer-events: none !important;
+    display: block !important;
 }
 
 /* ---------------------------------------------------------
@@ -2758,6 +2803,122 @@
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
         <script src="ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+
+
+
+
+        <style>
+/* =========================================================
+   PROFESSIONAL TEAM - VISIBILITY
+   ========================================================= */
+
+.team-one .text-align-center > div:first-child {
+    opacity: 1 !important;
+}
+
+.team-one .team-heading h2 {
+    opacity: 1 !important;
+    transform: none !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+}
+
+
+/* =========================================================
+   TEAM CARD OVERLAY
+   ========================================================= */
+
+.team-one .team-black-overlay {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.team-one .team-black-overlay .heading-style-h5,
+.team-one .team-black-overlay .color-white {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.team-one .team-white-overlay {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+
+/* =========================================================
+   SOCIAL ICONS - HIDDEN BY DEFAULT
+   ========================================================= */
+
+.team-one .team-social-icon-main-wrapper {
+    height: 0 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+
+    transform: translate3d(0, 100%, 0) !important;
+    -webkit-transform: translate3d(0, 100%, 0) !important;
+
+    overflow: hidden;
+
+    transition:
+        height 0.45s ease,
+        opacity 0.35s ease,
+        transform 0.45s ease,
+        visibility 0.35s ease;
+}
+
+
+/* =========================================================
+   SHOW SOCIAL ICONS WHEN CARD IS HOVERED
+   ========================================================= */
+
+.team-one .team-card-one:hover .team-social-icon-main-wrapper {
+    height: 40px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transform: translate3d(0, 0, 0) !important;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+}
+
+
+/* =========================================================
+   SOCIAL ICON COLOR
+   ========================================================= */
+
+/* Normal state */
+.team-one .team-social-icon-wrapper {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.team-one .team-social-icon-wrapper .team-icon {
+    filter: invert(0%);
+    transition: filter 0.3s ease;
+}
+
+
+/* Hover state - yellow/orange circle + white icon */
+.team-one .team-social-icon-wrapper:hover {
+    background-color: #ffb82e;
+}
+
+.team-one .team-social-icon-wrapper:hover .team-icon {
+    filter: invert(100%);
+}
+
+
+/* Keep icons visible once their wrapper is revealed */
+.team-one .team-social-icon-wrapper {
+    visibility: visible !important;
+}
+.team-one {
+    padding-top: 80px !important;
+}
+
+
+
+</style>
       
     </head>
     <body>
@@ -2813,9 +2974,7 @@
                         style="opacity: 0"
                         class="hero-text-gap-top-bottom color-white one"
                     >
-                        Ethically sourced and meticulously processed tobacco
-                        leaves, delivering premium quality, consistency and
-                        reliability to global partners.
+                    From tobacco growing to processing and exports, Tabac Leaf Enterprises brings together five decades of industry experience, integrated infrastructure, and large-scale processing capabilities.
                     </p>
                 </div>
 
@@ -2839,11 +2998,11 @@
                                     class="w-layout-vflex button-text-wrap position-relative overflow-hidden"
                                 >
                                     <div class="button-text">
-                                        Discover Our Heritage
+                                    EXPLORE OUR CAPABILITIES 
                                     </div>
 
                                     <div class="button-text two">
-                                        Discover Our Heritage
+                                    VIEW TOBACCO CATALOGUE
                                     </div>
                                 </div>
 
@@ -3114,6 +3273,267 @@
 
 </section>
 
+<section class="team-one change-background-color">
+            <div class="w-layout-blockcontainer container w-container">
+                <div class="w-layout-vflex team-one-main-wrap">
+                    <div class="text-align-center">
+                        <div>
+                            <div
+                                data-wf--sub-heading--variant="dark-sub-heading"
+                                class="sub-heading w-variant-8339cfd4-9c83-eaae-331a-5682dc1da52c"
+                            >
+                                Our professional team
+                            </div>
+                        </div>
+                        <div class="heading-two-gap-top overflow-hidden team-heading">
+                        <h2 class="no-margin color-black">
+                                Meet the leaders guiding Tabac Leaf Enterprises
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="team-one-grid-wrapper w-dyn-list">
+                        <div role="list" class="team-one-grid w-dyn-items">
+                            <div role="listitem" class="w-dyn-item">
+                                <div
+                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc96"
+                                    class="team-card-one position-relative overflow-hidden border-radius-10"
+                                >
+                                    <div class="team-card-one-image position-relative border-radius-10">
+                                        <img
+                                            width="407"
+                                            height="573"
+                                            alt=""
+                                            src="67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07.webp"
+                                            loading="lazy"
+                                            sizes="(max-width: 479px) 100vw, 407px"
+                                            srcset="
+                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07-p-500.webp 500w,
+                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07-p-800.webp 800w,
+                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07.webp       814w
+                                            "
+                                            class="full-width border-radius-10 image-effect"
+                                        />
+                                        <div
+                                            data-wf--image-apearence--variant="base"
+                                            data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
+                                            class="image-effect-wrapper overflow-hidden"
+                                        >
+                                            <div class="inside-overlay"></div>
+                                            <div class="outside-overlay"></div>
+                                        </div>
+                                    </div>
+                                    <div class="team-black-overlay">
+                                        <div class="heading-style-h5">Manoj Bellam</div>
+                                        <div class="color-white">Managing Director</div>
+                                        <div
+                                            data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9c"
+                                            class="team-social-icon-main-wrapper"
+                                        >
+                                            <a
+                                                data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9d"
+                                                href="https://facebook.com"
+                                                class="team-social-icon-wrapper w-inline-block"
+                                                ><img
+                                                    src="67ad72477c605912a4af72eb/687643be47c8e168d5a0b004_Mask%20group%20%282%29.svg"
+                                                    loading="lazy"
+                                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9e"
+                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
+                                                    class="team-icon" /></a
+                                            ><a
+                                                data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9f"
+                                                href="https://x.com"
+                                                class="team-social-icon-wrapper w-inline-block"
+                                                ><img
+                                                    src="67ad72477c605912a4af72eb/68764426623f1b898c9e3de6_Mask%20group%20%284%29.svg"
+                                                    loading="lazy"
+                                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca0"
+                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
+                                                    class="team-icon" /></a
+                                            ><a
+                                                data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca1"
+                                                href="https://instagram.com"
+                                                class="team-social-icon-wrapper w-inline-block"
+                                                ><img
+                                                    src="67ad72477c605912a4af72eb/6876440c03276f755f93aeef_Mask%20group%20%283%29.svg"
+                                                    loading="lazy"
+                                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca2"
+                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
+                                                    class="team-icon"
+                                            /></a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca3"
+                                        class="team-white-overlay"
+                                    ></div>
+                                    <a href="team/patricia-smith.html" class="link-block w-inline-block"
+                                        ><div class="link-text">This is some text inside of a div block.</div></a
+                                    >
+                                </div>
+                            </div>
+                            <div role="listitem" class="w-dyn-item">
+                                <div
+                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc96"
+                                    class="team-card-one position-relative overflow-hidden border-radius-10"
+                                >
+                                    <div class="team-card-one-image position-relative border-radius-10">
+                                        <img
+                                            width="407"
+                                            height="573"
+                                            alt=""
+                                            src="67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08.webp"
+                                            loading="lazy"
+                                            sizes="(max-width: 479px) 100vw, 407px"
+                                            srcset="
+                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-500.webp 500w,
+                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-800.webp 800w,
+                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08.webp       814w
+                                            "
+                                            class="full-width border-radius-10 image-effect"
+                                        />
+                                        <div
+                                            data-wf--image-apearence--variant="base"
+                                            data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
+                                            class="image-effect-wrapper overflow-hidden"
+                                        >
+                                            <div class="inside-overlay"></div>
+                                            <div class="outside-overlay"></div>
+                                        </div>
+                                    </div>
+                                    <div class="team-black-overlay">
+                                        <div class="heading-style-h5">CJ Simon</div>
+                                        <div class="color-white">Chief Commercial Officer</div>
+                                        <div
+                                            data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9c"
+                                            class="team-social-icon-main-wrapper"
+                                        >
+                                            <a
+                                                data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9d"
+                                                href="https://facebook.com"
+                                                class="team-social-icon-wrapper w-inline-block"
+                                                ><img
+                                                    src="67ad72477c605912a4af72eb/687643be47c8e168d5a0b004_Mask%20group%20%282%29.svg"
+                                                    loading="lazy"
+                                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9e"
+                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
+                                                    class="team-icon" /></a
+                                            ><a
+                                                data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9f"
+                                                href="https://x.com"
+                                                class="team-social-icon-wrapper w-inline-block"
+                                                ><img
+                                                    src="67ad72477c605912a4af72eb/68764426623f1b898c9e3de6_Mask%20group%20%284%29.svg"
+                                                    loading="lazy"
+                                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca0"
+                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
+                                                    class="team-icon" /></a
+                                            ><a
+                                                data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca1"
+                                                href="https://instagram.com"
+                                                class="team-social-icon-wrapper w-inline-block"
+                                                ><img
+                                                    src="67ad72477c605912a4af72eb/6876440c03276f755f93aeef_Mask%20group%20%283%29.svg"
+                                                    loading="lazy"
+                                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca2"
+                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
+                                                    class="team-icon"
+                                            /></a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca3"
+                                        class="team-white-overlay"
+                                    ></div>
+                                    <a href="team/terry-dias.html" class="link-block w-inline-block"
+                                        ><div class="link-text">This is some text inside of a div block.</div></a
+                                    >
+                                </div>
+                            </div>
+                            <div role="listitem" class="w-dyn-item">
+                                <div
+                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc96"
+                                    class="team-card-one position-relative overflow-hidden border-radius-10"
+                                >
+                                    <div class="team-card-one-image position-relative border-radius-10">
+                                        <img
+                                            width="407"
+                                            height="573"
+                                            alt=""
+                                            src="67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09.webp"
+                                            loading="lazy"
+                                            sizes="(max-width: 479px) 100vw, 407px"
+                                            srcset="
+                                                67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09-p-500.webp 500w,
+                                                67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09-p-800.webp 800w,
+                                                67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09.webp       814w
+                                            "
+                                            class="full-width border-radius-10 image-effect"
+                                        />
+                                        <div
+                                            data-wf--image-apearence--variant="base"
+                                            data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
+                                            class="image-effect-wrapper overflow-hidden"
+                                        >
+                                            <div class="inside-overlay"></div>
+                                            <div class="outside-overlay"></div>
+                                        </div>
+                                    </div>
+                                    <div class="team-black-overlay">
+                                        <div class="heading-style-h5">Dr. Bellam Ravichandar</div>
+                                        <div class="color-white">Managing Director</div>
+                                        <div
+                                            data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9c"
+                                            class="team-social-icon-main-wrapper"
+                                        >
+                                            <a
+                                                data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9d"
+                                                href="https://facebook.com"
+                                                class="team-social-icon-wrapper w-inline-block"
+                                                ><img
+                                                    src="67ad72477c605912a4af72eb/687643be47c8e168d5a0b004_Mask%20group%20%282%29.svg"
+                                                    loading="lazy"
+                                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9e"
+                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
+                                                    class="team-icon" /></a
+                                            ><a
+                                                data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9f"
+                                                href="https://x.com"
+                                                class="team-social-icon-wrapper w-inline-block"
+                                                ><img
+                                                    src="67ad72477c605912a4af72eb/68764426623f1b898c9e3de6_Mask%20group%20%284%29.svg"
+                                                    loading="lazy"
+                                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca0"
+                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
+                                                    class="team-icon" /></a
+                                            ><a
+                                                data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca1"
+                                                href="https://instagram.com"
+                                                class="team-social-icon-wrapper w-inline-block"
+                                                ><img
+                                                    src="67ad72477c605912a4af72eb/6876440c03276f755f93aeef_Mask%20group%20%283%29.svg"
+                                                    loading="lazy"
+                                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca2"
+                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
+                                                    class="team-icon"
+                                            /></a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca3"
+                                        class="team-white-overlay"
+                                    ></div>
+                                    <a href="team/martin-philips.html" class="link-block w-inline-block"
+                                        ><div class="link-text">This is some text inside of a div block.</div></a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
        <style>
     /* =========================================
        tabac ENTERPRISES - WHO WE ARE
@@ -3375,7 +3795,7 @@
                             data-wf--sub-heading--variant="dark-sub-heading"
                             class="sub-heading w-variant-8339cfd4-9c83-eaae-331a-5682dc1da52c"
                         >
-                            Who we are
+                            Company at a Glance
                         </div>
                     </div>
 
@@ -3416,126 +3836,46 @@
                             "
                             class="no-margin color-black construction-heading"
                         >
-                            Advanced Tobacco Processing Built for Consistency and Scale
+                            Experience. Infrastructure. Processing Capability.
+
                         </h2>
 
                     </div>
 
 
-                    <!-- DESCRIPTION -->
-                    <div class="construction-text overflow-hidden">
+                   <!-- DESCRIPTION -->
+<div class="construction-text overflow-hidden">
 
-                        <div
-                            data-w-id="685bfbb2-07dc-f29a-277d-ccff8065ca6c"
-                            style="opacity: 0"
-                            class="color-black"
-                        >
-                            Tabac Enterprises focuses on industrial tobacco leaf
-                            processing and threshing, supported by controlled
-                            conditioning, multi-stage separation, drying, moisture
-                            management and quality-focused operations. Our integrated
-                            processing infrastructure is designed to deliver consistent
-                            output across every stage of the tobacco processing cycle.
-                        </div>
+    <div
+        data-w-id="685bfbb2-07dc-f29a-277d-ccff8065ca6c"
+        style="opacity: 0"
+        class="color-black"
+    >
 
-                    </div>
+        <div style="margin-bottom: 12px;">
+            <strong>50 Years of Industry Experience</strong> - 
+            Five decades of experience across tobacco growing, processing, and exports.
+        </div>
 
-                </div>
+        <div style="margin-bottom: 12px;">
+            <strong>100 Million Tobacco Processing Capacity</strong> - 
+            Large-scale processing capabilities across our two facilities.
+        </div>
 
+        <div style="margin-bottom: 12px;">
+            <strong>4 Million Sq. Ft. Warehousing</strong> - 
+            Integrated warehousing and storage infrastructure supporting tobacco processing operations.
+        </div>
 
-                <!-- STATS -->
-                <div class="construction-right-bottom-part">
+        <div>
+            <strong>Integrated Transportation</strong> - 
+            Dedicated internal transportation supporting tobacco movement from farm to factory.
+        </div>
 
-                    <!-- 22 TPH -->
-                    <div
-                        data-w-id="69e5e430-eba6-7df7-4c9a-6e3279bddb76"
-                        class="position-relative"
-                    >
+    </div>
 
-                        <div class="innovation-progress-bar">
+</div>
 
-                            <div class="heading-style-h6">
-                                Multi-Stage Threshing
-                            </div>
-
-                            <div class="heading-style-h6">
-                                22 TPH
-                            </div>
-
-                        </div>
-
-                        <div class="innovation-progress-light-grey-line">
-
-                            <div
-                                data-w-id="69e5e430-eba6-7df7-4c9a-6e3279bddb7d"
-                                class="innovation-progress-black-line one"
-                            ></div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- 2 FACILITIES -->
-                    <div
-                        data-w-id="69e5e430-eba6-7df7-4c9a-6e3279bddb7e"
-                        class="position-relative"
-                    >
-
-                        <div class="innovation-progress-bar">
-
-                            <div class="heading-style-h6">
-                                Integrated Processing
-                            </div>
-
-                            <div class="heading-style-h6">
-                                2 Facilities
-                            </div>
-
-                        </div>
-
-                        <div class="innovation-progress-light-grey-line">
-
-                            <div
-                                data-w-id="69e5e430-eba6-7df7-4c9a-6e3279bddb85"
-                                class="innovation-progress-black-line two"
-                            ></div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- 300 ACRES -->
-                    <div
-                        data-w-id="69e5e430-eba6-7df7-4c9a-6e3279bddb86"
-                        class="position-relative"
-                    >
-
-                        <div class="innovation-progress-bar">
-
-                            <div class="heading-style-h6">
-                                Tobacco Cultivation Experience
-                            </div>
-
-                            <div class="heading-style-h6">
-                                300 Acres
-                            </div>
-
-                        </div>
-
-                        <div class="innovation-progress-light-grey-line">
-
-                            <div
-                                data-w-id="69e5e430-eba6-7df7-4c9a-6e3279bddb8d"
-                                class="innovation-progress-black-line three"
-                            ></div>
-
-                        </div>
-
-                    </div>
-
-                </div>
 
             </div>
 
@@ -3584,159 +3924,76 @@
                     </div>
                     <div class="over-view-information">
                         <div data-w-id="6addf797-8284-aa80-13b1-d515ad6c9cde" style="opacity: 0">
-                            <div data-wf--sub-heading--variant="base" class="sub-heading">INDUSTRIAL PROCESSING CAPABILITY</div>
+                            <div data-wf--sub-heading--variant="base" class="sub-heading">Our Core Services</div>
                         </div>
                         <div class="heading-two-gap-top-bottom overflow-hidden overview-two-heading">
-                            <h2
-                                data-w-id="26e0ae4f-35bc-e397-1ff7-4aca542f868d"
-                                style="
-                                    -webkit-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                        rotateZ(0) skew(-19deg, 0);
-                                    -moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                        rotateZ(0) skew(-19deg, 0);
-                                    -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                        rotateZ(0) skew(-19deg, 0);
-                                    transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                                        skew(-19deg, 0);
-                                "
-                                class="no-margin"
-                            >
-                                Built Around Tobacco Processing
-                            </h2>
-                        </div>
-                        <div class="overflow-hidden">
-                            <p data-w-id="26e0ae4f-35bc-e397-1ff7-4aca542f8690" style="opacity: 0" class="no-margin">
-                               Tabac Enterprises is focused on industrial tobacco leaf processing
-                                and threshing, supported by integrated infrastructure for conditioning,
-                                separation, drying, quality control, packing and storage.
-                            </p>
-                        </div>
-                        <div
-                            data-w-id="26e0ae4f-35bc-e397-1ff7-4aca542f8692"
-                            style="opacity: 0"
-                            class="w-layout-hflex counter-two-wrapper change-padding"
-                        >
-                            <div
-                                data-w-id="26e0ae4f-35bc-e397-1ff7-4aca542f8693"
-                                class="w-layout-vflex counter-card-two one full-width"
-                            >
-                                <div class="w-layout-hflex counter-one-wrap">
-                                    <div class="w-layout-hflex counter-two-marquee-wrap overflow-hidden">
-                                       
-                                       
-                                        <div class="w-layout-vflex counter-two-marquee">
-                                            <div
-                                                style="
-                                                    -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                    -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                    -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                    transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                "
-                                                class="w-layout-vflex counter-one-train"
-                                            >
-                                                <div class="counter-two-number color-white">0</div>
-                                                <div class="counter-two-number color-white">1</div>
-                                                <div class="counter-two-number color-white">2</div>
-                                                <div class="counter-two-number color-white">3</div>
-                                                <div class="counter-two-number color-white">4</div>
-                                            </div>
-                                            <div
-                                                style="
-                                                    -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                    -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                    -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                    transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                "
-                                                class="w-layout-vflex counter-one-train"
-                                            >
-                                                <div class="counter-two-number color-white">22</div>
-                                                <div class="counter-two-number color-white">1</div>
-                                                <div class="counter-two-number color-white">2</div>
-                                                <div class="counter-two-number color-white">3</div>
-                                                <div class="counter-two-number color-white">4</div>
-                                            </div>
-                                        </div>
-                                        <div class="w-layout-vflex counter-two-marquee">
-                                            <div class="counter-two-number color-white"> Tph</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="heading-style-h5">Combined Installed<br /> Threshing Capacity</div>
-                            </div>
-                            <div
-                                data-w-id="26e0ae4f-35bc-e397-1ff7-4aca542f86c4"
-                                class="w-layout-vflex counter-card-two two full-width"
-                            >
-                                <div class="w-layout-hflex counter-one-wrap">
-                                    <div class="w-layout-hflex counter-two-marquee-wrap overflow-hidden">
-                                       
-                                        
-                                        <div class="w-layout-vflex counter-two-marquee">
-                                            <div
-                                                style="
-                                                    -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                    -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                    -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                    transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                "
-                                                class="w-layout-vflex counter-one-train"
-                                            >
-                                                <div class="counter-two-number color-white">0</div>
-                                                <div class="counter-two-number color-white">1</div>
-                                                <div class="counter-two-number color-white">2</div>
-                                                <div class="counter-two-number color-white">3</div>
-                                                <div class="counter-two-number color-white">4</div>
-                                                <div class="counter-two-number color-white">5</div>
-                                                <div class="counter-two-number color-white">6</div>
-                                                <div class="counter-two-number color-white">7</div>
-                                                <div class="counter-two-number color-white">8</div>
-                                                <div class="counter-two-number color-white">9</div>
-                                            </div>
-                                            <div
-                                                style="
-                                                    -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                    -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                    -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                    transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                "
-                                                class="w-layout-vflex counter-one-train"
-                                            >
-                                                <div class="counter-two-number color-white">300</div>
-                                                <div class="counter-two-number color-white">1</div>
-                                                <div class="counter-two-number color-white">2</div>
-                                                <div class="counter-two-number color-white">3</div>
-                                                <div class="counter-two-number color-white">4</div>
-                                                <div class="counter-two-number color-white">5</div>
-                                                <div class="counter-two-number color-white">6</div>
-                                                <div class="counter-two-number color-white">7</div>
-                                                <div class="counter-two-number color-white">8</div>
-                                                <div class="counter-two-number color-white">9</div>
-                                            </div>
-                                        </div>
-                                        <div class="w-layout-vflex counter-two-marquee">
-                                            <div class="counter-two-number color-white">+</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="heading-style-h5">Tobacco Cultivation<br /> Experience</div>
-                            </div>
-                        </div>
+
+    <h2 class="no-margin">
+        Integrated Capabilities Across the Tobacco Value Chain
+    </h2>
+
+</div>
+
+<div class="overflow-hidden">
+
+    <div class="no-margin">
+
+        <div style="margin-bottom: 12px;">
+            <strong>Tobacco Processing</strong> -
+            Industrial tobacco processing supported by advanced threshing infrastructure,
+            process control, and quality-focused operations.
+        </div>
+
+        <div style="margin-bottom: 12px;">
+            <strong>Transportation</strong> -
+            Dedicated internal transportation supporting tobacco movement from farms
+            to processing facilities.
+        </div>
+
+        <div>
+            <strong>Exporting</strong> -
+            Tobacco export capabilities supported by industry experience,
+            product knowledge, and coordinated operations.
+        </div>
+
+    </div>
+
+</div>
+<div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffd0" style="margin-top: 20px;">
+    <div
+        data-wf--button-style-one--variant="base"
+        data-w-id="a1dfbf13-2114-c851-1b8e-eda5fda5e771"
+        class="button-style-one-wrap overflow-hidden"
+    >
+        <a
+            href="services.php"
+            class="button-style-one position-relative overflow-hidden w-inline-block"
+        >
+            <div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
+                <div class="button-text">
+                    Explore Our Capabilities
+                </div>
+
+                <div class="button-text two">
+                    Explore Our Capabilities
+                </div>
+            </div>
+
+            <div class="button-style-one-icon position-relative">
+                <img
+                    width="8"
+                    height="9"
+                    alt=""
+                    src="67ad72477c605912a4af72eb/67af1b78eef99645a9f0bfd8_Arrow%206.svg"
+                    loading="lazy"
+                    class="button-one-arrow"
+                />
+            </div>
+
+            <div class="button-style-one-background position-absolute"></div>
+        </a>
+    </div>
+</div>
                     </div>
                 </div>
             </div>
@@ -3748,12 +4005,12 @@
                     <div class="feature-wrapper">
                         <div class="feature-left-part">
                             <div class="overflow-hidden feature-heading-wrapper mobile-text-center" style="margin-bottom: 0px !important;">
-                                <h2 class="no-margin color-black">Advanced Processing. Every Stage Controlled</h2>
+                                <h2 class="no-margin color-black">Catalogue</h2>
                             </div>
                             <div class="feature-card-content">
                                 <div data-w-id="cb2e62d1-0778-0ad1-57a2-72a9a1798795" class="feature-card-text one">
                                     <div class="heading-style-h4 color-black text-no-wrap">
-                                        Tobacco Leaf Processing
+                                    Mysore FCV
                                     </div>
                                     <img
                                         src="67ad72477c605912a4af72eb/68a80569fb754984ca482d08_Vector%20%2891%29.svg"
@@ -3766,7 +4023,7 @@
                                     />
                                 </div>
                                 <div data-w-id="fb196b32-c1c4-e9d6-8dbf-60b7aed7b537" class="feature-card-text two">
-                                    <div class="heading-style-h4 color-black text-no-wrap">Multi-Stage Threshing</div>
+                                    <div class="heading-style-h4 color-black text-no-wrap">TRAD FCV</div>
                                     <img
                                         src="67ad72477c605912a4af72eb/68a80569fb754984ca482d08_Vector%20%2891%29.svg"
                                         loading="lazy"
@@ -3779,7 +4036,7 @@
                                 </div>
                                 <div data-w-id="a4808b38-293f-76c2-32cb-c6a138c0f3d4" class="feature-card-text active">
                                     <div class="heading-style-h4 color-black text-no-wrap">
-                                        Lamina &amp; Stem Separation
+                                    NLS FCV
                                     </div>
                                     <img
                                         src="67ad72477c605912a4af72eb/68a80569fb754984ca482d08_Vector%20%2891%29.svg"
@@ -3792,7 +4049,7 @@
                                     />
                                 </div>
                                 <div data-w-id="2f668eff-5085-9f88-ec5a-67f3cd01f2f5" class="feature-card-text four">
-                                    <div class="heading-style-h4 color-black text-no-wrap">Drying &amp; Moisture Control</div>
+                                    <div class="heading-style-h4 color-black text-no-wrap">Vinukonda Burley</div>
                                     <img
                                         src="67ad72477c605912a4af72eb/68a80569fb754984ca482d08_Vector%20%2891%29.svg"
                                         loading="lazy"
@@ -3802,6 +4059,41 @@
                                         data-w-id="2f668eff-5085-9f88-ec5a-67f3cd01f2f8"
                                         class="feature-arrow-icon-four"
                                     />
+                                </div>
+                            </div>
+                            <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffd0" style="margin-top: 35px;">
+                                <div
+                                    data-wf--button-style-one--variant="base"
+                                    data-w-id="a1dfbf13-2114-c851-1b8e-eda5fda5e771"
+                                    class="button-style-one-wrap overflow-hidden"
+                                >
+                                    <a
+                                        href="javascript:void(0);"
+                                        class="button-style-one position-relative overflow-hidden w-inline-block"
+                                    >
+                                        <div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
+                                            <div class="button-text">
+                                                EXPLORE THE GRADE CATALOGUE
+                                            </div>
+
+                                            <div class="button-text two">
+                                                EXPLORE THE GRADE CATALOGUE
+                                            </div>
+                                        </div>
+
+                                        <div class="button-style-one-icon position-relative">
+                                            <img
+                                                width="8"
+                                                height="9"
+                                                alt=""
+                                                src="67ad72477c605912a4af72eb/67af1b78eef99645a9f0bfd8_Arrow%206.svg"
+                                                loading="lazy"
+                                                class="button-one-arrow"
+                                            />
+                                        </div>
+
+                                        <div class="button-style-one-background position-absolute"></div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -3949,10 +4241,11 @@
                                     data-wf--sub-heading--variant="white-sub-heading"
                                     class="sub-heading w-variant-f1a14dd4-f30f-c0f4-d5f6-6802c309e3c1"
                                 >
-                                    PROCESSING EXCELLENCE
+                                A Bio-Steam-Powered Processing Operation
                                 </div>
-                                <div class="image-card-two-title-wrap">
-                                    <h3 class="no-margin">Advanced processing built for consistency</h3>
+                                <div class="image-card-two-title-wrap" style="max-width: 480px; margin-top: 10px; margin-bottom: 20px;">
+                                    <h3 class="no-margin" style="font-size: 22px; line-height: 1.3;">Bio-Steam Powered Processing</h3>
+                                    <p style="font-size: 14.5px; line-height: 1.5; color: rgba(255, 255, 255, 0.88); margin-top: 8px; margin-bottom: 0;">Tabac Leaf Enterprises operates its tobacco processing facilities using bio-steam generated through briquettes rather than coal. This approach reflects our focus on alternative fuel use and responsible industrial practices.</p>
                                 </div>
                                 <div
                                     data-w-id="32a080e7-e635-fd07-ca0b-ba724ec0d900"
@@ -3965,7 +4258,7 @@
                                             class="button-style-one-wrap w-variant-6e2385dc-4996-d9d5-515e-70517806a760 overflow-hidden"
                                         >
                                             <a
-                                                href="javascript:void(0);"
+                                                href="services.php"
                                                 class="button-style-one w-variant-6e2385dc-4996-d9d5-515e-70517806a760 position-relative overflow-hidden w-inline-block"
                                                 ><div
                                                     class="w-layout-vflex button-text-wrap position-relative overflow-hidden"
@@ -3977,8 +4270,8 @@
                                                     <img
                                                         width="8"
                                                         height="9"
-                                                        alt="Kontix-home-two-innovative-building-solution-arrow-icon-webflow-ecommerce-template"
-                                                        src="assets/images/INDUSTRIAL-CAPABILITY.webp"
+                                                        alt=""
+                                                        src="67ad72477c605912a4af72eb/67af1b78eef99645a9f0bfd8_Arrow%206.svg"
                                                         loading="lazy"
                                                         class="button-one-arrow"
                                                     />
@@ -4030,10 +4323,11 @@
                                     data-wf--sub-heading--variant="white-sub-heading"
                                     class="sub-heading w-variant-f1a14dd4-f30f-c0f4-d5f6-6802c309e3c1"
                                 >
-                                    INDUSTRIAL CAPABILITY
+                                A Distinctive Approach to Tobacco Processing
                                 </div>
-                                <div class="image-card-two-title-wrap">
-                                    <h3 class="no-margin">Built for industrial-scale tobacco processing</h3>
+                                <div class="image-card-two-title-wrap" style="max-width: 480px; margin-top: 10px; margin-bottom: 20px;">
+                                    <h3 class="no-margin" style="font-size: 22px; line-height: 1.3;">India's Only Bio-Steam Processor</h3>
+                                    <p style="font-size: 14.5px; line-height: 1.5; color: rgba(255, 255, 255, 0.88); margin-top: 8px; margin-bottom: 0;">Tabac Leaf Enterprises is positioned as the only company in India using bio-steam generated through briquettes for tobacco processing.</p>
                                 </div>
                                 <div
                                     data-w-id="32a080e7-e635-fd07-ca0b-ba724ec0d917"
@@ -4046,7 +4340,7 @@
                                             class="button-style-one-wrap w-variant-6e2385dc-4996-d9d5-515e-70517806a760 overflow-hidden"
                                         >
                                             <a
-                                                href="javascript:void(0);"
+                                                href="operations.php"
                                                 class="button-style-one w-variant-6e2385dc-4996-d9d5-515e-70517806a760 position-relative overflow-hidden w-inline-block"
                                                 ><div
                                                     class="w-layout-vflex button-text-wrap position-relative overflow-hidden"
@@ -4243,17 +4537,17 @@
                     <div class="reliable-construction-left-part">
                         <div class="overflow-hidden">
                             <div data-w-id="a03bfe86-fd76-2f47-73b6-952ebbc7fb54" style="opacity: 0">
-                                <div data-wf--sub-heading--variant="base" class="sub-heading">OUR PROCESS</div>
+                                <div data-wf--sub-heading--variant="base" class="sub-heading">Processing Partnerships</div>
                             </div>
                         </div>
                         <div class="timeline-two-heading-wrap">
                             <h2 data-w-id="3d6e7e08-0aa3-fcea-dc0a-8a547fe973a9" class="no-margin">
-                                A Controlled Tobacco Processing Cycle from Leaf to Finished Product
+                            Supporting Major Industry Requirements
                             </h2>
                         </div>
                         <div class="overflow-hidden">
                             <div data-w-id="52a55b34-5290-9c20-a95d-49ebb1381fad">
-                                From carefully selected tobacco leaves to finished products, every stage is managed with precision, consistency, and quality control. Our process combines experienced handling, controlled processing, efficient threshing, and rigorous quality checks to deliver dependable tobacco products
+                                Tabac Leaf Enterprises works with leading tobacco industry partners, including Godfrey Phillips India and Philip Morris. Our facilities support large-scale processing requirements through industrial infrastructure, operational experience, and coordinated execution.
                             </div>
                         </div>
                         <div
@@ -4262,31 +4556,25 @@
                             class="reliable-construction-bottom-container"
                         >
                             <div class="reliable-construction-subtext-wrapper">
-                                <div class="position-relative reliable-construction-subtext-bottom-padding">
-                                    <div style="opacity: 1" class="heading-style-h5 active">Leaf Receiving</div>
+                                <div class="position-relative reliable-construction-subtext-bottom-padding tab-nav-item active" data-tab="0">
+                                    <div class="heading-style-h5 active">Godfrey Phillips India</div>
                                     <div
-                                        style="width: 100%"
                                         class="reliable-construction-subtext-glow-line active"
+                                        style="width: 100%;"
                                     ></div>
                                 </div>
-                                <div
-                                    data-w-id="6a9dbb97-1dec-5de8-f24c-00211260779b"
-                                    class="position-relative reliable-construction-subtext-bottom-padding"
-                                >
-                                    <div style="opacity: 0.5" class="heading-style-h5 inactive">Multi-Stage Threshing</div>
+                                <div class="position-relative reliable-construction-subtext-bottom-padding tab-nav-item" data-tab="1">
+                                    <div class="heading-style-h5 inactive" style="opacity: 0.5;">Philip Morris</div>
                                     <div
-                                        style="width: 0%"
                                         class="reliable-construction-subtext-glow-line inactive"
+                                        style="width: 0%;"
                                     ></div>
                                 </div>
-                                <div
-                                    data-w-id="73e1fc07-bacd-2f24-e28a-af163c6cea60"
-                                    class="position-relative reliable-construction-subtext-bottom-padding"
-                                >
-                                    <div style="opacity: 0.5" class="heading-style-h5 inactive">Quality Control</div>
+                                <div class="position-relative reliable-construction-subtext-bottom-padding tab-nav-item" data-tab="2">
+                                    <div class="heading-style-h5 inactive" style="opacity: 0.5;">Industrial Scale</div>
                                     <div
-                                        style="width: 0%"
                                         class="reliable-construction-subtext-glow-line inactive"
+                                        style="width: 0%;"
                                     ></div>
                                 </div>
                             </div>
@@ -4302,49 +4590,22 @@
                                 </div>
                                 <div class="reliable-construction-para-wrapper position-relative overflow-hidden">
                                     <div
-                                        style="
-                                            -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                        "
-                                        class="reliable-construction-para active"
+                                        class="reliable-construction-para tab-pane active"
+                                        data-tab-content="0"
                                     >
-                                       Tobacco leaves are received and prepared through controlled handling, conditioning and moisture management to establish suitable processing conditions before threshing
+                                        A major processing partnership supporting tobacco processing operations, consistent grading, and coordinated execution.
                                     </div>
                                     <div
-                                        style="
-                                            -webkit-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                        "
-                                        class="reliable-construction-para inactive"
+                                        class="reliable-construction-para tab-pane inactive"
+                                        data-tab-content="1"
                                     >
-                                       
+                                        Processing partner supporting specialized requirements, operational compliance, and strict international quality standards.
                                     </div>
                                     <div
-                                        style="
-                                            -webkit-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                        "
-                                        class="reliable-construction-para inactive"
+                                        class="reliable-construction-para tab-pane inactive"
+                                        data-tab-content="2"
                                     >
-                                        Processed material undergoes drying and moisture control, followed by inspection, quality checks and packing for organized storage and further handling
+                                        Industrial-scale infrastructure and dedicated processing lines engineered to manage large enterprise supply demands with consistency and speed.
                                     </div>
                                 </div>
                             </div>
@@ -4545,14 +4806,14 @@
             <div class="video-text-box">
                 <div class="video-one-title-wrap padding-left">
                     <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffca">
-                        <div data-wf--sub-heading--variant="base" class="sub-heading">Let's connect</div>
+                        <div data-wf--sub-heading--variant="base" class="sub-heading">LET'S CONNECT</div>
                     </div>
                     <div class="video-title mobile-text-center change">
                         <h2
                             data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffce"
                             class="heading-two-gap-top-bottom no-margin"
                         >
-                            Advanced Tobacco Processing. Built for Consistency and Scale
+                            Advanced Processing. Proven Capability. Consistent Quality.
                         </h2>
                     </div>
                     <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffd0" style="margin-top: 10px;">
@@ -4562,11 +4823,11 @@
                             class="button-style-one-wrap overflow-hidden"
                         >
                             <a
-                                href="javascript:void(0);"
+                                href="contact.php"
                                 class="button-style-one position-relative overflow-hidden w-inline-block"
                                 ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
-                                    <div class="button-text">Explore Our Capabilities</div>
-                                    <div class="button-text two">Explore Our Capabilities</div>
+                                    <div class="button-text">CONTACT OUR TEAM</div>
+                                    <div class="button-text two">CONTACT OUR TEAM</div>
                                 </div>
                                 <div class="button-style-one-icon position-relative">
                                     <img
@@ -4590,5 +4851,38 @@
        <?php require __DIR__ . "/includes/footer.php"; ?>
         <script src="js/jquery-3.5.1.min.dc5e7f18c8.js?site=67ad72477c605912a4af72eb" type="text/javascript"></script>
         <script src="67ad72477c605912a4af72eb/js/webflow.8c3c7a7b.98f16f3db6b689ff.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function() {
+                var $triggers = $('.reliable-construction-subtext-wrapper .tab-nav-item');
+                var $contents = $('.reliable-construction-para-wrapper .tab-pane');
+
+                $triggers.on('click mouseenter', function() {
+                    var tabIndex = $(this).data('tab');
+
+                    $triggers.each(function() {
+                        var isActive = $(this).data('tab') === tabIndex;
+                        var $heading = $(this).find('.heading-style-h5');
+                        var $line = $(this).find('.reliable-construction-subtext-glow-line');
+
+                        if (isActive) {
+                            $heading.css('opacity', '1').removeClass('inactive').addClass('active');
+                            $line.css('width', '100%').removeClass('inactive').addClass('active');
+                        } else {
+                            $heading.css('opacity', '0.5').removeClass('active').addClass('inactive');
+                            $line.css('width', '0%').removeClass('active').addClass('inactive');
+                        }
+                    });
+
+                    $contents.each(function() {
+                        var isMatch = $(this).data('tab-content') === tabIndex;
+                        if (isMatch) {
+                            $(this).removeClass('inactive').addClass('active');
+                        } else {
+                            $(this).removeClass('active').addClass('inactive');
+                        }
+                    });
+                });
+            });
+        </script>
     </body>
 </html>

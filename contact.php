@@ -214,17 +214,17 @@
                 >
                     <div class="w-layout-hflex contact-box-one">
                         <div class="w-layout-vflex contact-box-one-wrap margin-auto text-align-center">
-                            <div class="sub-heading">Email</div>
-                            <a href="mailto:info@example.com" class="contact-box-one-link w-inline-block"
-                                ><div class="heading-style-h5">info@example.com</div></a
+                            <div data-wf--sub-heading--variant="base" class="sub-heading">Email</div>
+                            <a href="mailto:info@tabacleaf.com" class="contact-box-one-link w-inline-block"
+                                ><div class="heading-style-h5">info@tabac.com</div></a
                             >
                         </div>
                     </div>
                     <div class="w-layout-hflex contact-box-one">
                         <div class="w-layout-vflex contact-box-one-wrap margin-auto text-align-center">
-                            <div class="sub-heading">Phone</div>
-                            <a href="tel:8881234567" class="contact-box-one-link w-inline-block"
-                                ><div class="heading-style-h5">(888) 123-4567</div></a
+                            <div data-wf--sub-heading--variant="base" class="sub-heading">Phone</div>
+                            <a href="tel:+918592252000" class="contact-box-one-link w-inline-block"
+                                ><div class="heading-style-h5">+91 99999 99000</div></a
                             >
                         </div>
                     </div>
@@ -233,8 +233,8 @@
                         class="w-layout-hflex contact-box-one three"
                     >
                         <div class="w-layout-vflex contact-box-one-wrap margin-auto text-align-center">
-                            <div class="sub-heading">Location</div>
-                            <div class="heading-style-h5">410 Sandtown, California 94001, USA</div>
+                            <div data-wf--sub-heading--variant="base" class="sub-heading">Location</div>
+                            <div class="heading-style-h5">India</div>
                         </div>
                     </div>
                 </div>
@@ -251,8 +251,7 @@
                         </div>
                         <div class="contact-one-form-information-text overflow-hidden">
                             <p data-w-id="4a4b2c44-6875-fe44-d9ea-726f18f42133" class="color-white">
-                                Lorem suspend vivamus enim netus conval viverra iaculis erat auctor vulputate mollis
-                                eget porta
+                                Contact our team to discuss tobacco leaf processing, threshing requirements, facility operations, and industry partnerships.
                             </p>
                         </div>
                         <div class="w-layout-vflex icon-box-four-wrapper two">
@@ -262,17 +261,17 @@
                                         <img
                                             width="53"
                                             height="55"
-                                            alt="Kontix-contact-one-customer-support-icon-webflow-ecommerce-template"
+                                            alt="Operational Support Icon"
                                             src="67ad72477c605912a4af72eb/68ac6509a2ad1bc019be1a1a_Group%201597883837.svg"
                                             loading="lazy"
                                         />
                                     </div>
-                                    <div class="heading-style-h5 icon-box-four-title">24/7 customer support</div>
+                                    <div class="heading-style-h5 icon-box-four-title">Operational Coordination</div>
                                 </div>
                                 <div class="icon-box-four-line two"></div>
                                 <div class="icon-box-four-text two">
                                     <p class="no-margin">
-                                        Morbi nunc quam adipiscing facilisi duis vivamus in nec ultrices.
+                                        Direct coordination for processing schedules, volume requirements, and facility logistics.
                                     </p>
                                 </div>
                             </div>
@@ -282,17 +281,17 @@
                                         <img
                                             width="53"
                                             height="55"
-                                            alt="Kontix-contact-one-technical-support-icon-webflow-ecommerce-template"
+                                            alt="Technical Support Icon"
                                             src="67ad72477c605912a4af72eb/68ac65099efa38e124542740_Group%201597883838.svg"
                                             loading="lazy"
                                         />
                                     </div>
-                                    <div class="heading-style-h5 icon-box-four-title">Technical Support</div>
+                                    <div class="heading-style-h5 icon-box-four-title">Technical & Quality Assurance</div>
                                 </div>
                                 <div class="icon-box-four-line two"></div>
                                 <div class="icon-box-four-text two">
                                     <p class="no-margin">
-                                        Morbi nunc quam adipiscing facilisi duis vivamus in nec Ultrices.
+                                        Dedicated support for leaf grading, conditioning parameters, separation, and quality standards.
                                     </p>
                                 </div>
                             </div>
@@ -301,7 +300,7 @@
                     <div class="contact-one-form-wrap">
                         <div class="contact-one-form-title overflow-hidden">
                             <h3 data-w-id="4a4b2c44-6875-fe44-d9ea-726f18f4214c" class="no-margin">
-                                Connect with Kontix
+                                Send Us an Inquiry
                             </h3>
                         </div>
                         <div class="contact-one-form-text full-width overflow-hidden">
@@ -310,8 +309,7 @@
                                 style="opacity: 0"
                                 class="no-margin color-white"
                             >
-                                Whether you have a question about our brews or just want to share your story, we&#x27;re
-                                here to listen
+                                Whether you have an inquiry regarding processing infrastructure or wish to discuss large-scale leaf handling, our team is here to assist.
                             </p>
                         </div>
                         <div>
@@ -440,8 +438,6 @@
         <script
             src="js/jquery-3.5.1.min.dc5e7f18c8.js?site=67ad72477c605912a4af72eb"
             type="text/javascript"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-            crossorigin="anonymous"
         ></script>
         <script>
             document.documentElement.setAttribute("data-wf-page", "67bc6f35bcf2f2cff9c1b132");
@@ -450,8 +446,6 @@
         <script
             src="67ad72477c605912a4af72eb/js/webflow.8c3c7a7b.98f16f3db6b689ff.js"
             type="text/javascript"
-            integrity="sha384-vCkcyTRRgvEMQNx9Dg/YrD+O/OJohIPm8YjWNBlLoQDNPZgfG9w9e6ZcKXNuRikK"
-            crossorigin="anonymous"
         ></script>
       
        

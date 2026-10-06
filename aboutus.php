@@ -207,7 +207,7 @@
                             style="opacity: 0"
                             class="overflow-hidden"
                         >
-                            <div data-wf--sub-heading--variant="base" class="sub-heading">About one</div>
+                            <div data-wf--sub-heading--variant="base" class="sub-heading">About Us</div>
                         </div>
                         <div class="heading-one-gap-top about-hero-heading margin-auto overflow-hidden">
                             <h1
@@ -224,7 +224,7 @@
                                 "
                                 class="no-margin"
                             >
-                                Crafting excellence in industrial solutions
+                            Five Decades of Tobacco Expertise
                             </h1>
                         </div>
                     </div>
@@ -292,10 +292,10 @@
                     <div class="progress-one-information-wrap">
                         <div data-w-id="a0255e21-a5eb-7621-7afd-23b5e7b79106" style="opacity: 0">
                             <div
-                                data-wf--sub-heading--variant="white-sub-heading"
-                                class="sub-heading w-variant-f1a14dd4-f30f-c0f4-d5f6-6802c309e3c1"
+                                data-wf--sub-heading--variant="base"
+                                class="sub-heading"
                             >
-                                Site readiness
+                                Experience
                             </div>
                         </div>
                         <div class="heading-two-gap-top-bottom overflow-hidden progress-one-heading-wrapper">
@@ -313,13 +313,12 @@
                                 "
                                 class="no-margin"
                             >
-                                A legacy of strength a future of innovation
+                            Experience Across the Tobacco Value Chain
                             </h2>
                         </div>
                         <div class="overflow-hidden">
                             <p data-w-id="2a5bf49e-a915-ce81-044a-9004ac91edce" style="opacity: 0" class="no-margin">
-                                Finance consultants offer guidance on investment decisions, including asset allocation,
-                                portfolio diversification, and risk management
+                            With 50 years of experience in tobacco growing, processing and exports, Tabac Leaf Enterprises has developed an integrated presence across the tobacco value chain. <br> Rooted in Tangutur, Prakasam District, Andhra Pradesh, our operations bring together industry experience, large-scale processing infrastructure, internal transportation and warehousing capabilities. Our focus is on delivering dependable processing operations supported by technical capability, operational discipline and long-term industry partnerships.
                             </p>
                         </div>
                         <div
@@ -329,7 +328,7 @@
                         >
                             <div class="w-layout-vflex progress-bar-one-progress-wrap full-width">
                                 <div class="w-layout-hflex progress-bar-one-top-wrap full-width">
-                                    <div class="color-white">Timely execution</div>
+                                    <div class="color-white">Large-Scale Processing Infrastructure</div>
                                     <div class="color-white">90%</div>
                                 </div>
                                 <div class="progress-bar-one-bar position-relative">
@@ -338,7 +337,7 @@
                             </div>
                             <div class="w-layout-vflex progress-bar-one-progress-wrap full-width">
                                 <div class="w-layout-hflex progress-bar-one-top-wrap full-width">
-                                    <div class="color-white">Structures</div>
+                                    <div class="color-white">Internal Transportation Network</div>
                                     <div class="color-white">85%<br /></div>
                                 </div>
                                 <div class="progress-bar-one-bar position-relative">
@@ -347,7 +346,7 @@
                             </div>
                             <div class="w-layout-vflex progress-bar-one-progress-wrap full-width">
                                 <div class="w-layout-hflex progress-bar-one-top-wrap full-width">
-                                    <div class="color-white">Project foundation</div>
+                                    <div class="color-white">Warehousing & Storage Capabilities</div>
                                     <div class="color-white">82%<br /></div>
                                 </div>
                                 <div class="progress-bar-one-bar position-relative">
@@ -362,11 +361,11 @@
                                 class="button-style-one-wrap overflow-hidden"
                             >
                                 <a
-                                    href="service-three.html"
+                                    href="services.php"
                                     class="button-style-one position-relative overflow-hidden w-inline-block"
                                     ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
-                                        <div class="button-text">View more</div>
-                                        <div class="button-text two">View more</div>
+                                        <div class="button-text">EXPLORE OUR CAPABILITIES</div>
+                                        <div class="button-text two">EXPLORE OUR CAPABILITIES</div>
                                     </div>
                                     <div class="button-style-one-icon position-relative">
                                         <img
@@ -386,22 +385,58 @@
                 </div>
             </div>
         </section>
-        <section data-w-id="ce630ebd-859f-fe30-474c-de6cff878182" class="over-view-one">
+        <style>
+            .vision-quote-line {
+                display: block;
+            }
+            .over-view-title-wrapper .over-view-flex.vision-overlay-flex {
+                position: absolute;
+                inset: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: stretch;
+                pointer-events: none;
+                z-index: 2;
+            }
+            .over-view-title-wrapper .over-view-flex-div {
+                flex: 1 1 0%;
+                width: 100%;
+                height: auto;
+                background-color: #000000ab;
+                transform: translate3d(0%, 0, 0);
+                transform-origin: 100% 50%;
+                will-change: transform;
+            }
+            @media (max-width: 767px) {
+                .over-view-title-wrapper .over-view-flex.vision-overlay-flex {
+                    display: none !important;
+                }
+                .vision-quote-line {
+                    display: inline !important;
+                }
+            }
+        </style>
+        <section class="over-view-one">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="overflow-hidden">
                     <div data-w-id="6cba64be-0e94-2c16-c0ac-4294feeb1fa0" style="opacity: 0" class="text-align-center">
-                        <div data-wf--sub-heading--variant="base" class="sub-heading">About us</div>
+                        <div data-wf--sub-heading--variant="base" class="sub-heading">OUR VISION</div>
                     </div>
                 </div>
                 <div class="over-view-title-wrapper text-align-center position-relative overflow-hidden">
                     <div class="heading-style-h2 color-white">
-                        “We bring expertise dedication and innovation to every project ensuring exceptional
-                        craftsmanship durability and client satisfaction”
+                        <span class="vision-quote-line">“Engineering Excellence in Tobacco Processing: To</span>
+                        <span class="vision-quote-line">strengthen Tabac Leaf Enterprises’ position in the</span>
+                        <span class="vision-quote-line">tobacco industry through advanced processing</span>
+                        <span class="vision-quote-line">infrastructure, operational efficiency, responsible</span>
+                        <span class="vision-quote-line">practices and enduring business partnerships.”</span>
                     </div>
-                    <div class="w-layout-vflex over-view-flex position-absolute">
+                    <div class="w-layout-vflex over-view-flex position-absolute vision-overlay-flex">
                         <div class="over-view-flex-div one overlay-two"></div>
                         <div class="over-view-flex-div two overlay-two"></div>
                         <div class="over-view-flex-div three overlay-two"></div>
+                        <div class="over-view-flex-div four overlay-two"></div>
+                        <div class="over-view-flex-div five overlay-two"></div>
                     </div>
                 </div>
                 <div
@@ -443,9 +478,9 @@
                             class="rt-big-icon"
                         />
                         <div class="over-view-card-text-wrapper">
-                            <div class="heading-style-h4 color-black">Emergency services</div>
+                            <div class="heading-style-h4 color-black">Industrial Tobacco Processing</div>
                             <div class="color-black">
-                                Lorem ipsum dolor sit amet pharetra sapien lectus habitasse hendrerit nibh
+                            Tobacco processing is at the centre of our operations. Tabac Leaf Enterprises supports large-scale processing requirements with infrastructure designed for efficiency, consistency and operational control across threshing, leaf processing, separation and handling.
                             </div>
                         </div>
                     </div>
@@ -459,9 +494,9 @@
                             class="rt-big-icon"
                         />
                         <div class="over-view-card-text-wrapper">
-                            <div class="heading-style-h4 color-white">100% secure</div>
+                            <div class="heading-style-h4 color-white">Built on Processing Capability</div>
                             <div class="color-white">
-                                Lorem ipsum dolor sit amet pharetra sapien lectus habitasse hendrerit nibh
+                            Tabac Leaf Enterprises works with established tobacco industry partners, including Godfrey Phillips India and Philip Morris, supporting global requirements through coordinated execution and consistent operations.
                             </div>
                         </div>
                     </div>
@@ -472,10 +507,10 @@
             <div class="w-layout-blockcontainer container w-container">
                 <div data-w-id="2a5bf49e-a915-ce81-044a-9004ac91edf9" style="opacity: 0" class="text-align-center">
                     <div
-                        data-wf--sub-heading--variant="white-sub-heading"
-                        class="sub-heading w-variant-f1a14dd4-f30f-c0f4-d5f6-6802c309e3c1"
+                        data-wf--sub-heading--variant="base"
+                        class="sub-heading"
                     >
-                        Wealth preservation
+                    OUR APPROACH
                     </div>
                 </div>
                 <div class="text-align-center heading-two-gap-top">
@@ -493,7 +528,7 @@
                         "
                         class="no-margin service-six-title-wrap margin-auto"
                     >
-                        Innovative building solutions for a competitive edge
+                    Disciplined Execution Across the Tobacco Value Chain
                     </h2>
                 </div>
             </div>
@@ -504,11 +539,11 @@
                     class="w-layout-grid service-six-card-wrap"
                 >
                     <a
-                        href="service-one.html"
+                        href="operations.php"
                         class="service-two-card position-relative service-card-six overflow-hidden w-inline-block"
                         ><div class="w-layout-hflex service-two-card-main position-relative">
                             <div class="w-layout-hflex service-two-card-left-wrap service-six-card-text-wrap">
-                                <div class="heading-style-h5">Custom home building</div>
+                                <div class="heading-style-h5">Experience</div>
                                 <div class="w-layout-hflex service-six-arrow">
                                     <img
                                         width="20"
@@ -544,11 +579,11 @@
                             <div class="service-card-two-bg position-absolute two"></div></div></a
                     ><a
                         data-w-id="2a5bf49e-a915-ce81-044a-9004ac91ee1d"
-                        href="service-three.html"
+                        href="operations.php"
                         class="service-two-card position-relative service-card-six overflow-hidden w-inline-block"
                         ><div class="w-layout-hflex service-two-card-main position-relative">
                             <div class="w-layout-hflex service-two-card-left-wrap service-six-card-text-wrap">
-                                <div class="heading-style-h5">Corporate building construction</div>
+                                <div class="heading-style-h5">Infrastructure</div>
                                 <div class="w-layout-hflex service-six-arrow">
                                     <img
                                         width="20"
@@ -584,11 +619,11 @@
                             <div class="service-card-two-bg position-absolute two"></div></div></a
                     ><a
                         data-w-id="025e7ee4-150f-684e-966c-394ef48bf6ba"
-                        href="service-two.html"
+                        href="operations.php"
                         class="service-two-card position-relative service-card-six overflow-hidden w-inline-block"
                         ><div class="w-layout-hflex service-two-card-main position-relative">
                             <div class="w-layout-hflex service-two-card-left-wrap service-six-card-text-wrap">
-                                <div class="heading-style-h5">Roofing &amp; exterior finishing</div>
+                                <div class="heading-style-h5">Operational Discipline</div>
                                 <div class="w-layout-hflex service-six-arrow">
                                     <img
                                         width="20"
@@ -624,11 +659,11 @@
                             <div class="service-card-two-bg position-absolute two"></div></div></a
                     ><a
                         data-w-id="b3be48ab-aec7-eedb-248e-4c977aa2d17d"
-                        href="service-one.html"
+                        href="operations.php"
                         class="service-two-card position-relative service-card-six overflow-hidden w-inline-block"
                         ><div class="w-layout-hflex service-two-card-main position-relative">
                             <div class="w-layout-hflex service-two-card-left-wrap service-six-card-text-wrap">
-                                <div class="heading-style-h5">Distribution center buildout</div>
+                                <div class="heading-style-h5">Responsible Practices</div>
                                 <div class="w-layout-hflex service-six-arrow">
                                     <img
                                         width="20"
@@ -664,11 +699,11 @@
                             <div class="service-card-two-bg position-absolute two"></div></div></a
                     ><a
                         data-w-id="127df504-60a4-55f9-202b-b0fd7f920651"
-                        href="service-three.html"
+                        href="operations.php"
                         class="service-two-card position-relative service-card-six overflow-hidden w-inline-block"
                         ><div class="w-layout-hflex service-two-card-main position-relative">
                             <div class="w-layout-hflex service-two-card-left-wrap service-six-card-text-wrap">
-                                <div class="heading-style-h5">Specialized construction services</div>
+                                <div class="heading-style-h5">Industry Partnerships</div>
                                 <div class="w-layout-hflex service-six-arrow">
                                     <img
                                         width="20"
@@ -702,7 +737,7 @@
                                 class="full-width full-height"
                             />
                             <div class="service-card-two-bg position-absolute two"></div></div></a
-                    ><a
+                    ><!-- <a
                         data-w-id="815d4e7c-5988-fc4f-9714-84725731eceb"
                         href="service-two.html"
                         class="service-two-card position-relative service-card-six overflow-hidden w-inline-block"
@@ -741,8 +776,8 @@
                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 740px"
                                 class="full-width full-height"
                             />
-                            <div class="service-card-two-bg position-absolute two"></div></div
-                    ></a>
+                            <div class="service-card-two-bg position-absolute two"></div></div></a
+                    > -->
                 </div>
             </div>
         </section>
@@ -810,10 +845,10 @@
                             class="overflow-hidden mobile-text-center"
                         >
                             <div
-                                data-wf--sub-heading--variant="dark-sub-heading"
-                                class="sub-heading w-variant-8339cfd4-9c83-eaae-331a-5682dc1da52c"
+                                data-wf--sub-heading--variant="base"
+                                class="sub-heading"
                             >
-                                Quality Construction
+                            OUR INDUSTRIAL FOOTPRINT
                             </div>
                         </div>
                         <div class="heading-two-gap-top overflow-hidden">
@@ -831,8 +866,13 @@
                                 "
                                 class="no-margin features-two-heading color-black"
                             >
-                                Building strong foundations for a stronger future
+                            Two Facilities. Integrated Operations.
                             </h2>
+                        </div>
+                        <div class="overflow-hidden" style="margin-top: 12px; margin-bottom: 20px;">
+                            <p class="no-margin color-black">
+                            Tabac Leaf Enterprises operates two dedicated tobacco processing facilities in Tangutur, Prakasam District, Andhra Pradesh—Tabac Leaf Enterprises and B.K. Threshers Private Limited—with a stated combined processing capacity of 100 million.
+                            </p>
                         </div>
                         <div
                             data-w-id="d79c86cc-7a05-faab-2953-61351dccd47b"
@@ -853,11 +893,10 @@
                                 <div class="icon-card-three-middle-line color-change"></div>
                                 <div class="icon-card-three-information full-width">
                                     <div class="icon-card-three-title">
-                                        <div class="heading-style-h5 color-black">Faster project completion</div>
+                                        <div class="heading-style-h5 color-black">From Farm to Factory</div>
                                     </div>
                                     <p class="no-margin color-black">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius finibus
-                                        erat. In hac habitas
+                                    Our internal transportation system coordinates tobacco movement from farms to processing facilities, backed by 4 million sq. ft. of warehousing infrastructure for seamless storage and supply chain integration.
                                     </p>
                                 </div>
                                 <div class="icon-card-three-hr-line position-absolute top color-change"></div>
@@ -877,11 +916,10 @@
                                 <div class="icon-card-three-middle-line color-change"></div>
                                 <div class="icon-card-three-information full-width">
                                     <div class="icon-card-three-title">
-                                        <div class="heading-style-h5 color-black">Increased property value</div>
+                                        <div class="heading-style-h5 color-black">Bio-Steam & Briquette Fuel</div>
                                     </div>
                                     <p class="no-margin color-black">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit cras diam sapien, mattis
-                                        sed lorem pretium
+                                    Our facilities utilize bio-steam generated through agricultural briquettes rather than coal, reflecting our focus on alternative fuel use, operational efficiency and responsible industrial practices.
                                     </p>
                                 </div>
                                 <div class="icon-card-three-hr-line position-absolute bottom color-change"></div>
@@ -898,11 +936,11 @@
                                 class="button-style-one-wrap overflow-hidden light-button"
                             >
                                 <a
-                                    href="contact-two.html"
+                                    href="operations.php"
                                     class="button-style-one position-relative overflow-hidden light-button w-inline-block"
                                     ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
-                                        <div class="button-text dark">Get started</div>
-                                        <div class="button-text color-white">Get started</div>
+                                        <div class="button-text dark">VIEW OPERATIONS</div>
+                                        <div class="button-text color-white">VIEW OPERATIONS</div>
                                     </div>
                                     <div class="button-style-one-icon position-relative">
                                         <img
@@ -925,37 +963,9 @@
         <section class="team-one change-background-color">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="w-layout-vflex team-one-main-wrap">
-                    <div class="text-align-center">
-                        <div data-w-id="fb7966ef-d1c6-4d26-b0e7-b4947f1640f1" style="opacity: 0">
-                            <div
-                                data-wf--sub-heading--variant="dark-sub-heading"
-                                class="sub-heading w-variant-8339cfd4-9c83-eaae-331a-5682dc1da52c"
-                            >
-                                Our professional team
-                            </div>
-                        </div>
-                        <div class="heading-two-gap-top overflow-hidden team-heading">
-                            <h2
-                                data-w-id="6d51833e-f7a0-5784-97a6-3656f0dcf255"
-                                style="
-                                    -webkit-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                        rotateZ(0) skew(-19deg, 0);
-                                    -moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                        rotateZ(0) skew(-19deg, 0);
-                                    -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                        rotateZ(0) skew(-19deg, 0);
-                                    transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                                        skew(-19deg, 0);
-                                "
-                                class="no-margin color-black"
-                            >
-                                Meet the experts behind your success
-                            </h2>
-                        </div>
-                    </div>
                     <div class="team-one-grid-wrapper w-dyn-list">
-                        <div role="list" class="team-one-grid w-dyn-items">
-                            <div role="listitem" class="w-dyn-item">
+                        <div role="list" class="team-one-grid w-dyn-items" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 50px; align-items: flex-start; max-width: 1100px; margin: 0 auto;">
+                            <div role="listitem" class="w-dyn-item" style="max-width: 407px; width: 100%;">
                                 <div
                                     data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc96"
                                     class="team-card-one position-relative overflow-hidden border-radius-10"
@@ -964,7 +974,7 @@
                                         <img
                                             width="407"
                                             height="573"
-                                            alt=""
+                                            alt="Manoj Bellam - Managing Director"
                                             src="67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07.webp"
                                             loading="lazy"
                                             sizes="(max-width: 479px) 100vw, 407px"
@@ -985,54 +995,57 @@
                                         </div>
                                     </div>
                                     <div class="team-black-overlay">
-                                        <div class="heading-style-h5">Patricia Smith</div>
-                                        <div class="color-white">Construction Superintendent</div>
-                                        <div
-                                            data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9c"
-                                            class="team-social-icon-main-wrapper"
-                                        >
-                                            <a
-                                                data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9d"
-                                                href="https://facebook.com"
-                                                class="team-social-icon-wrapper w-inline-block"
-                                                ><img
-                                                    src="67ad72477c605912a4af72eb/687643be47c8e168d5a0b004_Mask%20group%20%282%29.svg"
-                                                    loading="lazy"
-                                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9e"
-                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
-                                                    class="team-icon" /></a
-                                            ><a
-                                                data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9f"
-                                                href="https://x.com"
-                                                class="team-social-icon-wrapper w-inline-block"
-                                                ><img
-                                                    src="67ad72477c605912a4af72eb/68764426623f1b898c9e3de6_Mask%20group%20%284%29.svg"
-                                                    loading="lazy"
-                                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca0"
-                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
-                                                    class="team-icon" /></a
-                                            ><a
-                                                data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca1"
-                                                href="https://instagram.com"
-                                                class="team-social-icon-wrapper w-inline-block"
-                                                ><img
-                                                    src="67ad72477c605912a4af72eb/6876440c03276f755f93aeef_Mask%20group%20%283%29.svg"
-                                                    loading="lazy"
-                                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca2"
-                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
-                                                    class="team-icon"
-                                            /></a>
-                                        </div>
+                                        <div class="heading-style-h5">Manoj Bellam</div>
+                                        <div class="color-white">Managing Director</div>
                                     </div>
                                     <div
                                         data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca3"
                                         class="team-white-overlay"
                                     ></div>
-                                    <a href="team/patricia-smith.html" class="link-block w-inline-block"
-                                        ><div class="link-text">This is some text inside of a div block.</div></a
-                                    >
                                 </div>
                             </div>
+                            <div class="leadership-bio-wrap" style="flex: 1; min-width: 320px; max-width: 620px;">
+                                <div data-w-id="fb7966ef-d1c6-4d26-b0e7-b4947f1640f1" style="opacity: 0" class="overflow-hidden mobile-text-center">
+                                    <div
+                                        data-wf--sub-heading--variant="base"
+                                        class="sub-heading"
+                                    >
+                                        OUR LEADERSHIP
+                                    </div>
+                                </div>
+                                <div class="heading-two-gap-top overflow-hidden">
+                                    <h2
+                                        data-w-id="6d51833e-f7a0-5784-97a6-3656f0dcf255"
+                                        style="
+                                            -webkit-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+                                                rotateZ(0) skew(-19deg, 0);
+                                            -moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+                                                rotateZ(0) skew(-19deg, 0);
+                                            -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+                                                rotateZ(0) skew(-19deg, 0);
+                                            transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+                                                skew(-19deg, 0);
+                                        "
+                                        class="no-margin features-two-heading color-black"
+                                    >
+                                        Guiding Growth &amp; Operational Discipline
+                                    </h2>
+                                </div>
+                                <div style="margin-top: 18px; margin-bottom: 16px;">
+                                    <div class="heading-style-h4 color-black" style="font-weight: 700; margin-bottom: 2px;">Manoj Bellam</div>
+                                    <div class="sub-heading" style="color: #b08940; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem;">Managing Director</div>
+                                </div>
+                                <p class="color-black" style="margin-bottom: 14px; line-height: 1.65;">
+                                    Manoj Bellam is the Managing Director of Tabac Leaf Enterprises and is closely involved in the development of the company’s processing operations, infrastructure and long-term industry partnerships.
+                                </p>
+                                <p class="color-black" style="margin-bottom: 14px; line-height: 1.65;">
+                                    His focus includes strengthening large-scale tobacco processing capabilities, supporting operational development and advancing the company’s integrated presence across the tobacco value chain.
+                                </p>
+                                <p class="no-margin color-black" style="line-height: 1.65;">
+                                    Under his leadership, Tabac Leaf Enterprises continues to develop its processing infrastructure and operational capabilities with an emphasis on technology, efficiency and responsible practices.
+                                </p>
+                            </div>
+                            <!-- Commented out placeholder team cards:
                             <div role="listitem" class="w-dyn-item">
                                 <div
                                     data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc96"
@@ -1065,50 +1078,11 @@
                                     <div class="team-black-overlay">
                                         <div class="heading-style-h5">Terry Dias</div>
                                         <div class="color-white">Structural Engineer</div>
-                                        <div
-                                            data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9c"
-                                            class="team-social-icon-main-wrapper"
-                                        >
-                                            <a
-                                                data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9d"
-                                                href="https://facebook.com"
-                                                class="team-social-icon-wrapper w-inline-block"
-                                                ><img
-                                                    src="67ad72477c605912a4af72eb/687643be47c8e168d5a0b004_Mask%20group%20%282%29.svg"
-                                                    loading="lazy"
-                                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9e"
-                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
-                                                    class="team-icon" /></a
-                                            ><a
-                                                data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9f"
-                                                href="https://x.com"
-                                                class="team-social-icon-wrapper w-inline-block"
-                                                ><img
-                                                    src="67ad72477c605912a4af72eb/68764426623f1b898c9e3de6_Mask%20group%20%284%29.svg"
-                                                    loading="lazy"
-                                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca0"
-                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
-                                                    class="team-icon" /></a
-                                            ><a
-                                                data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca1"
-                                                href="https://instagram.com"
-                                                class="team-social-icon-wrapper w-inline-block"
-                                                ><img
-                                                    src="67ad72477c605912a4af72eb/6876440c03276f755f93aeef_Mask%20group%20%283%29.svg"
-                                                    loading="lazy"
-                                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca2"
-                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
-                                                    class="team-icon"
-                                            /></a>
-                                        </div>
                                     </div>
                                     <div
                                         data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca3"
                                         class="team-white-overlay"
                                     ></div>
-                                    <a href="team/terry-dias.html" class="link-block w-inline-block"
-                                        ><div class="link-text">This is some text inside of a div block.</div></a
-                                    >
                                 </div>
                             </div>
                             <div role="listitem" class="w-dyn-item">
@@ -1143,52 +1117,14 @@
                                     <div class="team-black-overlay">
                                         <div class="heading-style-h5">Martin Philips</div>
                                         <div class="color-white">Construction Engineer</div>
-                                        <div
-                                            data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9c"
-                                            class="team-social-icon-main-wrapper"
-                                        >
-                                            <a
-                                                data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9d"
-                                                href="https://facebook.com"
-                                                class="team-social-icon-wrapper w-inline-block"
-                                                ><img
-                                                    src="67ad72477c605912a4af72eb/687643be47c8e168d5a0b004_Mask%20group%20%282%29.svg"
-                                                    loading="lazy"
-                                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9e"
-                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
-                                                    class="team-icon" /></a
-                                            ><a
-                                                data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc9f"
-                                                href="https://x.com"
-                                                class="team-social-icon-wrapper w-inline-block"
-                                                ><img
-                                                    src="67ad72477c605912a4af72eb/68764426623f1b898c9e3de6_Mask%20group%20%284%29.svg"
-                                                    loading="lazy"
-                                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca0"
-                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
-                                                    class="team-icon" /></a
-                                            ><a
-                                                data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca1"
-                                                href="https://instagram.com"
-                                                class="team-social-icon-wrapper w-inline-block"
-                                                ><img
-                                                    src="67ad72477c605912a4af72eb/6876440c03276f755f93aeef_Mask%20group%20%283%29.svg"
-                                                    loading="lazy"
-                                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca2"
-                                                    alt="Kontix-team-social-icon-webflow-ecommerce-template"
-                                                    class="team-icon"
-                                            /></a>
-                                        </div>
                                     </div>
                                     <div
                                         data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca3"
                                         class="team-white-overlay"
                                     ></div>
-                                    <a href="team/martin-philips.html" class="link-block w-inline-block"
-                                        ><div class="link-text">This is some text inside of a div block.</div></a
-                                    >
                                 </div>
                             </div>
+                            -->    </div>
                         </div>
                     </div>
                 </div>
@@ -1306,14 +1242,14 @@
             <div class="video-text-box">
                 <div class="video-one-title-wrap padding-left">
                     <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffca">
-                        <div data-wf--sub-heading--variant="base" class="sub-heading">Let’s connect</div>
+                        <div data-wf--sub-heading--variant="base" class="sub-heading">LET'S CONNECT</div>
                     </div>
                     <div class="video-title mobile-text-center change">
                         <h2
                             data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffce"
                             class="heading-two-gap-top-bottom no-margin"
                         >
-                            Start your vision today with expert construction
+                            Advanced Processing. Proven Capability. Consistent Quality.
                         </h2>
                     </div>
                     <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffd0">
@@ -1323,11 +1259,11 @@
                             class="button-style-one-wrap overflow-hidden"
                         >
                             <a
-                                href="contact-one.html"
+                                href="contact.php"
                                 class="button-style-one position-relative overflow-hidden w-inline-block"
                                 ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
-                                    <div class="button-text">Request a quote</div>
-                                    <div class="button-text two">Request a quote</div>
+                                    <div class="button-text">EXPLORE OUR CAPABILITIES</div>
+                                    <div class="button-text two">EXPLORE OUR CAPABILITIES</div>
                                 </div>
                                 <div class="button-style-one-icon position-relative">
                                     <img
@@ -1363,7 +1299,57 @@
            
             crossorigin="anonymous"
         ></script>
-       
-       
+        <script>
+            (function() {
+                var titleWrapper = document.querySelector('.over-view-title-wrapper');
+                var divs = document.querySelectorAll('.over-view-title-wrapper .over-view-flex-div');
+                if (!titleWrapper || divs.length === 0) return;
+
+                var ticking = false;
+
+                function updateVisionAnimation() {
+                    var rect = titleWrapper.getBoundingClientRect();
+                    var winH = window.innerHeight || document.documentElement.clientHeight;
+
+                    // When titleWrapper enters viewport from bottom (~85%), animation begins
+                    // When titleWrapper moves up towards upper-middle (~35%), all 5 lines are revealed
+                    var startY = winH * 0.85;
+                    var endY = winH * 0.35;
+
+                    var progress = (startY - rect.top) / (startY - endY);
+                    progress = Math.max(0, Math.min(1, progress));
+
+                    // Stagger all 5 lines smoothly across scroll progress
+                    var stagger = 0.18;
+                    var duration = 0.28;
+
+                    for (var i = 0; i < divs.length; i++) {
+                        var lineStart = i * stagger;
+                        var lineProg = (progress - lineStart) / duration;
+                        lineProg = Math.max(0, Math.min(1, lineProg));
+                        var moveX = lineProg * 101;
+                        divs[i].style.transform = 'translate3d(' + moveX.toFixed(2) + '%, 0px, 0px)';
+                    }
+
+                    ticking = false;
+                }
+
+                function onScroll() {
+                    if (!ticking) {
+                        requestAnimationFrame(updateVisionAnimation);
+                        ticking = true;
+                    }
+                }
+
+                window.addEventListener('scroll', onScroll, { passive: true });
+                window.addEventListener('resize', onScroll, { passive: true });
+                
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', updateVisionAnimation);
+                } else {
+                    updateVisionAnimation();
+                }
+            })();
+        </script>
     </body>
 </html>
