@@ -199,6 +199,355 @@
                     opacity: 0;
                 }
             }
+            /* Section Spacing & Breathing Room */
+            .our-story-one {
+                padding-top: 110px !important;
+                padding-bottom: 110px !important;
+            }
+            .features-three {
+                padding-top: 110px !important;
+                padding-bottom: 120px !important;
+            }
+            .counter-four {
+                padding-top: 120px !important;
+                padding-bottom: 120px !important;
+            }
+            @media (max-width: 991px) {
+                .our-story-one {
+                    padding-top: 75px !important;
+                    padding-bottom: 75px !important;
+                }
+                .features-three {
+                    padding-top: 75px !important;
+                    padding-bottom: 80px !important;
+                }
+                .counter-four {
+                    padding-top: 80px !important;
+                    padding-bottom: 80px !important;
+                }
+            }
+            @media (max-width: 479px) {
+                .our-story-one {
+                    padding-top: 55px !important;
+                    padding-bottom: 55px !important;
+                }
+                .features-three {
+                    padding-top: 55px !important;
+                    padding-bottom: 60px !important;
+                }
+                .counter-four {
+                    padding-top: 60px !important;
+                    padding-bottom: 60px !important;
+                }
+            }
+
+            /* =========================================================
+               FEATURES THREE CARDS: EQUAL IMAGE PAIR HEIGHTS
+               ========================================================= */
+
+            .features-three-card-image {
+                display: flex !important;
+                align-items: stretch !important;
+            }
+
+            .features-three-card-image > div {
+                flex: 1 1 50% !important;
+                aspect-ratio: 3 / 4 !important;
+                height: auto !important;
+                position: relative !important;
+                overflow: hidden !important;
+                border-radius: 10px !important;
+            }
+
+            .features-three-card-image img {
+                width: 100% !important;
+                height: 100% !important;
+                aspect-ratio: 3 / 4 !important;
+                object-fit: cover !important;
+                display: block !important;
+            }
+
+            @media (max-width: 479px) {
+                .features-three-card-image > div,
+                .features-three-card-image img {
+                    aspect-ratio: 4 / 3 !important;
+                }
+            }
+
+            /* =========================================================
+               FEATURES THREE CARDS: ENTRANCE & POPPING ANIMATION (CARDS 3 & 4)
+               Exact 1:1 match to Webflow IX2 slideInBottom (1000ms, outQuart, 100px)
+               ========================================================= */
+
+            .features-three-card.anim-card {
+                opacity: 0;
+                transform: translate3d(0, 100px, 0);
+                text-decoration: none !important;
+                color: inherit !important;
+                will-change: transform, opacity;
+            }
+
+            .features-three-card.anim-card.is-in-view {
+                opacity: 1 !important;
+                transform: translate3d(0, 0, 0) !important;
+            }
+
+            .features-three-card.anim-card .anim-heading,
+            .features-three-card.anim-card .anim-text,
+            .features-three-card.anim-card .anim-icon {
+                opacity: 0;
+                transform: translate3d(0, 100px, 0);
+                will-change: transform, opacity;
+            }
+
+            .features-three-card.anim-card.is-in-view .anim-heading,
+            .features-three-card.anim-card.is-in-view .anim-text,
+            .features-three-card.anim-card.is-in-view .anim-icon {
+                opacity: 1 !important;
+                transform: translate3d(0, 0, 0) !important;
+            }
+
+            /* Card 3 Timings (matching Card 1 Webflow configuration: 300ms, 500ms, 600ms, 700ms) */
+            .features-three-card.anim-card-3 {
+                transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s,
+                            transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
+            }
+            .features-three-card.anim-card-3 .anim-heading {
+                transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s,
+                            transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+            }
+            .features-three-card.anim-card-3 .anim-text {
+                transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.6s,
+                            transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.6s;
+            }
+            .features-three-card.anim-card-3 .anim-icon {
+                transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.7s,
+                            transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.7s;
+            }
+
+            /* Card 4 Timings (matching Card 2 Webflow configuration: 400ms, 600ms, 700ms, 800ms) */
+            .features-three-card.anim-card-4 {
+                transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s,
+                            transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s;
+            }
+            .features-three-card.anim-card-4 .anim-heading {
+                transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.6s,
+                            transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.6s;
+            }
+            .features-three-card.anim-card-4 .anim-text {
+                transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.7s,
+                            transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.7s;
+            }
+            .features-three-card.anim-card-4 .anim-icon {
+                transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s,
+                            transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s;
+            }
+
+            /* =========================================================
+               VIDEO / CTA SECTION
+               COMPACT PREMIUM LAYOUT
+               ========================================================= */
+
+            /* Main section */
+            .video-section {
+                position: relative !important;
+                width: 100% !important;
+                overflow: hidden !important;
+                margin-top: 60px !important;
+                margin-bottom: 80px !important;
+            }
+
+            /* Remove full-screen behavior and ensure comfortable vertical space */
+            .video-section .video-section-two.full-height {
+                height: 600px !important;
+                min-height: 600px !important;
+                max-height: 600px !important;
+                overflow: hidden !important;
+            }
+
+            /* =========================================================
+               YOUTUBE BACKGROUND
+               ========================================================= */
+
+            .video-section .youtube-video-background {
+                position: absolute !important;
+                inset: 0 !important;
+                width: 100% !important;
+                height: 100% !important;
+                overflow: hidden !important;
+            }
+
+            .video-section .youtube-video-background iframe {
+                position: absolute !important;
+                top: 50% !important;
+                left: 50% !important;
+                width: 100vw !important;
+                height: 56.25vw !important;
+                min-width: 177.78vh !important;
+                min-height: 100% !important;
+                transform: translate(-50%, -50%) !important;
+                border: 0 !important;
+                pointer-events: none !important;
+            }
+
+            /* =========================================================
+               DARK OVERLAY
+               ========================================================= */
+
+            .video-section .youtube-video-overlay {
+                background:
+                    linear-gradient(
+                        90deg,
+                        rgba(0, 0, 0, 0.68) 0%,
+                        rgba(0, 0, 0, 0.42) 50%,
+                        rgba(0, 0, 0, 0.65) 100%
+                    ) !important;
+            }
+
+            /* =========================================================
+               CONTENT AREA
+               ========================================================= */
+
+            .video-section .video-text-box {
+                position: absolute !important;
+                inset: auto !important;
+                top: 50% !important;
+                bottom: auto !important;
+                transform: translateY(-50%) !important;
+                right: 8% !important;
+                left: auto !important;
+                width: 480px !important;
+                max-width: 480px !important;
+                margin: 0 !important;
+                z-index: 4 !important;
+            }
+
+            /* Clear Webflow title-wrap bottom padding that forces content upwards */
+            .video-section .video-one-title-wrap {
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .video-section .video-title h2 {
+                font-size: 38px !important;
+                line-height: 1.25 !important;
+                margin-top: 14px !important;
+                margin-bottom: 16px !important;
+                color: #ffffff !important;
+            }
+
+            /* =========================================================
+               CIRCULAR PLAY BUTTON
+               ========================================================= */
+
+            .video-section .lottie-button-wrapper {
+                position: absolute !important;
+                top: 50% !important;
+                left: 12% !important;
+                transform: translateY(-50%) !important;
+                width: 90px !important;
+                height: 90px !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                z-index: 5 !important;
+                margin: 0 !important;
+            }
+
+            .video-section .youtube-watch-button {
+                width: 86px !important;
+                height: 86px !important;
+                background: rgba(255, 255, 255, 0.95) !important;
+                border-radius: 50% !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4) !important;
+                transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease !important;
+                cursor: pointer !important;
+            }
+
+            .video-section .youtube-watch-button:hover {
+                transform: scale(1.08) !important;
+                background: #ffffff !important;
+                box-shadow: 0 14px 45px rgba(0, 0, 0, 0.55) !important;
+            }
+
+            .video-section .youtube-play-triangle {
+                width: 0 !important;
+                height: 0 !important;
+                border-top: 12px solid transparent !important;
+                border-bottom: 12px solid transparent !important;
+                border-left: 19px solid #111111 !important;
+                margin-left: 5px !important;
+            }
+
+            @media (max-width: 991px) {
+                .video-section {
+                    margin-top: 40px !important;
+                    margin-bottom: 60px !important;
+                }
+
+                .video-section .video-section-two.full-height {
+                    height: 520px !important;
+                    min-height: 520px !important;
+                    max-height: 520px !important;
+                }
+
+                .video-section .video-text-box {
+                    right: 5% !important;
+                    width: 420px !important;
+                    max-width: 420px !important;
+                }
+
+                .video-section .video-title h2 {
+                    font-size: 30px !important;
+                }
+
+                .video-section .lottie-button-wrapper {
+                    left: 8% !important;
+                    width: 76px !important;
+                    height: 76px !important;
+                }
+
+                .video-section .youtube-watch-button {
+                    width: 74px !important;
+                    height: 74px !important;
+                }
+            }
+
+            @media (max-width: 767px) {
+                .video-section .video-section-two.full-height {
+                    height: 560px !important;
+                    min-height: 560px !important;
+                    max-height: 560px !important;
+                }
+
+                .video-section .video-text-box {
+                    position: relative !important;
+                    top: auto !important;
+                    transform: none !important;
+                    right: auto !important;
+                    width: 100% !important;
+                    max-width: 100% !important;
+                    padding: 40px 24px !important;
+                    text-align: center !important;
+                }
+
+                .video-section .lottie-button-wrapper {
+                    position: relative !important;
+                    top: auto !important;
+                    left: auto !important;
+                    transform: none !important;
+                    margin: 40px auto 0 auto !important;
+                }
+
+                .video-section .youtube-video-overlay {
+                    background: rgba(0, 0, 0, 0.72) !important;
+                }
+            }
         </style>
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
@@ -247,7 +596,7 @@
             data-w-id="afa45947-3f92-b7b1-83a4-cf1ba3ff5109"
             class="service-hero position-relative overflow-hidden"
         >
-            <div class="about-hero-bg position-absolute service-bg banner-apearence"></div>
+            <div class="about-hero-bg position-absolute service-bg banner-apearence" style="background-image: linear-gradient(#0f0f0f, #0f0f0f1a 62%, #0f0f0f00), linear-gradient(#0f0f0f00, #0f0f0f5e 44%, #0f0f0ff2), url('assets/images/sustainability-hero-tobacco.jpg'); background-position: 0 0, 0 0, 50%; background-repeat: repeat, repeat, no-repeat; background-size: auto, auto, cover;"></div>
             <div class="about-hero-content position-relative">
                 <div class="w-layout-blockcontainer container w-container">
                     <div class="service-hero-information">
@@ -258,7 +607,7 @@
                                 style="opacity: 0"
                                 class="service-hero-subheading-top-gap"
                             >
-                                <div data-wf--sub-heading--variant="base" class="sub-heading">service one</div>
+                                <div data-wf--sub-heading--variant="base" class="sub-heading">SUSTAINABILITY</div>
                             </div>
                             <div class="heading-one-gap-top overflow-hidden">
                                 <h1
@@ -275,7 +624,7 @@
                                     "
                                     class="no-margin service-hero-heading"
                                 >
-                                    Building communities, one project at a time
+                                    Responsible Processing. Thoughtful Operations.
                                 </h1>
                             </div>
                         </div>
@@ -286,8 +635,8 @@
                                     style="opacity: 0"
                                     class="color-white"
                                 >
-                                    Lorem ipsum dolor sit amet consectetur dolor nec nec blandit nullam parturient
-                                    viverra id
+                                    At Tabac Leaf Enterprises, sustainability is an important consideration in how we manage our tobacco processing operations. We focus on practical measures that support operational efficiency, responsible fuel use and environmental awareness.<br /><br />
+                                    With decades of industry experience and integrated processing infrastructure, we continue to explore operating practices that align productivity with responsible resource management.
                                 </div>
                             </div>
                             <div data-w-id="d6df9f96-cc2a-6c23-383b-0d01b354037a" style="opacity: 0">
@@ -297,11 +646,11 @@
                                     class="button-style-one-wrap overflow-hidden"
                                 >
                                     <a
-                                        href="service-two.html"
+                                        href="contact.php"
                                         class="button-style-one position-relative overflow-hidden w-inline-block"
                                         ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
-                                            <div class="button-text">Start your project</div>
-                                            <div class="button-text two">Start your project</div>
+                                            <div class="button-text">CONTACT OUR TEAM</div>
+                                            <div class="button-text two">CONTACT OUR TEAM</div>
                                         </div>
                                         <div class="button-style-one-icon position-relative">
                                             <img
@@ -329,6 +678,9 @@
             </div>
             <div data-w-id="5fecc0f7-94f6-abed-461d-aeb5a8580bd1" class="image-blurry-overlay"></div>
         </section>
+        <?php /* =========================================================
+           UNUSED TEMPLATE SECTION: Client Logos Marquee
+           =========================================================
         <section data-w-id="aa2b0fac-4f9d-849c-aced-c91b4cf76241" class="client-section-one">
             <div class="client-one-marquee-main">
                 <div class="w-layout-blockcontainer container w-container">
@@ -451,25 +803,21 @@
                 </div>
             </div>
         </section>
+        */ ?>
         <section class="our-story-one overflow-hidden">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="w-layout-hflex our-story-one-wrapper">
                     <div data-w-id="524d328f-6574-81a3-bd10-3646bddadb6f" class="our-story-one-image border-radius-10">
                         <img
                             class="full-width full-height image-effect border-radius-10"
-                            src="67ad72477c605912a4af72eb/67b7fad2c4f592eb57cb89b1_our-story-01.webp"
+                            src="assets/images/sustainability-biosteam.jpg"
                             width="588"
                             height="750"
-                            alt="Kontix-service-one-our-story-image-webflow-ecommerce-template"
+                            alt="Bio-Steam Tobacco Processing Facility - Tabac Leaf Enterprises"
                             sizes="(max-width: 767px) 100vw, 588px"
                             data-w-id="524d328f-6574-81a3-bd10-3646bddadb70"
                             loading="lazy"
-                            srcset="
-                                67ad72477c605912a4af72eb/67b7fad2c4f592eb57cb89b1_our-story-01-p-500.webp   500w,
-                                67ad72477c605912a4af72eb/67b7fad2c4f592eb57cb89b1_our-story-01-p-800.webp   800w,
-                                67ad72477c605912a4af72eb/67b7fad2c4f592eb57cb89b1_our-story-01-p-1080.webp 1080w,
-                                67ad72477c605912a4af72eb/67b7fad2c4f592eb57cb89b1_our-story-01.webp        1176w
-                            "
+                            style="object-fit: cover;"
                         />
                         <div
                             data-wf--image-apearence--variant="base"
@@ -483,10 +831,10 @@
                     <div class="our-story-one-information mobile-text-center">
                         <div data-w-id="5562014e-2f78-e809-e3de-3b074165b399" style="opacity: 0">
                             <div
-                                data-wf--sub-heading--variant="white-sub-heading"
-                                class="sub-heading w-variant-f1a14dd4-f30f-c0f4-d5f6-6802c309e3c1"
+                                data-wf--sub-heading--variant="base"
+                                class="sub-heading"
                             >
-                                Our story
+                                BIO-STEAM POWERED PROCESSING
                             </div>
                         </div>
                         <div class="heading-two-gap-top-bottom overflow-hidden">
@@ -504,7 +852,7 @@
                                 "
                                 class="no-margin our-story-one-heading"
                             >
-                                A legacy of strength a future of innovation
+                                Briquettes, Not Coal
                             </h2>
                         </div>
                         <div class="overflow-hidden our-story-text">
@@ -513,8 +861,7 @@
                                 style="opacity: 0"
                                 class="no-margin color-white"
                             >
-                                Lorem ipsum dolor sit amet consectetur. Est augue ullamcorper suspendisse enim eget
-                                mauris iaculis facilisis ut et tortor leo
+                                Tabac Leaf Enterprises operates its processing facilities using bio-steam generated from briquettes rather than coal. This fuel approach reflects our focus on more environmentally conscious operations and reducing reliance on conventional coal-based steam generation.
                             </p>
                         </div>
                         <div class="w-layout-grid icon-box-three-wrap">
@@ -527,16 +874,16 @@
                                     <img
                                         width="48"
                                         height="48"
-                                        alt="Kontix-service-one-client-centric-approach-icon-webflow-ecommerce-template"
+                                        alt="Bio-Steam Operations"
                                         src="67ad72477c605912a4af72eb/68ac2fb36220ad2195d7062d_Vector%20%2899%29.svg"
                                         loading="lazy"
                                     />
                                 </div>
                                 <div class="icon-box-three-title-wrap">
-                                    <div class="heading-style-h5">Client-centric approach</div>
+                                    <div class="heading-style-h5">Major Bio-Steam Operations</div>
                                 </div>
                                 <p class="no-margin color-white">
-                                    Lorem ipsumlor sit amet cons ecetrsed pellentesque sit platea cmmodo
+                                    We are among the major tobacco processing operations in India using bio-steam as part of our production process.
                                 </p>
                             </div>
                             <div
@@ -548,16 +895,16 @@
                                     <img
                                         width="40"
                                         height="44"
-                                        alt="Kontix-service-one-innovation-&amp;-growth-icon-webflow-ecommerce-template"
+                                        alt="Agricultural Briquette Fuel"
                                         src="67ad72477c605912a4af72eb/68ac2fb34e2ced00f6f185d2_Vector%20%28100%29.svg"
                                         loading="lazy"
                                     />
                                 </div>
                                 <div class="icon-box-three-title-wrap">
-                                    <div class="heading-style-h5">Innovation &amp; growth</div>
+                                    <div class="heading-style-h5">Agricultural Briquette Fuel</div>
                                 </div>
                                 <p class="no-margin color-white">
-                                    Lorem ipsumlor sit amet cons ecetrsed pellentesque sit platea cmmodo
+                                    Our fuel approach focuses on environmentally conscious operations, significantly reducing reliance on conventional coal-based steam generation.
                                 </p>
                             </div>
                         </div>
@@ -570,10 +917,10 @@
                 <div class="w-layout-vflex features-three-title-wrap margin-auto text-align-center">
                     <div data-w-id="66e218cb-8dcc-134b-d34f-edfe685c0ad1" style="opacity: 0" class="change-align">
                         <div
-                            data-wf--sub-heading--variant="white-sub-heading"
-                            class="sub-heading w-variant-f1a14dd4-f30f-c0f4-d5f6-6802c309e3c1"
+                            data-wf--sub-heading--variant="base"
+                            class="sub-heading"
                         >
-                            Site readiness
+                            OPERATIONAL PRINCIPLES
                         </div>
                     </div>
                     <div class="overflow-hidden heading-two-gap-top">
@@ -591,30 +938,27 @@
                             "
                             class="no-margin"
                         >
-                            Heavy-duty construction for heavy-duty industries
+                            Our Sustainability Practices
                         </h2>
                     </div>
                 </div>
                 <a
                     data-w-id="524d328f-6574-81a3-bd10-3646bddadba3"
                     style="opacity: 0"
-                    href="service-three.html"
+                    href="contact.php"
                     class="features-three-card w-inline-block"
                     ><div class="features-three-card-image">
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="67ad72477c605912a4af72eb/68ac320016131b2e0a9d728d_grayscale-photo-of-high-rise-building-hHTaS4t_ok0.webp"
+                                src="assets/images/sustainability-briquette-fuel.jpg"
                                 width="302"
                                 height="289"
-                                alt="Kontix-service-one-industrial-infrastructure-image-one-webflow-ecommerce-template"
+                                alt="Agricultural Biomass Fuel Briquettes for Bio-Steam Generation"
                                 sizes="(max-width: 479px) 100vw, 302px"
                                 data-w-id="524d328f-6574-81a3-bd10-3646bddadbb7"
                                 loading="lazy"
-                                srcset="
-                                    67ad72477c605912a4af72eb/68ac320016131b2e0a9d728d_grayscale-photo-of-high-rise-building-hHTaS4t_ok0-p-500.webp 500w,
-                                    67ad72477c605912a4af72eb/68ac320016131b2e0a9d728d_grayscale-photo-of-high-rise-building-hHTaS4t_ok0.webp       604w
-                                "
+                                style="object-fit: cover;"
                             />
                             <div
                                 data-wf--image-apearence--variant="base"
@@ -628,17 +972,14 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="67ad72477c605912a4af72eb/68ac3200369e5aad7605b1db_image%20344.webp"
+                                src="assets/images/sustainability-biosteam.jpg"
                                 width="302"
                                 height="289"
-                                alt="Kontix-service-one-industrial-infrastructure-image-two-webflow-ecommerce-template"
+                                alt="Clean Bio-Steam Generation Boiler System"
                                 sizes="(max-width: 479px) 100vw, 302px"
                                 data-w-id="60ea14cd-b95c-ed97-41c8-e648eafd8133"
                                 loading="lazy"
-                                srcset="
-                                    67ad72477c605912a4af72eb/68ac3200369e5aad7605b1db_image%20344-p-500.webp 500w,
-                                    67ad72477c605912a4af72eb/68ac3200369e5aad7605b1db_image%20344.webp       604w
-                                "
+                                style="object-fit: cover;"
                             />
                             <div
                                 data-wf--image-apearence--variant="base"
@@ -653,7 +994,7 @@
                     <div class="features-three-card-information landscape-text-center">
                         <div class="overflow-hidden">
                             <h3 data-w-id="524d328f-6574-81a3-bd10-3646bddadba5" style="opacity: 0" class="no-margin">
-                                Industrial infrastructure
+                                Alternative Fuel Use
                             </h3>
                         </div>
                         <div class="features-three-card-text-wrap overflow-hidden">
@@ -662,8 +1003,7 @@
                                 style="opacity: 0"
                                 class="no-margin color-white"
                             >
-                                Lorem ipsum dolor sit amet consectetur. Est augue ullamcorper suspendisse enim eget
-                                mauris iaculis facilisis ut et cmalesuada egestas etiam vel cursus sollicitudin aenean
+                                Our facilities use briquettes to generate bio-steam, supporting our approach to responsible fuel selection and environmental awareness.
                             </p>
                         </div>
                         <div data-w-id="f10c0ba2-cd07-8752-d486-3af7a5d2298c" style="opacity: 0">
@@ -672,18 +1012,18 @@
                                 loading="lazy"
                                 width="50"
                                 height="50"
-                                alt="Kontix-home-two-what-we-do-icon-webflow-ecommerce-template"
+                                alt="Alternative Fuel Selection"
                             />
                         </div></div></a
                 ><a
                     data-w-id="e1f92f3a-07c7-6f1a-99a1-52fb097fdf32"
                     style="opacity: 0"
-                    href="service-two.html"
+                    href="contact.php"
                     class="features-three-card top-border-remove w-inline-block"
                     ><div class="features-three-card-information landscape-text-center">
                         <div class="overflow-hidden">
                             <h3 data-w-id="e1f92f3a-07c7-6f1a-99a1-52fb097fdf3c" style="opacity: 0" class="no-margin">
-                                Material engineering
+                                Efficient Processing Systems
                             </h3>
                         </div>
                         <div class="features-three-card-text-wrap overflow-hidden">
@@ -692,8 +1032,7 @@
                                 style="opacity: 0"
                                 class="no-margin color-white"
                             >
-                                Lorem ipsum dolor sit amet consectetur. Est augue ullamcorper suspendisse enim eget
-                                mauris iaculis facilisis ut et cmalesuada egestas etiam vel cursus sollicitudin aenean
+                                Integrated processing systems help us coordinate operations, manage material flow and maintain consistency throughout the processing stages.
                             </p>
                         </div>
                         <div data-w-id="e1f92f3a-07c7-6f1a-99a1-52fb097fdf41" style="opacity: 0">
@@ -702,7 +1041,7 @@
                                 loading="lazy"
                                 width="50"
                                 height="50"
-                                alt="Kontix-home-two-what-we-do-icon-webflow-ecommerce-template"
+                                alt="Efficient Processing Systems"
                             />
                         </div>
                     </div>
@@ -710,17 +1049,14 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="67ad72477c605912a4af72eb/68ac32f4ffdeaa8d41c0058c_tyh.webp"
+                                src="assets/images/services-tobacco-processing.jpg"
                                 width="302"
                                 height="289"
-                                alt="Kontix-service-one-material-engineering-image-one-webflow-ecommerce-template"
+                                alt="Efficient Tobacco Processing and Conditioning"
                                 sizes="(max-width: 479px) 100vw, 302px"
                                 data-w-id="e1f92f3a-07c7-6f1a-99a1-52fb097fdf35"
                                 loading="lazy"
-                                srcset="
-                                    67ad72477c605912a4af72eb/68ac32f4ffdeaa8d41c0058c_tyh-p-500.webp 500w,
-                                    67ad72477c605912a4af72eb/68ac32f4ffdeaa8d41c0058c_tyh.webp       604w
-                                "
+                                style="object-fit: cover;"
                             />
                             <div
                                 data-wf--image-apearence--variant="base"
@@ -734,17 +1070,14 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="67ad72477c605912a4af72eb/68ac32f327eb71344166a3bd_pexels-paata-gogua-116761-4561616%201%20%282%29.webp"
+                                src="assets/images/services-tobacco-integrated.jpg"
                                 width="302"
                                 height="289"
-                                alt="Kontix-service-one-material-engineering-image-two-webflow-ecommerce-template"
+                                alt="Integrated Material Handling and Processing Flow"
                                 sizes="(max-width: 479px) 100vw, 302px"
                                 data-w-id="e1f92f3a-07c7-6f1a-99a1-52fb097fdf38"
                                 loading="lazy"
-                                srcset="
-                                    67ad72477c605912a4af72eb/68ac32f327eb71344166a3bd_pexels-paata-gogua-116761-4561616%201%20%282%29-p-500.webp 500w,
-                                    67ad72477c605912a4af72eb/68ac32f327eb71344166a3bd_pexels-paata-gogua-116761-4561616%201%20%282%29.webp       604w
-                                "
+                                style="object-fit: cover;"
                             />
                             <div
                                 data-wf--image-apearence--variant="base"
@@ -754,26 +1087,172 @@
                                 <div class="inside-overlay"></div>
                                 <div class="outside-overlay"></div>
                             </div>
-                        </div></div
-                ></a>
+                        </div></div></a
+                ><a
+                    href="contact.php"
+                    class="features-three-card top-border-remove w-inline-block anim-card anim-card-3"
+                >
+                    <div class="features-three-card-image">
+                        <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
+                            <img
+                                class="border-radius-10 image-effect tab-image-full-width"
+                                src="assets/images/services-tobacco-transport.jpg"
+                                width="302"
+                                height="289"
+                                alt="Tobacco Transportation Fleet"
+                                sizes="(max-width: 479px) 100vw, 302px"
+                                data-w-id="e1f92f3a-07c7-6f1a-99a1-52fb097fdf35"
+                                loading="lazy"
+                                style="object-fit: cover;"
+                            />
+                            <div
+                                data-wf--image-apearence--variant="base"
+                                data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
+                                class="image-effect-wrapper overflow-hidden"
+                            >
+                                <div class="inside-overlay"></div>
+                                <div class="outside-overlay"></div>
+                            </div>
+                        </div>
+                        <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
+                            <img
+                                class="border-radius-10 image-effect tab-image-full-width"
+                                src="assets/images/services-tobacco-export.jpg"
+                                width="302"
+                                height="289"
+                                alt="Direct Farm to Facility Logistics"
+                                sizes="(max-width: 479px) 100vw, 302px"
+                                data-w-id="e1f92f3a-07c7-6f1a-99a1-52fb097fdf38"
+                                loading="lazy"
+                                style="object-fit: cover;"
+                            />
+                            <div
+                                data-wf--image-apearence--variant="base"
+                                data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
+                                class="image-effect-wrapper overflow-hidden"
+                            >
+                                <div class="inside-overlay"></div>
+                                <div class="outside-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-three-card-information landscape-text-center">
+                        <div class="overflow-hidden">
+                            <h3 class="no-margin anim-heading">
+                                Integrated Transportation
+                            </h3>
+                        </div>
+                        <div class="features-three-card-text-wrap overflow-hidden">
+                            <p class="no-margin color-white anim-text">
+                                Our internal transportation system supports the movement of tobacco from farms to our processing facilities, helping streamline logistics and material handling.
+                            </p>
+                        </div>
+                        <div class="anim-icon">
+                            <img
+                                src="67ad72477c605912a4af72eb/68a70c473b4a730e2f37f93e_Group%201009003598.svg"
+                                loading="lazy"
+                                width="50"
+                                height="50"
+                                alt="Transportation System"
+                            />
+                        </div>
+                    </div>
+                </a>
+                <a
+                    href="contact.php"
+                    class="features-three-card top-border-remove w-inline-block anim-card anim-card-4"
+                >
+                    <div class="features-three-card-information landscape-text-center">
+                        <div class="overflow-hidden">
+                            <h3 class="no-margin anim-heading">
+                                Resource-Conscious Operations
+                            </h3>
+                        </div>
+                        <div class="features-three-card-text-wrap overflow-hidden">
+                            <p class="no-margin color-white anim-text">
+                                We focus on operational planning, process coordination and effective use of infrastructure to support efficient day-to-day activities.
+                            </p>
+                        </div>
+                        <div class="anim-icon">
+                            <img
+                                src="67ad72477c605912a4af72eb/68a70c473b4a730e2f37f93e_Group%201009003598.svg"
+                                loading="lazy"
+                                width="50"
+                                height="50"
+                                alt="Resource-Conscious Infrastructure"
+                            />
+                        </div>
+                    </div>
+                    <div class="features-three-card-image">
+                        <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
+                            <img
+                                class="border-radius-10 image-effect tab-image-full-width"
+                                src="assets/images/about-footprint-facility-1.jpg"
+                                width="302"
+                                height="289"
+                                alt="Resource-Conscious Industrial Infrastructure"
+                                sizes="(max-width: 479px) 100vw, 302px"
+                                data-w-id="524d328f-6574-81a3-bd10-3646bddadbb7"
+                                loading="lazy"
+                                style="object-fit: cover;"
+                            />
+                            <div
+                                data-wf--image-apearence--variant="base"
+                                data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
+                                class="image-effect-wrapper overflow-hidden"
+                            >
+                                <div class="inside-overlay"></div>
+                                <div class="outside-overlay"></div>
+                            </div>
+                        </div>
+                        <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
+                            <img
+                                class="border-radius-10 image-effect tab-image-full-width"
+                                src="assets/images/about-footprint-facility-2.jpg"
+                                width="302"
+                                height="289"
+                                alt="Planned Facility Coordination and Environmental Care"
+                                sizes="(max-width: 479px) 100vw, 302px"
+                                data-w-id="60ea14cd-b95c-ed97-41c8-e648eafd8133"
+                                loading="lazy"
+                                style="object-fit: cover;"
+                            />
+                            <div
+                                data-wf--image-apearence--variant="base"
+                                data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
+                                class="image-effect-wrapper overflow-hidden"
+                            >
+                                <div class="inside-overlay"></div>
+                                <div class="outside-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
                 <div
                     data-w-id="0e6ca4c9-96f4-715a-39b5-08ea2927bac5"
                     style="opacity: 0"
-                    class="text-align-center service-big-button"
+                    class="text-align-center service-big-button add-top-padding"
                 >
                     <div
                         data-w-id="0e6ca4c9-96f4-715a-39b5-08ea2927bac6"
-                        style="opacity: 0"
-                        class="service-one-button-wrapper"
+                        style="opacity: 0; max-width: 900px; padding: 40px 32px; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; background: rgba(255, 255, 255, 0.03); display: flex; flex-direction: column; align-items: center; text-align: center; margin: 40px auto 0 auto;"
                     >
-                        <div class="service-button-left-part"><div class="sub-heading color-black">Trust</div></div>
-                        <div class="color-white">
-                            Join the<span> </span>850+ companies trusting our construction service
+                        <div style="margin-bottom: 14px;">
+                            <div data-wf--sub-heading--variant="base" class="sub-heading">ENVIRONMENTAL AWARENESS</div>
                         </div>
+                        <h3 class="no-margin" style="color: #fff; font-size: 24px; margin-bottom: 14px;">
+                            A Practical Approach to Environmental Responsibility
+                        </h3>
+                        <p class="no-margin color-white" style="font-size: 15px; line-height: 1.7; color: rgba(255, 255, 255, 0.85); max-width: 800px;">
+                            We recognise that industrial operations have an environmental footprint. Our use of briquette-generated bio-steam is one part of our ongoing approach to responsible processing. We continue to focus on operational practices that support efficiency and environmental consideration.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
+        <?php /* =========================================================
+           UNUSED TEMPLATE SECTION: Innovation
+           =========================================================
         <section class="innovation rt-change-background-color">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="innovation-wrapper">
@@ -952,28 +1431,33 @@
                 </div>
             </div>
         </section>
+        */ ?>
         <section data-w-id="539bab2a-6475-ed51-c0ff-07ee5a0387fb" class="counter-four">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="overflow-hidden">
                     <div data-w-id="71ff4015-3176-2ce7-86d0-8bbff9d28329" style="opacity: 0" class="text-align-center">
                         <div
-                            data-wf--sub-heading--variant="dark-sub-heading"
-                            class="sub-heading w-variant-8339cfd4-9c83-eaae-331a-5682dc1da52c"
+                            data-wf--sub-heading--variant="base"
+                            class="sub-heading"
                         >
-                            About Kontix
+                            OUR COMMITMENT
                         </div>
                     </div>
                 </div>
                 <div class="over-view-title-v2-wrapper text-align-center position-relative overflow-hidden">
                     <div data-w-id="0e6f6434-a619-c990-631a-695d7269f101" class="heading-style-h2 color-black">
-                        Our mission is simple, to provide unparalleled expertise, guidance, and support to our clients
-                        across their real estate journey
+                        Advanced Processing. Responsible Practices. Consistent Quality.
                     </div>
                     <div class="w-layout-vflex over-view-flex position-absolute">
                         <div class="over-view-flex-div one"></div>
                         <div class="over-view-flex-div two"></div>
                         <div class="over-view-flex-div three"></div>
                     </div>
+                </div>
+                <div style="max-width: 780px; margin: 20px auto 0; text-align: center;">
+                    <p class="no-margin color-black" style="font-size: 16px; line-height: 1.7; color: #555e6d;">
+                        At Tabac Leaf Enterprises, we believe responsible operations are built through thoughtful fuel choices, efficient processes and continuous attention to how our facilities operate.
+                    </p>
                 </div>
                 <div
                     data-w-id="2a4f6a00-db39-4f27-c541-d68f09f63126"
@@ -987,99 +1471,22 @@
                     >
                         <div class="w-layout-hflex counter-one-wrap">
                             <div class="w-layout-hflex counter-one-marquee-wrap overflow-hidden">
-                                <div class="w-layout-vflex counter-one-marquee">
-                                    <div
-                                        style="
-                                            -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                        "
-                                        class="w-layout-vflex counter-one-train"
-                                    >
-                                        <div class="heading-style-h1 color-black">0</div>
-                                        <div class="heading-style-h1 color-black">1</div>
-                                    </div>
-                                    <div
-                                        style="
-                                            -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                        "
-                                        class="w-layout-vflex counter-one-train"
-                                    >
-                                        <div class="heading-style-h1 color-black">2</div>
-                                        <div class="heading-style-h1 color-black">1</div>
-                                    </div>
-                                </div>
-                                <div class="counter-one-dot"><div class="heading-style-h1 color-black">.</div></div>
-                                <div class="w-layout-vflex counter-one-marquee">
-                                    <div
-                                        style="
-                                            -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                        "
-                                        class="w-layout-vflex counter-one-train"
-                                    >
-                                        <div class="heading-style-h1 color-black">0</div>
-                                        <div class="heading-style-h1 color-black">1</div>
-                                        <div class="heading-style-h1 color-black">2</div>
-                                        <div class="heading-style-h1 color-black">3</div>
-                                        <div class="heading-style-h1 color-black">4</div>
-                                    </div>
-                                    <div
-                                        style="
-                                            -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                        "
-                                        class="w-layout-vflex counter-one-train"
-                                    >
-                                        <div class="heading-style-h1 color-black">5</div>
-                                        <div class="heading-style-h1 color-black">1</div>
-                                        <div class="heading-style-h1 color-black">2</div>
-                                        <div class="heading-style-h1 color-black">3</div>
-                                        <div class="heading-style-h1 color-black">4</div>
-                                    </div>
-                                </div>
-                                <div class="w-layout-vflex counter-one-marquee">
-                                    <div class="heading-style-h1 color-black">k</div>
-                                </div>
+                                <div class="heading-style-h1 color-black">100%</div>
                             </div>
                             <div class="counter-one-icon up-down">
                                 <img
                                     width="12"
                                     height="24"
-                                    alt="Kontix-home-one-smart-and-sustainable-construction-arrow-icon-webflow-ecommerce-template"
+                                    alt="Arrow"
                                     src="67ad72477c605912a4af72eb/6874c21b2219a5da539917f1_Arrow%2010%20%284%29.svg"
                                     loading="lazy"
                                 />
                             </div>
                         </div>
                         <div class="modern-infrastructure-counter-text-content">
-                            <div class="heading-style-h5 color-black">Projects completed</div>
+                            <div class="heading-style-h5 color-black">Bio-Steam Powered</div>
                             <p class="no-margin color-black">
-                                Lorem ipsum dolor amet consectetur inorci tempus inmi potenti lectus
+                                Operating processing facilities using bio-steam generated from briquettes rather than coal, supporting responsible fuel selection.
                             </p>
                         </div>
                     </div>
@@ -1090,104 +1497,22 @@
                     >
                         <div class="w-layout-hflex counter-one-wrap">
                             <div class="w-layout-hflex counter-one-marquee-wrap overflow-hidden">
-                                <div class="w-layout-vflex counter-one-marquee">
-                                    <div
-                                        style="
-                                            -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                        "
-                                        class="w-layout-vflex counter-one-train"
-                                    >
-                                        <div class="heading-style-h1 color-black">0</div>
-                                        <div class="heading-style-h1 color-black">1</div>
-                                        <div class="heading-style-h1 color-black">2</div>
-                                        <div class="heading-style-h1 color-black">3</div>
-                                    </div>
-                                    <div
-                                        style="
-                                            -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                        "
-                                        class="w-layout-vflex counter-one-train"
-                                    >
-                                        <div class="heading-style-h1 color-black">4</div>
-                                        <div class="heading-style-h1 color-black">1</div>
-                                        <div class="heading-style-h1 color-black">2</div>
-                                        <div class="heading-style-h1 color-black">3</div>
-                                    </div>
-                                </div>
-                                <div class="w-layout-vflex counter-one-marquee">
-                                    <div
-                                        style="
-                                            -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                        "
-                                        class="w-layout-vflex counter-one-train"
-                                    >
-                                        <div class="heading-style-h1 color-black">0</div>
-                                        <div class="heading-style-h1 color-black">1</div>
-                                        <div class="heading-style-h1 color-black">2</div>
-                                        <div class="heading-style-h1 color-black">3</div>
-                                        <div class="heading-style-h1 color-black">4</div>
-                                        <div class="heading-style-h1 color-black">5</div>
-                                    </div>
-                                    <div
-                                        style="
-                                            -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                        "
-                                        class="w-layout-vflex counter-one-train"
-                                    >
-                                        <div class="heading-style-h1 color-black">6</div>
-                                        <div class="heading-style-h1 color-black">1</div>
-                                        <div class="heading-style-h1 color-black">2</div>
-                                        <div class="heading-style-h1 color-black">3</div>
-                                        <div class="heading-style-h1 color-black">4</div>
-                                        <div class="heading-style-h1 color-black">5</div>
-                                    </div>
-                                </div>
-                                <div class="w-layout-vflex counter-one-marquee">
-                                    <div class="heading-style-h1 color-black">k</div>
-                                </div>
+                                <div class="heading-style-h1 color-black">10</div>
                             </div>
                             <div class="counter-one-icon up-down">
                                 <img
                                     width="12"
                                     height="24"
-                                    alt="Kontix-home-one-smart-and-sustainable-construction-arrow-icon-webflow-ecommerce-template"
+                                    alt="Arrow"
                                     src="67ad72477c605912a4af72eb/6874c21b2219a5da539917f1_Arrow%2010%20%284%29.svg"
                                     loading="lazy"
                                 />
                             </div>
                         </div>
                         <div class="modern-infrastructure-counter-text-content">
-                            <div class="heading-style-h5 color-black">Happy clients</div>
+                            <div class="heading-style-h5 color-black">Integrated Systems</div>
                             <p class="no-margin color-black">
-                                Lorem ipsum dolor amet consectetur inorci tempus inmi potenti lectus
+                                Multi-stage coordinated processing sequence managing material flow and maintaining consistency throughout operations.
                             </p>
                         </div>
                     </div>
@@ -1199,126 +1524,32 @@
                     >
                         <div class="w-layout-hflex counter-one-wrap">
                             <div class="w-layout-hflex counter-one-marquee-wrap overflow-hidden">
-                                <div class="w-layout-vflex counter-one-marquee">
-                                    <div
-                                        style="
-                                            -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                        "
-                                        class="w-layout-vflex counter-one-train"
-                                    >
-                                        <div class="heading-style-h1 color-black">0</div>
-                                        <div class="heading-style-h1 color-black">1</div>
-                                        <div class="heading-style-h1 color-black">2</div>
-                                        <div class="heading-style-h1 color-black">3</div>
-                                        <div class="heading-style-h1 color-black">4</div>
-                                        <div class="heading-style-h1 color-black">5</div>
-                                        <div class="heading-style-h1 color-black">6</div>
-                                        <div class="heading-style-h1 color-black">7</div>
-                                        <div class="heading-style-h1 color-black">8</div>
-                                    </div>
-                                    <div
-                                        style="
-                                            -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                        "
-                                        class="w-layout-vflex counter-one-train"
-                                    >
-                                        <div class="heading-style-h1 color-black">9</div>
-                                        <div class="heading-style-h1 color-black">1</div>
-                                        <div class="heading-style-h1 color-black">2</div>
-                                        <div class="heading-style-h1 color-black">3</div>
-                                        <div class="heading-style-h1 color-black">4</div>
-                                        <div class="heading-style-h1 color-black">5</div>
-                                        <div class="heading-style-h1 color-black">6</div>
-                                        <div class="heading-style-h1 color-black">7</div>
-                                        <div class="heading-style-h1 color-black">8</div>
-                                    </div>
-                                </div>
-                                <div class="w-layout-vflex counter-one-marquee">
-                                    <div
-                                        style="
-                                            -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                        "
-                                        class="w-layout-vflex counter-one-train"
-                                    >
-                                        <div class="heading-style-h1 color-black">0</div>
-                                        <div class="heading-style-h1 color-black">1</div>
-                                        <div class="heading-style-h1 color-black">2</div>
-                                        <div class="heading-style-h1 color-black">3</div>
-                                        <div class="heading-style-h1 color-black">4</div>
-                                        <div class="heading-style-h1 color-black">5</div>
-                                        <div class="heading-style-h1 color-black">6</div>
-                                        <div class="heading-style-h1 color-black">7</div>
-                                        <div class="heading-style-h1 color-black">8</div>
-                                    </div>
-                                    <div
-                                        style="
-                                            -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                rotateY(0) rotateZ(0) skew(0, 0);
-                                            -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                            transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(0, 0);
-                                        "
-                                        class="w-layout-vflex counter-one-train"
-                                    >
-                                        <div class="heading-style-h1 color-black">9</div>
-                                        <div class="heading-style-h1 color-black">1</div>
-                                        <div class="heading-style-h1 color-black">2</div>
-                                        <div class="heading-style-h1 color-black">3</div>
-                                        <div class="heading-style-h1 color-black">4</div>
-                                        <div class="heading-style-h1 color-black">5</div>
-                                        <div class="heading-style-h1 color-black">6</div>
-                                        <div class="heading-style-h1 color-black">7</div>
-                                        <div class="heading-style-h1 color-black">8</div>
-                                    </div>
-                                </div>
-                                <div class="w-layout-vflex counter-one-marquee">
-                                    <div class="heading-style-h1 color-black">%</div>
-                                </div>
+                                <div class="heading-style-h1 color-black">100M</div>
                             </div>
                             <div class="counter-one-icon up-down">
                                 <img
                                     width="12"
                                     height="24"
-                                    alt="Kontix-home-one-smart-and-sustainable-construction-arrow-icon-webflow-ecommerce-template"
+                                    alt="Arrow"
                                     src="67ad72477c605912a4af72eb/6874c21b2219a5da539917f1_Arrow%2010%20%284%29.svg"
                                     loading="lazy"
                                 />
                             </div>
                         </div>
                         <div class="modern-infrastructure-counter-text-content">
-                            <div class="heading-style-h5 color-black">Projects on time</div>
+                            <div class="heading-style-h5 color-black">Processing Capacity</div>
                             <p class="no-margin color-black">
-                                Lorem ipsum dolor amet consectetur inorci tempus inmi potenti lectus
+                                Stated processing capacity across dedicated facilities in Tangutur, backed by advanced machinery and laboratory controls.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <?php /* =========================================================
+           UNUSED TEMPLATE SECTIONS
+           (Service-slider, Pricing-section-two)
+           =========================================================
         <section class="service-slider">
             <div class="slider-main">
                 <div id="w-node-c60499cb-81db-b50e-cf2e-3e19e1625d1c-bb2c1b9c" class="slider-wrapper">
@@ -2135,103 +2366,101 @@
                 </div>
             </div>
         </section>
+        */ ?>
         <section class="video-section">
             <footer
-                data-poster-url="https://cdn.prod.website-files.com/67ad72477c605912a4af72eb%2F688b00deb1c6c73cb675c865_footer-video%20%281%29-poster-00001.jpg"
-                data-video-urls="https://cdn.prod.website-files.com/67ad72477c605912a4af72eb%2F688b00deb1c6c73cb675c865_footer-video%20%281%29-transcode.mp4,https://cdn.prod.website-files.com/67ad72477c605912a4af72eb%2F688b00deb1c6c73cb675c865_footer-video%20%281%29-transcode.webm"
-                data-autoplay="true"
-                data-loop="true"
-                data-wf-ignore="true"
                 class="video-section-two full-height remove-padding w-background-video w-background-video-atom"
+                style="position: relative; overflow: hidden;"
             >
-                <video
-                    id="88c81948-5fd7-346a-cfd2-4aae1ae9ffb2-video"
-                    autoplay=""
-                    loop=""
+                <!-- YouTube Background Video -->
+                <div
+                    class="youtube-video-background"
                     style="
-                        background-image: url(&quot;67ad72477c605912a4af72eb688b00deb1c6c73cb675c865_footer-video (1)-poster-00001-1.jpg&quot;);
+                        position: absolute;
+                        inset: 0;
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                        z-index: 0;
+                        background-image: url('https://img.youtube.com/vi/n91nMszHV5c/maxresdefault.jpg');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
                     "
-                    muted=""
-                    playsinline=""
-                    data-wf-ignore="true"
-                    data-object-fit="cover"
                 >
-                    <source
-                        src="67ad72477c605912a4af72eb688b00deb1c6c73cb675c865_footer-video%20%281%29-transcode.mp4"
-                        data-wf-ignore="true"
-                    />
-                    <source
-                        src="67ad72477c605912a4af72eb688b00deb1c6c73cb675c865_footer-video%20%281%29-transcode.webm"
-                        data-wf-ignore="true"
-                    />
-                </video>
-                <div class="w-layout-blockcontainer container w-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/n91nMszHV5c?autoplay=1&mute=1&loop=1&playlist=n91nMszHV5c&controls=0&rel=0&modestbranding=1&playsinline=1&cc_load_policy=0"
+                        title="Tabac Leaf Enterprises Industrial Tobacco Processing"
+                        frameborder="0"
+                        allow="autoplay; encrypted-media; picture-in-picture"
+                        allowfullscreen
+                        style="
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            width: 100vw;
+                            height: 56.25vw;
+                            min-height: 100vh;
+                            min-width: 177.78vh;
+                            transform: translate(-50%, -50%);
+                            border: 0;
+                            pointer-events: none;
+                        "
+                    ></iframe>
+                </div>
+
+                <!-- Dark Overlay -->
+                <div
+                    class="youtube-video-overlay"
+                    style="
+                        position: absolute;
+                        inset: 0;
+                        z-index: 1;
+                        pointer-events: none;
+                    "
+                ></div>
+
+                <!-- Video Content / Play Button -->
+                <div
+                    class="w-layout-blockcontainer container w-container"
+                    style="position: relative; z-index: 2;"
+                >
                     <div class="video-two-video-wrapper">
                         <div class="viide-two-video-line position-relative">
                             <div
-                                data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffb6"
                                 class="lottie-button-wrapper position-absolute"
+                                style="z-index: 5;"
                             >
-                                <noscript
-                                    ><style>
-                                        [data-wf-bgvideo-fallback-img] {
-                                            display: none;
-                                        }
-                                        @media (prefers-reduced-motion: reduce) {
-                                            [data-wf-bgvideo-fallback-img] {
-                                                position: absolute;
-                                                z-index: -100;
-                                                display: inline-block;
-                                                height: 100%;
-                                                width: 100%;
-                                                object-fit: cover;
-                                            }
-                                        }</style
-                                    ><img
-                                        data-wf-bgvideo-fallback-img="true"
-                                        src="67ad72477c605912a4af72eb688b00deb1c6c73cb675c865_footer-video%20%281%29-poster-00001-1.jpg"
-                                        alt=""
-                                /></noscript>
-                                <div aria-live="polite">
-                                    <button
-                                        type="button"
-                                        data-w-bg-video-control="true"
-                                        aria-controls="88c81948-5fd7-346a-cfd2-4aae1ae9ffb2-video"
-                                        class="w-backgroundvideo-backgroundvideoplaypausebutton play-pause-button position-relative w-background-video--control"
-                                    >
-                                        <span class="lottie-play-button"
-                                            ><img
-                                                width="14"
-                                                height="31"
-                                                alt="Pause video"
-                                                src="67ad72477c605912a4af72eb/67b413d1e38e4ea89b967b85_pause-icon.svg"
-                                                loading="lazy"
-                                                class="video-two-play-icon" /></span
-                                        ><span hidden="" class="play-button"
-                                            ><img
-                                                width="18"
-                                                height="24"
-                                                alt="Play video"
-                                                src="67ad72477c605912a4af72eb/67add5869df939f040a352a7_pay-icon.svg"
-                                                loading="lazy"
-                                                class="video-two-play-icon"
-                                        /></span>
-                                    </button>
-                                </div>
-                                <div
-                                    class="lottie-animation"
-                                    data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffbc"
-                                    data-animation-type="lottie"
-                                    data-src="https://cdn.prod.website-files.com/67ad72477c605912a4af72eb/68875dd2a602d21135a0cc98_btnB1lHDpv.json"
-                                    data-loop="1"
-                                    data-direction="1"
-                                    data-autoplay="1"
-                                    data-is-ix2-target="0"
-                                    data-renderer="svg"
-                                    data-default-duration="0"
-                                    data-duration="4"
-                                    data-loading="eager"
-                                ></div>
+                                <a
+                                    href="https://www.youtube.com/watch?v=n91nMszHV5c"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Watch Tabac Leaf Enterprises video on YouTube"
+                                    class="youtube-watch-button"
+                                    style="
+                                        width: 76px;
+                                        height: 76px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        border-radius: 50%;
+                                        background: rgba(255, 255, 255, 0.95);
+                                        text-decoration: none;
+                                        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+                                    "
+                                >
+                                    <span
+                                        style="
+                                            display: block;
+                                            width: 0;
+                                            height: 0;
+                                            border-top: 11px solid transparent;
+                                            border-bottom: 11px solid transparent;
+                                            border-left: 17px solid #000;
+                                            margin-left: 5px;
+                                        "
+                                    ></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -2247,15 +2476,20 @@
             <div class="video-text-box">
                 <div class="video-one-title-wrap padding-left">
                     <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffca">
-                        <div data-wf--sub-heading--variant="base" class="sub-heading">Let’s connect</div>
+                        <div data-wf--sub-heading--variant="base" class="sub-heading">LET’S CONNECT</div>
                     </div>
                     <div class="video-title mobile-text-center change">
                         <h2
                             data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffce"
                             class="heading-two-gap-top-bottom no-margin"
                         >
-                            Start your vision today with expert construction
+                            Explore a Processing or Business Partnership
                         </h2>
+                    </div>
+                    <div style="margin-bottom: 24px;">
+                        <p class="no-margin color-white" style="opacity: 0.85; font-size: 15px; line-height: 1.6;">
+                            Connect with Tabac Leaf Enterprises for enquiries related to tobacco processing, transportation, exports and grade specifications.
+                        </p>
                     </div>
                     <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffd0">
                         <div
@@ -2264,11 +2498,11 @@
                             class="button-style-one-wrap overflow-hidden"
                         >
                             <a
-                                href="contact-one.html"
+                                href="contact.php"
                                 class="button-style-one position-relative overflow-hidden w-inline-block"
                                 ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
-                                    <div class="button-text">Request a quote</div>
-                                    <div class="button-text two">Request a quote</div>
+                                    <div class="button-text">CONTACT OUR TEAM</div>
+                                    <div class="button-text two">CONTACT OUR TEAM</div>
                                 </div>
                                 <div class="button-style-one-icon position-relative">
                                     <img
@@ -2284,6 +2518,9 @@
                             ></a>
                         </div>
                     </div>
+                    <div style="margin-top: 18px; font-size: 13px; color: var(--yellow); letter-spacing: 0.5px; font-weight: 500;">
+                        Advanced Processing. Proven Capability. Consistent Quality.
+                    </div>
                 </div>
             </div>
         </section>
@@ -2291,8 +2528,6 @@
         <script
             src="js/jquery-3.5.1.min.dc5e7f18c8.js?site=67ad72477c605912a4af72eb"
             type="text/javascript"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-            crossorigin="anonymous"
         ></script>
         <script>
             document.documentElement.setAttribute("data-wf-page", "67b7fac2d26b0280bb2c1b9c");
@@ -2301,9 +2536,44 @@
         <script
             src="67ad72477c605912a4af72eb/js/webflow.8c3c7a7b.98f16f3db6b689ff.js"
             type="text/javascript"
-            integrity="sha384-vCkcyTRRgvEMQNx9Dg/YrD+O/OJohIPm8YjWNBlLoQDNPZgfG9w9e6ZcKXNuRikK"
-            crossorigin="anonymous"
         ></script>
-        
+        <script>
+            (function () {
+                function initCardAnimations() {
+                    var cards = document.querySelectorAll('.features-three-card.anim-card');
+                    if (!cards.length) return;
+
+                    if ('IntersectionObserver' in window) {
+                        var observer = new IntersectionObserver(
+                            function (entries) {
+                                entries.forEach(function (entry) {
+                                    if (entry.isIntersecting) {
+                                        requestAnimationFrame(function () {
+                                            entry.target.classList.add('is-in-view');
+                                        });
+                                        observer.unobserve(entry.target);
+                                    }
+                                });
+                            },
+                            { threshold: 0.12, rootMargin: '0px 0px -12% 0px' }
+                        );
+
+                        cards.forEach(function (card) {
+                            observer.observe(card);
+                        });
+                    } else {
+                        cards.forEach(function (card) {
+                            card.classList.add('is-in-view');
+                        });
+                    }
+                }
+
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', initCardAnimations);
+                } else {
+                    initCardAnimations();
+                }
+            })();
+        </script>
     </body>
 </html>

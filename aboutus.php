@@ -154,6 +154,275 @@
                 }
             }
         </style>
+        <style>
+/* =========================================================
+   VIDEO / CTA SECTION
+   COMPACT PREMIUM LAYOUT
+   ========================================================= */
+
+/* Main section */
+.video-section {
+    position: relative !important;
+    width: 100% !important;
+    overflow: hidden !important;
+}
+
+/* Remove full-screen behavior */
+.video-section .video-section-two.full-height {
+    height: 560px !important;
+    min-height: 560px !important;
+    max-height: 560px !important;
+    overflow: hidden !important;
+}
+
+/* =========================================================
+   YOUTUBE BACKGROUND
+   ========================================================= */
+
+.video-section .youtube-video-background {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden !important;
+}
+
+.video-section .youtube-video-background iframe {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    width: 100vw !important;
+    height: 56.25vw !important;
+    min-width: 177.78vh !important;
+    min-height: 100% !important;
+    transform: translate(-50%, -50%) !important;
+    border: 0 !important;
+    pointer-events: none !important;
+}
+
+/* =========================================================
+   DARK OVERLAY
+   ========================================================= */
+
+.video-section .youtube-video-overlay {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.62) 0%,
+            rgba(0, 0, 0, 0.38) 50%,
+            rgba(0, 0, 0, 0.60) 100%
+        ) !important;
+}
+
+/* =========================================================
+   CONTENT AREA
+   ========================================================= */
+
+.video-section .video-text-box {
+    position: absolute !important;
+    right: 8% !important;
+    bottom: 70px !important;
+    width: 470px !important;
+    max-width: 470px !important;
+    z-index: 4 !important;
+}
+
+/* Label */
+.video-section .video-one-title-wrap .sub-heading {
+    font-size: 12px !important;
+    line-height: 1.2 !important;
+    letter-spacing: 1.2px !important;
+    margin-bottom: 12px !important;
+}
+
+/* Heading */
+.video-section .video-title {
+    margin: 0 !important;
+}
+
+.video-section .video-title h2 {
+    font-size: 40px !important;
+    line-height: 1.12 !important;
+    letter-spacing: -1px !important;
+    margin: 0 !important;
+    max-width: 470px !important;
+}
+
+/* Heading spacing */
+.video-section .heading-two-gap-top-bottom {
+    margin-top: 0 !important;
+    margin-bottom: 25px !important;
+}
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.video-section .button-style-one-wrap {
+    margin-top: 0 !important;
+}
+
+.video-section .button-style-one {
+    min-height: 52px !important;
+    padding: 0 20px !important;
+}
+
+.video-section .button-text {
+    font-size: 14px !important;
+}
+
+/* =========================================================
+   PLAY BUTTON
+   ========================================================= */
+
+.video-section .lottie-button-wrapper {
+    left: 12% !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+/* Play circle */
+.video-section .youtube-watch-button {
+    width: 64px !important;
+    height: 64px !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.30) !important;
+}
+
+/* Play icon */
+.video-section .youtube-watch-button span {
+    border-top-width: 9px !important;
+    border-bottom-width: 9px !important;
+    border-left-width: 14px !important;
+    margin-left: 4px !important;
+}
+
+/* =========================================================
+   DECORATIVE LINES
+   ========================================================= */
+
+.video-section .video-section-apearence {
+    pointer-events: none !important;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+    .video-section .video-section-two.full-height {
+        height: 500px !important;
+        min-height: 500px !important;
+        max-height: 500px !important;
+    }
+
+    .video-section .video-text-box {
+        right: 6% !important;
+        bottom: 55px !important;
+        width: 400px !important;
+        max-width: 400px !important;
+    }
+
+    .video-section .video-title h2 {
+        font-size: 34px !important;
+        line-height: 1.12 !important;
+    }
+
+    .video-section .lottie-button-wrapper {
+        left: 8% !important;
+    }
+
+    .video-section .youtube-watch-button {
+        width: 58px !important;
+        height: 58px !important;
+    }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+    .video-section .video-section-two.full-height {
+        height: 560px !important;
+        min-height: 560px !important;
+        max-height: 560px !important;
+    }
+
+    .video-section .video-text-box {
+        right: 24px !important;
+        left: 24px !important;
+        bottom: 38px !important;
+        width: auto !important;
+        max-width: none !important;
+    }
+
+    .video-section .video-title h2 {
+        font-size: 30px !important;
+        line-height: 1.12 !important;
+        letter-spacing: -0.7px !important;
+    }
+
+    .video-section .video-one-title-wrap .sub-heading {
+        font-size: 11px !important;
+    }
+
+    .video-section .lottie-button-wrapper {
+        left: 24px !important;
+        top: 42% !important;
+    }
+
+    .video-section .youtube-watch-button {
+        width: 56px !important;
+        height: 56px !important;
+    }
+
+    .video-section .youtube-video-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.20) 0%,
+                rgba(0, 0, 0, 0.40) 45%,
+                rgba(0, 0, 0, 0.78) 100%
+            ) !important;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 479px) {
+    .video-section .video-section-two.full-height {
+        height: 500px !important;
+        min-height: 500px !important;
+        max-height: 500px !important;
+    }
+
+    .video-section .video-text-box {
+        right: 20px !important;
+        left: 20px !important;
+        bottom: 30px !important;
+    }
+
+    .video-section .video-title h2 {
+        font-size: 27px !important;
+        line-height: 1.14 !important;
+    }
+
+    .video-section .heading-two-gap-top-bottom {
+        margin-bottom: 20px !important;
+    }
+
+    .video-section .youtube-watch-button {
+        width: 52px !important;
+        height: 52px !important;
+    }
+
+    .video-section .lottie-button-wrapper {
+        left: 20px !important;
+    }
+}
+        </style>
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
         <script src="ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -198,7 +467,7 @@
     <body>
         <?php require __DIR__ . "/includes/header.php"; ?>
         <section data-w-id="2a5bf49e-a915-ce81-044a-9004ac91edb5" class="about-hero position-relative overflow-hidden">
-            <div class="about-hero-bg position-absolute banner-apearence"></div>
+            <div class="about-hero-bg position-absolute banner-apearence" style="background-image: linear-gradient(#0f0f0f, #0f0f0f1a 62%, #0f0f0f00), linear-gradient(#0f0f0f00, #0f0f0f5e 44%, #0f0f0ff2), url('assets/images/about-hero-tobacco.jpg'); background-position: 0 0, 0 0, 50%; background-repeat: repeat, repeat, no-repeat; background-size: auto, auto, cover;"></div>
             <div class="about-hero-content position-relative">
                 <div class="w-layout-blockcontainer container w-container">
                     <div class="about-hero-information text-align-center">
@@ -246,18 +515,14 @@
                             <div class="position-relative overflow-hidden border-radius-10">
                                 <img
                                     class="mobile-full-width image-effect border-radius-10"
-                                    src="67ad72477c605912a4af72eb/67b5d849a3963bbc82dafd7c_progress-one-01.webp"
+                                    src="assets/images/about-tobacco-processing.jpg"
                                     width="492"
                                     height="642"
-                                    alt="Kontix-home-one-quality-construction-image-two-webflow-ecommerce-template"
+                                    alt="Tabac Leaf Enterprises - Advanced Tobacco Processing Facility"
                                     sizes="(max-width: 767px) 100vw, 492px"
                                     data-w-id="2a5bf49e-a915-ce81-044a-9004ac91edc5"
                                     loading="lazy"
-                                    srcset="
-                                        67ad72477c605912a4af72eb/67b5d849a3963bbc82dafd7c_progress-one-01-p-500.webp 500w,
-                                        67ad72477c605912a4af72eb/67b5d849a3963bbc82dafd7c_progress-one-01-p-800.webp 800w,
-                                        67ad72477c605912a4af72eb/67b5d849a3963bbc82dafd7c_progress-one-01.webp       984w
-                                    "
+                                    style="object-fit: cover; width: 100%; height: 100%;"
                                 />
                                 <div
                                     data-wf--image-apearence--variant="base"
@@ -273,11 +538,12 @@
                             <img
                                 width="473"
                                 height="360"
-                                alt="Kontix-about-one-site-readiness-image-webflow-ecommerce-template"
-                                src="67ad72477c605912a4af72eb/67b5d849a3963bbc82dafd6c_progress-one-02.webp"
+                                alt="Tabac Leaf Enterprises - Tobacco Quality Inspection & Warehousing"
+                                src="assets/images/about-tobacco-warehousing.jpg"
                                 loading="lazy"
                                 data-w-id="2a5bf49e-a915-ce81-044a-9004ac91edc7"
                                 class="image-effect border-radius-10"
+                                style="object-fit: cover; width: 100%; height: 100%;"
                             />
                             <div
                                 data-wf--image-apearence--variant="base"
@@ -447,17 +713,13 @@
                     <div class="over-view-card-one border-radius-10 overflow-hidden">
                         <img
                             class="full-width full-height image-effect border-radius-10"
-                            src="67ad72477c605912a4af72eb/688355569cb3a448c4223405_Mask%20group%20-%202025-07-25T152837.107.webp"
+                            src="assets/images/about-vision-tobacco.jpg"
                             width="410"
                             height="415"
-                            alt="Kontix-about-one-about-us-image-webflow-ecommerce-template"
+                            alt="Tabac Leaf Enterprises - Engineering Excellence in Tobacco Processing"
                             sizes="(max-width: 479px) 100vw, 410px"
                             data-w-id="2d8cc677-296a-5085-0374-89aedf00872c"
                             loading="lazy"
-                            srcset="
-                                67ad72477c605912a4af72eb/688355569cb3a448c4223405_Mask%20group%20-%202025-07-25T152837.107-p-500.webp 500w,
-                                67ad72477c605912a4af72eb/688355569cb3a448c4223405_Mask%20group%20-%202025-07-25T152837.107.webp       820w
-                            "
                         />
                         <div
                             data-wf--image-apearence--variant="base"
@@ -561,17 +823,15 @@
                             class="service-card-two-bg-image position-absolute active"
                         >
                             <img
-                                src="67ad72477c605912a4af72eb/68876e3f7b2095979158e2b4_a-house-with-a-bike-parked-in-front-of-it-aeYg4dUwq0Y.webp"
+                                src="assets/images/Tobacco-Leaf-Processing.png"
                                 loading="lazy"
                                 width="740"
                                 height="141"
-                                alt="Kontix-about-one-custom-home-building-image-webflow-ecommerce-template"
+                                alt="Tobacco Leaf Processing"
                                 srcset="
-                                    67ad72477c605912a4af72eb/68876e3f7b2095979158e2b4_a-house-with-a-bike-parked-in-front-of-it-aeYg4dUwq0Y-p-500.webp   500w,
-                                    67ad72477c605912a4af72eb/68876e3f7b2095979158e2b4_a-house-with-a-bike-parked-in-front-of-it-aeYg4dUwq0Y-p-800.webp   800w,
-                                    67ad72477c605912a4af72eb/68876e3f7b2095979158e2b4_a-house-with-a-bike-parked-in-front-of-it-aeYg4dUwq0Y-p-1080.webp 1080w,
-                                    67ad72477c605912a4af72eb/68876e3f7b2095979158e2b4_a-house-with-a-bike-parked-in-front-of-it-aeYg4dUwq0Y-p-1600.webp 1600w,
-                                    67ad72477c605912a4af72eb/68876e3f7b2095979158e2b4_a-house-with-a-bike-parked-in-front-of-it-aeYg4dUwq0Y.webp        1927w
+                                    assets/images/Tobacco-Leaf-Processing.webp  500w,
+                                    assets/images/Tobacco-Leaf-Processing.webp  800w,
+                                    assets/images/Tobacco-Leaf-Processing.png  1261w
                                 "
                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 740px"
                                 class="full-width full-height"
@@ -601,17 +861,15 @@
                             class="service-card-two-bg-image position-absolute deactive"
                         >
                             <img
-                                src="67ad72477c605912a4af72eb/68876e3f924d411124631de0_new-york-skyscrapers_888788.htm%23from_view%3Ddetail_alsolike.webp"
+                                src="assets/images/Tobacco-Leaf-Processing.png"
                                 loading="lazy"
                                 width="740"
                                 height="141"
-                                alt="Kontix-about-one-corporate-building-construction-image-webflow-ecommerce-template"
+                                alt="Tobacco Leaf Processing Infrastructure"
                                 srcset="
-                                    67ad72477c605912a4af72eb/68876e3f924d411124631de0_new-york-skyscrapers_888788.htm%23from_view%3Ddetail_alsolike-p-500.webp   500w,
-                                    67ad72477c605912a4af72eb/68876e3f924d411124631de0_new-york-skyscrapers_888788.htm%23from_view%3Ddetail_alsolike-p-800.webp   800w,
-                                    67ad72477c605912a4af72eb/68876e3f924d411124631de0_new-york-skyscrapers_888788.htm%23from_view%3Ddetail_alsolike-p-1080.webp 1080w,
-                                    67ad72477c605912a4af72eb/68876e3f924d411124631de0_new-york-skyscrapers_888788.htm%23from_view%3Ddetail_alsolike-p-1600.webp 1600w,
-                                    67ad72477c605912a4af72eb/68876e3f924d411124631de0_new-york-skyscrapers_888788.htm%23from_view%3Ddetail_alsolike.webp        1927w
+                                    assets/images/Tobacco-Leaf-Processing.webp  500w,
+                                    assets/images/Tobacco-Leaf-Processing.webp  800w,
+                                    assets/images/Tobacco-Leaf-Processing.png  1261w
                                 "
                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 740px"
                                 class="full-width full-height"
@@ -641,17 +899,15 @@
                             class="service-card-two-bg-image position-absolute deactive"
                         >
                             <img
-                                src="67ad72477c605912a4af72eb/68876ec60e177409e21fc4d2_22.webp"
+                                src="assets/images/Tobacco-Leaf-Processing.png"
                                 loading="lazy"
                                 width="740"
                                 height="141"
-                                alt="Kontix-about-one-roofing-and-exterior-finishing-image-webflow-ecommerce-template"
+                                alt="Tobacco Processing Operational Discipline"
                                 srcset="
-                                    67ad72477c605912a4af72eb/68876ec60e177409e21fc4d2_22-p-500.webp   500w,
-                                    67ad72477c605912a4af72eb/68876ec60e177409e21fc4d2_22-p-800.webp   800w,
-                                    67ad72477c605912a4af72eb/68876ec60e177409e21fc4d2_22-p-1080.webp 1080w,
-                                    67ad72477c605912a4af72eb/68876ec60e177409e21fc4d2_22-p-1600.webp 1600w,
-                                    67ad72477c605912a4af72eb/68876ec60e177409e21fc4d2_22.webp        1927w
+                                    assets/images/Tobacco-Leaf-Processing.webp  500w,
+                                    assets/images/Tobacco-Leaf-Processing.webp  800w,
+                                    assets/images/Tobacco-Leaf-Processing.png  1261w
                                 "
                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 740px"
                                 class="full-width full-height"
@@ -681,17 +937,15 @@
                             class="service-card-two-bg-image position-absolute deactive"
                         >
                             <img
-                                src="67ad72477c605912a4af72eb/68876e3e73f309332b29b00f_selective-focus-photography-cement-2219024.webp"
+                                src="assets/images/Tobacco-Leaf-Processing.png"
                                 loading="lazy"
                                 width="740"
                                 height="141"
-                                alt="Kontix-about-one-distribution-center-buildout-image-webflow-ecommerce-template"
+                                alt="Responsible Tobacco Processing Practices"
                                 srcset="
-                                    67ad72477c605912a4af72eb/68876e3e73f309332b29b00f_selective-focus-photography-cement-2219024-p-500.webp   500w,
-                                    67ad72477c605912a4af72eb/68876e3e73f309332b29b00f_selective-focus-photography-cement-2219024-p-800.webp   800w,
-                                    67ad72477c605912a4af72eb/68876e3e73f309332b29b00f_selective-focus-photography-cement-2219024-p-1080.webp 1080w,
-                                    67ad72477c605912a4af72eb/68876e3e73f309332b29b00f_selective-focus-photography-cement-2219024-p-1600.webp 1600w,
-                                    67ad72477c605912a4af72eb/68876e3e73f309332b29b00f_selective-focus-photography-cement-2219024.webp        1927w
+                                    assets/images/Tobacco-Leaf-Processing.webp  500w,
+                                    assets/images/Tobacco-Leaf-Processing.webp  800w,
+                                    assets/images/Tobacco-Leaf-Processing.png  1261w
                                 "
                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 740px"
                                 class="full-width full-height"
@@ -721,17 +975,15 @@
                             class="service-card-two-bg-image position-absolute deactive"
                         >
                             <img
-                                src="67ad72477c605912a4af72eb/68876e3e615c3844388586a3_person-wearing-protective-mask-3970342.webp"
+                                src="assets/images/Tobacco-Leaf-Processing.png"
                                 loading="lazy"
                                 width="740"
                                 height="141"
-                                alt="Kontix-about-one-specialized-construction-services-image-webflow-ecommerce-template"
+                                alt="Tobacco Industry Partnerships"
                                 srcset="
-                                    67ad72477c605912a4af72eb/68876e3e615c3844388586a3_person-wearing-protective-mask-3970342-p-500.webp   500w,
-                                    67ad72477c605912a4af72eb/68876e3e615c3844388586a3_person-wearing-protective-mask-3970342-p-800.webp   800w,
-                                    67ad72477c605912a4af72eb/68876e3e615c3844388586a3_person-wearing-protective-mask-3970342-p-1080.webp 1080w,
-                                    67ad72477c605912a4af72eb/68876e3e615c3844388586a3_person-wearing-protective-mask-3970342-p-1600.webp 1600w,
-                                    67ad72477c605912a4af72eb/68876e3e615c3844388586a3_person-wearing-protective-mask-3970342.webp        1927w
+                                    assets/images/Tobacco-Leaf-Processing.webp  500w,
+                                    assets/images/Tobacco-Leaf-Processing.webp  800w,
+                                    assets/images/Tobacco-Leaf-Processing.png  1261w
                                 "
                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 740px"
                                 class="full-width full-height"
@@ -788,18 +1040,14 @@
                         <div class="features-two-image-two-white position-relative overflow-hidden">
                             <img
                                 class="image-effect border-radius-10"
-                                src="67ad72477c605912a4af72eb/68a6f8ab171f32ee9981ec87_Mask%20group%20-%202025-08-20T141702.980.webp"
+                                src="assets/images/about-footprint-facility-1.jpg"
                                 width="381"
                                 height="337"
-                                alt="Kontix-home-one-quality-construction-image-one-webflow-ecommerce-template"
+                                alt="Modern Industrial Tobacco Processing and Threshing Line"
                                 style="opacity: 0"
                                 sizes="(max-width: 479px) 100vw, 381px"
                                 data-w-id="d79c86cc-7a05-faab-2953-61351dccd46f"
                                 loading="lazy"
-                                srcset="
-                                    67ad72477c605912a4af72eb/68a6f8ab171f32ee9981ec87_Mask%20group%20-%202025-08-20T141702.980-p-500.webp 500w,
-                                    67ad72477c605912a4af72eb/68a6f8ab171f32ee9981ec87_Mask%20group%20-%202025-08-20T141702.980.webp       762w
-                                "
                             />
                             <div
                                 data-wf--image-apearence--variant="color-varient-white"
@@ -813,20 +1061,14 @@
                         <div class="features-two-image-one position-relative overflow-hidden border-radius-10">
                             <img
                                 class="responsive-full-width full-height image-effect border-radius-10"
-                                src="67ad72477c605912a4af72eb/68a6f8abc12a30456070fc93_worker-at-heights-near-eiffel-tower-qk-ay.webp"
+                                src="assets/images/about-footprint-facility-2.jpg"
                                 width="564"
                                 height="747"
-                                alt="Kontix-home-one-quality-construction-image-two-webflow-ecommerce-template"
+                                alt="Tabac Leaf Enterprises Industrial Facility at Tangutur"
                                 style="opacity: 0"
                                 sizes="(max-width: 767px) 100vw, 564px"
                                 data-w-id="d79c86cc-7a05-faab-2953-61351dccd472"
                                 loading="lazy"
-                                srcset="
-                                    67ad72477c605912a4af72eb/68a6f8abc12a30456070fc93_worker-at-heights-near-eiffel-tower-qk-ay-p-500.webp   500w,
-                                    67ad72477c605912a4af72eb/68a6f8abc12a30456070fc93_worker-at-heights-near-eiffel-tower-qk-ay-p-800.webp   800w,
-                                    67ad72477c605912a4af72eb/68a6f8abc12a30456070fc93_worker-at-heights-near-eiffel-tower-qk-ay-p-1080.webp 1080w,
-                                    67ad72477c605912a4af72eb/68a6f8abc12a30456070fc93_worker-at-heights-near-eiffel-tower-qk-ay.webp        1128w
-                                "
                             />
                             <div
                                 data-wf--image-apearence--variant="color-varient-white"
@@ -1131,107 +1373,157 @@
             </div>
         </section>
         <section class="video-section">
-            <footer
-                data-poster-url="https://cdn.prod.website-files.com/67ad72477c605912a4af72eb%2F688b00deb1c6c73cb675c865_footer-video%20%281%29-poster-00001.jpg"
-                data-video-urls="https://cdn.prod.website-files.com/67ad72477c605912a4af72eb%2F688b00deb1c6c73cb675c865_footer-video%20%281%29-transcode.mp4,https://cdn.prod.website-files.com/67ad72477c605912a4af72eb%2F688b00deb1c6c73cb675c865_footer-video%20%281%29-transcode.webm"
-                data-autoplay="true"
-                data-loop="true"
-                data-wf-ignore="true"
-                class="video-section-two full-height remove-padding w-background-video w-background-video-atom"
-            >
-                <video
-                    id="88c81948-5fd7-346a-cfd2-4aae1ae9ffb2-video"
-                    autoplay=""
-                    loop=""
-                    style="
-                        background-image: url(&quot;67ad72477c605912a4af72eb688b00deb1c6c73cb675c865_footer-video (1)-poster-00001-1.jpg&quot;);
-                    "
-                    muted=""
-                    playsinline=""
-                    data-wf-ignore="true"
-                    data-object-fit="cover"
+           <footer
+    class="video-section-two full-height remove-padding w-background-video w-background-video-atom"
+    style="position: relative; overflow: hidden;"
+>
+
+    <!-- YouTube Background Video -->
+    <div
+        class="youtube-video-background"
+        style="
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+            background-image: url('https://img.youtube.com/vi/n91nMszHV5c/maxresdefault.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        "
+    >
+
+        <iframe
+    src="https://www.youtube.com/embed/n91nMszHV5c?autoplay=1&mute=1&loop=1&playlist=n91nMszHV5c&controls=0&rel=0&modestbranding=1&playsinline=1&cc_load_policy=0"
+    title="Tobac Enterprises Industrial Tobacco Processing"
+    frameborder="0"
+    allow="autoplay; encrypted-media; picture-in-picture"
+    allowfullscreen
+    style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 56.25vw;
+        min-height: 100vh;
+        min-width: 177.78vh;
+        transform: translate(-50%, -50%);
+        border: 0;
+        pointer-events: none;
+    "
+></iframe>
+
+    </div>
+
+
+    <!-- Dark Overlay -->
+    <div
+        class="youtube-video-overlay"
+        style="
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(0, 0, 0, 0.72) 0%,
+                    rgba(0, 0, 0, 0.48) 50%,
+                    rgba(0, 0, 0, 0.65) 100%
+                );
+            pointer-events: none;
+        "
+    ></div>
+
+
+    <!-- Video Content -->
+    <div
+        class="w-layout-blockcontainer container w-container"
+        style="position: relative; z-index: 2;"
+    >
+
+        <div class="video-two-video-wrapper">
+
+            <div class="viide-two-video-line position-relative">
+
+                <!-- YouTube Play / Watch Button -->
+                <div
+                    class="lottie-button-wrapper position-absolute"
+                    style="z-index: 5;"
                 >
-                    <source
-                        src="67ad72477c605912a4af72eb688b00deb1c6c73cb675c865_footer-video%20%281%29-transcode.mp4"
-                        data-wf-ignore="true"
-                    />
-                    <source
-                        src="67ad72477c605912a4af72eb688b00deb1c6c73cb675c865_footer-video%20%281%29-transcode.webm"
-                        data-wf-ignore="true"
-                    />
-                </video>
-                <div class="w-layout-blockcontainer container w-container">
-                    <div class="video-two-video-wrapper">
-                        <div class="viide-two-video-line position-relative">
-                            <div
-                                data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffb6"
-                                class="lottie-button-wrapper position-absolute"
-                            >
-                                <noscript
-                                    ><style>
-                                        [data-wf-bgvideo-fallback-img] {
-                                            display: none;
-                                        }
-                                        @media (prefers-reduced-motion: reduce) {
-                                            [data-wf-bgvideo-fallback-img] {
-                                                position: absolute;
-                                                z-index: -100;
-                                                display: inline-block;
-                                                height: 100%;
-                                                width: 100%;
-                                                object-fit: cover;
-                                            }
-                                        }</style
-                                    ><img
-                                        data-wf-bgvideo-fallback-img="true"
-                                        src="67ad72477c605912a4af72eb688b00deb1c6c73cb675c865_footer-video%20%281%29-poster-00001-1.jpg"
-                                        alt=""
-                                /></noscript>
-                                <div aria-live="polite">
-                                    <button
-                                        type="button"
-                                        data-w-bg-video-control="true"
-                                        aria-controls="88c81948-5fd7-346a-cfd2-4aae1ae9ffb2-video"
-                                        class="w-backgroundvideo-backgroundvideoplaypausebutton play-pause-button position-relative w-background-video--control"
-                                    >
-                                        <span class="lottie-play-button"
-                                            ><img
-                                                width="14"
-                                                height="31"
-                                                alt="Pause video"
-                                                src="67ad72477c605912a4af72eb/67b413d1e38e4ea89b967b85_pause-icon.svg"
-                                                loading="lazy"
-                                                class="video-two-play-icon" /></span
-                                        ><span hidden="" class="play-button"
-                                            ><img
-                                                width="18"
-                                                height="24"
-                                                alt="Play video"
-                                                src="67ad72477c605912a4af72eb/67add5869df939f040a352a7_pay-icon.svg"
-                                                loading="lazy"
-                                                class="video-two-play-icon"
-                                        /></span>
-                                    </button>
-                                </div>
-                                <div
-                                    class="lottie-animation"
-                                    data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffbc"
-                                    data-animation-type="lottie"
-                                    data-src="https://cdn.prod.website-files.com/67ad72477c605912a4af72eb/68875dd2a602d21135a0cc98_btnB1lHDpv.json"
-                                    data-loop="1"
-                                    data-direction="1"
-                                    data-autoplay="1"
-                                    data-is-ix2-target="0"
-                                    data-renderer="svg"
-                                    data-default-duration="0"
-                                    data-duration="4"
-                                    data-loading="eager"
-                                ></div>
-                            </div>
-                        </div>
-                    </div>
+
+                    <a
+                        href="https://www.youtube.com/watch?v=n91nMszHV5c"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Watch Tobac Enterprises video on YouTube"
+                        class="youtube-watch-button"
+                        style="
+                            width: 76px;
+                            height: 76px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            background: rgba(255, 255, 255, 0.95);
+                            text-decoration: none;
+                            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+                        "
+                    >
+
+                        <span
+                            style="
+                                display: block;
+                                width: 0;
+                                height: 0;
+                                border-top: 11px solid transparent;
+                                border-bottom: 11px solid transparent;
+                                border-left: 17px solid #000;
+                                margin-left: 5px;
+                            "
+                        ></span>
+
+                    </a>
+
                 </div>
-            </footer>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Decorative Animation -->
+    <div
+        class="video-section-apearence"
+        style="position: relative; z-index: 3;"
+    >
+
+        <div class="video-line">
+            <div class="video-line-overlay _1"></div>
+        </div>
+
+        <div class="video-line">
+            <div class="video-line-overlay _2"></div>
+        </div>
+
+        <div class="video-line">
+            <div class="video-line-overlay _3"></div>
+        </div>
+
+        <div class="video-line">
+            <div class="video-line-overlay _4"></div>
+        </div>
+
+        <div class="video-line">
+            <div class="video-line-overlay _5"></div>
+        </div>
+
+    </div>
+
+</footer>
             <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffbd" class="video-section-apearence">
                 <div class="video-line"><div class="video-line-overlay _1"></div></div>
                 <div class="video-line"><div class="video-line-overlay _2"></div></div>

@@ -1,3 +1,67 @@
+<?php $base = isset($base_path) ? $base_path : ''; ?>
+<style>
+.copyright-section {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+
+.copy-right-menu {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    width: auto !important;
+    max-width: none !important;
+    gap: 0 !important;
+    flex-wrap: nowrap !important;
+}
+
+.copy-write-menu-item {
+    white-space: nowrap !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.25) !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    color: rgba(255, 255, 255, 0.65) !important;
+    text-decoration: none !important;
+    transition: color 0.25s ease !important;
+}
+
+.copy-write-menu-item:first-child {
+    padding-left: 0 !important;
+}
+
+.copy-write-menu-item.remove-right-border,
+.copy-write-menu-item:last-child {
+    border-right: none !important;
+    padding-right: 0 !important;
+}
+
+.copy-write-menu-item:hover,
+.copy-write-menu-item:hover .footer-menu-item-text {
+    color: var(--yellow, #ddb969) !important;
+}
+
+@media (max-width: 767px) {
+    .copyright-section {
+        flex-direction: column !important;
+        gap: 16px !important;
+        text-align: center !important;
+        align-items: center !important;
+    }
+    .copy-right-menu {
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+        gap: 6px !important;
+    }
+    .copy-write-menu-item {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
+</style>
 <section class="footer-one-wrap position-relative">
     <div class="footer-one position-relative">
         <div class="w-layout-blockcontainer footer-container w-container">
@@ -9,10 +73,10 @@
                     id="w-node-_6afda5bf-67eb-78ae-ea2a-d26c7b63ec92-7b63ec8e"
                     class="footer-col-one"
                 >
-                    <a href="javascript:void(0);" class="w-inline-block">
+                    <a href="<?php echo $base; ?>index.php" class="w-inline-block">
                         <img
                             loading="lazy"
-                            src="assets/images/tobaclogo.png"
+                            src="<?php echo $base; ?>assets/images/tobaclogo.png"
                             alt="Tobac Enterprises logo"
                             style="width: 230px;"
                         />
@@ -30,9 +94,8 @@
                     <div class="footer-col-two">
 
                         <a
-                            href="javascript:void(0);"
-                            aria-current="page"
-                            class="footer-menu-item footer-menu-item-text w-inline-block w--current"
+                            href="<?php echo $base; ?>index.php"
+                            class="footer-menu-item w-inline-block"
                         >
                             <div class="heading-style-h6 color-white footer-menu-item-text">
                                 Home
@@ -40,7 +103,7 @@
                         </a>
 
                         <a
-                            href="javascript:void(0);"
+                            href="<?php echo $base; ?>aboutus.php"
                             class="footer-menu-item w-inline-block"
                         >
                             <div class="heading-style-h6 color-white footer-menu-item-text">
@@ -49,7 +112,7 @@
                         </a>
 
                         <a
-                            href="javascript:void(0);"
+                            href="<?php echo $base; ?>services.php"
                             class="footer-menu-item w-inline-block"
                         >
                             <div class="heading-style-h6 color-white footer-menu-item-text">
@@ -58,7 +121,7 @@
                         </a>
 
                         <a
-                            href="javascript:void(0);"
+                            href="<?php echo $base; ?>operations.php"
                             class="footer-menu-item w-inline-block"
                         >
                             <div class="heading-style-h6 color-white footer-menu-item-text">
@@ -67,7 +130,7 @@
                         </a>
 
                         <a
-                            href="javascript:void(0);"
+                            href="<?php echo $base; ?>sustainability.php"
                             class="footer-menu-item w-inline-block"
                         >
                             <div class="heading-style-h6 color-white footer-menu-item-text">
@@ -76,11 +139,20 @@
                         </a>
 
                         <a
-                            href="javascript:void(0);"
+                            href="<?php echo $base; ?>contact.php"
                             class="footer-menu-item w-inline-block"
                         >
                             <div class="heading-style-h6 color-white footer-menu-item-text">
                                 Contact
+                            </div>
+                        </a>
+
+                        <a
+                            href="<?php echo $base; ?>blog.php"
+                            class="footer-menu-item w-inline-block"
+                        >
+                            <div class="heading-style-h6 color-white footer-menu-item-text">
+                                Blogs
                             </div>
                         </a>
 
@@ -103,10 +175,10 @@
                     <div>
                         <span class="color-white">Email:</span>
                         <a
-                            href="javascript:void(0);"
+                            href="mailto:info@tabac.com"
                             class="color-white link-footer-text heading-style-h6"
                         >
-                           
+                            info@tabac.com
                         </a>
                     </div>
 
@@ -114,10 +186,10 @@
                     <div class="color-white heading-style-h6">
                         Call us:
                         <a
-                            href="javascript:void(0);"
+                            href="tel:+918592252000"
                             class="color-white link-footer-text heading-style-h6"
                         >
-                            
+                            +91 99999 99000
                         </a>
                     </div>
 
@@ -151,7 +223,7 @@
                         <div class="w-layout-hflex copy-right-menu">
 
                             <a
-                                href="javascript:void(0);"
+                                href="<?php echo $base; ?>privacy-policy.php"
                                 class="copy-write-menu-item w-inline-block"
                             >
                                 <div class="text-capitalize footer-menu-item-text">
@@ -160,11 +232,20 @@
                             </a>
 
                             <a
-                                href="javascript:void(0);"
-                                class="copy-write-menu-item remove-right-border w-inline-block"
+                                href="<?php echo $base; ?>terms-conditions.php"
+                                class="copy-write-menu-item w-inline-block"
                             >
                                 <div class="text-capitalize footer-menu-item-text">
                                     Terms &amp; Conditions
+                                </div>
+                            </a>
+
+                            <a
+                                href="<?php echo $base; ?>cookie-policy.php"
+                                class="copy-write-menu-item remove-right-border w-inline-block"
+                            >
+                                <div class="text-capitalize footer-menu-item-text">
+                                    Cookie Policy
                                 </div>
                             </a>
 
@@ -185,11 +266,11 @@
             width="290"
             height="687"
             alt="Tobac Enterprises tobacco processing facility"
-            src="assets/images/Tobacco-Leaf-Processing.webp"
+            src="<?php echo $base; ?>assets/images/Tobacco-Leaf-Processing.webp"
             loading="lazy"
             srcset="
-                assets/images/Tobacco-Leaf-Processing.webp 500w,
-                assets/images/Tobacco-Leaf-Processing.webp 580w
+                <?php echo $base; ?>assets/images/Tobacco-Leaf-Processing.webp 500w,
+                <?php echo $base; ?>assets/images/Tobacco-Leaf-Processing.webp 580w
             "
             sizes="(max-width: 479px) 100vw, 290px"
         />
