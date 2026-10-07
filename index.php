@@ -1220,12 +1220,12 @@
 
 <style>
 /* =========================================================
-   OUR APPROACH -  COMPACT PREMIUM VERSION
+   OUR APPROACH - EXPANDED CLEAN SPACING
    ========================================================= */
 
 .about-two {
-    padding-top: 42px !important;
-    padding-bottom: 48px !important;
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
     overflow: hidden !important;
 }
 
@@ -1239,11 +1239,11 @@
    --------------------------------------------------------- */
 
 .about-two > .container > .text-align-center {
-    margin-bottom: 10px !important;
+    margin-bottom: 18px !important;
 }
 
 .about-two .sub-heading {
-    font-size: 12px !important;
+    font-size: 13px !important;
     line-height: 1.2 !important;
     letter-spacing: 1.2px !important;
 }
@@ -1254,13 +1254,13 @@
 
 .about-two .over-view-title-two-wrap {
     max-width: 980px !important;
-    margin: 0 auto 38px !important;
+    margin: 0 auto 72px !important;
 }
 
 .about-two .over-view-title-two-wrap .heading-style-h2 {
     font-size: 36px !important;
-    line-height: 1.12 !important;
-    letter-spacing: -1px !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.5px !important;
     margin: 0 !important;
 }
 
@@ -1277,7 +1277,7 @@
 
     margin: 0 auto !important;
 
-    gap: 28px !important;
+    gap: 32px !important;
 }
 
 /* ---------------------------------------------------------
@@ -1371,17 +1371,17 @@
 @media (max-width: 991px) {
 
     .about-two {
-        padding-top: 38px !important;
-        padding-bottom: 42px !important;
+        padding-top: 70px !important;
+        padding-bottom: 70px !important;
     }
 
     .about-two .over-view-title-two-wrap {
-        margin-bottom: 32px !important;
+        margin-bottom: 50px !important;
     }
 
     .about-two .over-view-title-two-wrap .heading-style-h2 {
         font-size: 32px !important;
-        line-height: 1.13 !important;
+        line-height: 1.22 !important;
     }
 
     .about-two .image-card-three-wrap {
@@ -1415,17 +1415,17 @@
 @media (max-width: 767px) {
 
     .about-two {
-        padding-top: 34px !important;
-        padding-bottom: 38px !important;
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
     }
 
     .about-two .over-view-title-two-wrap {
-        margin-bottom: 26px !important;
+        margin-bottom: 40px !important;
     }
 
     .about-two .over-view-title-two-wrap .heading-style-h2 {
         font-size: 28px !important;
-        line-height: 1.15 !important;
+        line-height: 1.22 !important;
         letter-spacing: -0.6px !important;
     }
 
@@ -1476,12 +1476,12 @@
 @media (max-width: 479px) {
 
     .about-two {
-        padding-top: 28px !important;
-        padding-bottom: 32px !important;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
     }
 
     .about-two .over-view-title-two-wrap {
-        margin-bottom: 22px !important;
+        margin-bottom: 34px !important;
     }
 
     .about-two .over-view-title-two-wrap .heading-style-h2 {
@@ -3279,8 +3279,8 @@
                     <div class="text-align-center">
                         <div>
                             <div
-                                data-wf--sub-heading--variant="dark-sub-heading"
-                                class="sub-heading w-variant-8339cfd4-9c83-eaae-331a-5682dc1da52c"
+                                data-wf--sub-heading--variant="base"
+                                class="sub-heading"
                             >
                                 Our professional team
                             </div>
@@ -3751,18 +3751,11 @@
             <div class="construction-image-wrapper position-relative overflow-hidden border-radius-10">
 
                 <img
-                    src="assets/images/who-we-are.webp"
+                    src="assets/images/home-company-at-a-glance.png"
                     loading="lazy"
                     width="895"
                     height="870"
-                    alt="Tobacco processing and threshing at Tabac Enterprises"
-                    srcset="
-                        assets/images/who-we-are.webp 500w,
-                        assets/images/who-we-are.webp 800w,
-                        assets/images/who-we-are.webp 1080w,
-                        assets/images/who-we-are.webp 1600w,
-                        assets/images/who-we-are.webp 1790w
-                    "
+                    alt="Company at a Glance - Tabac Enterprises"
                     sizes="(max-width: 767px) 100vw,
                            (max-width: 991px) 100vw,
                            600px"
@@ -3792,8 +3785,8 @@
                         style="opacity: 0"
                     >
                         <div
-                            data-wf--sub-heading--variant="dark-sub-heading"
-                            class="sub-heading w-variant-8339cfd4-9c83-eaae-331a-5682dc1da52c"
+                            data-wf--sub-heading--variant="base"
+                            class="sub-heading"
                         >
                             Company at a Glance
                         </div>
@@ -3902,13 +3895,9 @@
                             <img
                                 width="587"
                                 height="677"
-                                alt="Kontix-home-two-future-of-innovation-image-two-webflow-ecommerce-template"
-                                src="assets/images/INDUSTRIAL-PROCESSING-CAPABILITY.webp"
+                                alt="Our Core Services - Tabac Enterprises"
+                                src="assets/images/home-Our Core Services.png"
                                 loading="lazy"
-                                srcset="
-                                    assets/images/INDUSTRIAL-PROCESSING-CAPABILITY.webp  500w,
-                                    assets/images/INDUSTRIAL-PROCESSING-CAPABILITY.webp      1174w
-                                "
                                 sizes="(max-width: 767px) 100vw, 587px"
                                 class="responsive-full-width image-effect border-radius-10 responsiv-full-height"
                             />
@@ -4099,50 +4088,32 @@
                         </div>
                         <div class="feature-right-part position-relative border-radius-10">
                             <img
-                                src="assets/images/Tobacco-Leaf-Processing.webp"
+                                src="assets/images/home-catalogue.png"
                                 loading="lazy"
                                 width="630.5"
                                 height="790"
-                                alt="Kontix-home-three-building-the-futureimage-one-webflow-ecommerce-template"
-                                srcset="
-                                    assets/images/Tobacco-Leaf-Processing.webp   500w,
-                                    assets/images/Tobacco-Leaf-Processing.webp   800w,
-                                    assets/images/Tobacco-Leaf-Processing.webp 1080w,
-                                    assets/images/Tobacco-Leaf-Processing.webp        1261w
-                                "
+                                alt="Tobacco Grade Catalogue - Tabac Enterprises"
                                 sizes="(max-width: 767px) 100vw, 630.5px"
                                 class="feature-image-one border-radius-10"
                             /><img
-                                src="assets/images/Tobacco-Leaf-Processing.webp"
+                                src="assets/images/home-catalogue.png"
                                 loading="lazy"
                                 width="630.5"
                                 height="790"
-                                alt="Kontix-home-three-building-the-future-image-two-webflow-ecommerce-template"
-                                srcset="
-                                    assets/images/Tobacco-Leaf-Processing.webp   500w,
-                                    assets/images/Tobacco-Leaf-Processing.webp   800w,
-                                    assets/images/Tobacco-Leaf-Processing.webp 1080w,
-                                    assets/images/Tobacco-Leaf-Processing.webp       1261w
-                                "
+                                alt="Tobacco Grade Catalogue - Tabac Enterprises"
                                 sizes="(max-width: 767px) 100vw, 630.5px"
                                 class="feature-image-two border-radius-10"
                             />
                             <div class="position-relative border-radius-10 overflow-hidden feature-image-three-wrapper">
                                 <img
                                     class="image-effect border-radius-10 feature-image-three"
-                                    src="assets/images/Tobacco-Leaf-Processing.webp"
+                                    src="assets/images/home-catalogue.png"
                                     width="630.5"
                                     height="790"
-                                    alt="Kontix-home-three-building-the-future-image-three-webflow-ecommerce-template"
+                                    alt="Tobacco Grade Catalogue - Tabac Enterprises"
                                     sizes="(max-width: 767px) 100vw, 630.5px"
                                     data-w-id="12c5017c-0ce9-bd9b-d44f-8bfb5a3bc929"
                                     loading="lazy"
-                                    srcset="
-                                        assets/images/Tobacco-Leaf-Processing.webp   500w,
-                                        assets/images/Tobacco-Leaf-Processing.webp   800w,
-                                        assets/images/Tobacco-Leaf-Processing.webp 1080w,
-                                       assets/images/Tobacco-Leaf-Processing.webp        1261w
-                                    "
                                 />
                                 <div
                                     data-wf--image-apearence--variant="base"
@@ -4154,17 +4125,11 @@
                                 </div>
                             </div>
                             <img
-                                src="assets/images/Tobacco-Leaf-Processing.webp"
+                                src="assets/images/home-catalogue.png"
                                 loading="lazy"
                                 width="630.5"
                                 height="790"
-                                alt="Kontix-home-three-building-the-future-image-four-webflow-ecommerce-template"
-                                srcset="
-                                    assets/images/Tobacco-Leaf-Processing.webp   500w,
-                                    assets/images/Tobacco-Leaf-Processing.webp   800w,
-                                    assets/images/Tobacco-Leaf-Processing.webp 1080w,
-                                    assets/images/Tobacco-Leaf-Processing.webp       1261w
-                                "
+                                alt="Tobacco Grade Catalogue - Tabac Enterprises"
                                 sizes="(max-width: 767px) 100vw, 630.5px"
                                 class="feature-image-four border-radius-10"
                             />
@@ -4210,15 +4175,9 @@
                             <img
                                 width="629"
                                 height="676"
-                                alt="Kontix-home-three-superior-craftsmanship-image-two-webflow-ecommerce-template"
-                                src="assets/images/PROCESSING-EXCELLENCE.webp"
+                                alt="A Bio-Steam-Powered Processing Operation - Tabac Enterprises"
+                                src="assets/images/home-A Bio-Steam-Powered Processing Operation.png"
                                 loading="lazy"
-                                srcset="
-                                    assets/images/PROCESSING-EXCELLENCE.webp   500w,
-                                    assets/images/PROCESSING-EXCELLENCE.webp   800w,
-                                    assets/images/PROCESSING-EXCELLENCE.webp 1080w,
-                                    assets/images/PROCESSING-EXCELLENCE.webp  1258w
-                                "
                                 sizes="(max-width: 767px) 100vw, 629px"
                                 class="responsiv-full-height responsive-full-width image-effect border-radius-10"
                             />
@@ -4292,15 +4251,9 @@
                             <img
                                 width="630"
                                 height="676"
-                                alt="Kontix-home-three-superior-craftsmanship-image-one-webflow-ecommerce-template"
-                                src="assets/images/INDUSTRIAL-CAPABILITY.webp"
+                                alt="Our Approach - Tabac Enterprises"
+                                src="assets/images/home-OUR APPROACH.png"
                                 loading="lazy"
-                                srcset="
-                                    assets/images/INDUSTRIAL-CAPABILITY.webp   500w,
-                                    assets/images/INDUSTRIAL-CAPABILITY.webp   800w,
-                                    assets/images/INDUSTRIAL-CAPABILITY.webp 1080w,
-                                    assets/images/INDUSTRIAL-CAPABILITY.webp       1260w
-                                "
                                 sizes="(max-width: 767px) 100vw, 630px"
                                 class="responsive-full-width image-effect border-radius-10 responsiv-full-height"
                             />
@@ -4382,8 +4335,8 @@
             <div class="w-layout-blockcontainer container w-container">
                 <div data-w-id="06ee8c47-a083-9d81-2384-b897cc1feb50" style="opacity: 0" class="text-align-center">
                     <div
-                        data-wf--sub-heading--variant="dark-sub-heading"
-                        class="sub-heading w-variant-8339cfd4-9c83-eaae-331a-5682dc1da52c"
+                        data-wf--sub-heading--variant="base"
+                        class="sub-heading"
                     >
                         OUR CAPABILITIES
                     </div>
@@ -4617,19 +4570,13 @@
                         >
                             <img
                                 class="border-radius-10 tab-image-full-width image-effect"
-                                src="assets/images/OUR-PROCESS.webp"
+                                src="assets/images/home-Processing Partnerships.png"
                                 width="603"
                                 height="696"
-                                alt="Kontix-home-three-process-of-work-image-webflow-ecommerce-template"
+                                alt="Processing Partnerships - Tabac Enterprises"
                                 sizes="(max-width: 767px) 100vw, 603px"
                                 data-w-id="5ba2e318-d75c-ffff-da4f-78dff1ee332f"
                                 loading="lazy"
-                                srcset="
-                                    assets/images/OUR-PROCESS.webp   500w,
-                                    assets/images/OUR-PROCESS.webp   800w,
-                                    assets/images/OUR-PROCESS.webp 1080w,
-                                    assets/images/OUR-PROCESS.webp  1206w
-                                "
                             />
                             <div
                                 data-wf--image-apearence--variant="base"
