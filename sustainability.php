@@ -242,6 +242,108 @@
             }
 
             /* =========================================================
+               FEATURES THREE CARDS: EQUAL IMAGE PAIR HEIGHTS
+               ========================================================= */
+
+            .features-three-card-image {
+                display: flex !important;
+                align-items: stretch !important;
+            }
+
+            .features-three-card-image > div {
+                flex: 1 1 50% !important;
+                aspect-ratio: 3 / 4 !important;
+                height: auto !important;
+                position: relative !important;
+                overflow: hidden !important;
+                border-radius: 10px !important;
+            }
+
+            .features-three-card-image img {
+                width: 100% !important;
+                height: 100% !important;
+                aspect-ratio: 3 / 4 !important;
+                object-fit: cover !important;
+                display: block !important;
+            }
+
+            @media (max-width: 479px) {
+                .features-three-card-image > div,
+                .features-three-card-image img {
+                    aspect-ratio: 4 / 3 !important;
+                }
+            }
+
+            /* =========================================================
+               FEATURES THREE CARDS: ENTRANCE & POPPING ANIMATION (CARDS 3 & 4)
+               Exact 1:1 match to Webflow IX2 slideInBottom (1000ms, outQuart, 100px)
+               ========================================================= */
+
+            .features-three-card.anim-card {
+                opacity: 0;
+                transform: translate3d(0, 100px, 0);
+                text-decoration: none !important;
+                color: inherit !important;
+                will-change: transform, opacity;
+            }
+
+            .features-three-card.anim-card.is-in-view {
+                opacity: 1 !important;
+                transform: translate3d(0, 0, 0) !important;
+            }
+
+            .features-three-card.anim-card .anim-heading,
+            .features-three-card.anim-card .anim-text,
+            .features-three-card.anim-card .anim-icon {
+                opacity: 0;
+                transform: translate3d(0, 100px, 0);
+                will-change: transform, opacity;
+            }
+
+            .features-three-card.anim-card.is-in-view .anim-heading,
+            .features-three-card.anim-card.is-in-view .anim-text,
+            .features-three-card.anim-card.is-in-view .anim-icon {
+                opacity: 1 !important;
+                transform: translate3d(0, 0, 0) !important;
+            }
+
+            /* Card 3 Timings (matching Card 1 Webflow configuration: 300ms, 500ms, 600ms, 700ms) */
+            .features-three-card.anim-card-3 {
+                transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s,
+                            transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
+            }
+            .features-three-card.anim-card-3 .anim-heading {
+                transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s,
+                            transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+            }
+            .features-three-card.anim-card-3 .anim-text {
+                transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.6s,
+                            transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.6s;
+            }
+            .features-three-card.anim-card-3 .anim-icon {
+                transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.7s,
+                            transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.7s;
+            }
+
+            /* Card 4 Timings (matching Card 2 Webflow configuration: 400ms, 600ms, 700ms, 800ms) */
+            .features-three-card.anim-card-4 {
+                transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s,
+                            transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s;
+            }
+            .features-three-card.anim-card-4 .anim-heading {
+                transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.6s,
+                            transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.6s;
+            }
+            .features-three-card.anim-card-4 .anim-text {
+                transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.7s,
+                            transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.7s;
+            }
+            .features-three-card.anim-card-4 .anim-icon {
+                transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s,
+                            transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s;
+            }
+
+            /* =========================================================
                VIDEO / CTA SECTION
                COMPACT PREMIUM LAYOUT
                ========================================================= */
@@ -986,9 +1088,9 @@
                                 <div class="outside-overlay"></div>
                             </div>
                         </div></div></a
-                ><div
-                    style="opacity: 1"
-                    class="features-three-card top-border-remove"
+                ><a
+                    href="contact.php"
+                    class="features-three-card top-border-remove w-inline-block anim-card anim-card-3"
                 >
                     <div class="features-three-card-image">
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
@@ -999,6 +1101,7 @@
                                 height="289"
                                 alt="Tobacco Transportation Fleet"
                                 sizes="(max-width: 479px) 100vw, 302px"
+                                data-w-id="e1f92f3a-07c7-6f1a-99a1-52fb097fdf35"
                                 loading="lazy"
                                 style="object-fit: cover;"
                             />
@@ -1019,6 +1122,7 @@
                                 height="289"
                                 alt="Direct Farm to Facility Logistics"
                                 sizes="(max-width: 479px) 100vw, 302px"
+                                data-w-id="e1f92f3a-07c7-6f1a-99a1-52fb097fdf38"
                                 loading="lazy"
                                 style="object-fit: cover;"
                             />
@@ -1034,16 +1138,16 @@
                     </div>
                     <div class="features-three-card-information landscape-text-center">
                         <div class="overflow-hidden">
-                            <h3 class="no-margin">
+                            <h3 class="no-margin anim-heading">
                                 Integrated Transportation
                             </h3>
                         </div>
                         <div class="features-three-card-text-wrap overflow-hidden">
-                            <p class="no-margin color-white">
+                            <p class="no-margin color-white anim-text">
                                 Our internal transportation system supports the movement of tobacco from farms to our processing facilities, helping streamline logistics and material handling.
                             </p>
                         </div>
-                        <div>
+                        <div class="anim-icon">
                             <img
                                 src="67ad72477c605912a4af72eb/68a70c473b4a730e2f37f93e_Group%201009003598.svg"
                                 loading="lazy"
@@ -1053,23 +1157,23 @@
                             />
                         </div>
                     </div>
-                </div>
-                <div
-                    style="opacity: 1"
-                    class="features-three-card top-border-remove"
+                </a>
+                <a
+                    href="contact.php"
+                    class="features-three-card top-border-remove w-inline-block anim-card anim-card-4"
                 >
                     <div class="features-three-card-information landscape-text-center">
                         <div class="overflow-hidden">
-                            <h3 class="no-margin">
+                            <h3 class="no-margin anim-heading">
                                 Resource-Conscious Operations
                             </h3>
                         </div>
                         <div class="features-three-card-text-wrap overflow-hidden">
-                            <p class="no-margin color-white">
+                            <p class="no-margin color-white anim-text">
                                 We focus on operational planning, process coordination and effective use of infrastructure to support efficient day-to-day activities.
                             </p>
                         </div>
-                        <div>
+                        <div class="anim-icon">
                             <img
                                 src="67ad72477c605912a4af72eb/68a70c473b4a730e2f37f93e_Group%201009003598.svg"
                                 loading="lazy"
@@ -1088,11 +1192,13 @@
                                 height="289"
                                 alt="Resource-Conscious Industrial Infrastructure"
                                 sizes="(max-width: 479px) 100vw, 302px"
+                                data-w-id="524d328f-6574-81a3-bd10-3646bddadbb7"
                                 loading="lazy"
                                 style="object-fit: cover;"
                             />
                             <div
                                 data-wf--image-apearence--variant="base"
+                                data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
                                 class="image-effect-wrapper overflow-hidden"
                             >
                                 <div class="inside-overlay"></div>
@@ -1107,11 +1213,13 @@
                                 height="289"
                                 alt="Planned Facility Coordination and Environmental Care"
                                 sizes="(max-width: 479px) 100vw, 302px"
+                                data-w-id="60ea14cd-b95c-ed97-41c8-e648eafd8133"
                                 loading="lazy"
                                 style="object-fit: cover;"
                             />
                             <div
                                 data-wf--image-apearence--variant="base"
+                                data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
                                 class="image-effect-wrapper overflow-hidden"
                             >
                                 <div class="inside-overlay"></div>
@@ -1119,7 +1227,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 <div
                     data-w-id="0e6ca4c9-96f4-715a-39b5-08ea2927bac5"
                     style="opacity: 0"
@@ -2429,6 +2537,43 @@
             src="67ad72477c605912a4af72eb/js/webflow.8c3c7a7b.98f16f3db6b689ff.js"
             type="text/javascript"
         ></script>
-        
+        <script>
+            (function () {
+                function initCardAnimations() {
+                    var cards = document.querySelectorAll('.features-three-card.anim-card');
+                    if (!cards.length) return;
+
+                    if ('IntersectionObserver' in window) {
+                        var observer = new IntersectionObserver(
+                            function (entries) {
+                                entries.forEach(function (entry) {
+                                    if (entry.isIntersecting) {
+                                        requestAnimationFrame(function () {
+                                            entry.target.classList.add('is-in-view');
+                                        });
+                                        observer.unobserve(entry.target);
+                                    }
+                                });
+                            },
+                            { threshold: 0.12, rootMargin: '0px 0px -12% 0px' }
+                        );
+
+                        cards.forEach(function (card) {
+                            observer.observe(card);
+                        });
+                    } else {
+                        cards.forEach(function (card) {
+                            card.classList.add('is-in-view');
+                        });
+                    }
+                }
+
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', initCardAnimations);
+                } else {
+                    initCardAnimations();
+                }
+            })();
+        </script>
     </body>
 </html>
