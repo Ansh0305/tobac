@@ -651,6 +651,96 @@
                 </div>
             </div>
         </section>
+        <section class="team-one change-background-color" style="padding-top: 120px; padding-bottom: 120px;">
+            <div class="w-layout-blockcontainer container w-container">
+                <div class="w-layout-vflex team-one-main-wrap">
+                    <div class="team-one-grid-wrapper w-dyn-list">
+                        <div role="list" class="team-one-grid w-dyn-items" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 50px; align-items: flex-start; max-width: 1100px; margin: 0 auto;">
+                            <div role="listitem" class="w-dyn-item" style="max-width: 407px; width: 100%;">
+                                <div
+                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc96"
+                                    class="team-card-one position-relative overflow-hidden border-radius-10"
+                                >
+                                    <div class="team-card-one-image position-relative border-radius-10">
+                                        <img
+                                            width="407"
+                                            height="573"
+                                            alt="Manoj Bellam - Managing Director"
+                                            src="67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07.webp"
+                                            loading="lazy"
+                                            sizes="(max-width: 479px) 100vw, 407px"
+                                            srcset="
+                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07-p-500.webp 500w,
+                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07-p-800.webp 800w,
+                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07.webp       814w
+                                            "
+                                            class="full-width border-radius-10 image-effect"
+                                        />
+                                        <div
+                                            data-wf--image-apearence--variant="base"
+                                            data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
+                                            class="image-effect-wrapper overflow-hidden"
+                                        >
+                                            <div class="inside-overlay"></div>
+                                            <div class="outside-overlay"></div>
+                                        </div>
+                                    </div>
+                                    <div class="team-black-overlay">
+                                        <div class="heading-style-h5">Manoj Bellam</div>
+                                        <div class="color-white">Managing Director</div>
+                                    </div>
+                                    <div
+                                        data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca3"
+                                        class="team-white-overlay"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="leadership-bio-wrap" style="flex: 1; min-width: 320px; max-width: 620px;">
+                                <div data-w-id="fb7966ef-d1c6-4d26-b0e7-b4947f1640f1" style="opacity: 0" class="overflow-hidden mobile-text-center">
+                                    <div
+                                        data-wf--sub-heading--variant="base"
+                                        class="sub-heading"
+                                    >
+                                        OUR LEADERSHIP
+                                    </div>
+                                </div>
+                                <div class="heading-two-gap-top overflow-hidden">
+                                    <h2
+                                        data-w-id="6d51833e-f7a0-5784-97a6-3656f0dcf255"
+                                        style="
+                                            -webkit-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+                                                rotateZ(0) skew(-19deg, 0);
+                                            -moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+                                                rotateZ(0) skew(-19deg, 0);
+                                            -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+                                                rotateZ(0) skew(-19deg, 0);
+                                            transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+                                                skew(-19deg, 0);
+                                        "
+                                        class="no-margin features-two-heading color-black"
+                                    >
+                                        Guiding Growth &amp; Operational Discipline
+                                    </h2>
+                                </div>
+                                <div style="margin-top: 18px; margin-bottom: 16px;">
+                                    <div class="heading-style-h4 color-black" style="font-weight: 700; margin-bottom: 2px;">Manoj Bellam</div>
+                                    <div class="sub-heading" style="color: #b08940; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem;">Managing Director</div>
+                                </div>
+                                <p class="color-black" style="margin-bottom: 14px; line-height: 1.65;">
+                                    Manoj Bellam is the Managing Director of Tabac Leaf Enterprises and is closely involved in the development of the company’s processing operations, infrastructure and long-term industry partnerships.
+                                </p>
+                                <p class="color-black" style="margin-bottom: 14px; line-height: 1.65;">
+                                    His focus includes strengthening large-scale tobacco processing capabilities, supporting operational development and advancing the company’s integrated presence across the tobacco value chain.
+                                </p>
+                                <p class="no-margin color-black" style="line-height: 1.65;">
+                                    Under his leadership, Tabac Leaf Enterprises continues to develop its processing infrastructure and operational capabilities with an emphasis on technology, efficiency and responsible practices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <style>
             .vision-quote-line {
                 display: block;
@@ -673,7 +763,13 @@
                 transform-origin: 100% 50%;
                 will-change: transform;
             }
+            .over-view-one {
+                padding-top: 125px;
+            }
             @media (max-width: 767px) {
+                .over-view-one {
+                    padding-top: 70px;
+                }
                 .over-view-title-wrapper .over-view-flex.vision-overlay-flex {
                     display: none !important;
                 }
@@ -682,7 +778,7 @@
                 }
             }
         </style>
-        <section class="over-view-one">
+        <section class="over-view-one" style="padding-top: 125px;">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="overflow-hidden">
                     <div data-w-id="6cba64be-0e94-2c16-c0ac-4294feeb1fa0" style="opacity: 0" class="text-align-center">
@@ -691,11 +787,11 @@
                 </div>
                 <div class="over-view-title-wrapper text-align-center position-relative overflow-hidden">
                     <div class="heading-style-h2 color-white">
-                        <span class="vision-quote-line">“Engineering Excellence in Tobacco Processing: To</span>
-                        <span class="vision-quote-line">strengthen Tabac Leaf Enterprises’ position in the</span>
-                        <span class="vision-quote-line">tobacco industry through advanced processing</span>
+                        <span class="vision-quote-line">“To strengthen Tabac Leaf Enterprises’ position in</span>
+                        <span class="vision-quote-line">the tobacco industry through advanced processing</span>
                         <span class="vision-quote-line">infrastructure, operational efficiency, responsible</span>
                         <span class="vision-quote-line">practices and enduring business partnerships.”</span>
+                        <!-- <span class="vision-quote-line"></span> -->
                     </div>
                     <div class="w-layout-vflex over-view-flex position-absolute vision-overlay-flex">
                         <div class="over-view-flex-div one overlay-two"></div>
@@ -1197,176 +1293,6 @@
                                     <div class="button-style-one-background position-absolute light-button"></div
                                 ></a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="team-one change-background-color">
-            <div class="w-layout-blockcontainer container w-container">
-                <div class="w-layout-vflex team-one-main-wrap">
-                    <div class="team-one-grid-wrapper w-dyn-list">
-                        <div role="list" class="team-one-grid w-dyn-items" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 50px; align-items: flex-start; max-width: 1100px; margin: 0 auto;">
-                            <div role="listitem" class="w-dyn-item" style="max-width: 407px; width: 100%;">
-                                <div
-                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc96"
-                                    class="team-card-one position-relative overflow-hidden border-radius-10"
-                                >
-                                    <div class="team-card-one-image position-relative border-radius-10">
-                                        <img
-                                            width="407"
-                                            height="573"
-                                            alt="Manoj Bellam - Managing Director"
-                                            src="67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07.webp"
-                                            loading="lazy"
-                                            sizes="(max-width: 479px) 100vw, 407px"
-                                            srcset="
-                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07-p-500.webp 500w,
-                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07-p-800.webp 800w,
-                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07.webp       814w
-                                            "
-                                            class="full-width border-radius-10 image-effect"
-                                        />
-                                        <div
-                                            data-wf--image-apearence--variant="base"
-                                            data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
-                                            class="image-effect-wrapper overflow-hidden"
-                                        >
-                                            <div class="inside-overlay"></div>
-                                            <div class="outside-overlay"></div>
-                                        </div>
-                                    </div>
-                                    <div class="team-black-overlay">
-                                        <div class="heading-style-h5">Manoj Bellam</div>
-                                        <div class="color-white">Managing Director</div>
-                                    </div>
-                                    <div
-                                        data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca3"
-                                        class="team-white-overlay"
-                                    ></div>
-                                </div>
-                            </div>
-                            <div class="leadership-bio-wrap" style="flex: 1; min-width: 320px; max-width: 620px;">
-                                <div data-w-id="fb7966ef-d1c6-4d26-b0e7-b4947f1640f1" style="opacity: 0" class="overflow-hidden mobile-text-center">
-                                    <div
-                                        data-wf--sub-heading--variant="base"
-                                        class="sub-heading"
-                                    >
-                                        OUR LEADERSHIP
-                                    </div>
-                                </div>
-                                <div class="heading-two-gap-top overflow-hidden">
-                                    <h2
-                                        data-w-id="6d51833e-f7a0-5784-97a6-3656f0dcf255"
-                                        style="
-                                            -webkit-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(-19deg, 0);
-                                            -moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(-19deg, 0);
-                                            -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                                rotateZ(0) skew(-19deg, 0);
-                                            transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                                                skew(-19deg, 0);
-                                        "
-                                        class="no-margin features-two-heading color-black"
-                                    >
-                                        Guiding Growth &amp; Operational Discipline
-                                    </h2>
-                                </div>
-                                <div style="margin-top: 18px; margin-bottom: 16px;">
-                                    <div class="heading-style-h4 color-black" style="font-weight: 700; margin-bottom: 2px;">Manoj Bellam</div>
-                                    <div class="sub-heading" style="color: #b08940; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem;">Managing Director</div>
-                                </div>
-                                <p class="color-black" style="margin-bottom: 14px; line-height: 1.65;">
-                                    Manoj Bellam is the Managing Director of Tabac Leaf Enterprises and is closely involved in the development of the company’s processing operations, infrastructure and long-term industry partnerships.
-                                </p>
-                                <p class="color-black" style="margin-bottom: 14px; line-height: 1.65;">
-                                    His focus includes strengthening large-scale tobacco processing capabilities, supporting operational development and advancing the company’s integrated presence across the tobacco value chain.
-                                </p>
-                                <p class="no-margin color-black" style="line-height: 1.65;">
-                                    Under his leadership, Tabac Leaf Enterprises continues to develop its processing infrastructure and operational capabilities with an emphasis on technology, efficiency and responsible practices.
-                                </p>
-                            </div>
-                            <!-- Commented out placeholder team cards:
-                            <div role="listitem" class="w-dyn-item">
-                                <div
-                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc96"
-                                    class="team-card-one position-relative overflow-hidden border-radius-10"
-                                >
-                                    <div class="team-card-one-image position-relative border-radius-10">
-                                        <img
-                                            width="407"
-                                            height="573"
-                                            alt=""
-                                            src="67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08.webp"
-                                            loading="lazy"
-                                            sizes="(max-width: 479px) 100vw, 407px"
-                                            srcset="
-                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-500.webp 500w,
-                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-800.webp 800w,
-                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08.webp       814w
-                                            "
-                                            class="full-width border-radius-10 image-effect"
-                                        />
-                                        <div
-                                            data-wf--image-apearence--variant="base"
-                                            data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
-                                            class="image-effect-wrapper overflow-hidden"
-                                        >
-                                            <div class="inside-overlay"></div>
-                                            <div class="outside-overlay"></div>
-                                        </div>
-                                    </div>
-                                    <div class="team-black-overlay">
-                                        <div class="heading-style-h5">Terry Dias</div>
-                                        <div class="color-white">Structural Engineer</div>
-                                    </div>
-                                    <div
-                                        data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca3"
-                                        class="team-white-overlay"
-                                    ></div>
-                                </div>
-                            </div>
-                            <div role="listitem" class="w-dyn-item">
-                                <div
-                                    data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfc96"
-                                    class="team-card-one position-relative overflow-hidden border-radius-10"
-                                >
-                                    <div class="team-card-one-image position-relative border-radius-10">
-                                        <img
-                                            width="407"
-                                            height="573"
-                                            alt=""
-                                            src="67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09.webp"
-                                            loading="lazy"
-                                            sizes="(max-width: 479px) 100vw, 407px"
-                                            srcset="
-                                                67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09-p-500.webp 500w,
-                                                67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09-p-800.webp 800w,
-                                                67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09.webp       814w
-                                            "
-                                            class="full-width border-radius-10 image-effect"
-                                        />
-                                        <div
-                                            data-wf--image-apearence--variant="base"
-                                            data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
-                                            class="image-effect-wrapper overflow-hidden"
-                                        >
-                                            <div class="inside-overlay"></div>
-                                            <div class="outside-overlay"></div>
-                                        </div>
-                                    </div>
-                                    <div class="team-black-overlay">
-                                        <div class="heading-style-h5">Martin Philips</div>
-                                        <div class="color-white">Construction Engineer</div>
-                                    </div>
-                                    <div
-                                        data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca3"
-                                        class="team-white-overlay"
-                                    ></div>
-                                </div>
-                            </div>
-                            -->    </div>
                         </div>
                     </div>
                 </div>
