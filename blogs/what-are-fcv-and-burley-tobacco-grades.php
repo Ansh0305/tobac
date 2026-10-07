@@ -215,7 +215,7 @@
             data-w-id="f96aab72-3b6d-159a-79bc-c22c77209b8f"
             class="inner-pages-hero position-relative overflow-hidden"
         >
-            <div class="about-hero-bg position-absolute contact-one-bg banner-apearence"></div>
+            <div class="about-hero-bg position-absolute contact-one-bg banner-apearence" style="background-image: linear-gradient(#0f0f0f, #0f0f0f1a 62%, #0f0f0f00), linear-gradient(#0f0f0f00, #0f0f0f5e 44%, #0f0f0ff2), url('../assets/images/contact-golden-tobacco.jpg'); background-position: 0 0, 0 0, 50%; background-repeat: repeat, repeat, no-repeat; background-size: auto, auto, cover;"></div>
             <div class="about-hero-content position-relative">
                 <div class="w-layout-blockcontainer container w-container">
                     <div class="about-hero-information text-align-center">
@@ -258,7 +258,7 @@
 
                     <div class="article-hero-banner">
                         <img
-                            src="../67ad72477c605912a4af72eb/689324eb846050fe5b8d61ad_Blog 8.webp"
+                            src="../assets/images/contact-golden-tobacco.jpg"
                             alt="Tobacco Grades - Mysore FCV, Traditional FCV, NLS FCV, and Burley"
                         />
                     </div>
