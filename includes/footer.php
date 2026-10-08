@@ -1,22 +1,47 @@
 <?php $base = isset($base_path) ? $base_path : ''; ?>
 <style>
 /* =========================================================
-   PREMIUM MODERN FOOTER
+   PREMIUM DARK LUXE GLASSMORPHISM FOOTER
    ========================================================= */
 
 .tobac-footer-wrap {
-    background-color: #0b0b0b;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background-color: #070707;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     position: relative;
     overflow: hidden;
     color: #ffffff;
     font-family: inherit;
 }
 
+/* Atmospheric Ambient Lighting under Glass */
+.tobac-footer-glow-1 {
+    position: absolute;
+    top: -40px;
+    right: 8%;
+    width: 440px;
+    height: 360px;
+    background: radial-gradient(circle, rgba(176, 137, 64, 0.14) 0%, rgba(176, 137, 64, 0.03) 55%, transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+    filter: blur(40px);
+}
+
+.tobac-footer-glow-2 {
+    position: absolute;
+    bottom: -20px;
+    left: 8%;
+    width: 380px;
+    height: 280px;
+    background: radial-gradient(circle, rgba(221, 185, 105, 0.09) 0%, rgba(221, 185, 105, 0.02) 50%, transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+    filter: blur(45px);
+}
+
 .tobac-footer-container {
-    max-width: 1240px;
+    max-width: 1560px;
     margin: 0 auto;
-    padding: 70px 24px 28px;
+    padding: 65px 48px 30px;
     position: relative;
     z-index: 2;
 }
@@ -24,8 +49,8 @@
 /* 4-column main grid */
 .tobac-footer-grid {
     display: grid;
-    grid-template-columns: 2.2fr 1fr 1.1fr 1.7fr;
-    gap: 48px;
+    grid-template-columns: 2fr 1fr 1.1fr 1.6fr;
+    gap: 56px;
     align-items: start;
 }
 
@@ -57,23 +82,33 @@
     color: rgba(255, 255, 255, 0.68);
     font-size: 0.92rem;
     line-height: 1.7;
-    margin: 0 0 20px 0;
-    max-width: 380px;
+    margin: 0 0 22px 0;
+    max-width: 370px;
     letter-spacing: 0.2px;
 }
 
+/* Frosted Glass Pill Badge */
 .tobac-footer-badge {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 6px 14px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    gap: 9px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.035);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.09);
     border-radius: 999px;
     font-size: 0.76rem;
     letter-spacing: 0.5px;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.8);
     text-transform: uppercase;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    transition: all 0.25s ease;
+}
+
+.tobac-footer-badge:hover {
+    background: rgba(255, 255, 255, 0.055);
+    border-color: rgba(221, 185, 105, 0.25);
 }
 
 .tobac-footer-badge-dot {
@@ -81,13 +116,13 @@
     height: 6px;
     border-radius: 50%;
     background: #b08940;
-    box-shadow: 0 0 8px rgba(176, 137, 64, 0.7);
+    box-shadow: 0 0 8px rgba(176, 137, 64, 0.85);
     display: inline-block;
 }
 
 /* Column Headings */
 .tobac-footer-title {
-    color: #b08940;
+    color: #ddb969;
     font-size: 0.78rem;
     font-weight: 700;
     letter-spacing: 1.8px;
@@ -105,7 +140,7 @@
     width: 24px;
     height: 2px;
     background: #b08940;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 /* Navigation lists */
@@ -138,7 +173,31 @@
     transform: translateX(4px);
 }
 
-/* Contact rows */
+/* Frosted Glass Contact Card */
+.tobac-footer-glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 24px 22px;
+    box-shadow: 
+        0 20px 40px -15px rgba(0, 0, 0, 0.55),
+        inset 0 1px 0 rgba(255, 255, 255, 0.12),
+        inset 0 0 16px rgba(255, 255, 255, 0.015);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tobac-footer-glass-card:hover {
+    border-color: rgba(221, 185, 105, 0.25);
+    background: rgba(255, 255, 255, 0.045);
+    box-shadow: 
+        0 25px 50px -15px rgba(0, 0, 0, 0.65),
+        0 0 35px rgba(176, 137, 64, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.18);
+    transform: translateY(-2px);
+}
+
 .tobac-footer-contacts {
     display: flex;
     flex-direction: column;
@@ -160,22 +219,27 @@ a.tobac-footer-contact-item:hover {
 
 a.tobac-footer-contact-item:hover .tobac-footer-icon-box {
     background: #b08940;
-    color: #0b0b0b;
+    color: #070707;
     border-color: #b08940;
     transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(176, 137, 64, 0.4);
 }
 
 a.tobac-footer-contact-item:hover .tobac-footer-contact-val {
     color: #ddb969;
 }
 
+/* Frosted Icon Box */
 .tobac-footer-icon-box {
     width: 36px;
     height: 36px;
     min-width: 36px;
-    border-radius: 8px;
+    border-radius: 9px;
     background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,24 +254,29 @@ a.tobac-footer-contact-item:hover .tobac-footer-contact-val {
 }
 
 .tobac-footer-contact-label {
-    font-size: 0.74rem;
+    font-size: 0.72rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: rgba(255, 255, 255, 0.45);
 }
 
 .tobac-footer-contact-val {
-    font-size: 0.92rem;
+    font-size: 0.90rem;
     color: rgba(255, 255, 255, 0.88);
     line-height: 1.45;
     transition: color 0.22s ease;
 }
 
-/* Divider & Bottom Bar */
+/* Frosted Bottom Dock */
 .tobac-footer-bottom {
-    margin-top: 55px;
-    padding-top: 24px;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: 48px;
+    padding: 18px 30px;
+    background: rgba(255, 255, 255, 0.025);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 14px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -218,7 +287,7 @@ a.tobac-footer-contact-item:hover .tobac-footer-contact-val {
 .tobac-footer-copy {
     margin: 0;
     font-size: 0.84rem;
-    color: rgba(255, 255, 255, 0.48);
+    color: rgba(255, 255, 255, 0.52);
 }
 
 .tobac-footer-legal {
@@ -229,7 +298,7 @@ a.tobac-footer-contact-item:hover .tobac-footer-contact-val {
 }
 
 .tobac-footer-legal a {
-    color: rgba(255, 255, 255, 0.52);
+    color: rgba(255, 255, 255, 0.55);
     text-decoration: none;
     font-size: 0.84rem;
     transition: color 0.22s ease;
@@ -245,9 +314,18 @@ a.tobac-footer-contact-item:hover .tobac-footer-contact-val {
 }
 
 /* Responsive adjustments */
+@media (max-width: 1200px) {
+    .tobac-footer-container {
+        padding: 55px 32px 28px;
+    }
+    .tobac-footer-grid {
+        gap: 40px;
+    }
+}
+
 @media (max-width: 991px) {
     .tobac-footer-container {
-        padding: 55px 20px 24px;
+        padding: 50px 24px 26px;
     }
     .tobac-footer-grid {
         grid-template-columns: 1fr 1fr;
@@ -256,15 +334,22 @@ a.tobac-footer-contact-item:hover .tobac-footer-contact-val {
 }
 
 @media (max-width: 600px) {
+    .tobac-footer-container {
+        padding: 42px 18px 24px;
+    }
     .tobac-footer-grid {
         grid-template-columns: 1fr;
         gap: 32px;
+    }
+    .tobac-footer-glass-card {
+        padding: 20px 18px;
     }
     .tobac-footer-bottom {
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
-        margin-top: 40px;
+        margin-top: 32px;
+        padding: 16px 18px;
     }
     .tobac-footer-legal {
         gap: 14px;
@@ -273,6 +358,10 @@ a.tobac-footer-contact-item:hover .tobac-footer-contact-val {
 </style>
 
 <footer class="tobac-footer-wrap">
+    <!-- Atmospheric Ambient Glows behind frosted elements -->
+    <div class="tobac-footer-glow-1" aria-hidden="true"></div>
+    <div class="tobac-footer-glow-2" aria-hidden="true"></div>
+
     <div class="tobac-footer-container">
 
         <div class="tobac-footer-grid">
@@ -322,8 +411,8 @@ a.tobac-footer-contact-item:hover .tobac-footer-contact-val {
                 </ul>
             </div>
 
-            <!-- Col 4: Contact & Facility -->
-            <div>
+            <!-- Col 4: Frosted Glass Contact & Facility Card -->
+            <div class="tobac-footer-glass-card">
                 <div class="tobac-footer-title">Connect With Us</div>
                 <div class="tobac-footer-contacts">
 
@@ -373,7 +462,7 @@ a.tobac-footer-contact-item:hover .tobac-footer-contact-val {
 
         </div>
 
-        <!-- Bottom Copyright & Legal Links -->
+        <!-- Frosted Bottom Dock: Copyright & Legal Links -->
         <div class="tobac-footer-bottom">
             <p class="tobac-footer-copy">
                 &copy; <?php echo date('Y'); ?> Tobac Enterprises. All rights reserved.

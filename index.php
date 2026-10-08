@@ -357,8 +357,8 @@
 .home-two-hero-section .hero-three-title-text {
     font-size: 43px !important;
     line-height: 1.08 !important;
-    font-weight: 500 !important;
-    letter-spacing: -1.5px !important;
+    font-weight: 700 !important;
+    letter-spacing: -1.2px !important;
 
     /* Keep hero heading white */
     color: #ffffff !important;
@@ -1858,11 +1858,11 @@
     overflow: hidden !important;
 }
 
-/* Remove full-screen behavior */
+/* Remove full-screen behavior and ensure comfortable vertical space */
 .video-section .video-section-two.full-height {
-    height: 560px !important;
-    min-height: 560px !important;
-    max-height: 560px !important;
+    height: 600px !important;
+    min-height: 600px !important;
+    max-height: 600px !important;
     overflow: hidden !important;
 }
 
@@ -1878,24 +1878,15 @@
     overflow: hidden !important;
 }
 
-/*
-   Keep the video covering the section without making
-   the section itself 100vh.
-*/
 .video-section .youtube-video-background iframe {
     position: absolute !important;
-
     top: 50% !important;
     left: 50% !important;
-
     width: 100vw !important;
     height: 56.25vw !important;
-
     min-width: 177.78vh !important;
     min-height: 100% !important;
-
     transform: translate(-50%, -50%) !important;
-
     border: 0 !important;
     pointer-events: none !important;
 }
@@ -1920,14 +1911,25 @@
 
 .video-section .video-text-box {
     position: absolute !important;
-
+    inset: auto !important;
+    top: 50% !important;
+    bottom: auto !important;
+    transform: translateY(-50%) !important;
     right: 8% !important;
-    bottom: 70px !important;
-
-    width: 470px !important;
-    max-width: 470px !important;
-
+    left: auto !important;
+    width: 480px !important;
+    max-width: 480px !important;
+    margin: 0 !important;
     z-index: 4 !important;
+}
+
+/* Clear Webflow title-wrap bottom padding (180px) that was forcing content to the top */
+.video-section .video-one-title-wrap {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
 }
 
 /* Label */
@@ -1947,7 +1949,6 @@
     font-size: 40px !important;
     line-height: 1.12 !important;
     letter-spacing: -1px !important;
-
     margin: 0 !important;
     max-width: 470px !important;
 }
@@ -1963,7 +1964,7 @@
    ========================================================= */
 
 .video-section .button-style-one-wrap {
-    margin-top: 0 !important;
+    margin-top: 28px !important;
 }
 
 .video-section .button-style-one {
@@ -1982,7 +1983,6 @@
 .video-section .lottie-button-wrapper {
     left: 12% !important;
     top: 50% !important;
-
     transform: translateY(-50%) !important;
 }
 
@@ -1990,9 +1990,7 @@
 .video-section .youtube-watch-button {
     width: 64px !important;
     height: 64px !important;
-
-    box-shadow:
-        0 8px 30px rgba(0, 0, 0, 0.30) !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.30) !important;
 }
 
 /* Play icon */
@@ -2003,7 +2001,6 @@
     margin-left: 4px !important;
 }
 
-
 /* =========================================================
    DECORATIVE LINES
    ========================================================= */
@@ -2012,25 +2009,34 @@
     pointer-events: none !important;
 }
 
-
 /* =========================================================
    TABLET
    ========================================================= */
 
 @media (max-width: 991px) {
-
     .video-section .video-section-two.full-height {
-        height: 500px !important;
-        min-height: 500px !important;
-        max-height: 500px !important;
+        height: 560px !important;
+        min-height: 560px !important;
+        max-height: 560px !important;
     }
 
     .video-section .video-text-box {
+        position: absolute !important;
+        inset: auto !important;
+        top: 50% !important;
+        bottom: auto !important;
+        transform: translateY(-50%) !important;
         right: 6% !important;
-        bottom: 55px !important;
+        left: auto !important;
+        width: 420px !important;
+        max-width: 420px !important;
+        margin: 0 !important;
+    }
 
-        width: 400px !important;
-        max-width: 400px !important;
+    .video-section .video-one-title-wrap {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        padding-left: 0 !important;
     }
 
     .video-section .video-title h2 {
@@ -2048,30 +2054,34 @@
     }
 }
 
-
 /* =========================================================
    MOBILE
    ========================================================= */
 
 @media (max-width: 767px) {
-
     .video-section .video-section-two.full-height {
-        height: 560px !important;
-        min-height: 560px !important;
-        max-height: 560px !important;
+        height: 580px !important;
+        min-height: 580px !important;
+        max-height: 580px !important;
     }
 
-    /*
-       On mobile, position content toward the bottom
-       so the video remains the main visual.
-    */
     .video-section .video-text-box {
+        position: absolute !important;
+        inset: auto !important;
+        top: auto !important;
+        bottom: 30px !important;
+        transform: none !important;
         right: 24px !important;
         left: 24px !important;
-        bottom: 38px !important;
-
         width: auto !important;
         max-width: none !important;
+        margin: 0 !important;
+    }
+
+    .video-section .video-one-title-wrap {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        padding-left: 0 !important;
     }
 
     .video-section .video-title h2 {
@@ -2084,7 +2094,6 @@
         font-size: 11px !important;
     }
 
-    /* Play button */
     .video-section .lottie-button-wrapper {
         left: 24px !important;
         top: 42% !important;
@@ -2095,7 +2104,6 @@
         height: 56px !important;
     }
 
-    /* Slightly stronger mobile overlay */
     .video-section .youtube-video-overlay {
         background:
             linear-gradient(
@@ -2107,13 +2115,11 @@
     }
 }
 
-
 /* =========================================================
    SMALL MOBILE
    ========================================================= */
 
 @media (max-width: 479px) {
-
     .video-section .video-section-two.full-height {
         height: 500px !important;
         min-height: 500px !important;
@@ -4350,9 +4356,9 @@
                 <div data-w-id="00c8e272-69b6-a665-72ae-46cd339a9141" style="opacity: 0" class="text-align-center">
                     <div data-wf--sub-heading--variant="base" class="sub-heading">OUR APPROACH</div>
                 </div>
-                <div class="over-view-title-two-wrap text-align-center position-relative overflow-hidden">
+                <div class="over-view-title-two-wrap text-align-center position-relative overflow-hidden" style="max-width: 1050px !important;">
                     <div data-w-id="ec090364-0673-7fcd-a486-7b7a371838de" class="heading-style-h2 color-white">
-                        Our focus is to deliver controlled, consistent and efficient tobacco processing through advanced infrastructure, technology and quality management.
+                        Controlled, Consistent and Efficient Tobacco Processing<br>Through Advanced Infrastructure and Quality Management.
                     </div>
                     <div class="w-layout-vflex over-view-flex position-absolute">
                         <div class="over-view-flex-div one overlay-two"></div>
@@ -4947,13 +4953,6 @@
     </div>
 
 </footer>
-            <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffbd" class="video-section-apearence">
-                <div class="video-line"><div class="video-line-overlay _1"></div></div>
-                <div class="video-line"><div class="video-line-overlay _2"></div></div>
-                <div class="video-line"><div class="video-line-overlay _3"></div></div>
-                <div class="video-line"><div class="video-line-overlay _4"></div></div>
-                <div class="video-line"><div class="video-line-overlay _5"></div></div>
-            </div>
             <div class="video-text-box">
                 <div class="video-one-title-wrap padding-left">
                     <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffca">
@@ -4967,7 +4966,7 @@
                             Advanced Processing. Proven Capability. Consistent Quality.
                         </h2>
                     </div>
-                    <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffd0" style="margin-top: 10px;">
+                    <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffd0">
                         <div
                             data-wf--button-style-one--variant="base"
                             data-w-id="a1dfbf13-2114-c851-1b8e-eda5fda5e771"

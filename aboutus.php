@@ -167,11 +167,11 @@
     overflow: hidden !important;
 }
 
-/* Remove full-screen behavior */
+/* Remove full-screen behavior and ensure comfortable vertical space */
 .video-section .video-section-two.full-height {
-    height: 560px !important;
-    min-height: 560px !important;
-    max-height: 560px !important;
+    height: 600px !important;
+    min-height: 600px !important;
+    max-height: 600px !important;
     overflow: hidden !important;
 }
 
@@ -220,11 +220,25 @@
 
 .video-section .video-text-box {
     position: absolute !important;
+    inset: auto !important;
+    top: 50% !important;
+    bottom: auto !important;
+    transform: translateY(-50%) !important;
     right: 8% !important;
-    bottom: 70px !important;
-    width: 470px !important;
-    max-width: 470px !important;
+    left: auto !important;
+    width: 480px !important;
+    max-width: 480px !important;
+    margin: 0 !important;
     z-index: 4 !important;
+}
+
+/* Clear Webflow title-wrap bottom padding (180px) that was forcing content to the top */
+.video-section .video-one-title-wrap {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
 }
 
 /* Label */
@@ -259,7 +273,7 @@
    ========================================================= */
 
 .video-section .button-style-one-wrap {
-    margin-top: 0 !important;
+    margin-top: 28px !important;
 }
 
 .video-section .button-style-one {
@@ -310,16 +324,28 @@
 
 @media (max-width: 991px) {
     .video-section .video-section-two.full-height {
-        height: 500px !important;
-        min-height: 500px !important;
-        max-height: 500px !important;
+        height: 560px !important;
+        min-height: 560px !important;
+        max-height: 560px !important;
     }
 
     .video-section .video-text-box {
+        position: absolute !important;
+        inset: auto !important;
+        top: 50% !important;
+        bottom: auto !important;
+        transform: translateY(-50%) !important;
         right: 6% !important;
-        bottom: 55px !important;
-        width: 400px !important;
-        max-width: 400px !important;
+        left: auto !important;
+        width: 420px !important;
+        max-width: 420px !important;
+        margin: 0 !important;
+    }
+
+    .video-section .video-one-title-wrap {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        padding-left: 0 !important;
     }
 
     .video-section .video-title h2 {
@@ -343,17 +369,28 @@
 
 @media (max-width: 767px) {
     .video-section .video-section-two.full-height {
-        height: 560px !important;
-        min-height: 560px !important;
-        max-height: 560px !important;
+        height: 580px !important;
+        min-height: 580px !important;
+        max-height: 580px !important;
     }
 
     .video-section .video-text-box {
+        position: absolute !important;
+        inset: auto !important;
+        top: auto !important;
+        bottom: 30px !important;
+        transform: none !important;
         right: 24px !important;
         left: 24px !important;
-        bottom: 38px !important;
         width: auto !important;
         max-width: none !important;
+        margin: 0 !important;
+    }
+
+    .video-section .video-one-title-wrap {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        padding-left: 0 !important;
     }
 
     .video-section .video-title h2 {
@@ -740,6 +777,7 @@
         <style>
             .vision-quote-line {
                 display: block;
+                white-space: nowrap;
             }
             .over-view-title-wrapper .over-view-flex.vision-overlay-flex {
                 position: absolute;
@@ -762,6 +800,11 @@
             .over-view-one {
                 padding-top: 125px;
             }
+            @media (max-width: 991px) {
+                .vision-quote-line {
+                    white-space: normal !important;
+                }
+            }
             @media (max-width: 767px) {
                 .over-view-one {
                     padding-top: 70px;
@@ -771,6 +814,7 @@
                 }
                 .vision-quote-line {
                     display: inline !important;
+                    white-space: normal !important;
                 }
             }
         </style>
@@ -781,20 +825,14 @@
                         <div data-wf--sub-heading--variant="base" class="sub-heading">OUR VISION</div>
                     </div>
                 </div>
-                <div class="over-view-title-wrapper text-align-center position-relative overflow-hidden">
+                <div class="over-view-title-wrapper text-align-center position-relative overflow-hidden" style="max-width: 1050px !important;">
                     <div class="heading-style-h2 color-white">
-                        <span class="vision-quote-line">“To strengthen Tabac Leaf Enterprises’ position in</span>
-                        <span class="vision-quote-line">the tobacco industry through advanced processing</span>
-                        <span class="vision-quote-line">infrastructure, operational efficiency, responsible</span>
-                        <span class="vision-quote-line">practices and enduring business partnerships.”</span>
-                        <!-- <span class="vision-quote-line"></span> -->
+                        <span class="vision-quote-line">“Strengthening Industry Leadership Through</span>
+                        <span class="vision-quote-line">Advanced Infrastructure and Partnerships.”</span>
                     </div>
                     <div class="w-layout-vflex over-view-flex position-absolute vision-overlay-flex">
                         <div class="over-view-flex-div one overlay-two"></div>
                         <div class="over-view-flex-div two overlay-two"></div>
-                        <div class="over-view-flex-div three overlay-two"></div>
-                        <div class="over-view-flex-div four overlay-two"></div>
-                        <div class="over-view-flex-div five overlay-two"></div>
                     </div>
                 </div>
                 <div
@@ -1447,13 +1485,6 @@
     </div>
 
 </footer>
-            <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffbd" class="video-section-apearence">
-                <div class="video-line"><div class="video-line-overlay _1"></div></div>
-                <div class="video-line"><div class="video-line-overlay _2"></div></div>
-                <div class="video-line"><div class="video-line-overlay _3"></div></div>
-                <div class="video-line"><div class="video-line-overlay _4"></div></div>
-                <div class="video-line"><div class="video-line-overlay _5"></div></div>
-            </div>
             <div class="video-text-box">
                 <div class="video-one-title-wrap padding-left">
                     <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffca">
@@ -1534,9 +1565,9 @@
                     var progress = (startY - rect.top) / (startY - endY);
                     progress = Math.max(0, Math.min(1, progress));
 
-                    // Stagger all 5 lines smoothly across scroll progress
-                    var stagger = 0.18;
-                    var duration = 0.28;
+                    // Stagger the 2 lines smoothly across scroll progress
+                    var stagger = 0.30;
+                    var duration = 0.45;
 
                     for (var i = 0; i < divs.length; i++) {
                         var lineStart = i * stagger;
