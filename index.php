@@ -3366,7 +3366,7 @@
                                         data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca3"
                                         class="team-white-overlay"
                                     ></div>
-                                    <a href="team/patricia-smith.html" class="link-block w-inline-block"
+                                    <a href="aboutus.php#leadership" class="link-block w-inline-block" style="height: 100%; z-index: 25; cursor: pointer;"
                                         ><div class="link-text">This is some text inside of a div block.</div></a
                                     >
                                 </div>
@@ -3444,7 +3444,7 @@
                                         data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca3"
                                         class="team-white-overlay"
                                     ></div>
-                                    <a href="team/terry-dias.html" class="link-block w-inline-block"
+                                    <a href="#" class="link-block w-inline-block"
                                         ><div class="link-text">This is some text inside of a div block.</div></a
                                     >
                                 </div>
@@ -3522,7 +3522,7 @@
                                         data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca3"
                                         class="team-white-overlay"
                                     ></div>
-                                    <a href="team/martin-philips.html" class="link-block w-inline-block"
+                                    <a href="#" class="link-block w-inline-block"
                                         ><div class="link-text">This is some text inside of a div block.</div></a
                                     >
                                 </div>

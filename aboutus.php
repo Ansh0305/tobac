@@ -651,7 +651,7 @@
                 </div>
             </div>
         </section>
-        <section class="team-one change-background-color" style="padding-top: 120px; padding-bottom: 120px;">
+        <section id="leadership" class="team-one change-background-color" style="padding-top: 120px; padding-bottom: 120px; scroll-margin-top: 80px;">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="w-layout-vflex team-one-main-wrap">
                     <div class="team-one-grid-wrapper w-dyn-list">
@@ -685,10 +685,6 @@
                                             <div class="outside-overlay"></div>
                                         </div>
                                     </div>
-                                    <div class="team-black-overlay">
-                                        <div class="heading-style-h5">Manoj Bellam</div>
-                                        <div class="color-white">Managing Director</div>
-                                    </div>
                                     <div
                                         data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca3"
                                         class="team-white-overlay"
@@ -719,12 +715,12 @@
                                         "
                                         class="no-margin features-two-heading color-black"
                                     >
-                                        Guiding Growth &amp; Operational Discipline
+                                        Manoj Bellam
                                     </h2>
                                 </div>
-                                <div style="margin-top: 18px; margin-bottom: 16px;">
-                                    <div class="heading-style-h4 color-black" style="font-weight: 700; margin-bottom: 2px;">Manoj Bellam</div>
-                                    <div class="sub-heading" style="color: #b08940; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem;">Managing Director</div>
+                                <div style="margin-top: 8px; margin-bottom: 16px;">
+                                    <div class="sub-heading" style="color: #b08940; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem; margin-bottom: 12px;">Managing Director</div>
+                                    <div class="heading-style-h4 color-black" style="font-weight: 700; font-size: 1.25rem; line-height: 1.35;">Guiding Growth &amp; Operational Discipline</div>
                                 </div>
                                 <p class="color-black" style="margin-bottom: 14px; line-height: 1.65;">
                                     Manoj Bellam is the Managing Director of Tabac Leaf Enterprises and is closely involved in the development of the company’s processing operations, infrastructure and long-term industry partnerships.
@@ -1050,6 +1046,7 @@
                     ><a
                         data-w-id="127df504-60a4-55f9-202b-b0fd7f920651"
                         href="operations.php"
+                        style="grid-column: 1 / -1;"
                         class="service-two-card position-relative service-card-six overflow-hidden w-inline-block"
                         ><div class="w-layout-hflex service-two-card-main position-relative">
                             <div class="w-layout-hflex service-two-card-left-wrap service-six-card-text-wrap">
@@ -1136,7 +1133,7 @@
                         <div class="features-two-image-two-white position-relative overflow-hidden">
                             <img
                                 class="image-effect border-radius-10"
-                                src="assets/images/about-footprint-facility-1.jpg"
+                                src="assets/images/about-footprint-facility-1.jpg?v=<?= filemtime(__DIR__ . '/assets/images/about-footprint-facility-1.jpg') ?>"
                                 width="381"
                                 height="337"
                                 alt="Modern Industrial Tobacco Processing and Threshing Line"
@@ -1157,7 +1154,7 @@
                         <div class="features-two-image-one position-relative overflow-hidden border-radius-10">
                             <img
                                 class="responsive-full-width full-height image-effect border-radius-10"
-                                src="assets/images/about-footprint-facility-2.jpg"
+                                src="assets/images/about-footprint-facility-2.jpg?v=<?= filemtime(__DIR__ . '/assets/images/about-footprint-facility-2.jpg') ?>"
                                 width="564"
                                 height="747"
                                 alt="Tabac Leaf Enterprises Industrial Facility at Tangutur"
