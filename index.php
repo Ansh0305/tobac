@@ -3287,7 +3287,7 @@
                         </div>
                         <div class="heading-two-gap-top overflow-hidden team-heading">
                         <h2 class="no-margin color-black">
-                                Meet the leaders guiding Tabac Leaf Enterprises
+                                Meet the leaders
                             </h2>
                         </div>
                     </div>
@@ -3741,404 +3741,608 @@
 </style>
 
 
-<section class="construction-ideas">
+<style>
+/* =========================================================
+   STICKY SERVICES SECTION - IDENTICAL REPLICA OF services.php
+   ========================================================= */
 
-    <div class="w-layout-blockcontainer container-big w-container">
+.service-two-service-section.home-services-sticky {
+    height: 300vh;
+    position: relative;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        <div class="construction-idea-wrapper">
+.service-two-service-section.home-services-sticky .service-two-service-sticky-wrap {
+    align-items: stretch;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
 
-            <!-- IMAGE -->
-            <div class="construction-image-wrapper position-relative overflow-hidden border-radius-10">
+.service-two-service-section.home-services-sticky .service-two-service-sticky-card {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
 
-                <img
-                    src="assets/images/home-company-at-a-glance.png"
-                    loading="lazy"
-                    width="895"
-                    height="870"
-                    alt="Company at a Glance - Tabac Enterprises"
-                    sizes="(max-width: 767px) 100vw,
-                           (max-width: 991px) 100vw,
-                           600px"
-                    class="image-full-width image-effect border-radius-10"
-                />
+.service-two-service-section.home-services-sticky .service-two-service-sticky-card.one {
+    z-index: 5;
+}
 
-                <div
-                    data-wf--image-apearence--variant="color-varient-white"
-                    data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
-                    class="image-effect-wrapper overflow-hidden w-variant-75dcd1fa-3094-454a-1c3a-179ea4c4f3c0"
-                >
-                    <div class="inside-overlay w-variant-75dcd1fa-3094-454a-1c3a-179ea4c4f3c0"></div>
-                    <div class="outside-overlay w-variant-75dcd1fa-3094-454a-1c3a-179ea4c4f3c0"></div>
-                </div>
+.service-two-service-section.home-services-sticky .service-two-service-sticky-card.two {
+    z-index: 4;
+}
 
-            </div>
+.service-two-service-section.home-services-sticky .service-two-service-sticky-card.three {
+    z-index: 3;
+}
 
+.service-two-service-section.home-services-sticky .service-two-service-box {
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
 
-            <!-- RIGHT CONTENT -->
-            <div class="construction-right-part">
+/* Background colors matching services.php exactly: Card 1 pitch black, Card 2 gray #595959, Card 3 pitch black */
+.service-two-service-section.home-services-sticky .service-two-service-box.one {
+    background-color: #000000 !important;
+}
 
-                <div class="construction-right-top-part">
+.service-two-service-section.home-services-sticky .service-two-service-box.two {
+    background-color: #595959 !important;
+}
 
-                    <!-- LABEL -->
-                    <div
-                        data-w-id="6ee5a757-068e-d193-02fe-1b6aa84b4753"
-                        style="opacity: 0"
-                    >
-                        <div
-                            data-wf--sub-heading--variant="base"
-                            class="sub-heading"
-                        >
-                            Company at a Glance
-                        </div>
+.service-two-service-section.home-services-sticky .service-two-service-box.three {
+    background-color: #000000 !important;
+}
+
+/* Left image box - 51% width */
+.service-two-service-section.home-services-sticky .service-two-service-image-box {
+    width: 51%;
+    height: 100vh;
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 0 !important;
+}
+
+.service-two-service-section.home-services-sticky .service-two-service-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 0 !important;
+}
+
+.service-two-service-section.home-services-sticky .service-image-overlay {
+    background-image: linear-gradient(270deg, #000c, #fff0);
+    position: absolute;
+    inset: 0%;
+    pointer-events: none;
+}
+
+/* Watermark text rotated -90deg matching services.php */
+.service-two-service-section.home-services-sticky .service-two-image-text-wrap {
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    display: flex;
+    position: absolute;
+    inset: 0% 35px 0% auto;
+    pointer-events: none;
+}
+
+.service-two-service-section.home-services-sticky .service-three-image-text {
+    color: #ffffff80 !important;
+    letter-spacing: -10.5px !important;
+    font-size: 150px !important;
+    font-weight: 700 !important;
+    line-height: 180px !important;
+    transform: rotate(-90deg) !important;
+    white-space: nowrap !important;
+    user-select: none !important;
+}
+
+/* Right content container */
+.service-two-service-section.home-services-sticky .service-two-service-container {
+    width: 100%;
+    max-width: 560px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-two-service-section.home-services-sticky .sub-heading {
+    color: var(--yellow) !important;
+    font-size: 13px !important;
+    letter-spacing: 1.5px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    margin-bottom: 10px !important;
+}
+
+.service-two-service-section.home-services-sticky h2 {
+    color: #ffffff !important;
+    font-size: 38px !important;
+    line-height: 1.18 !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.6px !important;
+    margin: 0 !important;
+}
+
+.service-two-service-section.home-services-sticky .service-two-service-heading {
+    max-width: 560px !important;
+    width: 100% !important;
+    margin-top: 14px;
+    margin-bottom: 16px;
+}
+
+.service-two-service-section.home-services-sticky p.color-white {
+    color: #ffffff !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+}
+
+.service-two-service-section.home-services-sticky .service-two-service-list {
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    flex-flow: column;
+    display: flex;
+    padding-left: 18px;
+    list-style-type: disc;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.service-two-service-section.home-services-sticky .service-two-service-list li {
+    color: #ffffff !important;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.service-two-service-section.home-services-sticky .service-two-service-list li .color-white {
+    color: #ffffff !important;
+}
+
+.service-two-service-section.home-services-sticky .key-focus-note {
+    font-size: 13px;
+    color: var(--yellow);
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+
+/* Button identical to services.php in the screenshot */
+.service-two-service-section.home-services-sticky .button-style-one-wrap {
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.service-two-service-section.home-services-sticky .button-style-one {
+    grid-column-gap: 8px !important;
+    grid-row-gap: 8px !important;
+    background-color: #f6b61b !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    padding: 18px 33px !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    border-radius: 10px !important;
+    border: none !important;
+    width: auto !important;
+    min-height: auto !important;
+    box-sizing: border-box !important;
+}
+
+.service-two-service-section.home-services-sticky .button-text {
+    color: #121212 !important;
+    letter-spacing: .03px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+.service-two-service-section.home-services-sticky .button-style-one-icon {
+    display: flex !important;
+    align-items: center !important;
+    margin-left: 6px !important;
+}
+
+.service-two-service-section.home-services-sticky .button-style-one-icon img {
+    filter: brightness(0) !important;
+    width: 8px !important;
+    height: 9px !important;
+    display: block !important;
+}
+
+/* Tablet & Mobile responsive fallback */
+@media (max-width: 991px) {
+    .service-two-service-section.home-services-sticky {
+        height: auto !important;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-sticky-wrap {
+        position: static !important;
+        height: auto !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-sticky-card {
+        position: relative !important;
+        height: auto !important;
+        margin-bottom: 40px;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-box {
+        flex-direction: column !important;
+        height: auto !important;
+        padding-right: 0 !important;
+        grid-column-gap: 0 !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-image-box {
+        width: 100% !important;
+        height: 380px !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-image {
+        height: 380px !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-image-text-wrap {
+        inset: auto 0% 15px 0% !important;
+        width: 100% !important;
+        justify-content: center !important;
+    }
+    .service-two-service-section.home-services-sticky .service-three-image-text {
+        font-size: 50px !important;
+        letter-spacing: -3px !important;
+        transform: none !important;
+        line-height: 1 !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 30px 20px !important;
+    }
+    .service-two-service-section.home-services-sticky h2 {
+        font-size: 30px !important;
+    }
+}
+</style>
+
+<section class="service-two-service-section home-services-sticky">
+    <div class="w-layout-vflex service-two-service-sticky-wrap full-width">
+
+        <!-- Card 1: Company at a Glance (Black Background) -->
+        <div class="service-two-service-sticky-card overflow-hidden full-width one position-absolute">
+            <div class="w-layout-hflex service-two-service-box one">
+                <div class="service-two-service-image-box">
+                    <img
+                        width="975"
+                        height="1080"
+                        alt="Company at a Glance - Tabac Leaf Enterprises"
+                        src="assets/images/home-company-at-a-glance.png"
+                        loading="lazy"
+                        sizes="(max-width: 991px) 100vw, 975px"
+                        class="service-two-service-image"
+                    />
+                    <div class="service-two-image-text-wrap">
+                        <div class="service-three-image-text">Glance</div>
                     </div>
-
-
-                    <!-- HEADING -->
-                    <div class="overflow-hidden heading-two-gap-top-bottom construction-ideas-heading">
-
-                        <h2
-                            data-w-id="4276fc7a-eb10-7491-646a-4ad20b04120d"
-                            style="
-                                -webkit-transform: translate3d(0, 100%, 0)
-                                    scale3d(1, 1, 1)
-                                    rotateX(0)
-                                    rotateY(0)
-                                    rotateZ(0)
-                                    skew(-19deg, 0);
-
-                                -moz-transform: translate3d(0, 100%, 0)
-                                    scale3d(1, 1, 1)
-                                    rotateX(0)
-                                    rotateY(0)
-                                    rotateZ(0)
-                                    skew(-19deg, 0);
-
-                                -ms-transform: translate3d(0, 100%, 0)
-                                    scale3d(1, 1, 1)
-                                    rotateX(0)
-                                    rotateY(0)
-                                    rotateZ(0)
-                                    skew(-19deg, 0);
-
-                                transform: translate3d(0, 100%, 0)
-                                    scale3d(1, 1, 1)
-                                    rotateX(0)
-                                    rotateY(0)
-                                    rotateZ(0)
-                                    skew(-19deg, 0);
-                            "
-                            class="no-margin color-black construction-heading"
-                        >
-                            Experience. Infrastructure. Processing Capability.
-
+                    <div class="service-image-overlay"></div>
+                </div>
+                <div class="w-layout-vflex service-two-service-container sd">
+                    <div class="overflow-hidden">
+                        <div data-wf--sub-heading--variant="base" class="sub-heading">COMPANY AT A GLANCE</div>
+                    </div>
+                    <div class="overflow-hidden heading-two-gap-top-bottom service-two-service-heading">
+                        <h2 class="no-margin">
+                            Experience.<br>Infrastructure.<br><span style="white-space: nowrap;">Processing Capability.</span>
                         </h2>
-
                     </div>
-
-
-                   <!-- DESCRIPTION -->
-<div class="construction-text overflow-hidden">
-
-    <div
-        data-w-id="685bfbb2-07dc-f29a-277d-ccff8065ca6c"
-        style="opacity: 0"
-        class="color-black"
-    >
-
-        <div style="margin-bottom: 12px;">
-            <strong>50 Years of Industry Experience</strong> - 
-            Five decades of experience across tobacco growing, processing, and exports.
-        </div>
-
-        <div style="margin-bottom: 12px;">
-            <strong>100 Million Tobacco Processing Capacity</strong> - 
-            Large-scale processing capabilities across our two facilities.
-        </div>
-
-        <div style="margin-bottom: 12px;">
-            <strong>4 Million Sq. Ft. Warehousing</strong> - 
-            Integrated warehousing and storage infrastructure supporting tobacco processing operations.
-        </div>
-
-        <div>
-            <strong>Integrated Transportation</strong> - 
-            Dedicated internal transportation supporting tobacco movement from farm to factory.
-        </div>
-
-    </div>
-
-</div>
-
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-       
-        <section id="client" data-w-id="26e0ae4f-35bc-e397-1ff7-4aca542f8639" class="over-view-two">
-            <div class="w-layout-blockcontainer container w-container">
-                <div class="w-layout-hflex over-view-two-wrap">
-                    <div class="w-layout-hflex over-view-two-image-wrap position-relative">
+                    <div class="overflow-hidden">
+                        <p class="no-margin color-white">
+                            Tabac Leaf Enterprises brings over five decades of operational excellence across tobacco growing, processing, and exports, anchored by expansive warehousing and dedicated logistics.
+                        </p>
+                    </div>
+                    <ul role="list" class="service-two-service-list heading-two-gap-top-bottom">
+                        <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">50 Years of Industry Experience:</strong> Five decades across growing and exports</div></li>
+                        <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">100 Million kg Processing Capacity:</strong> Modern threshing infrastructure across dual facilities</div></li>
+                        <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">4 Million Sq. Ft. Warehousing:</strong> Integrated climate-controlled storage infrastructure</div></li>
+                        <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">Dedicated Fleet:</strong> Internal transportation connecting farm to factory</div></li>
+                    </ul>
+                    <div class="overflow-hidden" style="margin-bottom: 20px;">
+                        <p class="color-white" style="font-size: 14px; opacity: 0.9; margin-bottom: 6px;">
+                            Our operations are designed to support consistent processing and meet applicable customer specifications.
+                        </p>
+                        <div class="key-focus-note">
+                            Key Focus: Heritage | Scale | Quality Assurance
+                        </div>
+                    </div>
+                    <div>
                         <div
-                            data-w-id="228cfc79-c9fd-784c-d9a9-e8556a50f597"
-                            style="opacity: 0"
-                            class="overview-two-image-card"
-                        ></div>
-                        <div
-                            data-w-id="26e0ae4f-35bc-e397-1ff7-4aca542f863d"
-                            style="opacity: 0"
-                            class="over-view-two-image-one responsive-full-width overflow-hidden border-radius-10"
+                            data-wf--button-style-one--variant="base"
+                            data-w-id="a1dfbf13-2114-c851-1b8e-eda5fda5e771"
+                            class="button-style-one-wrap overflow-hidden"
                         >
-                            <img
-                                width="587"
-                                height="677"
-                                alt="Our Core Services - Tabac Enterprises"
-                                src="assets/images/home-Our Core Services.png"
-                                loading="lazy"
-                                sizes="(max-width: 767px) 100vw, 587px"
-                                class="responsive-full-width image-effect border-radius-10 responsiv-full-height"
-                            />
-                            <div
-                                data-wf--image-apearence--variant="base"
-                                data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
-                                class="image-effect-wrapper overflow-hidden"
+                            <a
+                                href="aboutus.php"
+                                class="button-style-one position-relative overflow-hidden w-inline-block"
                             >
-                                <div class="inside-overlay"></div>
-                                <div class="outside-overlay"></div>
-                            </div>
+                                <div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
+                                    <div class="button-text">About Our Company</div>
+                                    <div class="button-text two">About Our Company</div>
+                                </div>
+                                <div class="button-style-one-icon position-relative">
+                                    <img
+                                        width="8"
+                                        height="9"
+                                        alt=""
+                                        src="67ad72477c605912a4af72eb/67af1b78eef99645a9f0bfd8_Arrow%206.svg"
+                                        loading="lazy"
+                                        class="button-one-arrow"
+                                    />
+                                </div>
+                                <div class="button-style-one-background position-absolute"></div>
+                            </a>
                         </div>
                     </div>
-                    <div class="over-view-information">
-                        <div data-w-id="6addf797-8284-aa80-13b1-d515ad6c9cde" style="opacity: 0">
-                            <div data-wf--sub-heading--variant="base" class="sub-heading">Our Core Services</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Our Core Services (Dark Gray Background #595959) -->
+        <div class="service-two-service-sticky-card overflow-hidden full-width two position-absolute">
+            <div class="w-layout-hflex service-two-service-box two">
+                <div class="service-two-service-image-box">
+                    <img
+                        width="975"
+                        height="1080"
+                        alt="Our Core Services - Tabac Leaf Enterprises"
+                        src="assets/images/home-Our Core Services.png"
+                        loading="lazy"
+                        sizes="(max-width: 991px) 100vw, 975px"
+                        class="service-two-service-image"
+                    />
+                    <div class="service-two-image-text-wrap">
+                        <div class="service-three-image-text">Services</div>
+                    </div>
+                    <div class="service-image-overlay"></div>
+                </div>
+                <div class="w-layout-vflex service-two-service-container">
+                    <div class="overflow-hidden">
+                        <div data-wf--sub-heading--variant="base" class="sub-heading">OUR CORE SERVICES</div>
+                    </div>
+                    <div class="overflow-hidden heading-two-gap-top-bottom service-two-service-heading">
+                        <h2 class="no-margin">
+                            <span style="white-space: nowrap;">Connected Capabilities.</span><br><span style="white-space: nowrap;">Across the Value Chain.</span>
+                        </h2>
+                    </div>
+                    <div class="overflow-hidden">
+                        <p class="color-white no-margin">
+                            Our operations coordinate tobacco movement and processing activities within one operational framework, supporting consistent processing and meeting international customer specifications.
+                        </p>
+                    </div>
+                    <ul role="list" class="service-two-service-list heading-two-gap-top-bottom">
+                        <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">Tobacco Threshing:</strong> Industrial leaf processing and lamina separation</div></li>
+                        <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">Moisture &amp; Quality Control:</strong> Conditioning, drying and precision handling</div></li>
+                        <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">Internal Transportation:</strong> Coordinated fleet movement from farm to factory</div></li>
+                        <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">Storage &amp; Logistics:</strong> Integrated warehousing and global distribution support</div></li>
+                    </ul>
+                    <div class="overflow-hidden" style="margin-bottom: 20px;">
+                        <div class="key-focus-note">
+                            Key Focus: Coordination | Material Movement | Operational Efficiency
                         </div>
-                        <div class="heading-two-gap-top-bottom overflow-hidden overview-two-heading">
-
-    <h2 class="no-margin">
-        Integrated Capabilities Across the Tobacco Value Chain
-    </h2>
-
-</div>
-
-<div class="overflow-hidden">
-
-    <div class="no-margin">
-
-        <div style="margin-bottom: 12px;">
-            <strong>Tobacco Processing</strong> -
-            Industrial tobacco processing supported by advanced threshing infrastructure,
-            process control, and quality-focused operations.
+                    </div>
+                    <div>
+                        <div
+                            data-wf--button-style-one--variant="base"
+                            data-w-id="a1dfbf13-2114-c851-1b8e-eda5fda5e771"
+                            class="button-style-one-wrap overflow-hidden"
+                        >
+                            <a
+                                href="services.php"
+                                class="button-style-one position-relative overflow-hidden w-inline-block"
+                            >
+                                <div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
+                                    <div class="button-text">Explore All Services</div>
+                                    <div class="button-text two">Explore All Services</div>
+                                </div>
+                                <div class="button-style-one-icon position-relative">
+                                    <img
+                                        width="8"
+                                        height="9"
+                                        alt=""
+                                        src="67ad72477c605912a4af72eb/67af1b78eef99645a9f0bfd8_Arrow%206.svg"
+                                        loading="lazy"
+                                        class="button-one-arrow"
+                                    />
+                                </div>
+                                <div class="button-style-one-background position-absolute"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div style="margin-bottom: 12px;">
-            <strong>Transportation</strong> -
-            Dedicated internal transportation supporting tobacco movement from farms
-            to processing facilities.
-        </div>
-
-        <div>
-            <strong>Exporting</strong> -
-            Tobacco export capabilities supported by industry experience,
-            product knowledge, and coordinated operations.
+        <!-- Card 3: Grade Catalogue (Black Background) -->
+        <div class="service-two-service-sticky-card overflow-hidden full-width three position-absolute">
+            <div class="w-layout-hflex service-two-service-box three">
+                <div class="service-two-service-image-box">
+                    <img
+                        width="975"
+                        height="1080"
+                        alt="Indian Tobacco Grade Catalogue - Tabac Leaf Enterprises"
+                        src="assets/images/home-catalogue.png"
+                        loading="lazy"
+                        sizes="(max-width: 991px) 100vw, 975px"
+                        class="service-two-service-image"
+                    />
+                    <div class="service-two-image-text-wrap">
+                        <div class="service-three-image-text">Catalogue</div>
+                    </div>
+                    <div class="service-image-overlay"></div>
+                </div>
+                <div class="w-layout-vflex service-two-service-container">
+                    <div class="overflow-hidden">
+                        <div data-wf--sub-heading--variant="base" class="sub-heading">GRADE CATALOGUE</div>
+                    </div>
+                    <div class="overflow-hidden heading-two-gap-top-bottom service-two-service-heading">
+                        <h2 class="no-margin">
+                            <span style="white-space: nowrap;">Connecting Tobacco Supply</span><br><span style="white-space: nowrap;">with Global Markets</span>
+                        </h2>
+                    </div>
+                    <div class="overflow-hidden">
+                        <p class="no-margin color-white">
+                            Tabac Leaf Enterprises brings experience across tobacco growing, processing and exports. We work to support customer requirements through clear communication, grade specifications and business coordination.
+                        </p>
+                    </div>
+                    <ul role="list" class="service-two-service-list heading-two-gap-top-bottom">
+                        <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">Mysore FCV:</strong> Ripe, open grain, pleasant aroma with high filling value</div></li>
+                        <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">NLS FCV (Northern Light Soils):</strong> Bright lemon to orange color, clean smoking</div></li>
+                        <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">Vinukonda Burley:</strong> Neutral blending filler with high absorption</div></li>
+                        <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">Traditional FCV (Black Soils):</strong> Heavy body, rich taste &amp; balanced chemistry</div></li>
+                    </ul>
+                    <div class="overflow-hidden" style="margin-bottom: 20px;">
+                        <div class="key-focus-note">
+                            Key Focus: Product Knowledge | Customer Requirements | Industry Partnerships
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            data-wf--button-style-one--variant="base"
+                            data-w-id="a1dfbf13-2114-c851-1b8e-eda5fda5e771"
+                            class="button-style-one-wrap overflow-hidden"
+                        >
+                            <a
+                                href="contact.php"
+                                class="button-style-one position-relative overflow-hidden w-inline-block"
+                            >
+                                <div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
+                                    <div class="button-text">Request Grade Specs</div>
+                                    <div class="button-text two">Request Grade Specs</div>
+                                </div>
+                                <div class="button-style-one-icon position-relative">
+                                    <img
+                                        width="8"
+                                        height="9"
+                                        alt=""
+                                        src="67ad72477c605912a4af72eb/67af1b78eef99645a9f0bfd8_Arrow%206.svg"
+                                        loading="lazy"
+                                        class="button-one-arrow"
+                                    />
+                                </div>
+                                <div class="button-style-one-background position-absolute"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
+</section>
 
-</div>
-<div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffd0" style="margin-top: 20px;">
-    <div
-        data-wf--button-style-one--variant="base"
-        data-w-id="a1dfbf13-2114-c851-1b8e-eda5fda5e771"
-        class="button-style-one-wrap overflow-hidden"
-    >
-        <a
-            href="services.php"
-            class="button-style-one position-relative overflow-hidden w-inline-block"
-        >
-            <div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
-                <div class="button-text">
-                    Explore Our Capabilities
-                </div>
+<script>
+/* =========================================================
+   CURTAIN SCROLL TRANSITION
+   Identical to services.php interaction (a-241)
+   ========================================================= */
+(function() {
+    function initStickyCurtain() {
+        const section = document.querySelector('.service-two-service-section.home-services-sticky');
+        if (!section) return;
 
-                <div class="button-text two">
-                    Explore Our Capabilities
-                </div>
-            </div>
+        const card1 = section.querySelector('.service-two-service-sticky-card.one');
+        const card2 = section.querySelector('.service-two-service-sticky-card.two');
+        const card3 = section.querySelector('.service-two-service-sticky-card.three');
+        if (!card1 || !card2 || !card3) return;
 
-            <div class="button-style-one-icon position-relative">
-                <img
-                    width="8"
-                    height="9"
-                    alt=""
-                    src="67ad72477c605912a4af72eb/67af1b78eef99645a9f0bfd8_Arrow%206.svg"
-                    loading="lazy"
-                    class="button-one-arrow"
-                />
-            </div>
+        let ticking = false;
 
-            <div class="button-style-one-background position-absolute"></div>
-        </a>
-    </div>
-</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Advanced Processing. Every Stage Controlled -->
-        <section data-w-id="26e0ae4f-35bc-e397-1ff7-4aca542f8727" class="image-card-one-section">
-            <div class="large-size-div image-card-one-section-main margin-auto" style="padding-bottom: 24px; padding-top: 30px;">
-                <div class="w-layout-blockcontainer container w-container">
-                    <div class="feature-wrapper">
-                        <div class="feature-left-part">
-                            <div class="overflow-hidden feature-heading-wrapper mobile-text-center" style="margin-bottom: 0px !important;">
-                                <h2 class="no-margin color-black">Catalogue</h2>
-                            </div>
-                            <div class="feature-card-content">
-                                <div data-w-id="cb2e62d1-0778-0ad1-57a2-72a9a1798795" class="feature-card-text one">
-                                    <div class="heading-style-h4 color-black text-no-wrap">
-                                    Mysore FCV
-                                    </div>
-                                    <img
-                                        src="67ad72477c605912a4af72eb/68a80569fb754984ca482d08_Vector%20%2891%29.svg"
-                                        loading="lazy"
-                                        width="13"
-                                        height="12"
-                                        alt="Kontix-home-three-building-the-future-arrow-icon-webflow-ecommerce-template"
-                                        data-w-id="457f04e2-c884-2c09-5359-26a96edf2011"
-                                        class="feature-arrow-icon-one"
-                                    />
-                                </div>
-                                <div data-w-id="fb196b32-c1c4-e9d6-8dbf-60b7aed7b537" class="feature-card-text two">
-                                    <div class="heading-style-h4 color-black text-no-wrap">TRAD FCV</div>
-                                    <img
-                                        src="67ad72477c605912a4af72eb/68a80569fb754984ca482d08_Vector%20%2891%29.svg"
-                                        loading="lazy"
-                                        width="13"
-                                        height="12"
-                                        alt="Kontix-home-three-building-the-future-arrow-icon-webflow-ecommerce-template"
-                                        data-w-id="fb196b32-c1c4-e9d6-8dbf-60b7aed7b53a"
-                                        class="feature-arrow-icon-two"
-                                    />
-                                </div>
-                                <div data-w-id="a4808b38-293f-76c2-32cb-c6a138c0f3d4" class="feature-card-text active">
-                                    <div class="heading-style-h4 color-black text-no-wrap">
-                                    NLS FCV
-                                    </div>
-                                    <img
-                                        src="67ad72477c605912a4af72eb/68a80569fb754984ca482d08_Vector%20%2891%29.svg"
-                                        loading="lazy"
-                                        width="13"
-                                        height="12"
-                                        alt="Kontix-home-three-building-the-future-arrow-icon-webflow-ecommerce-template"
-                                        data-w-id="a4808b38-293f-76c2-32cb-c6a138c0f3d7"
-                                        class="feature-arrow-icon-three"
-                                    />
-                                </div>
-                                <div data-w-id="2f668eff-5085-9f88-ec5a-67f3cd01f2f5" class="feature-card-text four">
-                                    <div class="heading-style-h4 color-black text-no-wrap">Vinukonda Burley</div>
-                                    <img
-                                        src="67ad72477c605912a4af72eb/68a80569fb754984ca482d08_Vector%20%2891%29.svg"
-                                        loading="lazy"
-                                        width="13"
-                                        height="12"
-                                        alt="Kontix-home-three-building-the-future-arrow-icon-webflow-ecommerce-template"
-                                        data-w-id="2f668eff-5085-9f88-ec5a-67f3cd01f2f8"
-                                        class="feature-arrow-icon-four"
-                                    />
-                                </div>
-                            </div>
-                            <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffd0" style="margin-top: 35px;">
-                                <div
-                                    data-wf--button-style-one--variant="base"
-                                    data-w-id="a1dfbf13-2114-c851-1b8e-eda5fda5e771"
-                                    class="button-style-one-wrap overflow-hidden"
-                                >
-                                    <a
-                                        href="javascript:void(0);"
-                                        class="button-style-one position-relative overflow-hidden w-inline-block"
-                                    >
-                                        <div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
-                                            <div class="button-text">
-                                                EXPLORE THE GRADE CATALOGUE
-                                            </div>
+        function updateCurtain() {
+            if (window.innerWidth < 992) {
+                card1.style.height = '';
+                card2.style.height = '';
+                card3.style.height = '';
+                ticking = false;
+                return;
+            }
 
-                                            <div class="button-text two">
-                                                EXPLORE THE GRADE CATALOGUE
-                                            </div>
-                                        </div>
+            const rect = section.getBoundingClientRect();
+            const totalScrollable = rect.height - window.innerHeight;
+            if (totalScrollable <= 0) {
+                ticking = false;
+                return;
+            }
 
-                                        <div class="button-style-one-icon position-relative">
-                                            <img
-                                                width="8"
-                                                height="9"
-                                                alt=""
-                                                src="67ad72477c605912a4af72eb/67af1b78eef99645a9f0bfd8_Arrow%206.svg"
-                                                loading="lazy"
-                                                class="button-one-arrow"
-                                            />
-                                        </div>
+            const scrolled = -rect.top;
+            const progress = Math.max(0, Math.min(1, scrolled / totalScrollable));
 
-                                        <div class="button-style-one-background position-absolute"></div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="feature-right-part position-relative border-radius-10">
-                            <img
-                                src="assets/images/home-catalogue.png"
-                                loading="lazy"
-                                width="630.5"
-                                height="790"
-                                alt="Tobacco Grade Catalogue - Tabac Enterprises"
-                                sizes="(max-width: 767px) 100vw, 630.5px"
-                                class="feature-image-one border-radius-10"
-                            /><img
-                                src="assets/images/home-catalogue.png"
-                                loading="lazy"
-                                width="630.5"
-                                height="790"
-                                alt="Tobacco Grade Catalogue - Tabac Enterprises"
-                                sizes="(max-width: 767px) 100vw, 630.5px"
-                                class="feature-image-two border-radius-10"
-                            />
-                            <div class="position-relative border-radius-10 overflow-hidden feature-image-three-wrapper">
-                                <img
-                                    class="image-effect border-radius-10 feature-image-three"
-                                    src="assets/images/home-catalogue.png"
-                                    width="630.5"
-                                    height="790"
-                                    alt="Tobacco Grade Catalogue - Tabac Enterprises"
-                                    sizes="(max-width: 767px) 100vw, 630.5px"
-                                    data-w-id="12c5017c-0ce9-bd9b-d44f-8bfb5a3bc929"
-                                    loading="lazy"
-                                />
-                                <div
-                                    data-wf--image-apearence--variant="base"
-                                    data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
-                                    class="image-effect-wrapper overflow-hidden"
-                                >
-                                    <div class="inside-overlay"></div>
-                                    <div class="outside-overlay"></div>
-                                </div>
-                            </div>
-                            <img
-                                src="assets/images/home-catalogue.png"
-                                loading="lazy"
-                                width="630.5"
-                                height="790"
-                                alt="Tobacco Grade Catalogue - Tabac Enterprises"
-                                sizes="(max-width: 767px) 100vw, 630.5px"
-                                class="feature-image-four border-radius-10"
-                            />
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
+            // Phase 1: progress 0.12 to 0.48 -> Card 1 shrinks from 100vh down to 0vh, revealing Card 2
+            let h1 = 100;
+            if (progress <= 0.12) {
+                h1 = 100;
+            } else if (progress < 0.48) {
+                h1 = 100 - ((progress - 0.12) / 0.36) * 100;
+            } else {
+                h1 = 0;
+            }
+
+            // Phase 2: progress 0.54 to 0.90 -> Card 2 shrinks from 100vh down to 0vh, revealing Card 3
+            let h2 = 100;
+            if (progress <= 0.54) {
+                h2 = 100;
+            } else if (progress < 0.90) {
+                h2 = 100 - ((progress - 0.54) / 0.36) * 100;
+            } else {
+                h2 = 0;
+            }
+
+            card1.style.height = h1.toFixed(2) + 'vh';
+            card2.style.height = h2.toFixed(2) + 'vh';
+            card3.style.height = '100vh';
+
+            ticking = false;
+        }
+
+        function requestTick() {
+            if (!ticking) {
+                requestAnimationFrame(updateCurtain);
+                ticking = true;
+            }
+        }
+
+        window.addEventListener('scroll', requestTick, { passive: true });
+        window.addEventListener('resize', requestTick, { passive: true });
+        updateCurtain();
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initStickyCurtain);
+    } else {
+        initStickyCurtain();
+    }
+})();
+</script>
 
     
         <section data-w-id="32a080e7-e635-fd07-ca0b-ba724ec0d8f0" class="about-two change-background-color">
@@ -4204,7 +4408,7 @@
                                 </div>
                                 <div class="image-card-two-title-wrap" style="max-width: 480px; margin-top: 10px; margin-bottom: 20px;">
                                     <h3 class="no-margin" style="font-size: 22px; line-height: 1.3;">Bio-Steam Powered Processing</h3>
-                                    <p style="font-size: 14.5px; line-height: 1.5; color: rgba(255, 255, 255, 0.88); margin-top: 8px; margin-bottom: 0;">Tabac Leaf Enterprises operates its tobacco processing facilities using bio-steam generated through briquettes rather than coal. This approach reflects our focus on alternative fuel use and responsible industrial practices.</p>
+                                    <p style="font-size: 14.5px; line-height: 1.5; color: rgba(255, 255, 255, 0.88); margin-top: 8px; margin-bottom: 0;">Tabac Leaf Enterprises operates its tobacco processing facilities using bio-steam generated through briquettes rather than coal.</p>
                                 </div>
                                 <div
                                     data-w-id="32a080e7-e635-fd07-ca0b-ba724ec0d900"
