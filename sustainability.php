@@ -1187,7 +1187,7 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="assets/images/about-footprint-facility-1.jpg"
+                                src="assets/images/about-footprint-facility-1.jpg?v=<?= filemtime(__DIR__ . '/assets/images/about-footprint-facility-1.jpg') ?>"
                                 width="302"
                                 height="289"
                                 alt="Resource-Conscious Industrial Infrastructure"
@@ -1208,7 +1208,7 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="assets/images/about-footprint-facility-2.jpg"
+                                src="assets/images/about-footprint-facility-2.jpg?v=<?= filemtime(__DIR__ . '/assets/images/about-footprint-facility-2.jpg') ?>"
                                 width="302"
                                 height="289"
                                 alt="Planned Facility Coordination and Environmental Care"

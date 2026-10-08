@@ -31,6 +31,22 @@
         width: 145px !important;
     }
 }
+
+/* =========================================================
+   GLOBAL HEADING BOLDNESS
+   Matches the bold typography (font-weight: 700) requested
+   by the client across all files and pages.
+   ========================================================= */
+h1, h2, h3, h4,
+.heading-style-h1,
+.heading-style-h2,
+.heading-style-h3,
+.heading-style-h4,
+.features-two-heading,
+.service-six-title-wrap,
+.hero-three-title-text {
+    font-weight: 700 !important;
+}
 </style>
 <header data-wf--navbar--variant="base" class="navbar-style-one-wrapper">
     <div

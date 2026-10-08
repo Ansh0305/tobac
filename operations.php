@@ -1176,7 +1176,7 @@
                         <div class="preservation-image-one-wrapper">
                             <div class="preservation-image-wrapper one overflow-hidden border-radius-10">
                                 <img
-                                    src="assets/images/about-footprint-facility-1.jpg"
+                                    src="assets/images/about-footprint-facility-1-wide.jpg?v=<?= filemtime(__DIR__ . '/assets/images/about-footprint-facility-1-wide.jpg') ?>"
                                     loading="lazy"
                                     width="630"
                                     height="330"
@@ -1233,7 +1233,7 @@
                         <div class="preservation-image-two-wrapper">
                             <div class="preservation-image-wrapper two overflow-hidden border-radius-10">
                                 <img
-                                    src="assets/images/about-footprint-facility-2.jpg"
+                                    src="assets/images/about-footprint-facility-2-wide.jpg?v=<?= filemtime(__DIR__ . '/assets/images/about-footprint-facility-2-wide.jpg') ?>"
                                     loading="lazy"
                                     width="630"
                                     height="330"
