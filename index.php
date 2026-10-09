@@ -1582,11 +1582,48 @@
 }
 
 /* ---------------------------------------------------------
+   INDUSTRIAL PARTNERSHIP SUBHEADING (POPPING OUT REVEAL)
+   --------------------------------------------------------- */
+
+.industrial-subheading-wrap {
+    overflow: hidden !important;
+    margin-top: 36px !important;
+    margin-bottom: 18px !important;
+}
+
+.industrial-subheading-wrap .sub-heading {
+    margin-bottom: 0 !important;
+}
+
+.industrial-subheading-anim {
+    display: inline-block !important;
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+    transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.industrial-subheading-anim.is-visible {
+    opacity: 1 !important;
+    transform: translate3d(0, 0, 0) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .industrial-subheading-anim {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+}
+
+/* ---------------------------------------------------------
    PROCESS TABS
    --------------------------------------------------------- */
 
 .reliable-construction-bottom-container {
     margin-top: 0px !important;
+    padding-top: 0px !important;
 }
 
 .reliable-construction-subtext-wrapper {
@@ -1716,8 +1753,13 @@
         line-height: 1.1 !important;
     }
 
+    .industrial-subheading-wrap {
+        margin-top: 28px !important;
+        margin-bottom: 16px !important;
+    }
+
     .reliable-construction-bottom-container {
-        margin-top: 32px !important;
+        margin-top: 0px !important;
     }
 
     .reliable-construction-subtext-wrapper {
@@ -1773,8 +1815,13 @@
         line-height: 1.6 !important;
     }
 
+    .industrial-subheading-wrap {
+        margin-top: 24px !important;
+        margin-bottom: 14px !important;
+    }
+
     .reliable-construction-bottom-container {
-        margin-top: 28px !important;
+        margin-top: 0px !important;
     }
 
     .reliable-construction-subtext-wrapper {
@@ -1826,8 +1873,13 @@
         font-size: 27px !important;
     }
 
+    .industrial-subheading-wrap {
+        margin-top: 20px !important;
+        margin-bottom: 12px !important;
+    }
+
     .reliable-construction-bottom-container {
-        margin-top: 24px !important;
+        margin-top: 0px !important;
     }
 
     .reliable-construction-subtext-wrapper {
@@ -4713,6 +4765,11 @@
                                 Tabac Leaf Enterprises works with leading tobacco industry partners, including Godfrey Phillips India and Philip Morris. Our facilities support large-scale processing requirements through industrial infrastructure, operational experience, and coordinated execution.
                             </div>
                         </div>
+                        <div class="overflow-hidden industrial-subheading-wrap">
+                            <div class="industrial-subheading-anim">
+                                <div data-wf--sub-heading--variant="base" class="sub-heading">Industrial Partnership</div>
+                            </div>
+                        </div>
                         <div
                             data-w-id="a20fe58b-9e7d-a3f3-aea3-e553aa9cb5cd"
                             style="opacity: 0"
@@ -5032,6 +5089,51 @@
                         }
                     });
                 });
+
+                // Industrial Partnership separate popping out animation (matching Processing Partnerships)
+                (function() {
+                    var $anim = $('.industrial-subheading-anim');
+                    if (!$anim.length) return;
+
+                    var triggered = false;
+                    function popOut() {
+                        if (triggered) return;
+                        triggered = true;
+                        setTimeout(function() {
+                            $anim.addClass('is-visible');
+                        }, 250);
+                    }
+
+                    if ('IntersectionObserver' in window) {
+                        var obs = new IntersectionObserver(function(entries) {
+                            entries.forEach(function(entry) {
+                                if (entry.isIntersecting) {
+                                    popOut();
+                                    obs.unobserve(entry.target);
+                                }
+                            });
+                        }, {
+                            threshold: 0.15,
+                            rootMargin: '0px 0px -10% 0px'
+                        });
+                        obs.observe($anim[0]);
+                    } else {
+                        popOut();
+                    }
+
+                    var para = document.querySelector('[data-w-id="52a55b34-5290-9c20-a95d-49ebb1381fad"]');
+                    if (para && window.MutationObserver) {
+                        var mo = new MutationObserver(function() {
+                            if (para.style.opacity && parseFloat(para.style.opacity) > 0.05) {
+                                popOut();
+                                mo.disconnect();
+                            }
+                        });
+                        mo.observe(para, { attributes: true, attributeFilter: ['style'] });
+                    }
+
+                    setTimeout(popOut, 2000);
+                })();
             });
         </script>
     </body>
