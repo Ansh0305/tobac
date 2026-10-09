@@ -4034,21 +4034,57 @@
     display: block !important;
 }
 
-/* Tablet & Mobile responsive fallback */
+/* Tablet & Mobile Sticky Stacking Cards System */
 @media (max-width: 991px) {
     .service-two-service-section.home-services-sticky {
         height: auto !important;
-        padding-top: 50px !important;
-        padding-bottom: 50px !important;
+        position: relative !important;
+        overflow: visible !important;
+        padding-top: 35px !important;
+        padding-bottom: 70px !important;
     }
     .service-two-service-section.home-services-sticky .service-two-service-sticky-wrap {
-        position: static !important;
-        height: auto !important;
-    }
-    .service-two-service-section.home-services-sticky .service-two-service-sticky-card {
         position: relative !important;
+        overflow: visible !important;
         height: auto !important;
-        margin-bottom: 40px;
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-sticky-card,
+    .service-two-service-section.home-services-sticky .service-two-service-sticky-card.position-absolute {
+        display: block !important;
+        position: -webkit-sticky !important;
+        position: sticky !important;
+        width: 100% !important;
+        height: auto !important;
+        left: 0 !important;
+        right: auto !important;
+        bottom: auto !important;
+        border-radius: 18px !important;
+        overflow: hidden !important;
+        border: 1px solid rgba(221, 185, 105, 0.3) !important;
+        box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.7), 0 20px 48px rgba(0, 0, 0, 0.95) !important;
+        box-sizing: border-box !important;
+        transition: transform 0.2s ease !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-sticky-card.one {
+        top: 72px !important;
+        z-index: 10 !important;
+        margin-bottom: 45px !important;
+        background-color: #000000 !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-sticky-card.two {
+        top: 80px !important;
+        z-index: 20 !important;
+        margin-bottom: 45px !important;
+        background-color: #595959 !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-sticky-card.three {
+        top: 88px !important;
+        z-index: 30 !important;
+        margin-bottom: 0 !important;
+        background-color: #000000 !important;
     }
     .service-two-service-section.home-services-sticky .service-two-service-box {
         flex-direction: column !important;
@@ -4058,29 +4094,117 @@
     }
     .service-two-service-section.home-services-sticky .service-two-service-image-box {
         width: 100% !important;
-        height: 380px !important;
+        height: 240px !important;
+        position: relative !important;
+        overflow: hidden !important;
     }
     .service-two-service-section.home-services-sticky .service-two-service-image {
-        height: 380px !important;
+        height: 100% !important;
+        width: 100% !important;
+        object-fit: cover !important;
     }
     .service-two-service-section.home-services-sticky .service-two-image-text-wrap {
-        inset: auto 0% 15px 0% !important;
+        inset: auto 0% 12px 0% !important;
         width: 100% !important;
         justify-content: center !important;
     }
     .service-two-service-section.home-services-sticky .service-three-image-text {
-        font-size: 50px !important;
-        letter-spacing: -3px !important;
+        font-size: 42px !important;
+        letter-spacing: -2px !important;
         transform: none !important;
         line-height: 1 !important;
+        opacity: 0.8 !important;
     }
     .service-two-service-section.home-services-sticky .service-two-service-container {
         width: 100% !important;
         max-width: 100% !important;
-        padding: 30px 20px !important;
+        padding: 24px 20px !important;
+        box-sizing: border-box !important;
     }
     .service-two-service-section.home-services-sticky h2 {
-        font-size: 30px !important;
+        font-size: 24px !important;
+        line-height: 1.25 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .service-two-service-section.home-services-sticky {
+        padding-top: 25px !important;
+        padding-bottom: 50px !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-sticky-card.one {
+        top: 65px !important;
+        margin-bottom: 35px !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-sticky-card.two {
+        top: 72px !important;
+        margin-bottom: 35px !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-sticky-card.three {
+        top: 79px !important;
+        margin-bottom: 0 !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-image-box {
+        height: 200px !important;
+    }
+    .service-two-service-section.home-services-sticky .service-three-image-text {
+        font-size: 34px !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-container {
+        padding: 20px 16px !important;
+    }
+    .service-two-service-section.home-services-sticky h2 {
+        font-size: 21px !important;
+    }
+    .service-two-service-section.home-services-sticky p {
+        font-size: 13px !important;
+        line-height: 1.4 !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-list {
+        margin-top: 10px !important;
+        margin-bottom: 12px !important;
+        font-size: 12.5px !important;
+        line-height: 1.35 !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-list li {
+        margin-bottom: 5px !important;
+    }
+    .service-two-service-section.home-services-sticky .key-focus-note {
+        font-size: 12px !important;
+        margin-bottom: 14px !important;
+    }
+    .service-two-service-section.home-services-sticky .button-style-one {
+        padding: 12px 22px !important;
+    }
+    .service-two-service-section.home-services-sticky .button-text {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 479px) {
+    .service-two-service-section.home-services-sticky .service-two-service-sticky-card.one {
+        top: 60px !important;
+        margin-bottom: 30px !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-sticky-card.two {
+        top: 66px !important;
+        margin-bottom: 30px !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-sticky-card.three {
+        top: 72px !important;
+        margin-bottom: 0 !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-image-box {
+        height: 175px !important;
+    }
+    .service-two-service-section.home-services-sticky .service-three-image-text {
+        font-size: 28px !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-container {
+        padding: 18px 14px !important;
+    }
+    .service-two-service-section.home-services-sticky h2 {
+        font-size: 19px !important;
     }
 }
 </style>
