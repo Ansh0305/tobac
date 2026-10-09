@@ -428,14 +428,157 @@
     margin-bottom: 80px !important;
 }
 
+/* Tablet & Mobile Sticky Stacking Cards System */
 @media (max-width: 991px) {
     .service-two-service-section {
-        margin-top: 40px !important;
-        margin-bottom: 50px !important;
+        margin-top: 35px !important;
+        margin-bottom: 60px !important;
+        height: auto !important;
+        position: relative !important;
+        overflow: visible !important;
+    }
+
+    .service-two-service-sticky-wrap {
+        position: relative !important;
+        overflow: visible !important;
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .service-two-service-sticky-card,
+    .service-two-service-sticky-card.position-absolute {
+        display: block !important;
+        position: -webkit-sticky !important;
+        position: sticky !important;
+        width: 100% !important;
+        height: auto !important;
+        left: 0 !important;
+        right: auto !important;
+        bottom: auto !important;
+        border-radius: 18px !important;
+        overflow: hidden !important;
+        border: 1px solid rgba(221, 185, 105, 0.3) !important;
+        box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.7), 0 20px 48px rgba(0, 0, 0, 0.95) !important;
+        box-sizing: border-box !important;
+        transition: transform 0.2s ease !important;
+    }
+
+    .service-two-service-sticky-card.one {
+        top: 72px !important;
+        z-index: 10 !important;
+        margin-bottom: 45px !important;
+        background-color: #000000 !important;
+    }
+
+    .service-two-service-sticky-card.two {
+        top: 80px !important;
+        z-index: 20 !important;
+        margin-bottom: 45px !important;
+        background-color: #595959 !important;
+    }
+
+    .service-two-service-sticky-card.three {
+        top: 88px !important;
+        z-index: 30 !important;
+        margin-bottom: 45px !important;
+        background-color: #000000 !important;
+    }
+
+    .service-two-service-sticky-card.four {
+        top: 96px !important;
+        z-index: 40 !important;
+        margin-bottom: 20px !important;
+        background-color: #1a1a1a !important;
+    }
+
+    .service-two-service-box {
+        flex-direction: column !important;
+        height: auto !important;
+        padding-right: 0 !important;
+        grid-column-gap: 0 !important;
+    }
+
+    .service-two-service-image-box {
+        width: 100% !important;
+        height: 240px !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .service-two-service-image {
+        height: 100% !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    }
+
+    .service-two-service-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 24px 20px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Ensure desktop animation inline opacity/transforms are visible on mobile */
+    .service-two-service-container [style*="opacity"],
+    .service-two-service-container [data-w-id] {
+        opacity: 1 !important;
+        transform: none !important;
     }
 
     .video-section {
         margin-bottom: 50px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .service-two-service-sticky-card.one {
+        top: 65px !important;
+        margin-bottom: 35px !important;
+    }
+    .service-two-service-sticky-card.two {
+        top: 72px !important;
+        margin-bottom: 35px !important;
+    }
+    .service-two-service-sticky-card.three {
+        top: 79px !important;
+        margin-bottom: 35px !important;
+    }
+    .service-two-service-sticky-card.four {
+        top: 86px !important;
+        margin-bottom: 20px !important;
+    }
+    .service-two-service-image-box {
+        height: 200px !important;
+    }
+    .service-two-service-container {
+        padding: 20px 16px !important;
+    }
+    .service-two-service-heading h2 {
+        font-size: 21px !important;
+    }
+}
+
+@media (max-width: 479px) {
+    .service-two-service-sticky-card.one {
+        top: 60px !important;
+        margin-bottom: 30px !important;
+    }
+    .service-two-service-sticky-card.two {
+        top: 66px !important;
+        margin-bottom: 30px !important;
+    }
+    .service-two-service-sticky-card.three {
+        top: 72px !important;
+        margin-bottom: 30px !important;
+    }
+    .service-two-service-sticky-card.four {
+        top: 78px !important;
+        margin-bottom: 20px !important;
+    }
+    .service-two-service-image-box {
+        height: 175px !important;
     }
 }
 
