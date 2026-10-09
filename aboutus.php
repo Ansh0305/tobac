@@ -504,7 +504,7 @@
     <body>
         <?php require __DIR__ . "/includes/header.php"; ?>
         <section data-w-id="2a5bf49e-a915-ce81-044a-9004ac91edb5" class="about-hero position-relative overflow-hidden">
-            <div class="about-hero-bg position-absolute banner-apearence" style="background-image: linear-gradient(#0f0f0f, #0f0f0f1a 62%, #0f0f0f00), linear-gradient(#0f0f0f00, #0f0f0f5e 44%, #0f0f0ff2), url('assets/images/about-hero-tobacco.jpg'); background-position: 0 0, 0 0, 50%; background-repeat: repeat, repeat, no-repeat; background-size: auto, auto, cover;"></div>
+            <div class="about-hero-bg position-absolute banner-apearence" style="background-image: linear-gradient(#0f0f0f, #0f0f0f1a 62%, #0f0f0f00), linear-gradient(#0f0f0f00, #0f0f0f5e 44%, #0f0f0ff2), url('assets/images/Original/company-building.jpeg'); background-position: 0 0, 0 0, 50%; background-repeat: repeat, repeat, no-repeat; background-size: auto, auto, cover;"></div>
             <div class="about-hero-content position-relative">
                 <div class="w-layout-blockcontainer container w-container">
                     <div class="about-hero-information text-align-center">
@@ -552,7 +552,7 @@
                             <div class="position-relative overflow-hidden border-radius-10">
                                 <img
                                     class="mobile-full-width image-effect border-radius-10"
-                                    src="assets/images/about-tobacco-processing.jpg"
+                                    src="assets/images/Original/facility.jpeg"
                                     width="492"
                                     height="642"
                                     alt="Tabac Leaf Enterprises - Advanced Tobacco Processing Facility"
@@ -576,7 +576,7 @@
                                 width="473"
                                 height="360"
                                 alt="Tabac Leaf Enterprises - Tobacco Quality Inspection & Warehousing"
-                                src="assets/images/about-tobacco-warehousing.jpg"
+                                src="assets/images/Original/product-2.jpeg"
                                 loading="lazy"
                                 data-w-id="2a5bf49e-a915-ce81-044a-9004ac91edc7"
                                 class="image-effect border-radius-10"
@@ -953,18 +953,14 @@
                             class="service-card-two-bg-image position-absolute active"
                         >
                             <img
-                                src="assets/images/Tobacco-Leaf-Processing.png"
+                                src="assets/images/Original/product-3.jpeg"
                                 loading="lazy"
                                 width="740"
                                 height="141"
                                 alt="Tobacco Leaf Processing"
-                                srcset="
-                                    assets/images/Tobacco-Leaf-Processing.webp  500w,
-                                    assets/images/Tobacco-Leaf-Processing.webp  800w,
-                                    assets/images/Tobacco-Leaf-Processing.png  1261w
-                                "
                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 740px"
                                 class="full-width full-height"
+                                style="object-fit: cover;"
                             />
                             <div class="service-card-two-bg position-absolute two"></div></div></a
                     ><a
@@ -991,18 +987,14 @@
                             class="service-card-two-bg-image position-absolute deactive"
                         >
                             <img
-                                src="assets/images/Tobacco-Leaf-Processing.png"
+                                src="assets/images/Original/company-building.jpeg"
                                 loading="lazy"
                                 width="740"
                                 height="141"
                                 alt="Tobacco Leaf Processing Infrastructure"
-                                srcset="
-                                    assets/images/Tobacco-Leaf-Processing.webp  500w,
-                                    assets/images/Tobacco-Leaf-Processing.webp  800w,
-                                    assets/images/Tobacco-Leaf-Processing.png  1261w
-                                "
                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 740px"
                                 class="full-width full-height"
+                                style="object-fit: cover;"
                             />
                             <div class="service-card-two-bg position-absolute two"></div></div></a
                     ><a
@@ -1029,18 +1021,14 @@
                             class="service-card-two-bg-image position-absolute deactive"
                         >
                             <img
-                                src="assets/images/Tobacco-Leaf-Processing.png"
+                                src="assets/images/Original/facility-2.jpeg"
                                 loading="lazy"
                                 width="740"
                                 height="141"
                                 alt="Tobacco Processing Operational Discipline"
-                                srcset="
-                                    assets/images/Tobacco-Leaf-Processing.webp  500w,
-                                    assets/images/Tobacco-Leaf-Processing.webp  800w,
-                                    assets/images/Tobacco-Leaf-Processing.png  1261w
-                                "
                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 740px"
                                 class="full-width full-height"
+                                style="object-fit: cover;"
                             />
                             <div class="service-card-two-bg position-absolute two"></div></div></a
                     ><a
@@ -1067,18 +1055,14 @@
                             class="service-card-two-bg-image position-absolute deactive"
                         >
                             <img
-                                src="assets/images/Tobacco-Leaf-Processing.png"
+                                src="assets/images/Original/farm.jpeg"
                                 loading="lazy"
                                 width="740"
                                 height="141"
                                 alt="Responsible Tobacco Processing Practices"
-                                srcset="
-                                    assets/images/Tobacco-Leaf-Processing.webp  500w,
-                                    assets/images/Tobacco-Leaf-Processing.webp  800w,
-                                    assets/images/Tobacco-Leaf-Processing.png  1261w
-                                "
                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 740px"
                                 class="full-width full-height"
+                                style="object-fit: cover;"
                             />
                             <div class="service-card-two-bg position-absolute two"></div></div></a
                     ><a
@@ -1106,18 +1090,14 @@
                             class="service-card-two-bg-image position-absolute deactive"
                         >
                             <img
-                                src="assets/images/Tobacco-Leaf-Processing.png"
+                                src="assets/images/Original/Group.jpeg"
                                 loading="lazy"
                                 width="740"
                                 height="141"
                                 alt="Tobacco Industry Partnerships"
-                                srcset="
-                                    assets/images/Tobacco-Leaf-Processing.webp  500w,
-                                    assets/images/Tobacco-Leaf-Processing.webp  800w,
-                                    assets/images/Tobacco-Leaf-Processing.png  1261w
-                                "
                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 740px"
                                 class="full-width full-height"
+                                style="object-fit: cover;"
                             />
                             <div class="service-card-two-bg position-absolute two"></div></div></a
                     ><!-- <a
@@ -1171,11 +1151,11 @@
                         <div class="features-two-image-two-white position-relative overflow-hidden">
                             <img
                                 class="image-effect border-radius-10"
-                                src="assets/images/about-footprint-facility-1.jpg?v=<?= filemtime(__DIR__ . '/assets/images/about-footprint-facility-1.jpg') ?>"
+                                src="assets/images/Original/company-building.jpeg"
                                 width="381"
                                 height="337"
                                 alt="Modern Industrial Tobacco Processing and Threshing Line"
-                                style="opacity: 0"
+                                style="opacity: 0; object-fit: cover;"
                                 sizes="(max-width: 479px) 100vw, 381px"
                                 data-w-id="d79c86cc-7a05-faab-2953-61351dccd46f"
                                 loading="lazy"
@@ -1192,11 +1172,11 @@
                         <div class="features-two-image-one position-relative overflow-hidden border-radius-10">
                             <img
                                 class="responsive-full-width full-height image-effect border-radius-10"
-                                src="assets/images/about-footprint-facility-2.jpg?v=<?= filemtime(__DIR__ . '/assets/images/about-footprint-facility-2.jpg') ?>"
+                                src="assets/images/Original/facility-2.jpeg"
                                 width="564"
                                 height="747"
                                 alt="Tabac Leaf Enterprises Industrial Facility at Tangutur"
-                                style="opacity: 0"
+                                style="opacity: 0; object-fit: cover;"
                                 sizes="(max-width: 767px) 100vw, 564px"
                                 data-w-id="d79c86cc-7a05-faab-2953-61351dccd472"
                                 loading="lazy"
