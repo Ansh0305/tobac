@@ -1388,10 +1388,11 @@
                                 width="975"
                                 height="1080"
                                 alt="Industrial Tobacco Threshing and Processing Facilities - Tabac Leaf Enterprises"
-                                src="assets/images/services-tobacco-processing.jpg"
+                                src="assets/images/Original/facility.jpeg"
                                 loading="lazy"
                                 sizes="(max-width: 991px) 100vw, 975px"
                                 class="service-two-service-image"
+                                style="object-fit: cover;"
                             />
                             <div class="service-two-image-text-wrap">
                                 <div class="service-three-image-text">Processing</div>
@@ -1561,10 +1562,11 @@
                                 width="975"
                                 height="1080"
                                 alt="International Tobacco Export Warehouse - Tabac Leaf Enterprises"
-                                src="assets/images/services-tobacco-export.jpg"
+                                src="assets/images/Original/product.jpeg"
                                 loading="lazy"
                                 sizes="(max-width: 991px) 100vw, 975px"
                                 class="service-two-service-image"
+                                style="object-fit: cover;"
                             />
                             <div class="service-two-image-text-wrap">
                                 <div class="service-three-image-text">Exporting</div>
@@ -1631,10 +1633,11 @@
                                 width="975"
                                 height="1080"
                                 alt="Integrated Tobacco Value Chain - Tabac Leaf Enterprises"
-                                src="assets/images/services-tobacco-integrated.jpg"
+                                src="assets/images/Original/facility-2.jpeg"
                                 loading="lazy"
                                 sizes="(max-width: 991px) 100vw, 975px"
                                 class="service-two-service-image"
+                                style="object-fit: cover;"
                             />
                             <div class="service-two-image-text-wrap">
                                 <div class="service-three-image-text">Integration</div>
