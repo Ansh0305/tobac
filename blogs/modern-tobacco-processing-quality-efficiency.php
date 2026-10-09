@@ -296,7 +296,7 @@
 
                     <div class="article-hero-banner">
                         <img
-                            src="../assets/images/operations-machinery-systems.jpg"
+                            src="../assets/images/Original/facility-2.jpeg"
                             alt="How Modern Tobacco Processing Can Support Quality, Efficiency and Responsible Operations"
                         />
                     </div>

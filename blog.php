@@ -231,7 +231,7 @@
                     <article class="blog-card">
                         <a href="blogs/why-tobacco-leaf-processing-matters.php" class="blog-card-media">
                             <img
-                                src="assets/images/about-tobacco-processing.jpg"
+                                src="assets/images/Original/facility.jpeg"
                                 alt="Why Tobacco Leaf Processing Matters: From Harvested Leaf to Consistent Industrial Quality"
                                 loading="lazy"
                             />
@@ -265,7 +265,7 @@
                     <article class="blog-card">
                         <a href="blogs/what-are-fcv-and-burley-tobacco-grades.php" class="blog-card-media">
                             <img
-                                src="assets/images/contact-golden-tobacco.jpg"
+                                src="assets/images/Original/product-4.jpeg"
                                 alt="What Are FCV and Burley Tobacco Grades? Understanding Tobacco Varieties, Grades and Chemistry"
                                 loading="lazy"
                             />
@@ -299,7 +299,7 @@
                     <article class="blog-card">
                         <a href="blogs/modern-tobacco-processing-quality-efficiency.php" class="blog-card-media">
                             <img
-                                src="assets/images/operations-machinery-systems.jpg"
+                                src="assets/images/Original/facility-2.jpeg"
                                 alt="How Modern Tobacco Processing Can Support Quality, Efficiency and Responsible Operations"
                                 loading="lazy"
                             />
