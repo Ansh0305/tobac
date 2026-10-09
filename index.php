@@ -4220,10 +4220,11 @@
                         width="975"
                         height="1080"
                         alt="Company at a Glance - Tabac Leaf Enterprises"
-                        src="assets/images/home-company-at-a-glance.png"
+                        src="assets/images/Original/facility.jpeg"
                         loading="lazy"
                         sizes="(max-width: 991px) 100vw, 975px"
                         class="service-two-service-image"
+                        style="object-fit: cover;"
                     />
                     <div class="service-two-image-text-wrap">
                         <div class="service-three-image-text">Glance</div>
@@ -4298,10 +4299,11 @@
                         width="975"
                         height="1080"
                         alt="Our Core Services - Tabac Leaf Enterprises"
-                        src="assets/images/home-Our Core Services.png"
+                        src="assets/images/Original/facility-2.jpeg"
                         loading="lazy"
                         sizes="(max-width: 991px) 100vw, 975px"
                         class="service-two-service-image"
+                        style="object-fit: cover;"
                     />
                     <div class="service-two-image-text-wrap">
                         <div class="service-three-image-text">Services</div>
@@ -4373,10 +4375,11 @@
                         width="975"
                         height="1080"
                         alt="Indian Tobacco Grade Catalogue - Tabac Leaf Enterprises"
-                        src="assets/images/home-catalogue.png"
+                        src="assets/images/Original/product.jpeg"
                         loading="lazy"
                         sizes="(max-width: 991px) 100vw, 975px"
                         class="service-two-service-image"
+                        style="object-fit: cover;"
                     />
                     <div class="service-two-image-text-wrap">
                         <div class="service-three-image-text">Catalogue</div>
@@ -4961,13 +4964,14 @@
                         >
                             <img
                                 class="border-radius-10 tab-image-full-width image-effect"
-                                src="assets/images/home-Processing Partnerships.png"
+                                src="assets/images/Original/product-3.jpeg"
                                 width="603"
                                 height="696"
                                 alt="Processing Partnerships - Tabac Enterprises"
                                 sizes="(max-width: 767px) 100vw, 603px"
                                 data-w-id="5ba2e318-d75c-ffff-da4f-78dff1ee332f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                             />
                             <div
                                 data-wf--image-apearence--variant="base"
