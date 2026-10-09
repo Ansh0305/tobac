@@ -1049,7 +1049,7 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="assets/images/services-tobacco-processing.jpg"
+                                src="assets/images/Original/facility.jpeg"
                                 width="302"
                                 height="289"
                                 alt="Efficient Tobacco Processing and Conditioning"
@@ -1070,7 +1070,7 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="assets/images/services-tobacco-integrated.jpg"
+                                src="assets/images/Original/facility-2.jpeg"
                                 width="302"
                                 height="289"
                                 alt="Integrated Material Handling and Processing Flow"
@@ -1117,7 +1117,7 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="assets/images/services-tobacco-export.jpg"
+                                src="assets/images/Original/product-2.jpeg"
                                 width="302"
                                 height="289"
                                 alt="Direct Farm to Facility Logistics"
@@ -1187,7 +1187,7 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="assets/images/about-footprint-facility-1.jpg?v=<?= filemtime(__DIR__ . '/assets/images/about-footprint-facility-1.jpg') ?>"
+                                src="assets/images/Original/facility.jpeg"
                                 width="302"
                                 height="289"
                                 alt="Resource-Conscious Industrial Infrastructure"
@@ -1208,7 +1208,7 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="assets/images/about-footprint-facility-2.jpg?v=<?= filemtime(__DIR__ . '/assets/images/about-footprint-facility-2.jpg') ?>"
+                                src="assets/images/Original/company-building.jpeg"
                                 width="302"
                                 height="289"
                                 alt="Planned Facility Coordination and Environmental Care"
