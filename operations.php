@@ -866,7 +866,7 @@
                     <div class="service-three-about-image-wrap border-radius-10">
                         <img
                             class="full-width full-height image-effect border-radius-10"
-                            src="assets/images/operations-machinery-systems.jpg"
+                            src="assets/images/Original/product-3.jpeg"
                             width="597"
                             height="450"
                             alt="Industrial Tobacco Leaf Processing Machinery and Systems - Tabac Leaf Enterprises"
