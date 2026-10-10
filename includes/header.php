@@ -85,19 +85,16 @@ h1, h2, h3, h4,
 }
 
 /* Transform to X when menu is opened */
-.menu-button.w-nav-button.w--open .tobac-ham-line.line-1,
-.menu-button.w-nav-button.is-active .tobac-ham-line.line-1 {
+.menu-button.w-nav-button.w--open .tobac-ham-line.line-1 {
     transform: translateY(7px) rotate(45deg);
 }
 
-.menu-button.w-nav-button.w--open .tobac-ham-line.line-2,
-.menu-button.w-nav-button.is-active .tobac-ham-line.line-2 {
+.menu-button.w-nav-button.w--open .tobac-ham-line.line-2 {
     opacity: 0;
     transform: scaleX(0);
 }
 
-.menu-button.w-nav-button.w--open .tobac-ham-line.line-3,
-.menu-button.w-nav-button.is-active .tobac-ham-line.line-3 {
+.menu-button.w-nav-button.w--open .tobac-ham-line.line-3 {
     transform: translateY(-7px) rotate(-45deg);
 }
 
@@ -253,29 +250,14 @@ h1, h2, h3, h4,
 document.addEventListener('DOMContentLoaded', function() {
     var navButton = document.querySelector('.navbar .w-nav-button');
     var navMenu = document.querySelector('.navbar .w-nav-menu');
-    var navBar = document.querySelector('.navbar.w-nav');
     if (!navButton || !navMenu) return;
-
-    // Toggle helper to guarantee instant smooth menu response
-    navButton.addEventListener('click', function(e) {
-        setTimeout(function() {
-            var isOpen = navButton.classList.contains('w--open') || navMenu.hasAttribute('data-nav-menu-open');
-            if (isOpen) {
-                navButton.classList.add('is-active');
-                navButton.setAttribute('aria-expanded', 'true');
-            } else {
-                navButton.classList.remove('is-active');
-                navButton.setAttribute('aria-expanded', 'false');
-            }
-        }, 50);
-    });
 
     // Close when clicking a nav link on mobile
     var links = navMenu.querySelectorAll('.w-nav-link');
     links.forEach(function(link) {
         link.addEventListener('click', function() {
-            if (window.innerWidth < 992) {
-                navButton.classList.remove('is-active');
+            if (window.innerWidth < 992 && navButton.classList.contains('w--open')) {
+                navButton.click();
             }
         });
     });
