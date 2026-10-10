@@ -323,58 +323,234 @@
    ========================================================= */
 
 @media (max-width: 767px) {
+    .video-section {
+        position: relative !important;
+        width: 100% !important;
+        overflow: hidden !important;
+        margin-top: 40px !important;
+        margin-bottom: 50px !important;
+    }
+
     .video-section .video-section-two.full-height {
-        height: 580px !important;
-        min-height: 580px !important;
-        max-height: 580px !important;
+        position: relative !important;
+        height: 560px !important;
+        min-height: 560px !important;
+        max-height: 560px !important;
+        width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .video-section .youtube-video-background {
+        position: absolute !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .video-section .youtube-video-overlay {
+        position: absolute !important;
+        inset: 0 !important;
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.35) 0%,
+            rgba(0, 0, 0, 0.55) 40%,
+            rgba(0, 0, 0, 0.84) 100%
+        ) !important;
+        z-index: 1 !important;
+    }
+
+    .video-section .w-layout-blockcontainer.container {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        z-index: 5 !important;
+    }
+
+    .video-section .video-two-video-wrapper,
+    .video-section .viide-two-video-line {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .video-section .lottie-button-wrapper {
+        position: absolute !important;
+        top: 32px !important;
+        left: 50% !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: translateX(-50%) !important;
+        margin: 0 !important;
+        width: 58px !important;
+        height: 58px !important;
+        z-index: 5 !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .video-section .youtube-watch-button {
+        width: 58px !important;
+        height: 58px !important;
+        border-radius: 50% !important;
+        background: rgba(255, 255, 255, 0.95) !important;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .video-section .youtube-watch-button span {
+        width: 0 !important;
+        height: 0 !important;
+        border-top: 9px solid transparent !important;
+        border-bottom: 9px solid transparent !important;
+        border-left: 14px solid #111111 !important;
+        margin-left: 4px !important;
+        display: block !important;
+    }
+
+    .video-section .video-section-apearence {
+        display: none !important;
     }
 
     .video-section .video-text-box {
         position: absolute !important;
         inset: auto !important;
         top: auto !important;
-        bottom: 30px !important;
-        transform: none !important;
-        right: 24px !important;
-        left: 24px !important;
+        bottom: 24px !important;
+        left: 16px !important;
+        right: 16px !important;
         width: auto !important;
-        max-width: none !important;
-        margin: 0 !important;
+        max-width: 440px !important;
+        margin: 0 auto !important;
+        transform: none !important;
+        text-align: center !important;
+        z-index: 4 !important;
+        padding: 0 !important;
     }
 
-    .video-section .video-one-title-wrap {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-    }
-
-    .video-section .video-title h2 {
-        font-size: 30px !important;
-        line-height: 1.12 !important;
-        letter-spacing: -0.7px !important;
+    .video-section .video-one-title-wrap,
+    .video-section .video-one-title-wrap.padding-left {
+        padding: 0 !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
     }
 
     .video-section .video-one-title-wrap .sub-heading {
         font-size: 11px !important;
+        line-height: 1.2 !important;
+        letter-spacing: 1.5px !important;
+        text-transform: uppercase !important;
+        color: var(--yellow, #e5a93c) !important;
+        font-weight: 600 !important;
+        margin-bottom: 8px !important;
+        text-align: center !important;
     }
 
-    .video-section .lottie-button-wrapper {
-        left: 24px !important;
-        top: 42% !important;
+    .video-section .video-title {
+        margin: 0 0 10px 0 !important;
+        text-align: center !important;
+        width: 100% !important;
     }
 
-    .video-section .youtube-watch-button {
-        width: 56px !important;
-        height: 56px !important;
+    .video-section .video-title h2,
+    .video-section .heading-two-gap-top-bottom {
+        font-size: 22px !important;
+        line-height: 1.25 !important;
+        letter-spacing: -0.3px !important;
+        color: #ffffff !important;
+        margin: 0 0 10px 0 !important;
+        max-width: 100% !important;
+        font-weight: 700 !important;
+        text-align: center !important;
     }
 
-    .video-section .youtube-video-overlay {
-        background:
-            linear-gradient(
-                180deg,
-                rgba(0, 0, 0, 0.20) 0%,
-                rgba(0, 0, 0, 0.40) 45%,
-                rgba(0, 0, 0, 0.78) 100%
-            ) !important;
+    .video-section .video-text-box p,
+    .video-section .video-text-box .video-one-title-wrap > div:nth-child(3) {
+        font-size: 13px !important;
+        line-height: 1.45 !important;
+        color: rgba(255, 255, 255, 0.9) !important;
+        margin: 0 auto 16px auto !important;
+        max-width: 380px !important;
+        text-align: center !important;
+    }
+
+    .video-section .button-style-one-wrap {
+        margin: 0 auto !important;
+        display: inline-flex !important;
+        justify-content: center !important;
+        overflow: hidden !important;
+    }
+
+    .video-section .button-style-one {
+        min-height: 46px !important;
+        height: 46px !important;
+        padding: 0 24px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background-color: var(--yellow, #f6b61b) !important;
+        border-radius: 8px !important;
+        overflow: hidden !important;
+        position: relative !important;
+        text-decoration: none !important;
+    }
+
+    .video-section .button-text-wrap {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: auto !important;
+        overflow: hidden !important;
+    }
+
+    .video-section .button-text {
+        font-size: 13px !important;
+        font-weight: 600 !important;
+        letter-spacing: 0.5px !important;
+        color: #111111 !important;
+        line-height: 1 !important;
+        margin: 0 !important;
+        white-space: nowrap !important;
+    }
+
+    .video-section .button-text.two {
+        display: none !important;
+    }
+
+    .video-section .button-style-one-icon {
+        display: flex !important;
+        align-items: center !important;
+        margin-left: 8px !important;
+    }
+
+    .video-section .button-one-arrow {
+        display: block !important;
+        width: 9px !important;
+        height: 9px !important;
+        filter: brightness(0) !important;
+    }
+
+    .video-section .video-text-box .video-one-title-wrap > div:last-child {
+        margin-top: 14px !important;
+        font-size: 11.5px !important;
+        line-height: 1.35 !important;
+        letter-spacing: 0.4px !important;
+        text-align: center !important;
+        color: var(--yellow, #e5a93c) !important;
+        font-weight: 500 !important;
+        max-width: 360px !important;
     }
 }
 
@@ -384,24 +560,15 @@
 
 @media (max-width: 479px) {
     .video-section .video-section-two.full-height {
-        height: 500px !important;
-        min-height: 500px !important;
-        max-height: 500px !important;
+        height: 540px !important;
+        min-height: 540px !important;
+        max-height: 540px !important;
     }
 
-    .video-section .video-text-box {
-        right: 20px !important;
-        left: 20px !important;
-        bottom: 30px !important;
-    }
-
-    .video-section .video-title h2 {
-        font-size: 27px !important;
-        line-height: 1.14 !important;
-    }
-
-    .video-section .heading-two-gap-top-bottom {
-        margin-bottom: 20px !important;
+    .video-section .lottie-button-wrapper {
+        top: 26px !important;
+        width: 52px !important;
+        height: 52px !important;
     }
 
     .video-section .youtube-watch-button {
@@ -409,8 +576,51 @@
         height: 52px !important;
     }
 
-    .video-section .lottie-button-wrapper {
-        left: 20px !important;
+    .video-section .youtube-watch-button span {
+        border-top-width: 8px !important;
+        border-bottom-width: 8px !important;
+        border-left-width: 12px !important;
+        margin-left: 3px !important;
+    }
+
+    .video-section .video-text-box {
+        bottom: 20px !important;
+        left: 14px !important;
+        right: 14px !important;
+    }
+
+    .video-section .video-title h2,
+    .video-section .heading-two-gap-top-bottom {
+        font-size: 20px !important;
+        line-height: 1.25 !important;
+        margin-bottom: 8px !important;
+    }
+
+    .video-section .video-text-box p,
+    .video-section .video-text-box .video-one-title-wrap > div:nth-child(3) {
+        font-size: 12.5px !important;
+        line-height: 1.4 !important;
+        margin-bottom: 14px !important;
+        max-width: 340px !important;
+    }
+
+    .video-section .button-style-one {
+        min-height: 44px !important;
+        height: 44px !important;
+        padding: 0 20px !important;
+    }
+
+    .video-section .button-text {
+        font-size: 12px !important;
+    }
+
+    .video-section .button-text.two {
+        display: none !important;
+    }
+
+    .video-section .video-text-box .video-one-title-wrap > div:last-child {
+        margin-top: 12px !important;
+        font-size: 11px !important;
     }
 }
 
@@ -428,7 +638,7 @@
     margin-bottom: 80px !important;
 }
 
-/* Tablet & Mobile Sticky Stacking Cards System */
+/* Tablet & Mobile Stacking Cards System */
 @media (max-width: 991px) {
     .service-two-service-section {
         margin-top: 35px !important;
@@ -444,52 +654,45 @@
         height: auto !important;
         display: flex !important;
         flex-direction: column !important;
+        gap: 32px !important;
         width: 100% !important;
     }
 
     .service-two-service-sticky-card,
     .service-two-service-sticky-card.position-absolute {
         display: block !important;
-        position: -webkit-sticky !important;
-        position: sticky !important;
-        width: 100% !important;
-        height: auto !important;
-        left: 0 !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
         right: auto !important;
         bottom: auto !important;
+        width: 100% !important;
+        height: auto !important;
         border-radius: 18px !important;
         overflow: hidden !important;
         border: 1px solid rgba(221, 185, 105, 0.3) !important;
-        box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.7), 0 20px 48px rgba(0, 0, 0, 0.95) !important;
+        box-shadow: 0 12px 36px rgba(0, 0, 0, 0.85) !important;
         box-sizing: border-box !important;
-        transition: transform 0.2s ease !important;
+        margin-bottom: 0 !important;
     }
 
     .service-two-service-sticky-card.one {
-        top: 72px !important;
-        z-index: 10 !important;
-        margin-bottom: 45px !important;
+        z-index: 1 !important;
         background-color: #000000 !important;
     }
 
     .service-two-service-sticky-card.two {
-        top: 80px !important;
-        z-index: 20 !important;
-        margin-bottom: 45px !important;
+        z-index: 2 !important;
         background-color: #595959 !important;
     }
 
     .service-two-service-sticky-card.three {
-        top: 88px !important;
-        z-index: 30 !important;
-        margin-bottom: 45px !important;
+        z-index: 3 !important;
         background-color: #000000 !important;
     }
 
     .service-two-service-sticky-card.four {
-        top: 96px !important;
-        z-index: 40 !important;
-        margin-bottom: 20px !important;
+        z-index: 4 !important;
         background-color: #1a1a1a !important;
     }
 
@@ -502,13 +705,16 @@
 
     .service-two-service-image-box {
         width: 100% !important;
-        height: 240px !important;
+        height: 250px !important;
+        max-height: 250px !important;
+        flex: 0 0 250px !important;
         position: relative !important;
         overflow: hidden !important;
     }
 
     .service-two-service-image {
-        height: 100% !important;
+        height: 250px !important;
+        max-height: 250px !important;
         width: 100% !important;
         object-fit: cover !important;
     }
@@ -527,30 +733,43 @@
         transform: none !important;
     }
 
+    
+
+    .service-two-service-list {
+        margin-top: 12px !important;
+        margin-bottom: 16px !important;
+        padding-left: 18px !important;
+        row-gap: 8px !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .service-two-service-list li {
+        font-size: 13.5px !important;
+        line-height: 1.45 !important;
+        margin-bottom: 4px !important;
+    }
+    .service-two-service-container p.color-white {
+        font-size: 13.5px !important;
+        line-height: 1.45 !important;
+    }
+
     .video-section {
         margin-bottom: 50px !important;
     }
 }
 
 @media (max-width: 767px) {
-    .service-two-service-sticky-card.one {
-        top: 65px !important;
-        margin-bottom: 35px !important;
-    }
-    .service-two-service-sticky-card.two {
-        top: 72px !important;
-        margin-bottom: 35px !important;
-    }
-    .service-two-service-sticky-card.three {
-        top: 79px !important;
-        margin-bottom: 35px !important;
-    }
-    .service-two-service-sticky-card.four {
-        top: 86px !important;
-        margin-bottom: 20px !important;
+    .service-two-service-sticky-wrap {
+        gap: 25px !important;
     }
     .service-two-service-image-box {
-        height: 200px !important;
+        height: 220px !important;
+        max-height: 220px !important;
+        flex: 0 0 220px !important;
+    }
+    .service-two-service-image {
+        height: 220px !important;
+        max-height: 220px !important;
     }
     .service-two-service-container {
         padding: 20px 16px !important;
@@ -558,65 +777,49 @@
     .service-two-service-heading h2 {
         font-size: 21px !important;
     }
+    .service-two-service-list {
+        margin-top: 10px !important;
+        margin-bottom: 14px !important;
+        padding-left: 16px !important;
+        row-gap: 6px !important;
+    }
+    .service-two-service-list li {
+        font-size: 13px !important;
+        line-height: 1.4 !important;
+        margin-bottom: 3px !important;
+    }
+    .service-two-service-container p.color-white {
+        font-size: 13px !important;
+        line-height: 1.4 !important;
+    }
 }
 
 @media (max-width: 479px) {
-    .service-two-service-sticky-card.one {
-        top: 60px !important;
-        margin-bottom: 30px !important;
-    }
-    .service-two-service-sticky-card.two {
-        top: 66px !important;
-        margin-bottom: 30px !important;
-    }
-    .service-two-service-sticky-card.three {
-        top: 72px !important;
-        margin-bottom: 30px !important;
-    }
-    .service-two-service-sticky-card.four {
-        top: 78px !important;
-        margin-bottom: 20px !important;
+    .service-two-service-sticky-wrap {
+        gap: 20px !important;
     }
     .service-two-service-image-box {
-        height: 175px !important;
+        height: 200px !important;
+        max-height: 200px !important;
+        flex: 0 0 200px !important;
+    }
+    .service-two-service-image {
+        height: 200px !important;
+        max-height: 200px !important;
     }
 }
 
 /* =========================================================
-   SERVICE CARDS: WATERMARK TEXT CONTAINMENT
+   SERVICE CARDS: REMOVE WATERMARK & RESPONSIVE VISIBILITY
    ========================================================= */
 
-/* Strictly contain all visual elements inside the image box */
-.service-two-service-image-box {
-    position: relative !important;
-    overflow: hidden !important;
-}
-
-/* Strictly confine the rotated watermark container */
-.service-two-image-text-wrap {
-    overflow: hidden !important;
-    pointer-events: none !important;
-}
-
-/* Prevent text from wrapping to multiple lines and spattering outside */
+/* Remove watermark text on images completely */
+.service-two-image-text-wrap,
 .service-three-image-text {
-    white-space: nowrap !important;
-    word-break: keep-all !important;
-    pointer-events: none !important;
-    user-select: none !important;
+    display: none !important;
 }
 
-@media (min-width: 992px) {
-    .service-two-image-text-wrap {
-        max-width: 180px !important;
-    }
 
-    .service-three-image-text {
-        font-size: 110px !important;
-        line-height: 1 !important;
-        letter-spacing: -6px !important;
-    }
-}
         </style>
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
@@ -624,9 +827,7 @@
         <script type="text/javascript">
             WebFont.load({
                 google: {
-                    families: [
-                        "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic",
-                        "Inter:300,400,500,600,700",
+                    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Inter:300,400,500,600,700",
                     ],
                 },
             });
@@ -634,10 +835,10 @@
         <script type="text/javascript">
             !(function (o, c) {
                 var n = c.documentElement,
-                    t = " w-mod-";
-                (n.className += t + "js"),
+                    t =" w-mod-";
+                (n.className += t +"js"),
                     ("ontouchstart" in o || (o.DocumentTouch && c instanceof DocumentTouch)) &&
-                        (n.className += t + "touch");
+                        (n.className += t +"touch");
             })(window, document);
         </script>
         <link
@@ -648,11 +849,11 @@
         <link href="67ad72477c605912a4af72eb/67d10e7396516cb5859d8554_favicon-large.png" rel="apple-touch-icon" />
         <script type="text/javascript">
             window.__WEBFLOW_CURRENCY_SETTINGS = {
-                currencyCode: "USD",
-                symbol: "$",
-                decimal: ".",
+                currencyCode:"USD",
+                symbol:"$",
+                decimal:".",
                 fractionDigits: 2,
-                group: ",",
+                group:",",
                 template:
                     '{{wf {"path":"symbol","type":"PlainText"} }} {{wf {"path":"amount","type":"CommercePrice"} }} {{wf {"path":"currencyCode","type":"PlainText"} }}',
                 hideDecimalForWholeNumbers: false,
@@ -660,7 +861,7 @@
         </script>
     </head>
     <body>
-        <?php require __DIR__ . "/includes/header.php"; ?>
+        <?php require __DIR__ ."/includes/header.php"; ?>
         <section
             data-w-id="cdc768ec-aa89-764f-7048-810d906b54cb"
             class="service-v2-hero position-relative overflow-hidden"
@@ -689,8 +890,7 @@
                                         -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
                                             rotateZ(0) skew(-19deg, 0);
                                         transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                            rotateZ(0) skew(-19deg, 0);
-                                    "
+                                            rotateZ(0) skew(-19deg, 0);"
                                     class="no-margin service-hero-heading"
                                 >
                                 Integrated Capabilities Across the Tobacco Value Chain
@@ -889,8 +1089,7 @@
                             srcset="
                                 67ad72477c605912a4af72eb/68ad6efa832a3a5093814539_image%20%285%29-p-500.webp  500w,
                                 67ad72477c605912a4af72eb/68ad6efa832a3a5093814539_image%20%285%29-p-800.webp  800w,
-                                67ad72477c605912a4af72eb/68ad6efa832a3a5093814539_image%20%285%29.webp       1044w
-                            "
+                                67ad72477c605912a4af72eb/68ad6efa832a3a5093814539_image%20%285%29.webp       1044w"
                             sizes="(max-width: 767px) 100vw, 522px"
                             class="responsive-full-width image-effect border-radius-10 responsiv-full-height"
                         />
@@ -918,8 +1117,7 @@
                                     -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
                                         rotateZ(0) skew(-19deg, 0);
                                     transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                                        skew(-19deg, 0);
-                                "
+                                        skew(-19deg, 0);"
                                 class="no-margin"
                             >
                                 A legacy of strength a future of innovation
@@ -959,8 +1157,7 @@
                                                     -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
                                                         rotateY(0) rotateZ(0) skew(0, 0);
                                                     transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                "
+                                                        rotateY(0) rotateZ(0) skew(0, 0);"
                                                 class="w-layout-vflex counter-one-train"
                                             >
                                                 <div class="heading-style-h1 color-white">0</div>
@@ -975,8 +1172,7 @@
                                                     -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
                                                         rotateY(0) rotateZ(0) skew(0, 0);
                                                     transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                "
+                                                        rotateY(0) rotateZ(0) skew(0, 0);"
                                                 class="w-layout-vflex counter-one-train"
                                             >
                                                 <div class="heading-style-h1 color-white">2</div>
@@ -996,8 +1192,7 @@
                                                     -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
                                                         rotateY(0) rotateZ(0) skew(0, 0);
                                                     transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                "
+                                                        rotateY(0) rotateZ(0) skew(0, 0);"
                                                 class="w-layout-vflex counter-one-train"
                                             >
                                                 <div class="heading-style-h1 color-white">0</div>
@@ -1015,8 +1210,7 @@
                                                     -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
                                                         rotateY(0) rotateZ(0) skew(0, 0);
                                                     transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                "
+                                                        rotateY(0) rotateZ(0) skew(0, 0);"
                                                 class="w-layout-vflex counter-one-train"
                                             >
                                                 <div class="heading-style-h1 color-white">5</div>
@@ -1059,8 +1253,7 @@
                                                     -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
                                                         rotateY(0) rotateZ(0) skew(0, 0);
                                                     transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                "
+                                                        rotateY(0) rotateZ(0) skew(0, 0);"
                                                 class="w-layout-vflex counter-one-train"
                                             >
                                                 <div class="heading-style-h1 color-white">0</div>
@@ -1082,8 +1275,7 @@
                                                     -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
                                                         rotateY(0) rotateZ(0) skew(0, 0);
                                                     transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                "
+                                                        rotateY(0) rotateZ(0) skew(0, 0);"
                                                 class="w-layout-vflex counter-one-train"
                                             >
                                                 <div class="heading-style-h1 color-white">9</div>
@@ -1107,8 +1299,7 @@
                                                     -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
                                                         rotateY(0) rotateZ(0) skew(0, 0);
                                                     transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                "
+                                                        rotateY(0) rotateZ(0) skew(0, 0);"
                                                 class="w-layout-vflex counter-one-train"
                                             >
                                                 <div class="heading-style-h1 color-white">0</div>
@@ -1130,8 +1321,7 @@
                                                     -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
                                                         rotateY(0) rotateZ(0) skew(0, 0);
                                                     transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
-                                                        rotateY(0) rotateZ(0) skew(0, 0);
-                                                "
+                                                        rotateY(0) rotateZ(0) skew(0, 0);"
                                                 class="w-layout-vflex counter-one-train"
                                             >
                                                 <div class="heading-style-h1 color-white">9</div>
@@ -1184,8 +1374,7 @@
                                 -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
                                     skew(-19deg, 0);
                                 transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                                    skew(-19deg, 0);
-                            "
+                                    skew(-19deg, 0);"
                             class="no-margin service-v2-video-heading"
                         >
                             Trusted construction solutions For every project scale
@@ -1210,8 +1399,7 @@
                             autoplay=""
                             loop=""
                             style="
-                                background-image: url(&quot;67ad72477c605912a4af72eb6887662dc028951b445a61b4_hero-2-kontix-poster-00001.jpg&quot;);
-                            "
+                                background-image: url(&quot;67ad72477c605912a4af72eb6887662dc028951b445a61b4_hero-2-kontix-poster-00001.jpg&quot;);"
                             muted=""
                             playsinline=""
                             data-wf-ignore="true"
@@ -1296,8 +1484,7 @@
                                 -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
                                     skew(-19deg, 0);
                                 transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                                    skew(-19deg, 0);
-                            "
+                                    skew(-19deg, 0);"
                             class="no-margin"
                         >
                             Expert construction services that bring plans to life
@@ -1394,9 +1581,6 @@
                                 class="service-two-service-image"
                                 style="object-fit: cover;"
                             />
-                            <div class="service-two-image-text-wrap">
-                                <div class="service-three-image-text">Processing</div>
-                            </div>
                             <div class="service-image-overlay"></div>
                         </div>
                         <div class="w-layout-vflex service-two-service-container sd">
@@ -1418,8 +1602,7 @@
                                         -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
                                             rotateZ(0) skew(-19deg, 0);
                                         transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                            rotateZ(0) skew(-19deg, 0);
-                                    "
+                                            rotateZ(0) skew(-19deg, 0);"
                                     class="no-margin"
                                 >
                                     Industrial Processing. Operational Precision.
@@ -1434,6 +1617,7 @@
                                     Tobacco processing is at the core of our business. Our facilities in Tangutur, Prakasam District, Andhra Pradesh, support large-scale processing requirements through established infrastructure and process-focused operations.
                                 </p>
                             </div>
+                            
                             <ul
                                 data-w-id="4b323538-ff11-6b89-cf17-c26613673495"
                                 style="opacity: 0"
@@ -1447,6 +1631,7 @@
                                 <li><div class="color-white">Quality inspection and handling</div></li>
                                 <li><div class="color-white">Packing and storage</div></li>
                             </ul>
+                            
                             <div class="overflow-hidden" style="margin-bottom: 20px;">
                                 <p class="color-white" style="font-size: 14px; opacity: 0.9; margin-bottom: 6px;">
                                     Our operations are designed to support consistent processing and meet applicable customer specifications.
@@ -1497,9 +1682,6 @@
                                 sizes="(max-width: 991px) 100vw, 975px"
                                 class="service-two-service-image"
                             />
-                            <div class="service-two-image-text-wrap">
-                                <div class="service-three-image-text">Transport</div>
-                            </div>
                             <div class="service-image-overlay"></div>
                         </div>
                         <div class="w-layout-vflex service-two-service-container">
@@ -1514,12 +1696,14 @@
                                     Our internal transportation system supports the movement of tobacco from farms to processing facilities. By coordinating transportation with our processing and storage operations, we support material movement across the tobacco value chain.
                                 </p>
                             </div>
+                            
                             <ul role="list" class="service-two-service-list heading-two-gap-top-bottom">
                                 <li><div class="color-white">Farm-to-factory transportation</div></li>
                                 <li><div class="color-white">Coordinated movement to processing facilities</div></li>
                                 <li><div class="color-white">Support for storage and warehousing operations</div></li>
                                 <li><div class="color-white">Integrated logistics planning</div></li>
                             </ul>
+                            
                             <div class="overflow-hidden" style="margin-bottom: 20px;">
                                 <div style="font-size: 13px; color: var(--yellow); letter-spacing: 0.5px; font-weight: 500;">
                                     Key Focus: Coordination | Material Movement | Operational Efficiency
@@ -1568,9 +1752,6 @@
                                 class="service-two-service-image"
                                 style="object-fit: cover;"
                             />
-                            <div class="service-two-image-text-wrap">
-                                <div class="service-three-image-text">Exporting</div>
-                            </div>
                             <div class="service-image-overlay"></div>
                         </div>
                         <div class="w-layout-vflex service-two-service-container">
@@ -1585,12 +1766,14 @@
                                     Tabac Leaf Enterprises brings experience across tobacco growing, processing and exports. Our export operations are supported by product knowledge, processing infrastructure and coordinated logistics. We work to support customer requirements through clear communication, grade specifications and business coordination.
                                 </p>
                             </div>
+                            
                             <ul role="list" class="service-two-service-list heading-two-gap-top-bottom">
                                 <li><div class="color-white">Tobacco grade and product enquiries</div></li>
                                 <li><div class="color-white">Coordination of product specifications</div></li>
                                 <li><div class="color-white">Processing and logistics support</div></li>
                                 <li><div class="color-white">Business and export partnership enquiries</div></li>
                             </ul>
+                            
                             <div class="overflow-hidden" style="margin-bottom: 20px;">
                                 <div style="font-size: 13px; color: var(--yellow); letter-spacing: 0.5px; font-weight: 500;">
                                     Key Focus: Product Knowledge | Customer Requirements | Industry Partnerships
@@ -1639,9 +1822,6 @@
                                 class="service-two-service-image"
                                 style="object-fit: cover;"
                             />
-                            <div class="service-two-image-text-wrap">
-                                <div class="service-three-image-text">Integration</div>
-                            </div>
                             <div class="service-image-overlay"></div>
                         </div>
                         <div class="w-layout-vflex service-two-service-container">
@@ -1656,6 +1836,7 @@
                                     Our processing, transportation and warehousing capabilities work together to support coordinated operations. This integrated approach helps connect tobacco movement and processing activities within one operational framework.
                                 </p>
                             </div>
+                            
                             <ul role="list" class="service-two-service-list heading-two-gap-top-bottom">
                                 <li><div class="color-white"><strong style="color: var(--yellow);">Farm:</strong> Primary sourcing &amp; farm-level coordination</div></li>
                                 <li><div class="color-white"><strong style="color: var(--yellow);">Transportation:</strong> Internal fleet &amp; farm-to-factory logistics</div></li>
@@ -1663,6 +1844,7 @@
                                 <li><div class="color-white"><strong style="color: var(--yellow);">Storage:</strong> Regulated climate warehousing &amp; packaging</div></li>
                                 <li><div class="color-white"><strong style="color: var(--yellow);">Export:</strong> Global market supply &amp; grade fulfillment</div></li>
                             </ul>
+                            
                             <div class="overflow-hidden" style="margin-bottom: 20px;">
                                 <div style="font-size: 13px; color: var(--yellow); letter-spacing: 0.5px; font-weight: 500;">
                                     Farm &rarr; Transportation &rarr; Processing &rarr; Storage &rarr; Export
@@ -1833,8 +2015,7 @@
                                     -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
                                         rotateZ(0) skew(-19deg, 0);
                                     transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                                        skew(-19deg, 0);
-                                "
+                                        skew(-19deg, 0);"
                                 class="no-margin color-black"
                             >
                                 A legacy of strength a future of innovation
@@ -1935,8 +2116,7 @@
                                     srcset="
                                         67ad72477c605912a4af72eb/687610141fc9d3eb705deca0_Mask%20group%20-%202025-07-15T134417.251-p-500.webp 500w,
                                         67ad72477c605912a4af72eb/687610141fc9d3eb705deca0_Mask%20group%20-%202025-07-15T134417.251-p-800.webp 800w,
-                                        67ad72477c605912a4af72eb/687610141fc9d3eb705deca0_Mask%20group%20-%202025-07-15T134417.251.webp       960w
-                                    "
+                                        67ad72477c605912a4af72eb/687610141fc9d3eb705deca0_Mask%20group%20-%202025-07-15T134417.251.webp       960w"
                                 />
                                 <div
                                     data-wf--image-apearence--variant="color-varient-white"
@@ -1961,8 +2141,7 @@
                                     loading="lazy"
                                     srcset="
                                         67ad72477c605912a4af72eb/68761014d8071350caefd10b_17511%201-p-500.webp 500w,
-                                        67ad72477c605912a4af72eb/68761014d8071350caefd10b_17511%201.webp       692w
-                                    "
+                                        67ad72477c605912a4af72eb/68761014d8071350caefd10b_17511%201.webp       692w"
                                 />
                                 <div
                                     data-wf--image-apearence--variant="base"
@@ -2122,8 +2301,7 @@
             background-image: url('https://img.youtube.com/vi/n91nMszHV5c/maxresdefault.jpg');
             background-position: center;
             background-size: cover;
-            background-repeat: no-repeat;
-        "
+            background-repeat: no-repeat;"
     >
 
         <iframe
@@ -2142,8 +2320,7 @@
         min-width: 177.78vh;
         transform: translate(-50%, -50%);
         border: 0;
-        pointer-events: none;
-    "
+        pointer-events: none;"
 ></iframe>
 
     </div>
@@ -2163,8 +2340,7 @@
                     rgba(0, 0, 0, 0.48) 50%,
                     rgba(0, 0, 0, 0.65) 100%
                 );
-            pointer-events: none;
-        "
+            pointer-events: none;"
     ></div>
 
 
@@ -2199,8 +2375,7 @@
                             border-radius: 50%;
                             background: rgba(255, 255, 255, 0.95);
                             text-decoration: none;
-                            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
-                        "
+                            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);"
                     >
 
                         <span
@@ -2211,8 +2386,7 @@
                                 border-top: 11px solid transparent;
                                 border-bottom: 11px solid transparent;
                                 border-left: 17px solid #000;
-                                margin-left: 5px;
-                            "
+                                margin-left: 5px;"
                         ></span>
 
                     </a>
@@ -2307,14 +2481,14 @@
                 </div>
             </div>
         </section>
-        <?php require __DIR__ . "/includes/footer.php"; ?>
+        <?php require __DIR__ ."/includes/footer.php"; ?>
         <script
             src="js/jquery-3.5.1.min.dc5e7f18c8.js?site=67ad72477c605912a4af72eb"
             type="text/javascript"
         ></script>
         <script>
-            document.documentElement.setAttribute("data-wf-page", "67dd651f2ee1c33e120e658a");
-            document.documentElement.setAttribute("data-wf-site", "67ad72477c605912a4af72eb");
+            document.documentElement.setAttribute("data-wf-page","67dd651f2ee1c33e120e658a");
+            document.documentElement.setAttribute("data-wf-site","67ad72477c605912a4af72eb");
         </script>
         <script
             src="67ad72477c605912a4af72eb/js/webflow.8c3c7a7b.98f16f3db6b689ff.js"
