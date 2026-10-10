@@ -71,41 +71,6 @@
         />
         <style>
             @media (min-width: 992px) {
-                html.w-mod-js:not(.w-mod-ix) [data-w-id="32a080e7-e635-fd07-ca0b-ba724ec0d8fa"] {
-                    -webkit-transform: translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                        skew(0, 0);
-                    -moz-transform: translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    -ms-transform: translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    transform: translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                }
-                html.w-mod-js:not(.w-mod-ix) [data-w-id="32a080e7-e635-fd07-ca0b-ba724ec0d8f6"] {
-                    border-color: rgb(255, 185, 55);
-                }
-                html.w-mod-js:not(.w-mod-ix) [data-w-id="32a080e7-e635-fd07-ca0b-ba724ec0d90d"] {
-                    border-color: rgba(255, 185, 55, 0);
-                }
-                html.w-mod-js:not(.w-mod-ix) [data-w-id="32a080e7-e635-fd07-ca0b-ba724ec0d8f7"] {
-                    -webkit-transform: translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0)
-                        skew(0, 0);
-                    -moz-transform: translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0)
-                        skew(0, 0);
-                    -ms-transform: translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    transform: translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                }
-                html.w-mod-js:not(.w-mod-ix) [data-w-id="32a080e7-e635-fd07-ca0b-ba724ec0d917"] {
-                    opacity: 0;
-                }
-                html.w-mod-js:not(.w-mod-ix) [data-w-id="32a080e7-e635-fd07-ca0b-ba724ec0d900"] {
-                    opacity: 1;
-                }
-                html.w-mod-js:not(.w-mod-ix) [data-w-id="32a080e7-e635-fd07-ca0b-ba724ec0d911"] {
-                    -webkit-transform: translate3d(0, 102px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                        skew(0, 0);
-                    -moz-transform: translate3d(0, 102px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                        skew(0, 0);
-                    -ms-transform: translate3d(0, 102px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    transform: translate3d(0, 102px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                }
                 html.w-mod-js:not(.w-mod-ix) [data-w-id="d3e8c70d-9056-3db0-9265-2f016fd144f4"] {
                     height: 0%;
                 }
@@ -351,7 +316,7 @@
 <style>
 
     /* =========================================================
-   HERO HEADING -  MATCH "WHY TABAC ENTERPRISES" TYPOGRAPHY
+   HERO HEADING -  MATCH"WHY TABAC ENTERPRISES" TYPOGRAPHY
    ========================================================= */
 
 .home-two-hero-section .hero-three-title-text {
@@ -1220,12 +1185,12 @@
 
 <style>
 /* =========================================================
-   OUR APPROACH - EXPANDED CLEAN SPACING
+   OUR APPROACH - REFINED ELEGANT SPACING & DESKTOP ANIMATION
    ========================================================= */
 
 .about-two {
-    padding-top: 90px !important;
-    padding-bottom: 90px !important;
+    padding-top: 85px !important;
+    padding-bottom: 85px !important;
     overflow: hidden !important;
 }
 
@@ -1235,26 +1200,23 @@
 }
 
 /* ---------------------------------------------------------
-   LABEL
+   LABEL & HEADINGS
    --------------------------------------------------------- */
 
 .about-two > .container > .text-align-center {
-    margin-bottom: 18px !important;
+    margin-bottom: 16px !important;
 }
 
 .about-two .sub-heading {
     font-size: 13px !important;
     line-height: 1.2 !important;
-    letter-spacing: 1.2px !important;
+    letter-spacing: 1.5px !important;
+    font-weight: 700 !important;
 }
-
-/* ---------------------------------------------------------
-   MAIN HEADING
-   --------------------------------------------------------- */
 
 .about-two .over-view-title-two-wrap {
     max-width: 980px !important;
-    margin: 0 auto 72px !important;
+    margin: 0 auto 56px !important;
 }
 
 .about-two .over-view-title-two-wrap .heading-style-h2 {
@@ -1265,74 +1227,202 @@
 }
 
 /* ---------------------------------------------------------
-   IMAGE GRID
+   IMAGE GRID & CARDS
    --------------------------------------------------------- */
 
 .about-two .image-card-three-wrap {
     display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-
     width: 100% !important;
     max-width: 1080px !important;
-
     margin: 0 auto !important;
-
-    gap: 32px !important;
+    gap: 30px !important;
 }
-
-/* ---------------------------------------------------------
-   IMAGE CARDS
-   --------------------------------------------------------- */
 
 .about-two .image-card-two {
     width: 100% !important;
-    height: 430px !important;
-    min-height: 430px !important;
-
+    height: 440px !important;
+    min-height: 440px !important;
     overflow: hidden !important;
-    border-radius: 12px !important;
+    border-radius: 14px !important;
+    position: relative !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3) !important;
+    transition: border-color 0.45s ease, box-shadow 0.45s ease !important;
+    cursor: pointer;
 }
 
-/* Image wrapper */
+/* Image wrapper & images */
 .about-two .image-card-two-image {
     width: 100% !important;
     height: 100% !important;
-    min-height: 430px !important;
+    min-height: 440px !important;
+    position: relative !important;
+    overflow: hidden !important;
 }
 
-/* Actual images */
 .about-two .image-card-two-image img {
     width: 100% !important;
     height: 100% !important;
-
     object-fit: cover !important;
     object-position: center !important;
-
     display: block !important;
+    transform: scale(1.0);
+    filter: brightness(0.85);
+    transition: transform 0.75s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease !important;
 }
 
-/* Animation wrapper */
 .about-two .image-card-two-image .image-effect-wrapper {
     width: 100% !important;
     height: 100% !important;
 }
 
-/* ---------------------------------------------------------
-   IMAGE OVERLAY
-   --------------------------------------------------------- */
+/* Gradient Overlay */
+.about-two .image-card-two-overlay {
+    position: absolute !important;
+    inset: 0 !important;
+    background: linear-gradient(180deg, rgba(10, 10, 13, 0.08) 0%, rgba(10, 10, 13, 0.42) 42%, rgba(10, 10, 13, 0.95) 100%) !important;
+    pointer-events: none !important;
+    transition: opacity 0.5s ease !important;
+}
 
+/* Content wrapper & Content text */
 .about-two .image-card-card-two-content-wrap {
-    padding: 24px !important;
+    padding: 30px 32px 34px !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 2 !important;
+    pointer-events: none !important;
+}
+
+.about-two .image-card-card-two-content {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.about-two .image-card-card-two-content .sub-heading {
+    font-size: 12.5px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.4px !important;
+    color: #f6b61b !important;
+    text-transform: uppercase !important;
+    margin-bottom: 8px !important;
+    opacity: 0.95 !important;
+}
+
+.about-two .image-card-two-title-wrap {
+    margin: 0 !important;
+    max-width: 460px !important;
 }
 
 .about-two .image-card-two-title-wrap h3 {
-    font-size: 23px !important;
-    line-height: 1.15 !important;
-    letter-spacing: -0.4px !important;
+    font-size: 24px !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.3px !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
 }
 
+.about-two .approach-desc {
+    font-size: 14.5px !important;
+    line-height: 1.5 !important;
+    color: rgba(255, 255, 255, 0.88) !important;
+    margin-top: 8px !important;
+    margin-bottom: 0 !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Button */
 .about-two .image-card-two-button-wrap {
-    margin-top: 14px !important;
+    margin-top: 18px !important;
+    pointer-events: auto !important;
+    transition: opacity 0.4s ease 0.05s, transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s ease !important;
+}
+
+/* ---------------------------------------------------------
+   DESKTOP ANIMATION & HOVER DYNAMICS (min-width: 992px)
+   --------------------------------------------------------- */
+
+@media (min-width: 992px) {
+    /* Active Card */
+    .about-two .image-card-two.active {
+        border-color: #f6b61b !important;
+        box-shadow: 0 16px 42px rgba(0, 0, 0, 0.45), 0 0 24px rgba(246, 182, 27, 0.16) !important;
+    }
+    .about-two .image-card-two.active .image-card-two-image img {
+        transform: scale(1.08) !important;
+        filter: brightness(1) !important;
+    }
+    .about-two .image-card-two.active .image-card-card-two-content {
+        transform: translateY(0) !important;
+    }
+    .about-two .image-card-two.active .image-card-two-button-wrap {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+        pointer-events: auto !important;
+    }
+
+    /* Deactive / Resting Card */
+    .about-two .image-card-two.deactive {
+        border-color: rgba(255, 255, 255, 0.12) !important;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
+    }
+    .about-two .image-card-two.deactive .image-card-two-image img {
+        transform: scale(1.0) !important;
+        filter: brightness(0.85) !important;
+    }
+    .about-two .image-card-two.deactive .image-card-card-two-content {
+        transform: translateY(58px) !important;
+    }
+    .about-two .image-card-two.deactive .image-card-two-button-wrap {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transform: translateY(14px) !important;
+        pointer-events: none !important;
+    }
+
+    /* Pure CSS instant hover reaction */
+    .about-two .image-card-three-wrap:has(.image-card-two.two:hover) .image-card-two.two {
+        border-color: #f6b61b !important;
+        box-shadow: 0 16px 42px rgba(0, 0, 0, 0.45), 0 0 24px rgba(246, 182, 27, 0.16) !important;
+    }
+    .about-two .image-card-three-wrap:has(.image-card-two.two:hover) .image-card-two.two .image-card-two-image img {
+        transform: scale(1.08) !important;
+        filter: brightness(1) !important;
+    }
+    .about-two .image-card-three-wrap:has(.image-card-two.two:hover) .image-card-two.two .image-card-card-two-content {
+        transform: translateY(0) !important;
+    }
+    .about-two .image-card-three-wrap:has(.image-card-two.two:hover) .image-card-two.two .image-card-two-button-wrap {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+        pointer-events: auto !important;
+    }
+
+    .about-two .image-card-three-wrap:has(.image-card-two.two:hover) .image-card-two.one {
+        border-color: rgba(255, 255, 255, 0.12) !important;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
+    }
+    .about-two .image-card-three-wrap:has(.image-card-two.two:hover) .image-card-two.one .image-card-two-image img {
+        transform: scale(1.0) !important;
+        filter: brightness(0.85) !important;
+    }
+    .about-two .image-card-three-wrap:has(.image-card-two.two:hover) .image-card-two.one .image-card-card-two-content {
+        transform: translateY(58px) !important;
+    }
+    .about-two .image-card-three-wrap:has(.image-card-two.two:hover) .image-card-two.one .image-card-two-button-wrap {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transform: translateY(14px) !important;
+        pointer-events: none !important;
+    }
 }
 
 /* ---------------------------------------------------------
@@ -1363,20 +1453,18 @@
     line-height: 1.35 !important;
 }
 
-
 /* =========================================================
-   TABLET
+   TABLET RESPONSIVENESS (max-width: 991px)
    ========================================================= */
 
 @media (max-width: 991px) {
-
     .about-two {
         padding-top: 70px !important;
         padding-bottom: 70px !important;
     }
 
     .about-two .over-view-title-two-wrap {
-        margin-bottom: 50px !important;
+        margin-bottom: 45px !important;
     }
 
     .about-two .over-view-title-two-wrap .heading-style-h2 {
@@ -1392,63 +1480,85 @@
     .about-two .image-card-two {
         height: 380px !important;
         min-height: 380px !important;
+        border-color: rgba(246, 182, 27, 0.35) !important;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3) !important;
     }
 
     .about-two .image-card-two-image {
         min-height: 380px !important;
     }
 
-    .about-two .counter-one-wrapper-two {
-        margin-top: 32px !important;
+    .about-two .image-card-two-image img {
+        transform: none !important;
+        filter: brightness(0.92) !important;
     }
 
-    .about-two .counter-wrapper .heading-style-h1 {
-        font-size: 44px !important;
+    .about-two .image-card-card-two-content,
+    .about-two .image-card-card-two-content.deactive,
+    .about-two .image-card-card-two-content.active {
+        transform: none !important;
+        display: flex !important;
+    }
+
+    .about-two .image-card-two-button-wrap,
+    .about-two .image-card-two-button-wrap.deactive,
+    .about-two .image-card-two-button-wrap.active {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+        pointer-events: auto !important;
+        margin-top: 16px !important;
+    }
+
+    .about-two .image-card-two-overlay {
+        opacity: 0.8 !important;
+    }
+
+    .about-two .approach-desc {
+        display: none !important;
     }
 }
 
-
 /* =========================================================
-   MOBILE
+   MOBILE RESPONSIVENESS (max-width: 767px)
    ========================================================= */
 
 @media (max-width: 767px) {
-
     .about-two {
-        padding-top: 60px !important;
-        padding-bottom: 60px !important;
+        padding-top: 55px !important;
+        padding-bottom: 55px !important;
     }
 
     .about-two .over-view-title-two-wrap {
-        margin-bottom: 40px !important;
+        margin-bottom: 34px !important;
     }
 
     .about-two .over-view-title-two-wrap .heading-style-h2 {
-        font-size: 28px !important;
+        font-size: 27px !important;
         line-height: 1.22 !important;
-        letter-spacing: -0.6px !important;
+        letter-spacing: -0.5px !important;
     }
 
     .about-two .image-card-three-wrap {
         display: flex !important;
         flex-direction: column !important;
-
         gap: 18px !important;
     }
 
     .about-two .image-card-two {
         width: 100% !important;
-        height: 320px !important;
-        min-height: 320px !important;
+        height: 340px !important;
+        min-height: 340px !important;
     }
 
     .about-two .image-card-two-image {
-        height: 320px !important;
-        min-height: 320px !important;
+        height: 340px !important;
+        min-height: 340px !important;
     }
 
     .about-two .image-card-card-two-content-wrap {
-        padding: 20px !important;
+        padding: 24px 22px !important;
     }
 
     .about-two .image-card-two-title-wrap h3 {
@@ -1468,43 +1578,45 @@
     }
 }
 
-
 /* =========================================================
-   SMALL MOBILE
+   SMALL MOBILE RESPONSIVENESS (max-width: 479px)
    ========================================================= */
 
 @media (max-width: 479px) {
-
     .about-two {
-        padding-top: 50px !important;
-        padding-bottom: 50px !important;
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
     }
 
     .about-two .over-view-title-two-wrap {
-        margin-bottom: 34px !important;
+        margin-bottom: 28px !important;
     }
 
     .about-two .over-view-title-two-wrap .heading-style-h2 {
-        font-size: 25px !important;
-        line-height: 1.16 !important;
-    }
-
-    .about-two .image-card-three-wrap {
-        gap: 15px !important;
+        font-size: 23px !important;
+        line-height: 1.2 !important;
     }
 
     .about-two .image-card-two {
-        height: 285px !important;
-        min-height: 285px !important;
+        height: 300px !important;
+        min-height: 300px !important;
     }
 
     .about-two .image-card-two-image {
-        height: 285px !important;
-        min-height: 285px !important;
+        height: 300px !important;
+        min-height: 300px !important;
+    }
+
+    .about-two .image-card-card-two-content-wrap {
+        padding: 20px 18px !important;
+    }
+
+    .about-two .image-card-two-title-wrap h3 {
+        font-size: 19px !important;
     }
 
     .about-two .counter-wrapper .heading-style-h1 {
-        font-size: 36px !important;
+        font-size: 34px !important;
     }
 }
 </style>
@@ -2111,59 +2223,234 @@
    ========================================================= */
 
 @media (max-width: 767px) {
+    .video-section {
+        position: relative !important;
+        width: 100% !important;
+        overflow: hidden !important;
+        margin-top: 40px !important;
+        margin-bottom: 50px !important;
+    }
+
     .video-section .video-section-two.full-height {
-        height: 580px !important;
-        min-height: 580px !important;
-        max-height: 580px !important;
+        position: relative !important;
+        height: 560px !important;
+        min-height: 560px !important;
+        max-height: 560px !important;
+        width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .video-section .youtube-video-background {
+        position: absolute !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .video-section .youtube-video-overlay {
+        position: absolute !important;
+        inset: 0 !important;
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.35) 0%,
+            rgba(0, 0, 0, 0.55) 40%,
+            rgba(0, 0, 0, 0.84) 100%
+        ) !important;
+        z-index: 1 !important;
+    }
+
+    .video-section .w-layout-blockcontainer.container {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        z-index: 5 !important;
+    }
+
+    .video-section .video-two-video-wrapper,
+    .video-section .viide-two-video-line {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .video-section .lottie-button-wrapper {
+        position: absolute !important;
+        top: 32px !important;
+        left: 50% !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: translateX(-50%) !important;
+        margin: 0 !important;
+        width: 58px !important;
+        height: 58px !important;
+        z-index: 5 !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .video-section .youtube-watch-button {
+        width: 58px !important;
+        height: 58px !important;
+        border-radius: 50% !important;
+        background: rgba(255, 255, 255, 0.95) !important;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .video-section .youtube-watch-button span {
+        width: 0 !important;
+        height: 0 !important;
+        border-top: 9px solid transparent !important;
+        border-bottom: 9px solid transparent !important;
+        border-left: 14px solid #111111 !important;
+        margin-left: 4px !important;
+        display: block !important;
+    }
+
+    .video-section .video-section-apearence {
+        display: none !important;
     }
 
     .video-section .video-text-box {
         position: absolute !important;
         inset: auto !important;
         top: auto !important;
-        bottom: 30px !important;
-        transform: none !important;
-        right: 24px !important;
-        left: 24px !important;
+        bottom: 24px !important;
+        left: 16px !important;
+        right: 16px !important;
         width: auto !important;
-        max-width: none !important;
-        margin: 0 !important;
+        max-width: 440px !important;
+        margin: 0 auto !important;
+        transform: none !important;
+        text-align: center !important;
+        z-index: 4 !important;
+        padding: 0 !important;
     }
 
-    .video-section .video-one-title-wrap {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-        padding-left: 0 !important;
-    }
-
-    .video-section .video-title h2 {
-        font-size: 30px !important;
-        line-height: 1.12 !important;
-        letter-spacing: -0.7px !important;
+    .video-section .video-one-title-wrap,
+    .video-section .video-one-title-wrap.padding-left {
+        padding: 0 !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
     }
 
     .video-section .video-one-title-wrap .sub-heading {
         font-size: 11px !important;
+        line-height: 1.2 !important;
+        letter-spacing: 1.5px !important;
+        text-transform: uppercase !important;
+        color: var(--yellow, #e5a93c) !important;
+        font-weight: 600 !important;
+        margin-bottom: 8px !important;
+        text-align: center !important;
     }
 
-    .video-section .lottie-button-wrapper {
-        left: 24px !important;
-        top: 42% !important;
+    .video-section .video-title {
+        margin: 0 0 10px 0 !important;
+        text-align: center !important;
+        width: 100% !important;
     }
 
-    .video-section .youtube-watch-button {
-        width: 56px !important;
-        height: 56px !important;
+    .video-section .video-title h2,
+    .video-section .heading-two-gap-top-bottom {
+        font-size: 21px !important;
+        line-height: 1.35 !important;
+        letter-spacing: -0.3px !important;
+        color: #ffffff !important;
+        margin: 0 0 16px 0 !important;
+        max-width: 100% !important;
+        font-weight: 700 !important;
+        text-align: center !important;
     }
 
-    .video-section .youtube-video-overlay {
-        background:
-            linear-gradient(
-                180deg,
-                rgba(0, 0, 0, 0.20) 0%,
-                rgba(0, 0, 0, 0.40) 45%,
-                rgba(0, 0, 0, 0.78) 100%
-            ) !important;
+    .video-section .video-text-box p,
+    .video-section .video-text-box .video-one-title-wrap > div:nth-child(3) {
+        font-size: 13px !important;
+        line-height: 1.45 !important;
+        color: rgba(255, 255, 255, 0.9) !important;
+        margin: 0 auto 16px auto !important;
+        max-width: 380px !important;
+        text-align: center !important;
+    }
+
+    .video-section .button-style-one-wrap {
+        margin: 0 auto !important;
+        display: inline-flex !important;
+        justify-content: center !important;
+        overflow: hidden !important;
+    }
+
+    .video-section .button-style-one {
+        min-height: 46px !important;
+        height: 46px !important;
+        padding: 0 24px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background-color: var(--yellow, #f6b61b) !important;
+        border-radius: 8px !important;
+        overflow: hidden !important;
+        position: relative !important;
+        text-decoration: none !important;
+    }
+
+    .video-section .button-text-wrap {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: auto !important;
+        overflow: hidden !important;
+    }
+
+    .video-section .button-text {
+        font-size: 13px !important;
+        font-weight: 600 !important;
+        letter-spacing: 0.5px !important;
+        color: #111111 !important;
+        line-height: 1 !important;
+        margin: 0 !important;
+        white-space: nowrap !important;
+    }
+
+    .video-section .button-text.two {
+        display: none !important;
+    }
+
+    .video-section .button-style-one-icon {
+        display: flex !important;
+        align-items: center !important;
+        margin-left: 8px !important;
+    }
+
+    .video-section .button-one-arrow {
+        display: block !important;
+        width: 9px !important;
+        height: 9px !important;
+        filter: brightness(0) !important;
+    }
+
+    .video-section .video-text-box .video-one-title-wrap > div:last-child {
+        margin-top: 14px !important;
+        font-size: 11.5px !important;
+        line-height: 1.35 !important;
+        letter-spacing: 0.4px !important;
+        text-align: center !important;
+        color: var(--yellow, #e5a93c) !important;
+        font-weight: 500 !important;
+        max-width: 360px !important;
     }
 }
 
@@ -2173,24 +2460,15 @@
 
 @media (max-width: 479px) {
     .video-section .video-section-two.full-height {
-        height: 500px !important;
-        min-height: 500px !important;
-        max-height: 500px !important;
+        height: 540px !important;
+        min-height: 540px !important;
+        max-height: 540px !important;
     }
 
-    .video-section .video-text-box {
-        right: 20px !important;
-        left: 20px !important;
-        bottom: 30px !important;
-    }
-
-    .video-section .video-title h2 {
-        font-size: 27px !important;
-        line-height: 1.14 !important;
-    }
-
-    .video-section .heading-two-gap-top-bottom {
-        margin-bottom: 20px !important;
+    .video-section .lottie-button-wrapper {
+        top: 26px !important;
+        width: 52px !important;
+        height: 52px !important;
     }
 
     .video-section .youtube-watch-button {
@@ -2198,8 +2476,51 @@
         height: 52px !important;
     }
 
-    .video-section .lottie-button-wrapper {
-        left: 20px !important;
+    .video-section .youtube-watch-button span {
+        border-top-width: 8px !important;
+        border-bottom-width: 8px !important;
+        border-left-width: 12px !important;
+        margin-left: 3px !important;
+    }
+
+    .video-section .video-text-box {
+        bottom: 20px !important;
+        left: 14px !important;
+        right: 14px !important;
+    }
+
+    .video-section .video-title h2,
+    .video-section .heading-two-gap-top-bottom {
+        font-size: 19px !important;
+        line-height: 1.35 !important;
+        margin-bottom: 14px !important;
+    }
+
+    .video-section .video-text-box p,
+    .video-section .video-text-box .video-one-title-wrap > div:nth-child(3) {
+        font-size: 12.5px !important;
+        line-height: 1.4 !important;
+        margin-bottom: 14px !important;
+        max-width: 340px !important;
+    }
+
+    .video-section .button-style-one {
+        min-height: 44px !important;
+        height: 44px !important;
+        padding: 0 20px !important;
+    }
+
+    .video-section .button-text {
+        font-size: 12px !important;
+    }
+
+    .video-section .button-text.two {
+        display: none !important;
+    }
+
+    .video-section .video-text-box .video-one-title-wrap > div:last-child {
+        margin-top: 12px !important;
+        font-size: 11px !important;
     }
 }
 
@@ -2432,7 +2753,7 @@
 }
 
 .tobac-values-eyebrow::before {
-    content: "";
+    content:"";
 
     width: 28px;
     height: 1px;
@@ -2980,7 +3301,7 @@
       
     </head>
     <body>
-       <?php require __DIR__ . "/includes/header.php"; ?>
+       <?php require __DIR__ ."/includes/header.php"; ?>
         <section
     data-w-id="6b976423-c5ad-08a1-cb07-5c4fc93b4eb0"
     class="home-two-hero-section position-relative"
@@ -3017,8 +3338,7 @@
                             -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
                                 rotateZ(0) skew(-19deg, 0);
                             transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(-19deg, 0);
-                        "
+                                rotateZ(0) skew(-19deg, 0);"
                         class="color-white hero-three-title-text one"
                     >
                     Five Decades of Tobacco Expertise. Built for Scale.
@@ -3367,8 +3687,7 @@
                                             srcset="
                                                 67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07-p-500.webp 500w,
                                                 67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07-p-800.webp 800w,
-                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07.webp       814w
-                                            "
+                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07.webp       814w"
                                             class="full-width border-radius-10 image-effect"
                                         />
                                         <div
@@ -3445,8 +3764,7 @@
                                             srcset="
                                                 67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-500.webp 500w,
                                                 67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-800.webp 800w,
-                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08.webp       814w
-                                            "
+                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08.webp       814w"
                                             class="full-width border-radius-10 image-effect"
                                         />
                                         <div
@@ -3523,8 +3841,7 @@
                                             srcset="
                                                 67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09-p-500.webp 500w,
                                                 67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09-p-800.webp 800w,
-                                                67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09.webp       814w
-                                            "
+                                                67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09.webp       814w"
                                             class="full-width border-radius-10 image-effect"
                                         />
                                         <div
@@ -3897,28 +4214,13 @@
     pointer-events: none;
 }
 
-/* Watermark text rotated -90deg matching services.php */
-.service-two-service-section.home-services-sticky .service-two-image-text-wrap {
-    z-index: 1;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    display: flex;
-    position: absolute;
-    inset: 0% 35px 0% auto;
-    pointer-events: none;
+/* Watermark text completely removed from images */
+.service-two-service-section.home-services-sticky .service-two-image-text-wrap,
+.service-two-service-section.home-services-sticky .service-three-image-text {
+    display: none !important;
 }
 
-.service-two-service-section.home-services-sticky .service-three-image-text {
-    color: #ffffff80 !important;
-    letter-spacing: -10.5px !important;
-    font-size: 150px !important;
-    font-weight: 700 !important;
-    line-height: 180px !important;
-    transform: rotate(-90deg) !important;
-    white-space: nowrap !important;
-    user-select: none !important;
-}
+
 
 /* Right content container */
 .service-two-service-section.home-services-sticky .service-two-service-container {
@@ -4034,14 +4336,13 @@
     display: block !important;
 }
 
-/* Tablet & Mobile Sticky Stacking Cards System */
+/* Tablet & Mobile Service Cards */
 @media (max-width: 991px) {
     .service-two-service-section.home-services-sticky {
         height: auto !important;
         position: relative !important;
         overflow: visible !important;
-        padding-top: 35px !important;
-        padding-bottom: 70px !important;
+        padding: 40px 0 56px !important;
     }
     .service-two-service-section.home-services-sticky .service-two-service-sticky-wrap {
         position: relative !important;
@@ -4049,41 +4350,37 @@
         height: auto !important;
         display: flex !important;
         flex-direction: column !important;
+        gap: 28px !important;
         width: 100% !important;
     }
     .service-two-service-section.home-services-sticky .service-two-service-sticky-card,
     .service-two-service-section.home-services-sticky .service-two-service-sticky-card.position-absolute {
         display: block !important;
-        position: -webkit-sticky !important;
-        position: sticky !important;
-        width: 100% !important;
-        height: auto !important;
-        left: 0 !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
         right: auto !important;
         bottom: auto !important;
-        border-radius: 18px !important;
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 16px !important;
         overflow: hidden !important;
         border: 1px solid rgba(221, 185, 105, 0.3) !important;
-        box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.7), 0 20px 48px rgba(0, 0, 0, 0.95) !important;
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.58) !important;
         box-sizing: border-box !important;
-        transition: transform 0.2s ease !important;
+        margin-bottom: 0 !important;
+        align-self: stretch !important;
     }
     .service-two-service-section.home-services-sticky .service-two-service-sticky-card.one {
-        top: 72px !important;
-        z-index: 10 !important;
-        margin-bottom: 45px !important;
+        z-index: 1 !important;
         background-color: #000000 !important;
     }
     .service-two-service-section.home-services-sticky .service-two-service-sticky-card.two {
-        top: 80px !important;
-        z-index: 20 !important;
-        margin-bottom: 45px !important;
+        z-index: 2 !important;
         background-color: #595959 !important;
     }
     .service-two-service-section.home-services-sticky .service-two-service-sticky-card.three {
-        top: 88px !important;
-        z-index: 30 !important;
-        margin-bottom: 0 !important;
+        z-index: 3 !important;
         background-color: #000000 !important;
     }
     .service-two-service-section.home-services-sticky .service-two-service-box {
@@ -4094,84 +4391,97 @@
     }
     .service-two-service-section.home-services-sticky .service-two-service-image-box {
         width: 100% !important;
-        height: 240px !important;
+        height: 250px !important;
+        max-height: 250px !important;
+        flex: 0 0 250px !important;
         position: relative !important;
         overflow: hidden !important;
     }
     .service-two-service-section.home-services-sticky .service-two-service-image {
-        height: 100% !important;
+        height: 250px !important;
+        max-height: 250px !important;
         width: 100% !important;
         object-fit: cover !important;
     }
-    .service-two-service-section.home-services-sticky .service-two-image-text-wrap {
-        inset: auto 0% 12px 0% !important;
-        width: 100% !important;
-        justify-content: center !important;
-    }
-    .service-two-service-section.home-services-sticky .service-three-image-text {
-        font-size: 42px !important;
-        letter-spacing: -2px !important;
-        transform: none !important;
-        line-height: 1 !important;
-        opacity: 0.8 !important;
+    
+
+    .service-two-service-section.home-services-sticky .service-image-overlay {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0) 68%) !important;
     }
     .service-two-service-section.home-services-sticky .service-two-service-container {
         width: 100% !important;
         max-width: 100% !important;
-        padding: 24px 20px !important;
+        margin: 0 !important;
+        padding: 22px 20px 24px !important;
         box-sizing: border-box !important;
+        justify-content: flex-start !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-heading {
+        margin-top: 10px !important;
+        margin-bottom: 12px !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-container [style*="opacity"],
+    .service-two-service-section.home-services-sticky .service-two-service-container [data-w-id] {
+        opacity: 1 !important;
+        transform: none !important;
     }
     .service-two-service-section.home-services-sticky h2 {
         font-size: 24px !important;
         line-height: 1.25 !important;
     }
+    .service-two-service-section.home-services-sticky .service-two-service-list {
+        margin-top: 12px !important;
+        margin-bottom: 16px !important;
+        padding-left: 18px !important;
+        row-gap: 8px !important;
+    }
+    .service-two-service-section.home-services-sticky .service-two-service-list li {
+        font-size: 13px !important;
+        line-height: 1.4 !important;
+        margin-bottom: 4px !important;
+    }
+    .service-two-service-section.home-services-sticky p.color-white {
+        font-size: 13.5px !important;
+        line-height: 1.45 !important;
+    }
 }
 
 @media (max-width: 767px) {
     .service-two-service-section.home-services-sticky {
-        padding-top: 25px !important;
-        padding-bottom: 50px !important;
+        padding: 32px 0 48px !important;
     }
-    .service-two-service-section.home-services-sticky .service-two-service-sticky-card.one {
-        top: 65px !important;
-        margin-bottom: 35px !important;
-    }
-    .service-two-service-section.home-services-sticky .service-two-service-sticky-card.two {
-        top: 72px !important;
-        margin-bottom: 35px !important;
-    }
-    .service-two-service-section.home-services-sticky .service-two-service-sticky-card.three {
-        top: 79px !important;
-        margin-bottom: 0 !important;
+    .service-two-service-section.home-services-sticky .service-two-service-sticky-wrap {
+        gap: 22px !important;
     }
     .service-two-service-section.home-services-sticky .service-two-service-image-box {
-        height: 200px !important;
+        height: 220px !important;
+        max-height: 220px !important;
+        flex: 0 0 220px !important;
     }
-    .service-two-service-section.home-services-sticky .service-three-image-text {
-        font-size: 34px !important;
+    .service-two-service-section.home-services-sticky .service-two-service-image {
+        height: 220px !important;
+        max-height: 220px !important;
     }
     .service-two-service-section.home-services-sticky .service-two-service-container {
-        padding: 20px 16px !important;
+        padding: 18px 16px 20px !important;
     }
     .service-two-service-section.home-services-sticky h2 {
         font-size: 21px !important;
     }
-    .service-two-service-section.home-services-sticky p {
+    .service-two-service-section.home-services-sticky p.color-white {
         font-size: 13px !important;
         line-height: 1.4 !important;
     }
     .service-two-service-section.home-services-sticky .service-two-service-list {
         margin-top: 10px !important;
-        margin-bottom: 12px !important;
+        margin-bottom: 14px !important;
+        padding-left: 16px !important;
+        row-gap: 6px !important;
         font-size: 12.5px !important;
         line-height: 1.35 !important;
     }
     .service-two-service-section.home-services-sticky .service-two-service-list li {
-        margin-bottom: 5px !important;
-    }
-    .service-two-service-section.home-services-sticky .key-focus-note {
-        font-size: 12px !important;
-        margin-bottom: 14px !important;
+        margin-bottom: 3px !important;
     }
     .service-two-service-section.home-services-sticky .button-style-one {
         padding: 12px 22px !important;
@@ -4182,26 +4492,20 @@
 }
 
 @media (max-width: 479px) {
-    .service-two-service-section.home-services-sticky .service-two-service-sticky-card.one {
-        top: 60px !important;
-        margin-bottom: 30px !important;
-    }
-    .service-two-service-section.home-services-sticky .service-two-service-sticky-card.two {
-        top: 66px !important;
-        margin-bottom: 30px !important;
-    }
-    .service-two-service-section.home-services-sticky .service-two-service-sticky-card.three {
-        top: 72px !important;
-        margin-bottom: 0 !important;
+    .service-two-service-section.home-services-sticky .service-two-service-sticky-wrap {
+        gap: 18px !important;
     }
     .service-two-service-section.home-services-sticky .service-two-service-image-box {
-        height: 175px !important;
+        height: 200px !important;
+        max-height: 200px !important;
+        flex: 0 0 200px !important;
     }
-    .service-two-service-section.home-services-sticky .service-three-image-text {
-        font-size: 28px !important;
+    .service-two-service-section.home-services-sticky .service-two-service-image {
+        height: 200px !important;
+        max-height: 200px !important;
     }
     .service-two-service-section.home-services-sticky .service-two-service-container {
-        padding: 18px 14px !important;
+        padding: 16px 14px 18px !important;
     }
     .service-two-service-section.home-services-sticky h2 {
         font-size: 19px !important;
@@ -4226,9 +4530,6 @@
                         class="service-two-service-image"
                         style="object-fit: cover;"
                     />
-                    <div class="service-two-image-text-wrap">
-                        <div class="service-three-image-text">Glance</div>
-                    </div>
                     <div class="service-image-overlay"></div>
                 </div>
                 <div class="w-layout-vflex service-two-service-container sd">
@@ -4245,12 +4546,14 @@
                             Tabac Leaf Enterprises brings over five decades of operational excellence across tobacco growing, processing, and exports, anchored by expansive warehousing and dedicated logistics.
                         </p>
                     </div>
+                    
                     <ul role="list" class="service-two-service-list heading-two-gap-top-bottom">
                         <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">50 Years of Industry Experience:</strong> Five decades across growing and exports</div></li>
                         <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">100 Million kg Processing Capacity:</strong> Modern threshing infrastructure across dual facilities</div></li>
                         <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">4 Million Sq. Ft. Warehousing:</strong> Integrated climate-controlled storage infrastructure</div></li>
                         <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">Dedicated Fleet:</strong> Internal transportation connecting farm to factory</div></li>
                     </ul>
+                    
                     <div class="overflow-hidden" style="margin-bottom: 20px;">
                         <p class="color-white" style="font-size: 14px; opacity: 0.9; margin-bottom: 6px;">
                             Our operations are designed to support consistent processing and meet applicable customer specifications.
@@ -4305,9 +4608,6 @@
                         class="service-two-service-image"
                         style="object-fit: cover;"
                     />
-                    <div class="service-two-image-text-wrap">
-                        <div class="service-three-image-text">Services</div>
-                    </div>
                     <div class="service-image-overlay"></div>
                 </div>
                 <div class="w-layout-vflex service-two-service-container">
@@ -4324,12 +4624,14 @@
                             Our operations coordinate tobacco movement and processing activities within one operational framework, supporting consistent processing and meeting international customer specifications.
                         </p>
                     </div>
+                    
                     <ul role="list" class="service-two-service-list heading-two-gap-top-bottom">
                         <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">Tobacco Threshing:</strong> Industrial leaf processing and lamina separation</div></li>
                         <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">Moisture &amp; Quality Control:</strong> Conditioning, drying and precision handling</div></li>
                         <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">Internal Transportation:</strong> Coordinated fleet movement from farm to factory</div></li>
                         <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">Storage &amp; Logistics:</strong> Integrated warehousing and global distribution support</div></li>
                     </ul>
+                    
                     <div class="overflow-hidden" style="margin-bottom: 20px;">
                         <div class="key-focus-note">
                             Key Focus: Coordination | Material Movement | Operational Efficiency
@@ -4381,9 +4683,6 @@
                         class="service-two-service-image"
                         style="object-fit: cover;"
                     />
-                    <div class="service-two-image-text-wrap">
-                        <div class="service-three-image-text">Catalogue</div>
-                    </div>
                     <div class="service-image-overlay"></div>
                 </div>
                 <div class="w-layout-vflex service-two-service-container">
@@ -4400,12 +4699,14 @@
                             Tabac Leaf Enterprises brings experience across tobacco growing, processing and exports. We work to support customer requirements through clear communication, grade specifications and business coordination.
                         </p>
                     </div>
+                    
                     <ul role="list" class="service-two-service-list heading-two-gap-top-bottom">
                         <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">Mysore FCV:</strong> Ripe, open grain, pleasant aroma with high filling value</div></li>
                         <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">NLS FCV (Northern Light Soils):</strong> Bright lemon to orange color, clean smoking</div></li>
                         <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">Vinukonda Burley:</strong> Neutral blending filler with high absorption</div></li>
                         <li><div class="color-white"><strong style="color: var(--yellow); font-weight: 600;">Traditional FCV (Black Soils):</strong> Heavy body, rich taste &amp; balanced chemistry</div></li>
                     </ul>
+                    
                     <div class="overflow-hidden" style="margin-bottom: 20px;">
                         <div class="key-focus-note">
                             Key Focus: Product Knowledge | Customer Requirements | Industry Partnerships
@@ -4529,7 +4830,6 @@
 })();
 </script>
 
-    
         <section data-w-id="32a080e7-e635-fd07-ca0b-ba724ec0d8f0" class="about-two change-background-color">
             <div class="w-layout-blockcontainer container w-container">
                 <div data-w-id="00c8e272-69b6-a665-72ae-46cd339a9141" style="opacity: 0" class="text-align-center">
@@ -4558,13 +4858,13 @@
                 >
                     <div
                         data-w-id="32a080e7-e635-fd07-ca0b-ba724ec0d8f6"
-                        class="image-card-two position-relative one overflow-hidden"
+                        class="image-card-two position-relative one overflow-hidden active"
                     >
                         <div data-w-id="32a080e7-e635-fd07-ca0b-ba724ec0d8f7" class="image-card-two-image active">
                             <img
                                 width="629"
                                 height="676"
-                                alt="A Bio-Steam-Powered Processing Operation - Tabac Enterprises"
+                                alt="Bio-Steam Powered Tobacco Processing - Tabac Enterprises"
                                 src="assets/images/home-A Bio-Steam-Powered Processing Operation.png"
                                 loading="lazy"
                                 sizes="(max-width: 767px) 100vw, 629px"
@@ -4589,11 +4889,11 @@
                                     data-wf--sub-heading--variant="white-sub-heading"
                                     class="sub-heading w-variant-f1a14dd4-f30f-c0f4-d5f6-6802c309e3c1"
                                 >
-                                A Bio-Steam-Powered Processing Operation
+                                    PROCESSING EXCELLENCE
                                 </div>
-                                <div class="image-card-two-title-wrap" style="max-width: 480px; margin-top: 10px; margin-bottom: 20px;">
-                                    <h3 class="no-margin" style="font-size: 22px; line-height: 1.3;">Bio-Steam Powered Processing</h3>
-                                    <p style="font-size: 14.5px; line-height: 1.5; color: rgba(255, 255, 255, 0.88); margin-top: 8px; margin-bottom: 0;">Tabac Leaf Enterprises operates its tobacco processing facilities using bio-steam generated through briquettes rather than coal.</p>
+                                <div class="image-card-two-title-wrap">
+                                    <h3 class="no-margin">Bio-Steam Powered Tobacco Processing</h3>
+                                    <p class="approach-desc">Tabac Leaf Enterprises operates its tobacco processing facilities using bio-steam generated through briquettes rather than coal.</p>
                                 </div>
                                 <div
                                     data-w-id="32a080e7-e635-fd07-ca0b-ba724ec0d900"
@@ -4634,7 +4934,7 @@
                     </div>
                     <div
                         data-w-id="32a080e7-e635-fd07-ca0b-ba724ec0d90d"
-                        class="image-card-two position-relative two overflow-hidden"
+                        class="image-card-two position-relative two overflow-hidden deactive"
                     >
                         <div class="image-card-two-image deactive responsiv-full-height">
                             <img
@@ -4665,11 +4965,11 @@
                                     data-wf--sub-heading--variant="white-sub-heading"
                                     class="sub-heading w-variant-f1a14dd4-f30f-c0f4-d5f6-6802c309e3c1"
                                 >
-                                A Distinctive Approach to Tobacco Processing
+                                    EXCLUSIVE CAPABILITY
                                 </div>
-                                <div class="image-card-two-title-wrap" style="max-width: 480px; margin-top: 10px; margin-bottom: 20px;">
-                                    <h3 class="no-margin" style="font-size: 22px; line-height: 1.3;">India's Only Bio-Steam Processor</h3>
-                                    <p style="font-size: 14.5px; line-height: 1.5; color: rgba(255, 255, 255, 0.88); margin-top: 8px; margin-bottom: 0;">Tabac Leaf Enterprises is positioned as the only company in India using bio-steam generated through briquettes for tobacco processing.</p>
+                                <div class="image-card-two-title-wrap">
+                                    <h3 class="no-margin">India's Only Bio-Steam Processor</h3>
+                                    <p class="approach-desc">Tabac Leaf Enterprises is positioned as the only company in India using bio-steam generated through briquettes for tobacco processing.</p>
                                 </div>
                                 <div
                                     data-w-id="32a080e7-e635-fd07-ca0b-ba724ec0d917"
@@ -4741,8 +5041,7 @@
                             -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
                                 skew(-19deg, 0);
                             transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                                skew(-19deg, 0);
-                        "
+                                skew(-19deg, 0);"
                         class="no-margin color-black"
                     >
                         Integrated Tobacco Processing for Consistent Quality
@@ -5005,8 +5304,7 @@
             background-image: url('https://img.youtube.com/vi/n91nMszHV5c/maxresdefault.jpg');
             background-position: center;
             background-size: cover;
-            background-repeat: no-repeat;
-        "
+            background-repeat: no-repeat;"
     >
 
         <iframe
@@ -5025,8 +5323,7 @@
         min-width: 177.78vh;
         transform: translate(-50%, -50%);
         border: 0;
-        pointer-events: none;
-    "
+        pointer-events: none;"
 ></iframe>
 
     </div>
@@ -5046,8 +5343,7 @@
                     rgba(0, 0, 0, 0.48) 50%,
                     rgba(0, 0, 0, 0.65) 100%
                 );
-            pointer-events: none;
-        "
+            pointer-events: none;"
     ></div>
 
 
@@ -5082,8 +5378,7 @@
                             border-radius: 50%;
                             background: rgba(255, 255, 255, 0.95);
                             text-decoration: none;
-                            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
-                        "
+                            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);"
                     >
 
                         <span
@@ -5094,8 +5389,7 @@
                                 border-top: 11px solid transparent;
                                 border-bottom: 11px solid transparent;
                                 border-left: 17px solid #000;
-                                margin-left: 5px;
-                            "
+                                margin-left: 5px;"
                         ></span>
 
                     </a>
@@ -5148,7 +5442,7 @@
                             data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffce"
                             class="heading-two-gap-top-bottom no-margin"
                         >
-                            Advanced Processing. Proven Capability. Consistent Quality.
+                            Advanced Processing.<br />Proven Capability.<br />Consistent Quality.
                         </h2>
                     </div>
                     <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffd0">
@@ -5183,11 +5477,157 @@
         </section>
 
 
-       <?php require __DIR__ . "/includes/footer.php"; ?>
+       <?php require __DIR__ ."/includes/footer.php"; ?>
         <script src="js/jquery-3.5.1.min.dc5e7f18c8.js?site=67ad72477c605912a4af72eb" type="text/javascript"></script>
+        <script>
+            document.documentElement.setAttribute("data-wf-page","67ade0c66ad1a860af33154c");
+            document.documentElement.setAttribute("data-wf-site","67ad72477c605912a4af72eb");
+        </script>
         <script src="67ad72477c605912a4af72eb/js/webflow.8c3c7a7b.98f16f3db6b689ff.js" type="text/javascript"></script>
+        <style>
+            /* Mobile trigger for the original leader-card image curtain reveal. */
+            @media (max-width: 991px) and (prefers-reduced-motion: no-preference) {
+                html.tobac-mobile-motion-ready .team-one .team-card-one .image-effect {
+                    transform: scale(2) !important;
+                    transition: transform 2s ease 0.5s !important;
+                    will-change: transform;
+                }
+
+                html.tobac-mobile-motion-ready .team-one .team-card-one .image-effect-wrapper {
+                    display: block !important;
+                }
+
+                html.tobac-mobile-motion-ready .team-one .team-card-one .inside-overlay {
+                    transform: translate3d(0, 0, 0) !important;
+                    transition: transform 0.5s ease 0.5s !important;
+                    will-change: transform;
+                }
+
+                html.tobac-mobile-motion-ready .team-one .team-card-one .outside-overlay {
+                    transform: translate3d(0, -100%, 0) !important;
+                    transition: transform 0.5s ease !important;
+                    will-change: transform;
+                }
+
+                html.tobac-mobile-motion-ready .team-one .team-card-one.is-mobile-revealed .image-effect,
+                html.tobac-mobile-motion-ready .team-one .team-card-one.is-mobile-revealed .inside-overlay,
+                html.tobac-mobile-motion-ready .team-one .team-card-one.is-mobile-revealed .outside-overlay {
+                    transform: translate3d(0, 100%, 0) !important;
+                }
+
+                html.tobac-mobile-motion-ready .team-one .team-card-one.is-mobile-revealed .image-effect {
+                    transform: scale(1) !important;
+                }
+
+                html.tobac-mobile-motion-ready .team-one .team-card-one.is-mobile-reveal-complete .image-effect-wrapper {
+                    display: none !important;
+                }
+
+                html.tobac-mobile-motion-ready .home-services-sticky .service-two-service-image {
+                    opacity: 0 !important;
+                    transform: scale(1.06) !important;
+                    transition: opacity 0.35s ease, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1) !important;
+                    will-change: opacity, transform;
+                }
+
+                html.tobac-mobile-motion-ready .home-services-sticky .service-two-service-sticky-card.is-mobile-revealed .service-two-service-image {
+                    opacity: 1 !important;
+                    transform: scale(1) !important;
+                }
+            }
+
+            @media (max-width: 991px) and (prefers-reduced-motion: reduce) {
+                .team-one .team-card-one .image-effect,
+                .home-services-sticky .service-two-service-image {
+                    opacity: 1 !important;
+                    transform: none !important;
+                    transition: none !important;
+                }
+            }
+        </style>
+        <script>
+            (function () {
+                var mobileViewport = window.matchMedia('(max-width: 991px)');
+                var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+                if (!mobileViewport.matches || reducedMotion.matches || !('IntersectionObserver' in window)) {
+                    return;
+                }
+
+                document.documentElement.classList.add('tobac-mobile-motion-ready');
+
+                function revealOnce(element, className, options) {
+                    var observer = new IntersectionObserver(function (entries) {
+                        entries.forEach(function (entry) {
+                            if (!entry.isIntersecting) return;
+
+                            element.classList.add(className);
+                            window.setTimeout(function () {
+                                element.classList.add('is-mobile-reveal-complete');
+                            }, 1100);
+                            observer.unobserve(element);
+                        });
+                    }, options);
+
+                    observer.observe(element);
+                }
+
+                document.querySelectorAll('.team-one .team-card-one').forEach(function (card) {
+                    revealOnce(card, 'is-mobile-revealed', {
+                        threshold: 0.18,
+                        rootMargin: '0px 0px -8% 0px'
+                    });
+                });
+
+                document.querySelectorAll('.home-services-sticky .service-two-service-sticky-card').forEach(function (card) {
+                    revealOnce(card, 'is-mobile-revealed', {
+                        threshold: 0.14,
+                        rootMargin: '0px 0px -8% 0px'
+                    });
+                });
+
+            })();
+        </script>
         <script>
             $(document).ready(function() {
+                // OUR APPROACH - Desktop Interactive Hover Animation
+                (function() {
+                    var $card1 = $('.about-two .image-card-two.one');
+                    var $card2 = $('.about-two .image-card-two.two');
+                    var $wrap = $('.about-two .image-card-three-wrap');
+                    if (!$card1.length || !$card2.length) return;
+
+                    function activate(activeCard, inactiveCard) {
+                        activeCard.addClass('active').removeClass('deactive');
+                        activeCard.find('.image-card-card-two-content, .image-card-two-button-wrap, .image-card-two-image').addClass('active').removeClass('deactive');
+                        inactiveCard.addClass('deactive').removeClass('active');
+                        inactiveCard.find('.image-card-card-two-content, .image-card-two-button-wrap, .image-card-two-image').addClass('deactive').removeClass('active');
+                    }
+
+                    // Initial state on desktop: Card 1 active
+                    if (window.innerWidth >= 992) {
+                        activate($card1, $card2);
+                    }
+
+                    $card1.on('mouseenter', function() {
+                        if (window.innerWidth >= 992) {
+                            activate($card1, $card2);
+                        }
+                    });
+
+                    $card2.on('mouseenter', function() {
+                        if (window.innerWidth >= 992) {
+                            activate($card2, $card1);
+                        }
+                    });
+
+                    $wrap.on('mouseleave', function() {
+                        if (window.innerWidth >= 992) {
+                            activate($card1, $card2);
+                        }
+                    });
+                })();
+
                 var $triggers = $('.reliable-construction-subtext-wrapper .tab-nav-item');
                 var $contents = $('.reliable-construction-para-wrapper .tab-pane');
 
