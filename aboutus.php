@@ -153,7 +153,9 @@
                     opacity: 0;
                 }
             }
-        </style>
+        
+    
+    </style>
         <style>
 /* =========================================================
    VIDEO / CTA SECTION
@@ -712,29 +714,65 @@
     
     
     <style>
-        /* Custom Mobile Reordering */
+        /* Mobile Adjustments for Experience Section */
         @media (max-width: 991px) {
-            
-    .progress-one-wrapper {
-        display: flex !important;
-        flex-direction: column !important;
-    }
-    .progress-one-image-wrapper {
-        order: -1 !important;
-        width: 100% !important;
-    }
-    .progress-one-information-wrap {
-        order: 1 !important;
-        width: 100% !important;
-    }
-
+            .progress-one-wrapper {
+                display: flex !important;
+                flex-direction: column !important;
+                width: 100% !important;
+            }
+            .progress-one-image-wrapper {
+                order: -1 !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                flex: 1 1 100% !important;
+                display: block !important;
+                padding-bottom: 0 !important;
+                margin-bottom: 30px !important;
+            }
+            .progress-one-image-one {
+                width: 100% !important;
+                max-width: 100% !important;
+                flex: 1 1 100% !important;
+                display: block !important;
+            }
+            .progress-one-image-one > div {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: 280px !important;
+                display: block !important;
+            }
+            .progress-one-image-one img {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: 100% !important;
+                max-height: 280px !important;
+                object-fit: cover !important;
+                display: block !important;
+            }
+            .progress-one-image-two {
+                display: none !important;
+            }
+            .progress-one-information-wrap {
+                order: 1 !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+        @media (min-width: 480px) and (max-width: 991px) {
+            .progress-one-image-one > div {
+                height: 340px !important;
+            }
+            .progress-one-image-one img {
+                max-height: 340px !important;
+            }
         }
     </style>
     </head>
     <body>
         <?php require __DIR__ . "/includes/header.php"; ?>
         <section data-w-id="2a5bf49e-a915-ce81-044a-9004ac91edb5" class="about-hero position-relative overflow-hidden">
-            <div class="about-hero-bg position-absolute banner-apearence" style="background-image: linear-gradient(#0f0f0f, #0f0f0f1a 62%, #0f0f0f00), linear-gradient(#0f0f0f00, #0f0f0f5e 44%, #0f0f0ff2), url('assets/images/Original/company-building.jpeg'); background-position: 0 0, 0 0, 50%; background-repeat: repeat, repeat, no-repeat; background-size: auto, auto, cover;"></div>
+            <div class="about-hero-bg position-absolute banner-apearence" style="background-image: linear-gradient(#0f0f0f, #0f0f0f1a 62%, #0f0f0f00), linear-gradient(#0f0f0f00, #0f0f0f5e 44%, #0f0f0ff2), url('assets/images/Original/Group.jpeg'); background-position: 0 0, 0 0, 50%; background-repeat: repeat, repeat, no-repeat; background-size: auto, auto, cover;"></div>
             <div class="about-hero-content position-relative">
                 <div class="w-layout-blockcontainer container w-container">
                     <div class="about-hero-information text-align-center">
