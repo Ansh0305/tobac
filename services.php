@@ -859,6 +859,24 @@
                 hideDecimalForWholeNumbers: false,
             };
         </script>
+    
+    <style>
+    @media (max-width: 991px) {
+        .service-v2-hero {
+            padding-top: 130px !important;
+            min-height: auto !important;
+        }
+        .about-hero-content {
+            padding-top: 0 !important;
+        }
+        .service-hero-information {
+            margin-top: 0 !important;
+        }
+        .service-hero-subheading-top-gap {
+            margin-top: 0 !important;
+        }
+    }
+    </style>
     </head>
     <body>
         <?php require __DIR__ ."/includes/header.php"; ?>
