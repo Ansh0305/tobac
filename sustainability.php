@@ -817,7 +817,9 @@
                     font-size: 11px !important;
                 }
             }
-        </style>
+        
+    
+    </style>
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
         <script src="ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -879,6 +881,35 @@
 
         }
     </style>
+    
+    <style>
+        /* Final Mobile Adjustments */
+        @media (max-width: 991px) {
+            
+    .service-hero {
+        padding-top: 130px !important;
+        min-height: auto !important;
+    }
+    .about-hero-content {
+        padding-top: 0 !important;
+    }
+    .service-hero-information {
+        margin-top: 0 !important;
+    }
+    .service-hero-subheading-top-gap {
+        margin-top: 0 !important;
+    }
+    .service-hero-heading {
+        font-size: clamp(22px, 6vw, 35px) !important;
+        line-height: 1.25 !important;
+    }
+    .service-hero-heading .heading-line {
+        display: block !important;
+        white-space: nowrap !important;
+    }
+
+        }
+    </style>
     </head>
     <body>
         <?php require __DIR__ . "/includes/header.php"; ?>
@@ -914,7 +945,7 @@
                                     "
                                     class="no-margin service-hero-heading"
                                 >
-                                    Responsible Processing. Thoughtful Operations.
+                                    <span class="heading-line">Responsible Processing.</span><span class="heading-line">Thoughtful Operations.</span>
                                 </h1>
                             </div>
                         </div>
@@ -925,8 +956,7 @@
                                     style="opacity: 0"
                                     class="color-white"
                                 >
-                                    At Tabac Leaf Enterprises, sustainability is an important consideration in how we manage our tobacco processing operations. We focus on practical measures that support operational efficiency, responsible fuel use and environmental awareness.<br /><br />
-                                    With decades of industry experience and integrated processing infrastructure, we continue to explore operating practices that align productivity with responsible resource management.
+                                    At Tabac Leaf Enterprises, sustainability is an important consideration in how we manage our tobacco processing operations. We focus on practical measures that support operational efficiency, responsible fuel use and environmental awareness.
                                 </div>
                             </div>
                             <div data-w-id="d6df9f96-cc2a-6c23-383b-0d01b354037a" style="opacity: 0">
