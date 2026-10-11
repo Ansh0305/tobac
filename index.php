@@ -3306,7 +3306,7 @@
     data-w-id="6b976423-c5ad-08a1-cb07-5c4fc93b4eb0"
     class="home-two-hero-section position-relative"
 >
-    <div class="home-three-slider-hero-wrap home-three-slider-hero-wrap-two">
+    <div class="home-three-slider-hero-wrap home-three-slider-hero-wrap-two" style="background-image: url('assets/images/Original/company-building.jpeg'); background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;">
 
         <div class="w-layout-blockcontainer container position-relative w-container">
 
