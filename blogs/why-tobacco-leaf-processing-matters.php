@@ -253,7 +253,7 @@
 
                     <div class="article-hero-banner">
                         <img
-                            src="../assets/images/about-tobacco-processing.jpg"
+                            src="../assets/images/Original/facility.jpeg"
                             alt="Tobacco Leaf Processing - Industrial Threshing and Conditioning"
                         />
                     </div>

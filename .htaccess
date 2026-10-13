@@ -1,0 +1,15 @@
+RewriteEngine On
+Options -MultiViews
+
+# Redirect /index.php, /index, or /home to the root /
+RewriteRule ^(index\.php|index|home)$ / [R=301,L]
+
+# Redirect URLs with .php to extensionless URLs
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# Internally route extensionless requests to .php files
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+RewriteRule ^(.+?)/?$ /$1.php [L]

@@ -153,7 +153,9 @@
                     opacity: 0;
                 }
             }
-        </style>
+        
+    
+    </style>
         <style>
 /* =========================================================
    VIDEO / CTA SECTION
@@ -368,59 +370,234 @@
    ========================================================= */
 
 @media (max-width: 767px) {
+    .video-section {
+        position: relative !important;
+        width: 100% !important;
+        overflow: hidden !important;
+        margin-top: 40px !important;
+        margin-bottom: 50px !important;
+    }
+
     .video-section .video-section-two.full-height {
-        height: 580px !important;
-        min-height: 580px !important;
-        max-height: 580px !important;
+        position: relative !important;
+        height: 560px !important;
+        min-height: 560px !important;
+        max-height: 560px !important;
+        width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .video-section .youtube-video-background {
+        position: absolute !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .video-section .youtube-video-overlay {
+        position: absolute !important;
+        inset: 0 !important;
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.35) 0%,
+            rgba(0, 0, 0, 0.55) 40%,
+            rgba(0, 0, 0, 0.84) 100%
+        ) !important;
+        z-index: 1 !important;
+    }
+
+    .video-section .w-layout-blockcontainer.container {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        z-index: 5 !important;
+    }
+
+    .video-section .video-two-video-wrapper,
+    .video-section .viide-two-video-line {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .video-section .lottie-button-wrapper {
+        position: absolute !important;
+        top: 32px !important;
+        left: 50% !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: translateX(-50%) !important;
+        margin: 0 !important;
+        width: 58px !important;
+        height: 58px !important;
+        z-index: 5 !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .video-section .youtube-watch-button {
+        width: 58px !important;
+        height: 58px !important;
+        border-radius: 50% !important;
+        background: rgba(255, 255, 255, 0.95) !important;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .video-section .youtube-watch-button span {
+        width: 0 !important;
+        height: 0 !important;
+        border-top: 9px solid transparent !important;
+        border-bottom: 9px solid transparent !important;
+        border-left: 14px solid #111111 !important;
+        margin-left: 4px !important;
+        display: block !important;
+    }
+
+    .video-section .video-section-apearence {
+        display: none !important;
     }
 
     .video-section .video-text-box {
         position: absolute !important;
         inset: auto !important;
         top: auto !important;
-        bottom: 30px !important;
-        transform: none !important;
-        right: 24px !important;
-        left: 24px !important;
+        bottom: 24px !important;
+        left: 16px !important;
+        right: 16px !important;
         width: auto !important;
-        max-width: none !important;
-        margin: 0 !important;
+        max-width: 440px !important;
+        margin: 0 auto !important;
+        transform: none !important;
+        text-align: center !important;
+        z-index: 4 !important;
+        padding: 0 !important;
     }
 
-    .video-section .video-one-title-wrap {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-        padding-left: 0 !important;
-    }
-
-    .video-section .video-title h2 {
-        font-size: 30px !important;
-        line-height: 1.12 !important;
-        letter-spacing: -0.7px !important;
+    .video-section .video-one-title-wrap,
+    .video-section .video-one-title-wrap.padding-left {
+        padding: 0 !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
     }
 
     .video-section .video-one-title-wrap .sub-heading {
         font-size: 11px !important;
+        line-height: 1.2 !important;
+        letter-spacing: 1.5px !important;
+        text-transform: uppercase !important;
+        color: var(--yellow, #e5a93c) !important;
+        font-weight: 600 !important;
+        margin-bottom: 8px !important;
+        text-align: center !important;
     }
 
-    .video-section .lottie-button-wrapper {
-        left: 24px !important;
-        top: 42% !important;
+    .video-section .video-title {
+        margin: 0 0 10px 0 !important;
+        text-align: center !important;
+        width: 100% !important;
     }
 
-    .video-section .youtube-watch-button {
-        width: 56px !important;
-        height: 56px !important;
+    .video-section .video-title h2,
+    .video-section .heading-two-gap-top-bottom {
+        font-size: 21px !important;
+        line-height: 1.35 !important;
+        letter-spacing: -0.3px !important;
+        color: #ffffff !important;
+        margin: 0 0 16px 0 !important;
+        max-width: 100% !important;
+        font-weight: 700 !important;
+        text-align: center !important;
     }
 
-    .video-section .youtube-video-overlay {
-        background:
-            linear-gradient(
-                180deg,
-                rgba(0, 0, 0, 0.20) 0%,
-                rgba(0, 0, 0, 0.40) 45%,
-                rgba(0, 0, 0, 0.78) 100%
-            ) !important;
+    .video-section .video-text-box p,
+    .video-section .video-text-box .video-one-title-wrap > div:nth-child(3) {
+        font-size: 13px !important;
+        line-height: 1.45 !important;
+        color: rgba(255, 255, 255, 0.9) !important;
+        margin: 0 auto 16px auto !important;
+        max-width: 380px !important;
+        text-align: center !important;
+    }
+
+    .video-section .button-style-one-wrap {
+        margin: 0 auto !important;
+        display: inline-flex !important;
+        justify-content: center !important;
+        overflow: hidden !important;
+    }
+
+    .video-section .button-style-one {
+        min-height: 46px !important;
+        height: 46px !important;
+        padding: 0 24px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background-color: var(--yellow, #f6b61b) !important;
+        border-radius: 8px !important;
+        overflow: hidden !important;
+        position: relative !important;
+        text-decoration: none !important;
+    }
+
+    .video-section .button-text-wrap {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: auto !important;
+        overflow: hidden !important;
+    }
+
+    .video-section .button-text {
+        font-size: 13px !important;
+        font-weight: 600 !important;
+        letter-spacing: 0.5px !important;
+        color: #111111 !important;
+        line-height: 1 !important;
+        margin: 0 !important;
+        white-space: nowrap !important;
+    }
+
+    .video-section .button-text.two {
+        display: none !important;
+    }
+
+    .video-section .button-style-one-icon {
+        display: flex !important;
+        align-items: center !important;
+        margin-left: 8px !important;
+    }
+
+    .video-section .button-one-arrow {
+        display: block !important;
+        width: 9px !important;
+        height: 9px !important;
+        filter: brightness(0) !important;
+    }
+
+    .video-section .video-text-box .video-one-title-wrap > div:last-child {
+        margin-top: 14px !important;
+        font-size: 11.5px !important;
+        line-height: 1.35 !important;
+        letter-spacing: 0.4px !important;
+        text-align: center !important;
+        color: var(--yellow, #e5a93c) !important;
+        font-weight: 500 !important;
+        max-width: 360px !important;
     }
 }
 
@@ -430,24 +607,15 @@
 
 @media (max-width: 479px) {
     .video-section .video-section-two.full-height {
-        height: 500px !important;
-        min-height: 500px !important;
-        max-height: 500px !important;
+        height: 540px !important;
+        min-height: 540px !important;
+        max-height: 540px !important;
     }
 
-    .video-section .video-text-box {
-        right: 20px !important;
-        left: 20px !important;
-        bottom: 30px !important;
-    }
-
-    .video-section .video-title h2 {
-        font-size: 27px !important;
-        line-height: 1.14 !important;
-    }
-
-    .video-section .heading-two-gap-top-bottom {
-        margin-bottom: 20px !important;
+    .video-section .lottie-button-wrapper {
+        top: 26px !important;
+        width: 52px !important;
+        height: 52px !important;
     }
 
     .video-section .youtube-watch-button {
@@ -455,8 +623,51 @@
         height: 52px !important;
     }
 
-    .video-section .lottie-button-wrapper {
-        left: 20px !important;
+    .video-section .youtube-watch-button span {
+        border-top-width: 8px !important;
+        border-bottom-width: 8px !important;
+        border-left-width: 12px !important;
+        margin-left: 3px !important;
+    }
+
+    .video-section .video-text-box {
+        bottom: 20px !important;
+        left: 14px !important;
+        right: 14px !important;
+    }
+
+    .video-section .video-title h2,
+    .video-section .heading-two-gap-top-bottom {
+        font-size: 19px !important;
+        line-height: 1.35 !important;
+        margin-bottom: 14px !important;
+    }
+
+    .video-section .video-text-box p,
+    .video-section .video-text-box .video-one-title-wrap > div:nth-child(3) {
+        font-size: 12.5px !important;
+        line-height: 1.4 !important;
+        margin-bottom: 14px !important;
+        max-width: 340px !important;
+    }
+
+    .video-section .button-style-one {
+        min-height: 44px !important;
+        height: 44px !important;
+        padding: 0 20px !important;
+    }
+
+    .video-section .button-text {
+        font-size: 12px !important;
+    }
+
+    .video-section .button-text.two {
+        display: none !important;
+    }
+
+    .video-section .video-text-box .video-one-title-wrap > div:last-child {
+        margin-top: 12px !important;
+        font-size: 11px !important;
     }
 }
         </style>
@@ -500,11 +711,68 @@
                 hideDecimalForWholeNumbers: false,
             };
         </script>
+    
+    
+    <style>
+        /* Mobile Adjustments for Experience Section */
+        @media (max-width: 991px) {
+            .progress-one-wrapper {
+                display: flex !important;
+                flex-direction: column !important;
+                width: 100% !important;
+            }
+            .progress-one-image-wrapper {
+                order: -1 !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                flex: 1 1 100% !important;
+                display: block !important;
+                padding-bottom: 0 !important;
+                margin-bottom: 30px !important;
+            }
+            .progress-one-image-one {
+                width: 100% !important;
+                max-width: 100% !important;
+                flex: 1 1 100% !important;
+                display: block !important;
+            }
+            .progress-one-image-one > div {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: 280px !important;
+                display: block !important;
+            }
+            .progress-one-image-one img {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: 100% !important;
+                max-height: 280px !important;
+                object-fit: cover !important;
+                display: block !important;
+            }
+            .progress-one-image-two {
+                display: none !important;
+            }
+            .progress-one-information-wrap {
+                order: 1 !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+        @media (min-width: 480px) and (max-width: 991px) {
+            .progress-one-image-one > div {
+                height: 340px !important;
+            }
+            .progress-one-image-one img {
+                max-height: 340px !important;
+            }
+        }
+    </style>
     </head>
     <body>
         <?php require __DIR__ . "/includes/header.php"; ?>
         <section data-w-id="2a5bf49e-a915-ce81-044a-9004ac91edb5" class="about-hero position-relative overflow-hidden">
-            <div class="about-hero-bg position-absolute banner-apearence" style="background-image: linear-gradient(#0f0f0f, #0f0f0f1a 62%, #0f0f0f00), linear-gradient(#0f0f0f00, #0f0f0f5e 44%, #0f0f0ff2), url('assets/images/about-hero-tobacco.jpg'); background-position: 0 0, 0 0, 50%; background-repeat: repeat, repeat, no-repeat; background-size: auto, auto, cover;"></div>
+            <div class="about-hero-bg position-absolute banner-apearence" style="background-image: linear-gradient(#0f0f0f, #0f0f0f1a 62%, #0f0f0f00), linear-gradient(#0f0f0f00, #0f0f0f5e 44%, #0f0f0ff2), url('assets/images/Original/Group.jpeg'); background-position: 0 0, 0 0, 50%; background-repeat: repeat, repeat, no-repeat; background-size: auto, auto, cover;"></div>
             <div class="about-hero-content position-relative">
                 <div class="w-layout-blockcontainer container w-container">
                     <div class="about-hero-information text-align-center">
@@ -552,7 +820,7 @@
                             <div class="position-relative overflow-hidden border-radius-10">
                                 <img
                                     class="mobile-full-width image-effect border-radius-10"
-                                    src="assets/images/about-tobacco-processing.jpg"
+                                    src="assets/images/Original/facility.jpeg"
                                     width="492"
                                     height="642"
                                     alt="Tabac Leaf Enterprises - Advanced Tobacco Processing Facility"
@@ -576,7 +844,7 @@
                                 width="473"
                                 height="360"
                                 alt="Tabac Leaf Enterprises - Tobacco Quality Inspection & Warehousing"
-                                src="assets/images/about-tobacco-warehousing.jpg"
+                                src="assets/images/Original/product-2.jpeg"
                                 loading="lazy"
                                 data-w-id="2a5bf49e-a915-ce81-044a-9004ac91edc7"
                                 class="image-effect border-radius-10"
@@ -804,13 +1072,19 @@
                 .vision-quote-line {
                     white-space: normal !important;
                 }
+                .over-view-title-wrapper .over-view-flex.vision-overlay-flex {
+                    display: none !important;
+                }
+                .service-six .service-card-two-bg-image {
+                    opacity: 0.35 !important;
+                    transform: none !important;
+                    display: block !important;
+                    visibility: visible !important;
+                }
             }
             @media (max-width: 767px) {
                 .over-view-one {
                     padding-top: 70px;
-                }
-                .over-view-title-wrapper .over-view-flex.vision-overlay-flex {
-                    display: none !important;
                 }
                 .vision-quote-line {
                     display: inline !important;
@@ -953,18 +1227,14 @@
                             class="service-card-two-bg-image position-absolute active"
                         >
                             <img
-                                src="assets/images/Tobacco-Leaf-Processing.png"
+                                src="assets/images/Original/product-3.jpeg"
                                 loading="lazy"
                                 width="740"
                                 height="141"
                                 alt="Tobacco Leaf Processing"
-                                srcset="
-                                    assets/images/Tobacco-Leaf-Processing.webp  500w,
-                                    assets/images/Tobacco-Leaf-Processing.webp  800w,
-                                    assets/images/Tobacco-Leaf-Processing.png  1261w
-                                "
                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 740px"
                                 class="full-width full-height"
+                                style="object-fit: cover;"
                             />
                             <div class="service-card-two-bg position-absolute two"></div></div></a
                     ><a
@@ -991,18 +1261,14 @@
                             class="service-card-two-bg-image position-absolute deactive"
                         >
                             <img
-                                src="assets/images/Tobacco-Leaf-Processing.png"
+                                src="assets/images/Original/company-building.jpeg"
                                 loading="lazy"
                                 width="740"
                                 height="141"
                                 alt="Tobacco Leaf Processing Infrastructure"
-                                srcset="
-                                    assets/images/Tobacco-Leaf-Processing.webp  500w,
-                                    assets/images/Tobacco-Leaf-Processing.webp  800w,
-                                    assets/images/Tobacco-Leaf-Processing.png  1261w
-                                "
                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 740px"
                                 class="full-width full-height"
+                                style="object-fit: cover;"
                             />
                             <div class="service-card-two-bg position-absolute two"></div></div></a
                     ><a
@@ -1029,18 +1295,14 @@
                             class="service-card-two-bg-image position-absolute deactive"
                         >
                             <img
-                                src="assets/images/Tobacco-Leaf-Processing.png"
+                                src="assets/images/Original/facility-2.jpeg"
                                 loading="lazy"
                                 width="740"
                                 height="141"
                                 alt="Tobacco Processing Operational Discipline"
-                                srcset="
-                                    assets/images/Tobacco-Leaf-Processing.webp  500w,
-                                    assets/images/Tobacco-Leaf-Processing.webp  800w,
-                                    assets/images/Tobacco-Leaf-Processing.png  1261w
-                                "
                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 740px"
                                 class="full-width full-height"
+                                style="object-fit: cover;"
                             />
                             <div class="service-card-two-bg position-absolute two"></div></div></a
                     ><a
@@ -1067,18 +1329,14 @@
                             class="service-card-two-bg-image position-absolute deactive"
                         >
                             <img
-                                src="assets/images/Tobacco-Leaf-Processing.png"
+                                src="assets/images/Original/farm.jpeg"
                                 loading="lazy"
                                 width="740"
                                 height="141"
                                 alt="Responsible Tobacco Processing Practices"
-                                srcset="
-                                    assets/images/Tobacco-Leaf-Processing.webp  500w,
-                                    assets/images/Tobacco-Leaf-Processing.webp  800w,
-                                    assets/images/Tobacco-Leaf-Processing.png  1261w
-                                "
                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 740px"
                                 class="full-width full-height"
+                                style="object-fit: cover;"
                             />
                             <div class="service-card-two-bg position-absolute two"></div></div></a
                     ><a
@@ -1106,18 +1364,14 @@
                             class="service-card-two-bg-image position-absolute deactive"
                         >
                             <img
-                                src="assets/images/Tobacco-Leaf-Processing.png"
+                                src="assets/images/Original/Group.jpeg"
                                 loading="lazy"
                                 width="740"
                                 height="141"
                                 alt="Tobacco Industry Partnerships"
-                                srcset="
-                                    assets/images/Tobacco-Leaf-Processing.webp  500w,
-                                    assets/images/Tobacco-Leaf-Processing.webp  800w,
-                                    assets/images/Tobacco-Leaf-Processing.png  1261w
-                                "
                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 740px"
                                 class="full-width full-height"
+                                style="object-fit: cover;"
                             />
                             <div class="service-card-two-bg position-absolute two"></div></div></a
                     ><!-- <a
@@ -1171,11 +1425,11 @@
                         <div class="features-two-image-two-white position-relative overflow-hidden">
                             <img
                                 class="image-effect border-radius-10"
-                                src="assets/images/about-footprint-facility-1.jpg?v=<?= filemtime(__DIR__ . '/assets/images/about-footprint-facility-1.jpg') ?>"
+                                src="assets/images/Original/company-building.jpeg"
                                 width="381"
                                 height="337"
                                 alt="Modern Industrial Tobacco Processing and Threshing Line"
-                                style="opacity: 0"
+                                style="opacity: 0; object-fit: cover;"
                                 sizes="(max-width: 479px) 100vw, 381px"
                                 data-w-id="d79c86cc-7a05-faab-2953-61351dccd46f"
                                 loading="lazy"
@@ -1192,11 +1446,11 @@
                         <div class="features-two-image-one position-relative overflow-hidden border-radius-10">
                             <img
                                 class="responsive-full-width full-height image-effect border-radius-10"
-                                src="assets/images/about-footprint-facility-2.jpg?v=<?= filemtime(__DIR__ . '/assets/images/about-footprint-facility-2.jpg') ?>"
+                                src="assets/images/Original/facility-2.jpeg"
                                 width="564"
                                 height="747"
                                 alt="Tabac Leaf Enterprises Industrial Facility at Tangutur"
-                                style="opacity: 0"
+                                style="opacity: 0; object-fit: cover;"
                                 sizes="(max-width: 767px) 100vw, 564px"
                                 data-w-id="d79c86cc-7a05-faab-2953-61351dccd472"
                                 loading="lazy"
@@ -1495,7 +1749,7 @@
                             data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffce"
                             class="heading-two-gap-top-bottom no-margin"
                         >
-                            Advanced Processing. Proven Capability. Consistent Quality.
+                            Advanced Processing.<br />Proven Capability.<br />Consistent Quality.
                         </h2>
                     </div>
                     <div data-w-id="88c81948-5fd7-346a-cfd2-4aae1ae9ffd0">

@@ -258,7 +258,7 @@
 
                     <div class="article-hero-banner">
                         <img
-                            src="../assets/images/contact-golden-tobacco.jpg"
+                            src="../assets/images/Original/product-4.jpeg"
                             alt="Tobacco Grades - Mysore FCV, Traditional FCV, NLS FCV, and Burley"
                         />
                     </div>

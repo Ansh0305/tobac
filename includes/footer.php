@@ -104,16 +104,14 @@
     text-transform: uppercase;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.12);
     transition: all 0.25s ease;
-}
-
-.tobac-footer-badge:hover {
-    background: rgba(255, 255, 255, 0.055);
-    border-color: rgba(221, 185, 105, 0.25);
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .tobac-footer-badge-dot {
     width: 6px;
     height: 6px;
+    min-width: 6px;
     border-radius: 50%;
     background: #b08940;
     box-shadow: 0 0 8px rgba(176, 137, 64, 0.85);
@@ -150,7 +148,7 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
 }
 
 .tobac-footer-links li {
@@ -165,12 +163,8 @@
     display: inline-flex;
     align-items: center;
     gap: 6px;
+    padding: 4px 0;
     transition: all 0.22s ease;
-}
-
-.tobac-footer-links a:hover {
-    color: #ddb969;
-    transform: translateX(4px);
 }
 
 /* Frosted Glass Contact Card */
@@ -188,16 +182,6 @@
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.tobac-footer-glass-card:hover {
-    border-color: rgba(221, 185, 105, 0.25);
-    background: rgba(255, 255, 255, 0.045);
-    box-shadow: 
-        0 25px 50px -15px rgba(0, 0, 0, 0.65),
-        0 0 35px rgba(176, 137, 64, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.18);
-    transform: translateY(-2px);
-}
-
 .tobac-footer-contacts {
     display: flex;
     flex-direction: column;
@@ -211,22 +195,6 @@
     color: rgba(255, 255, 255, 0.85);
     text-decoration: none;
     transition: all 0.22s ease;
-}
-
-a.tobac-footer-contact-item:hover {
-    color: #ffffff;
-}
-
-a.tobac-footer-contact-item:hover .tobac-footer-icon-box {
-    background: #b08940;
-    color: #070707;
-    border-color: #b08940;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 14px rgba(176, 137, 64, 0.4);
-}
-
-a.tobac-footer-contact-item:hover .tobac-footer-contact-val {
-    color: #ddb969;
 }
 
 /* Frosted Icon Box */
@@ -251,19 +219,22 @@ a.tobac-footer-contact-item:hover .tobac-footer-contact-val {
     display: flex;
     flex-direction: column;
     gap: 2px;
+    min-width: 0;
 }
 
 .tobac-footer-contact-label {
     font-size: 0.72rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: rgba(255, 255, 255, 0.45);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .tobac-footer-contact-val {
     font-size: 0.90rem;
     color: rgba(255, 255, 255, 0.88);
     line-height: 1.45;
+    word-break: break-word;
+    overflow-wrap: break-word;
     transition: color 0.22s ease;
 }
 
@@ -301,16 +272,54 @@ a.tobac-footer-contact-item:hover .tobac-footer-contact-val {
     color: rgba(255, 255, 255, 0.55);
     text-decoration: none;
     font-size: 0.84rem;
+    padding: 4px 0;
+    display: inline-block;
     transition: color 0.22s ease;
-}
-
-.tobac-footer-legal a:hover {
-    color: #ddb969;
 }
 
 .tobac-footer-legal-sep {
     color: rgba(255, 255, 255, 0.18);
     font-size: 0.75rem;
+}
+
+/* Hover effects scoped to devices that support true hover (avoids sticky hover on touch) */
+@media (hover: hover) {
+    .tobac-footer-logo-link:hover {
+        opacity: 0.85;
+    }
+    .tobac-footer-badge:hover {
+        background: rgba(255, 255, 255, 0.055);
+        border-color: rgba(221, 185, 105, 0.25);
+    }
+    .tobac-footer-links a:hover {
+        color: #ddb969;
+        transform: translateX(4px);
+    }
+    .tobac-footer-glass-card:hover {
+        border-color: rgba(221, 185, 105, 0.25);
+        background: rgba(255, 255, 255, 0.045);
+        box-shadow: 
+            0 25px 50px -15px rgba(0, 0, 0, 0.65),
+            0 0 35px rgba(176, 137, 64, 0.1),
+            inset 0 1px 0 rgba(255, 255, 255, 0.18);
+        transform: translateY(-2px);
+    }
+    a.tobac-footer-contact-item:hover {
+        color: #ffffff;
+    }
+    a.tobac-footer-contact-item:hover .tobac-footer-icon-box {
+        background: #b08940;
+        color: #070707;
+        border-color: #b08940;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 14px rgba(176, 137, 64, 0.4);
+    }
+    a.tobac-footer-contact-item:hover .tobac-footer-contact-val {
+        color: #ddb969;
+    }
+    .tobac-footer-legal a:hover {
+        color: #ddb969;
+    }
 }
 
 /* Responsive adjustments */
@@ -333,26 +342,64 @@ a.tobac-footer-contact-item:hover .tobac-footer-contact-val {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
     .tobac-footer-container {
-        padding: 42px 18px 24px;
+        padding: 42px 20px 24px;
     }
     .tobac-footer-grid {
         grid-template-columns: 1fr;
         gap: 32px;
     }
+    .tobac-footer-glow-1 {
+        width: 220px;
+        height: 180px;
+        filter: blur(30px);
+    }
+    .tobac-footer-glow-2 {
+        width: 200px;
+        height: 160px;
+        filter: blur(30px);
+    }
     .tobac-footer-glass-card {
-        padding: 20px 18px;
+        padding: 22px 18px;
     }
     .tobac-footer-bottom {
         flex-direction: column;
         align-items: flex-start;
-        gap: 12px;
+        gap: 14px;
         margin-top: 32px;
         padding: 16px 18px;
     }
     .tobac-footer-legal {
-        gap: 14px;
+        gap: 10px 18px;
+    }
+    .tobac-footer-legal-sep {
+        display: none;
+    }
+}
+
+@media (max-width: 479px) {
+    .tobac-footer-container {
+        padding: 36px 16px 20px;
+    }
+    .tobac-footer-logo {
+        width: 175px;
+    }
+    .tobac-footer-badge {
+        font-size: 0.70rem;
+        padding: 6px 12px;
+        gap: 7px;
+        letter-spacing: 0.3px;
+    }
+    .tobac-footer-tagline {
+        font-size: 0.88rem;
+        line-height: 1.6;
+    }
+    .tobac-footer-glass-card {
+        padding: 18px 14px;
+    }
+    .tobac-footer-bottom {
+        padding: 14px 14px;
     }
 }
 </style>
@@ -431,7 +478,7 @@ a.tobac-footer-contact-item:hover .tobac-footer-contact-val {
                     </a>
 
                     <!-- Phone -->
-                    <a href="tel:+918592252000" class="tobac-footer-contact-item">
+                    <a href="tel:+919999999000" class="tobac-footer-contact-item">
                         <div class="tobac-footer-icon-box" aria-hidden="true">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>

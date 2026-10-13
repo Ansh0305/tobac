@@ -519,36 +519,307 @@
             }
 
             @media (max-width: 767px) {
+                .video-section {
+                    position: relative !important;
+                    width: 100% !important;
+                    overflow: hidden !important;
+                    margin-top: 40px !important;
+                    margin-bottom: 50px !important;
+                }
+
                 .video-section .video-section-two.full-height {
+                    position: relative !important;
                     height: 560px !important;
                     min-height: 560px !important;
                     max-height: 560px !important;
-                }
-
-                .video-section .video-text-box {
-                    position: relative !important;
-                    top: auto !important;
-                    transform: none !important;
-                    right: auto !important;
                     width: 100% !important;
-                    max-width: 100% !important;
-                    padding: 40px 24px !important;
-                    text-align: center !important;
+                    overflow: hidden !important;
                 }
 
-                .video-section .lottie-button-wrapper {
-                    position: relative !important;
-                    top: auto !important;
-                    left: auto !important;
-                    transform: none !important;
-                    margin: 40px auto 0 auto !important;
+                .video-section .youtube-video-background {
+                    position: absolute !important;
+                    inset: 0 !important;
+                    width: 100% !important;
+                    height: 100% !important;
                 }
 
                 .video-section .youtube-video-overlay {
-                    background: rgba(0, 0, 0, 0.72) !important;
+                    position: absolute !important;
+                    inset: 0 !important;
+                    background: linear-gradient(
+                        180deg,
+                        rgba(0, 0, 0, 0.35) 0%,
+                        rgba(0, 0, 0, 0.55) 40%,
+                        rgba(0, 0, 0, 0.84) 100%
+                    ) !important;
+                    z-index: 1 !important;
+                }
+
+                .video-section .w-layout-blockcontainer.container {
+                    position: absolute !important;
+                    top: 0 !important;
+                    left: 0 !important;
+                    width: 100% !important;
+                    height: auto !important;
+                    z-index: 5 !important;
+                }
+
+                .video-section .video-two-video-wrapper,
+                .video-section .viide-two-video-line {
+                    position: relative !important;
+                    width: 100% !important;
+                    height: auto !important;
+                    display: flex !important;
+                    justify-content: center !important;
+                    align-items: center !important;
+                }
+
+                .video-section .lottie-button-wrapper {
+                    position: absolute !important;
+                    top: 32px !important;
+                    left: 50% !important;
+                    right: auto !important;
+                    bottom: auto !important;
+                    transform: translateX(-50%) !important;
+                    margin: 0 !important;
+                    width: 58px !important;
+                    height: 58px !important;
+                    z-index: 5 !important;
+                    display: flex !important;
+                    justify-content: center !important;
+                    align-items: center !important;
+                }
+
+                .video-section .youtube-watch-button {
+                    width: 58px !important;
+                    height: 58px !important;
+                    border-radius: 50% !important;
+                    background: rgba(255, 255, 255, 0.95) !important;
+                    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45) !important;
+                    display: flex !important;
+                    align-items: center !important;
+                    justify-content: center !important;
+                }
+
+                .video-section .youtube-watch-button span,
+                .video-section .youtube-play-triangle {
+                    width: 0 !important;
+                    height: 0 !important;
+                    border-top: 9px solid transparent !important;
+                    border-bottom: 9px solid transparent !important;
+                    border-left: 14px solid #111111 !important;
+                    margin-left: 4px !important;
+                    display: block !important;
+                }
+
+                .video-section .video-section-apearence {
+                    display: none !important;
+                }
+
+                .video-section .video-text-box {
+                    position: absolute !important;
+                    inset: auto !important;
+                    top: auto !important;
+                    bottom: 24px !important;
+                    left: 16px !important;
+                    right: 16px !important;
+                    width: auto !important;
+                    max-width: 440px !important;
+                    margin: 0 auto !important;
+                    transform: none !important;
+                    text-align: center !important;
+                    z-index: 4 !important;
+                    padding: 0 !important;
+                }
+
+                .video-section .video-one-title-wrap,
+                .video-section .video-one-title-wrap.padding-left {
+                    padding: 0 !important;
+                    margin: 0 auto !important;
+                    width: 100% !important;
+                    max-width: 100% !important;
+                    text-align: center !important;
+                    display: flex !important;
+                    flex-direction: column !important;
+                    align-items: center !important;
+                }
+
+                .video-section .video-one-title-wrap .sub-heading {
+                    font-size: 11px !important;
+                    line-height: 1.2 !important;
+                    letter-spacing: 1.5px !important;
+                    text-transform: uppercase !important;
+                    color: var(--yellow, #e5a93c) !important;
+                    font-weight: 600 !important;
+                    margin-bottom: 8px !important;
+                    text-align: center !important;
+                }
+
+                .video-section .video-title {
+                    margin: 0 0 10px 0 !important;
+                    text-align: center !important;
+                    width: 100% !important;
+                }
+
+                .video-section .video-title h2,
+                .video-section .heading-two-gap-top-bottom {
+                    font-size: 22px !important;
+                    line-height: 1.25 !important;
+                    letter-spacing: -0.3px !important;
+                    color: #ffffff !important;
+                    margin: 0 0 10px 0 !important;
+                    max-width: 100% !important;
+                    font-weight: 700 !important;
+                    text-align: center !important;
+                }
+
+                .video-section .video-text-box p,
+                .video-section .video-text-box .video-one-title-wrap > div:nth-child(3) {
+                    font-size: 13px !important;
+                    line-height: 1.45 !important;
+                    color: rgba(255, 255, 255, 0.9) !important;
+                    margin: 0 auto 16px auto !important;
+                    max-width: 380px !important;
+                    text-align: center !important;
+                }
+
+                .video-section .button-style-one-wrap {
+                    margin: 0 auto !important;
+                    display: inline-flex !important;
+                    justify-content: center !important;
+                    overflow: hidden !important;
+                }
+
+                .video-section .button-style-one {
+                    min-height: 46px !important;
+                    height: 46px !important;
+                    padding: 0 24px !important;
+                    display: inline-flex !important;
+                    align-items: center !important;
+                    justify-content: center !important;
+                    background-color: var(--yellow, #f6b61b) !important;
+                    border-radius: 8px !important;
+                    overflow: hidden !important;
+                    position: relative !important;
+                    text-decoration: none !important;
+                }
+
+                .video-section .button-text-wrap {
+                    display: flex !important;
+                    align-items: center !important;
+                    justify-content: center !important;
+                    height: auto !important;
+                    overflow: hidden !important;
+                }
+
+                .video-section .button-text {
+                    font-size: 13px !important;
+                    font-weight: 600 !important;
+                    letter-spacing: 0.5px !important;
+                    color: #111111 !important;
+                    line-height: 1 !important;
+                    margin: 0 !important;
+                    white-space: nowrap !important;
+                }
+
+                .video-section .button-text.two {
+                    display: none !important;
+                }
+
+                .video-section .button-style-one-icon {
+                    display: flex !important;
+                    align-items: center !important;
+                    margin-left: 8px !important;
+                }
+
+                .video-section .button-one-arrow {
+                    display: block !important;
+                    width: 9px !important;
+                    height: 9px !important;
+                    filter: brightness(0) !important;
+                }
+
+                .video-section .video-text-box .video-one-title-wrap > div:last-child {
+                    margin-top: 14px !important;
+                    font-size: 11.5px !important;
+                    line-height: 1.35 !important;
+                    letter-spacing: 0.4px !important;
+                    text-align: center !important;
+                    color: var(--yellow, #e5a93c) !important;
+                    font-weight: 500 !important;
+                    max-width: 360px !important;
                 }
             }
-        </style>
+
+            @media (max-width: 479px) {
+                .video-section .video-section-two.full-height {
+                    height: 540px !important;
+                    min-height: 540px !important;
+                    max-height: 540px !important;
+                }
+
+                .video-section .lottie-button-wrapper {
+                    top: 26px !important;
+                    width: 52px !important;
+                    height: 52px !important;
+                }
+
+                .video-section .youtube-watch-button {
+                    width: 52px !important;
+                    height: 52px !important;
+                }
+
+                .video-section .youtube-watch-button span,
+                .video-section .youtube-play-triangle {
+                    border-top-width: 8px !important;
+                    border-bottom-width: 8px !important;
+                    border-left-width: 12px !important;
+                    margin-left: 3px !important;
+                }
+
+                .video-section .video-text-box {
+                    bottom: 20px !important;
+                    left: 14px !important;
+                    right: 14px !important;
+                }
+
+                .video-section .video-title h2,
+                .video-section .heading-two-gap-top-bottom {
+                    font-size: 20px !important;
+                    line-height: 1.25 !important;
+                    margin-bottom: 8px !important;
+                }
+
+                .video-section .video-text-box p,
+                .video-section .video-text-box .video-one-title-wrap > div:nth-child(3) {
+                    font-size: 12.5px !important;
+                    line-height: 1.4 !important;
+                    margin-bottom: 14px !important;
+                    max-width: 340px !important;
+                }
+
+                .video-section .button-style-one {
+                    min-height: 44px !important;
+                    height: 44px !important;
+                    padding: 0 20px !important;
+                }
+
+                .video-section .button-text {
+                    font-size: 12px !important;
+                }
+
+                .video-section .button-text.two {
+                    display: none !important;
+                }
+
+                .video-section .video-text-box .video-one-title-wrap > div:last-child {
+                    margin-top: 12px !important;
+                    font-size: 11px !important;
+                }
+            }
+        
+    
+    </style>
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
         <script src="ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -589,6 +860,56 @@
                 hideDecimalForWholeNumbers: false,
             };
         </script>
+    
+    
+    <style>
+        /* Custom Mobile Reordering */
+        @media (max-width: 991px) {
+            
+    .features-three-card {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .features-three-card-image {
+        order: -1 !important;
+        width: 100% !important;
+    }
+    .features-three-card-information {
+        order: 1 !important;
+        width: 100% !important;
+    }
+
+        }
+    </style>
+    
+    <style>
+        /* Final Mobile Adjustments */
+        @media (max-width: 991px) {
+            
+    .service-hero {
+        padding-top: 130px !important;
+        min-height: auto !important;
+    }
+    .about-hero-content {
+        padding-top: 0 !important;
+    }
+    .service-hero-information {
+        margin-top: 0 !important;
+    }
+    .service-hero-subheading-top-gap {
+        margin-top: 0 !important;
+    }
+    .service-hero-heading {
+        font-size: clamp(22px, 6vw, 35px) !important;
+        line-height: 1.25 !important;
+    }
+    .service-hero-heading .heading-line {
+        display: block !important;
+        white-space: nowrap !important;
+    }
+
+        }
+    </style>
     </head>
     <body>
         <?php require __DIR__ . "/includes/header.php"; ?>
@@ -624,7 +945,7 @@
                                     "
                                     class="no-margin service-hero-heading"
                                 >
-                                    Responsible Processing. Thoughtful Operations.
+                                    <span class="heading-line">Responsible Processing.</span><span class="heading-line">Thoughtful Operations.</span>
                                 </h1>
                             </div>
                         </div>
@@ -635,8 +956,7 @@
                                     style="opacity: 0"
                                     class="color-white"
                                 >
-                                    At Tabac Leaf Enterprises, sustainability is an important consideration in how we manage our tobacco processing operations. We focus on practical measures that support operational efficiency, responsible fuel use and environmental awareness.<br /><br />
-                                    With decades of industry experience and integrated processing infrastructure, we continue to explore operating practices that align productivity with responsible resource management.
+                                    At Tabac Leaf Enterprises, sustainability is an important consideration in how we manage our tobacco processing operations. We focus on practical measures that support operational efficiency, responsible fuel use and environmental awareness.
                                 </div>
                             </div>
                             <div data-w-id="d6df9f96-cc2a-6c23-383b-0d01b354037a" style="opacity: 0">
@@ -1049,7 +1369,7 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="assets/images/services-tobacco-processing.jpg"
+                                src="assets/images/Original/facility.jpeg"
                                 width="302"
                                 height="289"
                                 alt="Efficient Tobacco Processing and Conditioning"
@@ -1070,7 +1390,7 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="assets/images/services-tobacco-integrated.jpg"
+                                src="assets/images/Original/facility-2.jpeg"
                                 width="302"
                                 height="289"
                                 alt="Integrated Material Handling and Processing Flow"
@@ -1117,7 +1437,7 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="assets/images/services-tobacco-export.jpg"
+                                src="assets/images/Original/product-2.jpeg"
                                 width="302"
                                 height="289"
                                 alt="Direct Farm to Facility Logistics"
@@ -1187,7 +1507,7 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="assets/images/about-footprint-facility-1.jpg?v=<?= filemtime(__DIR__ . '/assets/images/about-footprint-facility-1.jpg') ?>"
+                                src="assets/images/Original/facility.jpeg"
                                 width="302"
                                 height="289"
                                 alt="Resource-Conscious Industrial Infrastructure"
@@ -1208,7 +1528,7 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="assets/images/about-footprint-facility-2.jpg?v=<?= filemtime(__DIR__ . '/assets/images/about-footprint-facility-2.jpg') ?>"
+                                src="assets/images/Original/company-building.jpeg"
                                 width="302"
                                 height="289"
                                 alt="Planned Facility Coordination and Environmental Care"
@@ -1432,6 +1752,18 @@
             </div>
         </section>
         */ ?>
+        <style>
+        @media (max-width: 991px) {
+            .counter-four .over-view-title-v2-wrapper .over-view-flex {
+                display: none !important;
+            }
+            .counter-four .over-view-title-v2-wrapper .heading-style-h2 {
+                opacity: 1 !important;
+                transform: none !important;
+                visibility: visible !important;
+            }
+        }
+        </style>
         <section data-w-id="539bab2a-6475-ed51-c0ff-07ee5a0387fb" class="counter-four">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="overflow-hidden">
