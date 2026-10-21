@@ -3743,7 +3743,7 @@
                                         data-w-id="07a4a2ab-2fe3-9e53-514f-85ce269bfca3"
                                         class="team-white-overlay"
                                     ></div>
-                                    <a href="aboutus.php#leadership" class="link-block w-inline-block" style="height: 100%; z-index: 25; cursor: pointer;"
+                                    <a href="aboutus#leadership" class="link-block w-inline-block" style="height: 100%; z-index: 25; cursor: pointer;"
                                         ><div class="link-text">This is some text inside of a div block.</div></a
                                     >
                                 </div>
@@ -4569,7 +4569,7 @@
                             class="button-style-one-wrap overflow-hidden"
                         >
                             <a
-                                href="aboutus.php"
+                                href="aboutus"
                                 class="button-style-one position-relative overflow-hidden w-inline-block"
                             >
                                 <div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
@@ -4644,7 +4644,7 @@
                             class="button-style-one-wrap overflow-hidden"
                         >
                             <a
-                                href="services.php"
+                                href="services"
                                 class="button-style-one position-relative overflow-hidden w-inline-block"
                             >
                                 <div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
@@ -4719,7 +4719,7 @@
                             class="button-style-one-wrap overflow-hidden"
                         >
                             <a
-                                href="contact.php"
+                                href="contact"
                                 class="button-style-one position-relative overflow-hidden w-inline-block"
                             >
                                 <div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
@@ -4906,7 +4906,7 @@
                                             class="button-style-one-wrap w-variant-6e2385dc-4996-d9d5-515e-70517806a760 overflow-hidden"
                                         >
                                             <a
-                                                href="services.php"
+                                                href="services"
                                                 class="button-style-one w-variant-6e2385dc-4996-d9d5-515e-70517806a760 position-relative overflow-hidden w-inline-block"
                                                 ><div
                                                     class="w-layout-vflex button-text-wrap position-relative overflow-hidden"
@@ -4982,7 +4982,7 @@
                                             class="button-style-one-wrap w-variant-6e2385dc-4996-d9d5-515e-70517806a760 overflow-hidden"
                                         >
                                             <a
-                                                href="operations.php"
+                                                href="operations"
                                                 class="button-style-one w-variant-6e2385dc-4996-d9d5-515e-70517806a760 position-relative overflow-hidden w-inline-block"
                                                 ><div
                                                     class="w-layout-vflex button-text-wrap position-relative overflow-hidden"
@@ -5452,7 +5452,7 @@
                             class="button-style-one-wrap overflow-hidden"
                         >
                             <a
-                                href="contact.php"
+                                href="contact"
                                 class="button-style-one position-relative overflow-hidden w-inline-block"
                                 ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
                                     <div class="button-text">CONTACT OUR TEAM</div>

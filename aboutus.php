@@ -932,7 +932,7 @@
                                 class="button-style-one-wrap overflow-hidden"
                             >
                                 <a
-                                    href="services.php"
+                                    href="services"
                                     class="button-style-one position-relative overflow-hidden w-inline-block"
                                     ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
                                         <div class="button-text">EXPLORE OUR CAPABILITIES</div>
@@ -1205,7 +1205,7 @@
                     class="w-layout-grid service-six-card-wrap"
                 >
                     <a
-                        href="operations.php"
+                        href="operations"
                         class="service-two-card position-relative service-card-six overflow-hidden w-inline-block"
                         ><div class="w-layout-hflex service-two-card-main position-relative">
                             <div class="w-layout-hflex service-two-card-left-wrap service-six-card-text-wrap">
@@ -1239,7 +1239,7 @@
                             <div class="service-card-two-bg position-absolute two"></div></div></a
                     ><a
                         data-w-id="2a5bf49e-a915-ce81-044a-9004ac91ee1d"
-                        href="operations.php"
+                        href="operations"
                         class="service-two-card position-relative service-card-six overflow-hidden w-inline-block"
                         ><div class="w-layout-hflex service-two-card-main position-relative">
                             <div class="w-layout-hflex service-two-card-left-wrap service-six-card-text-wrap">
@@ -1273,7 +1273,7 @@
                             <div class="service-card-two-bg position-absolute two"></div></div></a
                     ><a
                         data-w-id="025e7ee4-150f-684e-966c-394ef48bf6ba"
-                        href="operations.php"
+                        href="operations"
                         class="service-two-card position-relative service-card-six overflow-hidden w-inline-block"
                         ><div class="w-layout-hflex service-two-card-main position-relative">
                             <div class="w-layout-hflex service-two-card-left-wrap service-six-card-text-wrap">
@@ -1307,7 +1307,7 @@
                             <div class="service-card-two-bg position-absolute two"></div></div></a
                     ><a
                         data-w-id="b3be48ab-aec7-eedb-248e-4c977aa2d17d"
-                        href="operations.php"
+                        href="operations"
                         class="service-two-card position-relative service-card-six overflow-hidden w-inline-block"
                         ><div class="w-layout-hflex service-two-card-main position-relative">
                             <div class="w-layout-hflex service-two-card-left-wrap service-six-card-text-wrap">
@@ -1341,7 +1341,7 @@
                             <div class="service-card-two-bg position-absolute two"></div></div></a
                     ><a
                         data-w-id="127df504-60a4-55f9-202b-b0fd7f920651"
-                        href="operations.php"
+                        href="operations"
                         style="grid-column: 1 / -1;"
                         class="service-two-card position-relative service-card-six overflow-hidden w-inline-block"
                         ><div class="w-layout-hflex service-two-card-main position-relative">
@@ -1563,7 +1563,7 @@
                                 class="button-style-one-wrap overflow-hidden light-button"
                             >
                                 <a
-                                    href="operations.php"
+                                    href="operations"
                                     class="button-style-one position-relative overflow-hidden light-button w-inline-block"
                                     ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
                                         <div class="button-text dark">VIEW OPERATIONS</div>
@@ -1759,7 +1759,7 @@
                             class="button-style-one-wrap overflow-hidden"
                         >
                             <a
-                                href="contact.php"
+                                href="contact"
                                 class="button-style-one position-relative overflow-hidden w-inline-block"
                                 ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
                                     <div class="button-text">EXPLORE OUR CAPABILITIES</div>

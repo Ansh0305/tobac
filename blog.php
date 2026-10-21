@@ -229,7 +229,7 @@
 
                     <!-- Article 1 -->
                     <article class="blog-card">
-                        <a href="blogs/why-tobacco-leaf-processing-matters.php" class="blog-card-media">
+                        <a href="blogs/why-tobacco-leaf-processing-matters" class="blog-card-media">
                             <img
                                 src="assets/images/Original/facility.jpeg"
                                 alt="Why Tobacco Leaf Processing Matters: From Harvested Leaf to Consistent Industrial Quality"
@@ -242,7 +242,7 @@
                                 <span class="blog-date">October 2026 · 6 min read</span>
                             </div>
                             <h2 class="blog-title">
-                                <a href="blogs/why-tobacco-leaf-processing-matters.php" style="color: inherit; text-decoration: none;">
+                                <a href="blogs/why-tobacco-leaf-processing-matters" style="color: inherit; text-decoration: none;">
                                     Why Tobacco Leaf Processing Matters: From Harvested Leaf to Consistent Industrial Quality
                                 </a>
                             </h2>
@@ -250,7 +250,7 @@
                                 Tobacco is an agricultural product, but producing high-quality leaf is only part of the value chain. Explore how conditioning, threshing, moisture control and process discipline create consistent industrial materials.
                             </p>
                             <div>
-                                <a href="blogs/why-tobacco-leaf-processing-matters.php" class="blog-read-more">
+                                <a href="blogs/why-tobacco-leaf-processing-matters" class="blog-read-more">
                                     <span>Read Full Article</span>
                                     <img
                                         src="67ad72477c605912a4af72eb/67af1b78eef99645a9f0bfd8_Arrow%206.svg"
@@ -263,7 +263,7 @@
 
                     <!-- Article 2 -->
                     <article class="blog-card">
-                        <a href="blogs/what-are-fcv-and-burley-tobacco-grades.php" class="blog-card-media">
+                        <a href="blogs/what-are-fcv-and-burley-tobacco-grades" class="blog-card-media">
                             <img
                                 src="assets/images/Original/product-4.jpeg"
                                 alt="What Are FCV and Burley Tobacco Grades? Understanding Tobacco Varieties, Grades and Chemistry"
@@ -276,7 +276,7 @@
                                 <span class="blog-date">October 2026 · 7 min read</span>
                             </div>
                             <h2 class="blog-title">
-                                <a href="blogs/what-are-fcv-and-burley-tobacco-grades.php" style="color: inherit; text-decoration: none;">
+                                <a href="blogs/what-are-fcv-and-burley-tobacco-grades" style="color: inherit; text-decoration: none;">
                                     What Are FCV and Burley Tobacco Grades? Understanding Varieties, Grades and Chemistry
                                 </a>
                             </h2>
@@ -284,7 +284,7 @@
                                 An essential guide across Mysore FCV, Traditional FCV, NLS FCV and Vinukonda Burley tobacco grades, examining leaf positions, colour classifications, and indicative nicotine and sugar chemistry.
                             </p>
                             <div>
-                                <a href="blogs/what-are-fcv-and-burley-tobacco-grades.php" class="blog-read-more">
+                                <a href="blogs/what-are-fcv-and-burley-tobacco-grades" class="blog-read-more">
                                     <span>Read Full Article</span>
                                     <img
                                         src="67ad72477c605912a4af72eb/67af1b78eef99645a9f0bfd8_Arrow%206.svg"
@@ -297,7 +297,7 @@
 
                     <!-- Article 3 -->
                     <article class="blog-card">
-                        <a href="blogs/modern-tobacco-processing-quality-efficiency.php" class="blog-card-media">
+                        <a href="blogs/modern-tobacco-processing-quality-efficiency" class="blog-card-media">
                             <img
                                 src="assets/images/Original/facility-2.jpeg"
                                 alt="How Modern Tobacco Processing Can Support Quality, Efficiency and Responsible Operations"
@@ -310,7 +310,7 @@
                                 <span class="blog-date">October 2026 · 6 min read</span>
                             </div>
                             <h2 class="blog-title">
-                                <a href="blogs/modern-tobacco-processing-quality-efficiency.php" style="color: inherit; text-decoration: none;">
+                                <a href="blogs/modern-tobacco-processing-quality-efficiency" style="color: inherit; text-decoration: none;">
                                     How Modern Tobacco Processing Can Support Quality, Efficiency and Responsible Operations
                                 </a>
                             </h2>
@@ -318,7 +318,7 @@
                                 Learn how 22 TPH installed capacity, PLC/SCADA automation, multi-stage threshing, dust management, fire protection and bio-steam power unite to create a high-efficiency processing environment.
                             </p>
                             <div>
-                                <a href="blogs/modern-tobacco-processing-quality-efficiency.php" class="blog-read-more">
+                                <a href="blogs/modern-tobacco-processing-quality-efficiency" class="blog-read-more">
                                     <span>Read Full Article</span>
                                     <img
                                         src="67ad72477c605912a4af72eb/67af1b78eef99645a9f0bfd8_Arrow%206.svg"

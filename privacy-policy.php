@@ -374,7 +374,7 @@
                             The actual cookies used will depend on the technologies, hosting platform, analytics services and other tools implemented on the live website.
                         </p>
                         <p class="legal-text">
-                            Please refer to our <a href="cookie-policy.php" style="color: var(--yellow, #ddb969); text-decoration: underline;">Cookie Policy</a> for additional information.
+                            Please refer to our <a href="cookie-policy" style="color: var(--yellow, #ddb969); text-decoration: underline;">Cookie Policy</a> for additional information.
                         </p>
                     </div>
 

@@ -1016,7 +1016,7 @@
                                 class="button-style-one-wrap overflow-hidden"
                             >
                                 <a
-                                    href="contact.php"
+                                    href="contact"
                                     class="button-style-one position-relative overflow-hidden w-inline-block"
                                     ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
                                         <div class="button-text">REQUEST GRADE SPECS</div>
@@ -1043,7 +1043,7 @@
                         class="w-layout-grid home-two-about-us"
                     >
                         <a
-                            href="contact.php"
+                            href="contact"
                             data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7ac"
                             class="service-three-card one w-inline-block"
                             ><div class="service-three-card-image-block">
@@ -1076,7 +1076,7 @@
                                     />
                                 </div></div></a
                         ><a
-                            href="contact.php"
+                            href="contact"
                             data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7ba"
                             class="service-three-card two w-inline-block"
                             ><div class="service-three-card-image-block">
@@ -1109,7 +1109,7 @@
                                     />
                                 </div></div></a
                         ><a
-                            href="contact.php"
+                            href="contact"
                             data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7c8"
                             class="service-three-card three w-inline-block"
                             ><div class="service-three-card-image-block">
@@ -1142,7 +1142,7 @@
                                     />
                                 </div></div></a
                         ><a
-                            href="contact.php"
+                            href="contact"
                             data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7d6"
                             class="service-three-card four w-inline-block"
                             ><div class="service-three-card-image-block">
@@ -1526,7 +1526,7 @@
                                     </div>
                                     <div class="heading-style-h3 color-white">B.K. Threshers Private Limited</div>
                                 </div>
-                                <a href="contact.php" class="preservation-arrow-wrapper one w-inline-block"
+                                <a href="contact" class="preservation-arrow-wrapper one w-inline-block"
                                     ><img
                                         src="67ad72477c605912a4af72eb/68749ece601a251f2eb40b39_Group%201597883626.svg"
                                         loading="lazy"
@@ -1583,7 +1583,7 @@
                                     </div>
                                     <div class="heading-style-h3 color-white">Tabac Leaf Enterprises</div>
                                 </div>
-                                <a href="contact.php" class="preservation-arrow-wrapper two w-inline-block"
+                                <a href="contact" class="preservation-arrow-wrapper two w-inline-block"
                                     ><img
                                         src="67ad72477c605912a4af72eb/68749ece601a251f2eb40b39_Group%201597883626.svg"
                                         loading="lazy"
@@ -1771,7 +1771,7 @@
                             class="button-style-one-wrap overflow-hidden"
                         >
                             <a
-                                href="contact.php"
+                                href="contact"
                                 class="button-style-one position-relative overflow-hidden w-inline-block"
                                 ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
                                     <div class="button-text">SEND AN ENQUIRY</div>

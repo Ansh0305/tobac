@@ -966,7 +966,7 @@
                                     class="button-style-one-wrap overflow-hidden"
                                 >
                                     <a
-                                        href="contact.php"
+                                        href="contact"
                                         class="button-style-one position-relative overflow-hidden w-inline-block"
                                         ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
                                             <div class="button-text">CONTACT OUR TEAM</div>
@@ -1265,7 +1265,7 @@
                 <a
                     data-w-id="524d328f-6574-81a3-bd10-3646bddadba3"
                     style="opacity: 0"
-                    href="contact.php"
+                    href="contact"
                     class="features-three-card w-inline-block"
                     ><div class="features-three-card-image">
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
@@ -1338,7 +1338,7 @@
                 ><a
                     data-w-id="e1f92f3a-07c7-6f1a-99a1-52fb097fdf32"
                     style="opacity: 0"
-                    href="contact.php"
+                    href="contact"
                     class="features-three-card top-border-remove w-inline-block"
                     ><div class="features-three-card-information landscape-text-center">
                         <div class="overflow-hidden">
@@ -1409,7 +1409,7 @@
                             </div>
                         </div></div></a
                 ><a
-                    href="contact.php"
+                    href="contact"
                     class="features-three-card top-border-remove w-inline-block anim-card anim-card-3"
                 >
                     <div class="features-three-card-image">
@@ -1479,7 +1479,7 @@
                     </div>
                 </a>
                 <a
-                    href="contact.php"
+                    href="contact"
                     class="features-three-card top-border-remove w-inline-block anim-card anim-card-4"
                 >
                     <div class="features-three-card-information landscape-text-center">
@@ -2830,7 +2830,7 @@
                             class="button-style-one-wrap overflow-hidden"
                         >
                             <a
-                                href="contact.php"
+                                href="contact"
                                 class="button-style-one position-relative overflow-hidden w-inline-block"
                                 ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
                                     <div class="button-text">CONTACT OUR TEAM</div>

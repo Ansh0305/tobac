@@ -415,7 +415,7 @@
 
             <!-- Col 1: Brand & Overview -->
             <div class="tobac-footer-brand">
-                <a href="<?php echo $base; ?>index.php" class="tobac-footer-logo-link" aria-label="Tobac Leaf Enterprises">
+                <a href="<?php echo $base; ?>" class="tobac-footer-logo-link" aria-label="Tobac Leaf Enterprises">
                     <img
                         loading="lazy"
                         src="<?php echo $base; ?>assets/images/tobaclogo.png"
@@ -438,11 +438,11 @@
             <div>
                 <div class="tobac-footer-title">Company</div>
                 <ul class="tobac-footer-links">
-                    <li><a href="<?php echo $base; ?>index.php">Home</a></li>
-                    <li><a href="<?php echo $base; ?>aboutus.php">About Us</a></li>
-                    <li><a href="<?php echo $base; ?>aboutus.php#leadership">Our Leadership</a></li>
-                    <li><a href="<?php echo $base; ?>sustainability.php">Sustainability</a></li>
-                    <li><a href="<?php echo $base; ?>blog.php">Blogs</a></li>
+                    <li><a href="<?php echo $base; ?>index">Home</a></li>
+                    <li><a href="<?php echo $base; ?>aboutus">About Us</a></li>
+                    <li><a href="<?php echo $base; ?>aboutus#leadership">Our Leadership</a></li>
+                    <li><a href="<?php echo $base; ?>sustainability">Sustainability</a></li>
+                    <li><a href="<?php echo $base; ?>blog">Blogs</a></li>
                 </ul>
             </div>
 
@@ -450,11 +450,11 @@
             <div>
                 <div class="tobac-footer-title">Operations</div>
                 <ul class="tobac-footer-links">
-                    <li><a href="<?php echo $base; ?>services.php">Core Services</a></li>
-                    <li><a href="<?php echo $base; ?>operations.php">Processing Facility</a></li>
-                    <li><a href="<?php echo $base; ?>operations.php">Quality &amp; Standards</a></li>
-                    <li><a href="<?php echo $base; ?>sustainability.php">Bio-Steam Energy</a></li>
-                    <li><a href="<?php echo $base; ?>contact.php">Contact Us</a></li>
+                    <li><a href="<?php echo $base; ?>services">Core Services</a></li>
+                    <li><a href="<?php echo $base; ?>operations">Processing Facility</a></li>
+                    <li><a href="<?php echo $base; ?>operations">Quality &amp; Standards</a></li>
+                    <li><a href="<?php echo $base; ?>sustainability">Bio-Steam Energy</a></li>
+                    <li><a href="<?php echo $base; ?>contact">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -516,11 +516,11 @@
             </p>
 
             <div class="tobac-footer-legal">
-                <a href="<?php echo $base; ?>privacy-policy.php">Privacy Policy</a>
+                <a href="<?php echo $base; ?>privacy-policy">Privacy Policy</a>
                 <span class="tobac-footer-legal-sep" aria-hidden="true">&bull;</span>
-                <a href="<?php echo $base; ?>terms-conditions.php">Terms &amp; Conditions</a>
+                <a href="<?php echo $base; ?>terms-conditions">Terms &amp; Conditions</a>
                 <span class="tobac-footer-legal-sep" aria-hidden="true">&bull;</span>
-                <a href="<?php echo $base; ?>cookie-policy.php">Cookie Policy</a>
+                <a href="<?php echo $base; ?>cookie-policy">Cookie Policy</a>
             </div>
         </div>
 

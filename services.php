@@ -932,7 +932,7 @@
                                     class="button-style-one-wrap overflow-hidden"
                                 >
                                     <a
-                                        href="contact.php"
+                                        href="contact"
                                         class="button-style-one position-relative overflow-hidden w-inline-block"
                                         ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
                                             <div class="button-text">CONTACT OUR TEAM</div>
@@ -1665,7 +1665,7 @@
                                     class="button-style-one-wrap overflow-hidden"
                                 >
                                     <a
-                                        href="contact.php"
+                                        href="contact"
                                         class="button-style-one position-relative overflow-hidden w-inline-block"
                                         ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
                                             <div class="button-text">Contact Our Team</div>
@@ -1734,7 +1734,7 @@
                                     class="button-style-one-wrap overflow-hidden"
                                 >
                                     <a
-                                        href="contact.php"
+                                        href="contact"
                                         class="button-style-one position-relative overflow-hidden w-inline-block"
                                         ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
                                             <div class="button-text">Contact Our Team</div>
@@ -1804,7 +1804,7 @@
                                     class="button-style-one-wrap overflow-hidden"
                                 >
                                     <a
-                                        href="contact.php"
+                                        href="contact"
                                         class="button-style-one position-relative overflow-hidden w-inline-block"
                                         ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
                                             <div class="button-text">Contact Our Team</div>
@@ -1875,7 +1875,7 @@
                                     class="button-style-one-wrap overflow-hidden"
                                 >
                                     <a
-                                        href="contact.php"
+                                        href="contact"
                                         class="button-style-one position-relative overflow-hidden w-inline-block"
                                         ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
                                             <div class="button-text">Contact Our Team</div>
@@ -2473,7 +2473,7 @@
                             class="button-style-one-wrap overflow-hidden"
                         >
                             <a
-                                href="contact.php"
+                                href="contact"
                                 class="button-style-one position-relative overflow-hidden w-inline-block"
                                 ><div class="w-layout-vflex button-text-wrap position-relative overflow-hidden">
                                     <div class="button-text">CONTACT OUR TEAM</div>

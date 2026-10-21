@@ -258,7 +258,7 @@
                 <div class="w-layout-blockcontainer container w-container">
                     <div class="about-hero-information text-align-center">
                         <div class="article-back-nav">
-                            <a href="../blog.php" class="article-back-link">
+                            <a href="../blog" class="article-back-link">
                                 ← Back to All Articles
                             </a>
                         </div>
@@ -481,10 +481,10 @@
                     </p>
 
                     <div style="margin-top: 50px; padding-top: 30px; border-top: 1px solid rgba(255, 255, 255, 0.1); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
-                        <a href="what-are-fcv-and-burley-tobacco-grades.php" class="article-back-link" style="color: rgba(255, 255, 255, 0.85);">
+                        <a href="what-are-fcv-and-burley-tobacco-grades" class="article-back-link" style="color: rgba(255, 255, 255, 0.85);">
                             ← Previous: FCV &amp; Burley Grades
                         </a>
-                        <a href="../blog.php" class="article-back-link">
+                        <a href="../blog" class="article-back-link">
                             View All Articles →
                         </a>
                     </div>

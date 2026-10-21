@@ -388,7 +388,7 @@
                             <span class="number">10.</span> Privacy
                         </h2>
                         <p class="legal-text">
-                            Any personal information submitted through this website will be handled in accordance with our <a href="privacy-policy.php" style="color: var(--yellow, #ddb969); text-decoration: underline;">Privacy Policy</a>.
+                            Any personal information submitted through this website will be handled in accordance with our <a href="privacy-policy" style="color: var(--yellow, #ddb969); text-decoration: underline;">Privacy Policy</a>.
                         </p>
                         <p class="legal-text">
                             Please review the Privacy Policy to understand how information submitted through contact forms, enquiries or other website interactions may be collected and used.
@@ -404,7 +404,7 @@
                             This website may use cookies and similar technologies for website functionality, security, analytics and user preferences.
                         </p>
                         <p class="legal-text">
-                            Please refer to our <a href="cookie-policy.php" style="color: var(--yellow, #ddb969); text-decoration: underline;">Cookie Policy</a> for further information.
+                            Please refer to our <a href="cookie-policy" style="color: var(--yellow, #ddb969); text-decoration: underline;">Cookie Policy</a> for further information.
                         </p>
                     </div>
 

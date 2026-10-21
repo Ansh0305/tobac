@@ -1,4 +1,4 @@
-<?php $base = isset($base_path) ? $base_path : ''; ?>
+<?php $base = isset($base_path) ? $base_path : '/'; ?>
 <style>
 .tobac-logo {
     width: 185px !important;
@@ -181,7 +181,7 @@ h1, h2, h3, h4,
             <div class="w-layout-grid header-grid-two">
 
                 <!-- LOGO -->
-                <a href="<?php echo $base; ?>index.php" class="logo w-nav-brand">
+                <a href="<?php echo $base; ?>" class="logo w-nav-brand">
                     <img
                         src="<?php echo $base; ?>assets/images/tobaclogo.png"
                         alt="Tobac Enterprises"
@@ -194,32 +194,32 @@ h1, h2, h3, h4,
                 <nav role="navigation" class="navbar-menu w-nav-menu">
 
                     <!-- Home -->
-                    <a href="<?php echo $base; ?>index.php" class="nav-menu w-nav-link">
+                    <a href="<?php echo $base; ?>" class="nav-menu w-nav-link">
                         <div class="nav-text">Home</div>
                     </a>
 
                     <!-- About Us -->
-                    <a href="<?php echo $base; ?>aboutus.php" class="nav-menu w-nav-link">
+                    <a href="<?php echo $base; ?>aboutus" class="nav-menu w-nav-link">
                         <div class="nav-text">About Us</div>
                     </a>
 
                     <!-- Services -->
-                    <a href="<?php echo $base; ?>services.php" class="nav-menu w-nav-link">
+                    <a href="<?php echo $base; ?>services" class="nav-menu w-nav-link">
                         <div class="nav-text">Services</div>
                     </a>
 
                     <!-- Operations -->
-                    <a href="<?php echo $base; ?>operations.php" class="nav-menu w-nav-link">
+                    <a href="<?php echo $base; ?>operations" class="nav-menu w-nav-link">
                         <div class="nav-text">Operations</div>
                     </a>
 
                     <!-- Sustainability -->
-                    <a href="<?php echo $base; ?>sustainability.php" class="nav-menu w-nav-link">
+                    <a href="<?php echo $base; ?>sustainability" class="nav-menu w-nav-link">
                         <div class="nav-text">Sustainability</div>
                     </a>
 
                     <!-- Contact -->
-                    <a href="<?php echo $base; ?>contact.php" class="nav-menu w-nav-link">
+                    <a href="<?php echo $base; ?>contact" class="nav-menu w-nav-link">
                         <div class="nav-text">Contact</div>
                     </a>
 

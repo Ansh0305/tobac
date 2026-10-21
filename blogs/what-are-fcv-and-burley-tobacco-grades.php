@@ -220,7 +220,7 @@
                 <div class="w-layout-blockcontainer container w-container">
                     <div class="about-hero-information text-align-center">
                         <div class="article-back-nav">
-                            <a href="../blog.php" class="article-back-link">
+                            <a href="../blog" class="article-back-link">
                                 ← Back to All Articles
                             </a>
                         </div>
@@ -426,10 +426,10 @@
                     </p>
 
                     <div style="margin-top: 50px; padding-top: 30px; border-top: 1px solid rgba(255, 255, 255, 0.1); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
-                        <a href="why-tobacco-leaf-processing-matters.php" class="article-back-link" style="color: rgba(255, 255, 255, 0.85);">
+                        <a href="why-tobacco-leaf-processing-matters" class="article-back-link" style="color: rgba(255, 255, 255, 0.85);">
                             ← Previous: Leaf Processing Matters
                         </a>
-                        <a href="modern-tobacco-processing-quality-efficiency.php" class="article-back-link">
+                        <a href="modern-tobacco-processing-quality-efficiency" class="article-back-link">
                             Next: Quality &amp; Efficiency →
                         </a>
                     </div>
