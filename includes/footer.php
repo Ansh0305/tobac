@@ -464,7 +464,7 @@
                 <div class="tobac-footer-contacts">
 
                     <!-- Email -->
-                    <a href="mailto:info@tabac.com" class="tobac-footer-contact-item">
+                    <a href="mailto:info@tabacenterprises.com" class="tobac-footer-contact-item">
                         <div class="tobac-footer-icon-box" aria-hidden="true">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="2" y="4" width="20" height="16" rx="2"></rect>
@@ -473,7 +473,7 @@
                         </div>
                         <div class="tobac-footer-contact-text">
                             <div class="tobac-footer-contact-label">Email Us</div>
-                            <div class="tobac-footer-contact-val">info@tabac.com</div>
+                            <div class="tobac-footer-contact-val">info@tabacenterprises.com</div>
                         </div>
                     </a>
 

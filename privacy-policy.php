@@ -440,7 +440,7 @@
                                 Tabac Leaf Enterprises
                             </h3>
                             <p><strong>Location:</strong> Prakasam District, Andhra Pradesh, India</p>
-                            <p><strong>Email:</strong> <a href="mailto:info@tabac.com" style="color: var(--yellow, #ddb969);">info@tabac.com</a></p>
+                            <p><strong>Email:</strong> <a href="mailto:info@tabacenterprises.com" style="color: var(--yellow, #ddb969);">info@tabacenterprises.com</a></p>
                             <p><strong>Phone:</strong> <a href="tel:+918592252000" style="color: var(--yellow, #ddb969);">+91 99999 99000</a></p>
                         </div>
                     </div>

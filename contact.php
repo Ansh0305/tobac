@@ -215,8 +215,8 @@
                     <div class="w-layout-hflex contact-box-one">
                         <div class="w-layout-vflex contact-box-one-wrap margin-auto text-align-center">
                             <div data-wf--sub-heading--variant="base" class="sub-heading">Email</div>
-                            <a href="mailto:info@tabacleaf.com" class="contact-box-one-link w-inline-block"
-                                ><div class="heading-style-h5">info@tabac.com</div></a
+                            <a href="mailto:info@tabacenterprises.com" class="contact-box-one-link w-inline-block"
+                                ><div class="heading-style-h5">info@tabacenterprises.com</div></a
                             >
                         </div>
                     </div>
