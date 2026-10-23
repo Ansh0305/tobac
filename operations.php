@@ -837,6 +837,423 @@
                     font-size: 11px !important;
                 }
             }
+            
+/* ==========================================
+   TOBACCO GRADE CATALOGUE
+   Scoped styles — existing page-safe
+========================================== */
+
+.tg-catalogue {
+    --tg-gold: #f5b91b;
+    --tg-green: #375b32;
+    --tg-bg: #080908;
+    --tg-panel: #111310;
+    --tg-border: rgba(255, 255, 255, .10);
+    padding: 100px 0;
+    background:
+        radial-gradient(ellipse at 8% 0%, rgba(245,185,27,.07), transparent 38%),
+        #080908;
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+}
+
+.tg-container {
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.tg-heading {
+    max-width: 720px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+.tg-eyebrow {
+    color: var(--tg-gold);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.tg-heading h2 {
+    margin: 16px 0;
+    color: #fff;
+    font-size: clamp(30px, 4vw, 46px);
+    line-height: 1.12;
+    font-weight: 700;
+    letter-spacing: -1.6px;
+}
+
+.tg-heading h2 span {
+    color: var(--tg-gold);
+}
+
+.tg-heading p {
+    max-width: 620px;
+    margin: 0 auto;
+    color: #a6aaa2;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.tg-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.tg-filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tg-filter {
+    min-height: 40px;
+    padding: 0 15px;
+    border: 1px solid var(--tg-border);
+    border-radius: 6px;
+    background: rgba(255,255,255,.025);
+    color: #c8cbc4;
+    font: inherit;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .2s, border-color .2s, color .2s;
+}
+
+.tg-filter:hover,
+.tg-filter.is-active {
+    border-color: var(--tg-gold);
+    background: var(--tg-gold);
+    color: #10100c;
+}
+
+.tg-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: min(300px, 100%);
+    min-height: 44px;
+    padding: 0 14px;
+    border: 1px solid var(--tg-border);
+    border-radius: 7px;
+    background: rgba(255,255,255,.04);
+}
+
+.tg-search:focus-within {
+    border-color: var(--tg-gold);
+    box-shadow: 0 0 0 3px rgba(245,185,27,.09);
+}
+
+.tg-search > span {
+    color: var(--tg-gold);
+    font-size: 25px;
+}
+
+.tg-search input {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #fff;
+    font: inherit;
+    font-size: 12px;
+}
+
+.tg-search input::placeholder {
+    color: #888c83;
+}
+
+.tg-results {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+    color: #898d84;
+    font-size: 11px;
+}
+
+.tg-results #tgResultCount {
+    color: var(--tg-gold);
+    font-weight: 700;
+}
+
+.tg-table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--tg-border);
+    border-radius: 10px;
+    background: rgba(255,255,255,.018);
+    scrollbar-width: thin;
+    scrollbar-color: #6d5923 #111310;
+}
+
+.tg-table {
+    width: 100%;
+    min-width: 1000px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.tg-table thead {
+    background: var(--tg-green);
+}
+
+.tg-table th {
+    padding: 17px 15px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .7px;
+    white-space: nowrap;
+}
+
+.tg-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,.065);
+    color: #c8cbc4;
+    font-size: 12px;
+    line-height: 1.65;
+    vertical-align: middle;
+}
+
+.tg-table tbody tr {
+    transition: background .2s;
+}
+
+.tg-table tbody tr:hover {
+    background: rgba(245,185,27,.055);
+}
+
+.tg-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.tg-table td:first-child {
+    color: var(--tg-gold);
+    font-weight: 700;
+    letter-spacing: .3px;
+    white-space: nowrap;
+}
+
+.tg-table td:nth-child(2) {
+    color: #fff;
+    white-space: nowrap;
+}
+
+.tg-table td:nth-child(4),
+.tg-table td:nth-child(5),
+.tg-table td:nth-child(6) {
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+
+.tg-empty {
+    padding: 55px 20px;
+    text-align: center;
+    border: 1px solid var(--tg-border);
+    border-radius: 10px;
+    background: var(--tg-panel);
+}
+
+.tg-empty[hidden] {
+    display: none !important;
+}
+
+.tg-empty > span {
+    color: var(--tg-gold);
+    font-size: 34px;
+}
+
+.tg-empty h3 {
+    margin: 12px 0 8px;
+    font-size: 19px;
+}
+
+.tg-empty p {
+    color: #a6aaa2;
+    font-size: 13px;
+}
+
+.tg-empty button {
+    margin-top: 10px;
+    padding: 11px 18px;
+    border: 0;
+    border-radius: 5px;
+    background: var(--tg-gold);
+    color: #111;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.tg-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-top: 28px;
+    padding: 24px;
+    border: 1px solid rgba(245,185,27,.2);
+    border-radius: 10px;
+    background: linear-gradient(
+        110deg,
+        rgba(245,185,27,.075),
+        rgba(255,255,255,.018)
+    );
+}
+
+.tg-footer > div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.tg-footer-mark {
+    display: grid;
+    place-items: center;
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    border: 1px solid rgba(245,185,27,.4);
+    border-radius: 8px;
+    color: var(--tg-gold);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.tg-footer strong {
+    display: block;
+    color: #fff;
+    font-size: 13px;
+}
+
+.tg-footer p {
+    margin: 6px 0 0;
+    color: #a6aaa2;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.tg-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-height: 46px;
+    padding: 0 20px;
+    border-radius: 5px;
+    background: var(--tg-gold);
+    color: #111 !important;
+    text-decoration: none !important;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .4px;
+    white-space: nowrap;
+    transition: background .2s, transform .2s;
+}
+
+.tg-cta:hover {
+    background: #ffd15a;
+    transform: translateY(-2px);
+}
+
+.tg-cta span {
+    font-size: 17px;
+}
+
+.tg-disclaimer {
+    margin: 16px 0 0;
+    color: #777c73;
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+@media (max-width: 767px) {
+    .tg-catalogue {
+        padding: 65px 0;
+    }
+
+    .tg-container {
+        width: calc(100% - 32px);
+    }
+
+    .tg-heading {
+        margin-bottom: 28px;
+        text-align: left;
+    }
+
+    .tg-heading h2 {
+        letter-spacing: -.8px;
+    }
+
+    .tg-heading p {
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .tg-toolbar {
+        align-items: stretch;
+    }
+
+    .tg-filters {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+    }
+
+    .tg-filter {
+        padding: 0 8px;
+        font-size: 10px;
+    }
+
+    .tg-search {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .tg-results {
+        font-size: 10px;
+    }
+
+    .tg-table {
+        min-width: 850px;
+    }
+
+    .tg-table th,
+    .tg-table td {
+        padding: 12px;
+    }
+
+    .tg-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .tg-cta {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .tg-catalogue *,
+    .tg-catalogue *::before,
+    .tg-catalogue *::after {
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
         </style>
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
@@ -860,6 +1277,162 @@
                         (n.className += t + "touch");
             })(window, document);
         </script>
+        
+<script>
+(() => {
+    const catalog = [
+        // MYSORE FCV
+        ["MCX1O","mysore","Mysore FCV","1st & 2nd quality Lugs & Cutters, thin to medium bodied, lemon orange, ripe tobacco","C-48 / 200","1.15-1.25","20.00-21.00"],
+        ["MCX23O","mysore","Mysore FCV","2nd & 3rd quality Lugs & Cutters, thin to medium bodied, orange, ripe tobacco","C-48 / 200","1.40-1.50","17.00-18.00"],
+        ["ML1O","mysore","Mysore FCV","1st quality leaf, medium bodied, lemon orange, ripe tobacco","C-48 / 200","1.45-1.55","21.00-22.00"],
+        ["ML2O","mysore","Mysore FCV","2nd & 3rd quality leaf, medium bodied, orange, ripe tobacco","C-48 / 200","1.60-1.70","15.00-16.00"],
+        ["ML4O","mysore","Mysore FCV","Leaf, medium bodied, deep orange, ripe tobacco","C-48 / 200","1.75-1.85","8.00-9.00"],
+        ["MX1A","mysore","Mysore FCV","Lugs & Cutters, thin to medium bodied, lemon orange, mature tobacco","C-48 / 200","1.15-1.25","20.00-21.00"],
+        ["MX2A","mysore","Mysore FCV","Lugs & Cutters, thin to medium bodied, orange, mature tobacco","C-48 / 200","1.20-1.40","17.00-18.00"],
+        ["MX3A","mysore","Mysore FCV","Lugs & Cutters, thin bodied, deep orange, mature tobacco","C-48 / 180","1.15-1.25","5.00-6.00"],
+        ["ML1A","mysore","Mysore FCV","Leaf, medium bodied, lemon orange, mature tobacco","C-48 / 200","1.25-1.35","20.00-21.00"],
+        ["ML2A","mysore","Mysore FCV","Leaf, medium bodied, orange, mature tobacco","C-48 / 200","1.35-1.45","17.00-18.00"],
+        ["ML2V","mysore","Mysore FCV","Leaf, medium bodied, orange to deep orange with green cast, immature tobacco","C-48 / 200","1.60-1.70","13.00-15.00"],
+        ["ML3A","mysore","Mysore FCV","Leaf, medium bodied, deep orange, mature tobacco","C-48 / 200","1.45-1.55","10.00-11.00"],
+        ["ML3V","mysore","Mysore FCV","Leaf, medium bodied, deep orange with green cast, immature tobacco","C-48 / 200","1.75-1.85","10.00-12.00"],
+        ["MX4O","mysore","Mysore FCV","Primings & Lugs, light brown, thin bodied, mature tobacco","C-48 / 180","1.25-1.35","9.50-10.50"],
+        ["MX5O","mysore","Mysore FCV","Primings & Lugs, deep orange to live brown, thin bodied tobacco","C-48 / 180","1.20-1.30","8.00-9.00"],
+        ["MX6O","mysore","Mysore FCV","Primings & Lugs, brown in colour, thin bodied tobacco","C-48 / 180","1.15-1.25","5.00-6.00"],
+        ["MX7O","mysore","Mysore FCV","Primings & Lugs, deep brown, thin bodied tobacco","C-48 / 180","1.10-1.20","4.00-5.00"],
+
+        // TRAD FCV
+        ["TC1O","trad","TRAD FCV","Leaf & Cutters, Lemon Orange, thin to medium bodied, soft natured ripe tobacco","C-48 / 200","2.05-2.15","13.50-14.50"],
+        ["TC2O","trad","TRAD FCV","Leaf & Cutters, Orange, thin to medium bodied, soft natured ripe tobacco","C-48 / 200","2.10-2.20","13.00-14.00"],
+        ["TL2O","trad","TRAD FCV","Leaf, Orange, medium bodied, soft natured ripe tobacco","C-48 / 200","2.15-2.25","11.00-12.00"],
+        ["TL3O","trad","TRAD FCV","Leaf, Orange to deep orange, medium bodied, soft natured ripe tobacco","C-48 / 200","2.30-2.40","10.00-11.00"],
+        ["TG4","trad","TRAD FCV","Leaf & Cutters, medium bodied, lemon to lemon orange, mature tobacco","C-48 / 200","1.95-2.05","13.00-14.00"],
+        ["TLBY","trad","TRAD FCV","Leaf & Cutters, medium bodied, lemon orange, mature tobacco","C-48 / 200","2.20-2.30","11.00-12.00"],
+        ["TLBY2","trad","TRAD FCV","Leaf & Cutters, medium bodied, orange to deep orange, mature tobacco","C-48 / 200","2.50-2.60","9.00-10.00"],
+        ["TB4O","trad","TRAD FCV","Leaf, bodied, brown, mature tobacco","C-48 / 200","2.90-3.00","3.00-4.00"],
+        ["TX5O","trad","TRAD FCV","Primings & Lugs, deep orange to live brown, thin bodied, mature tobacco","C-48 / 180","2.30-2.40","3.50-4.50"],
+        ["TX6O","trad","TRAD FCV","Primings & Lugs, brown in colour, thin bodied, mature tobacco","C-48 / 180","2.05-2.15","2.50-3.50"],
+        ["TX7O","trad","TRAD FCV","Primings & Lugs, deep brown, thin bodied, mature tobacco","C-48 / 180","2.00-2.10","3.00-4.00"],
+        ["TL2V","trad","TRAD FCV","Leaf & Cutters, medium bodied, lemon orange with greens of moderate intensity, unripe tobacco","C-48 / 200","2.50-2.60","8.00-9.00"],
+        ["TL3V","trad","TRAD FCV","Leaf & Cutters, medium bodied, orange to deep orange with greens of moderate to high intensity, unripe tobacco","C-48 / 200","2.60-2.70","5.00-6.00"],
+        ["TL4V","trad","TRAD FCV","Leaf & Cutters, medium bodied, deep orange to brown with greens of higher intensity, unripe tobacco","C-48 / 200","2.55-2.65","3.00-4.00"],
+
+        // NLS FCV
+        ["NCX1O","nls","NLS FCV","1st quality Lugs & Cutters, thin to medium bodied, lemon orange to orange, open grained, ripe tobacco","C-48 / 200","2.50-2.60","15.00-16.00"],
+        ["NCX2O","nls","NLS FCV","2nd & 3rd quality Lugs & Cutters, thin to medium bodied, orange to deep orange, open grained, ripe tobacco","C-48 / 200","2.70-2.80","13.00-14.00"],
+        ["NL1O","nls","NLS FCV","1st & 2nd quality Leaf, bodied, lemon orange to orange, oily, ripe tobacco","C-48 / 200","3.30-3.40","13.50-14.50"],
+        ["NL23O","nls","NLS FCV","2nd & 3rd quality Leaf, bodied, orange to deep orange, oily, ripe tobacco","C-48 / 200","3.40-3.50","11.50-12.50"],
+        ["NX1A","nls","NLS FCV","Lugs & Cutters, thin to medium bodied, lemon orange to orange, mature tobacco","C-48 / 200","2.35-2.45","16.00-17.00"],
+        ["NX2A","nls","NLS FCV","Lugs & Cutters, thin to medium bodied, orange, mature tobacco","C-48 / 200","2.45-2.55","10.00-11.00"],
+        ["NX3A","nls","NLS FCV","Lugs & Cutters, thin bodied, deep orange, over ripe tobacco","C-48 / 180","2.25-2.35","5.00-6.00"],
+        ["NL1A","nls","NLS FCV","Leaf, bodied, lemon orange to orange, mature tobacco","C-48 / 200","2.80-2.90","16.50-17.50"],
+        ["NL2A","nls","NLS FCV","Leaf, bodied, orange, mature tobacco","C-48 / 200","3.25-3.35","12.00-13.00"],
+        ["NL3A","nls","NLS FCV","Leaf, bodied, orange to deep orange, mature tobacco","C-48 / 200","3.30-3.40","4.50-5.50"],
+        ["NX4O","nls","NLS FCV","Primings & Lugs, light brown, thin bodied, mature tobacco","C-48 / 180","2.45-2.55","8.00-9.00"],
+        ["NX5O","nls","NLS FCV","Primings & Lugs, deep orange to live brown, thin bodied tobacco","C-48 / 180","2.40-2.50","5.00-6.00"],
+        ["NX6O","nls","NLS FCV","Primings & Lugs, brown in colour, thin bodied tobacco","C-48 / 180","2.10-2.20","3.50-4.50"],
+        ["NX7O","nls","NLS FCV","Primings & Lugs, deep brown, thin bodied tobacco","C-48 / 180","1.80-1.90","3.50-4.50"],
+
+        // VINUKONDA BURLEY
+        ["VBL1F","burley","Vinukonda Burley","Leaf & Tips, medium bodied, bright tan to tan, mature tobacco","C48 / 200 Kg","3.00-3.10","0.35-0.45"],
+        ["VBL2F","burley","Vinukonda Burley","Leaf & Tips, medium bodied, tan, mature tobacco","C48 / 200 Kg","2.90-3.00","0.35-0.45"],
+        ["VBCX1F","burley","Vinukonda Burley","Lugs & Cutters, thin bodied, buff to bright tan, mature tobacco","C48 / 180 Kg","2.45-2.55","0.35-0.45"],
+        ["VBCX2F","burley","Vinukonda Burley","Lugs & Cutters, thin bodied, tan, mature tobacco","C48 / 180 Kg","1.80-1.90","0.35-0.45"],
+        ["VBCX3O","burley","Vinukonda Burley","Lugs & Cutters with low intensity tending towards tan to deep tan","C48 / 180 Kg","1.60-1.70","0.35-0.45"],
+        ["VBX4O","burley","Vinukonda Burley","Thin to medium bodied, deep tan, low quality from all plant positions","C48 / 180 Kg","1.40-1.50","0.35-0.45"],
+        ["VBX5O","burley","Vinukonda Burley","Primings & lugs, thin bodied, deep tan to dark in colour, low quality from all plant positions","C48 / 180 Kg","1.25-1.35","0.35-0.45"],
+        ["VBX6O","burley","Vinukonda Burley","Primings & lugs, thin bodied, dark in colour, low quality from all plant positions","C48 / 180 Kg","1.20-1.30","0.35-0.45"]
+    ];
+
+    const body = document.getElementById("tgTableBody");
+    const search = document.getElementById("tgSearch");
+    const count = document.getElementById("tgResultCount");
+    const empty = document.getElementById("tgEmpty");
+    const tableWrap = document.querySelector("#tobacco-grade-catalogue .tg-table-wrap");
+    const filters = document.querySelectorAll("#tobacco-grade-catalogue .tg-filter");
+
+    if (!body || !search || !count || !empty || !tableWrap) return;
+
+    let activeCategory = "all";
+
+    // Render values as text, never as HTML from the data.
+    function render() {
+        const term = search.value.trim().toLowerCase();
+
+        const rows = catalog.filter(grade => {
+            const matchesCategory =
+                activeCategory === "all" || grade[1] === activeCategory;
+
+            const matchesSearch =
+                grade.join(" ").toLowerCase().includes(term);
+
+            return matchesCategory && matchesSearch;
+        });
+
+        body.replaceChildren();
+
+        const fragment = document.createDocumentFragment();
+
+        rows.forEach(grade => {
+            const tr = document.createElement("tr");
+
+            // Grade, category, description, packing, nicotine, sugars
+            const values = [grade[0], grade[2], grade[3], grade[4], grade[5], grade[6]];
+
+            values.forEach(value => {
+                const td = document.createElement("td");
+                td.textContent = value;
+                tr.appendChild(td);
+            });
+
+            fragment.appendChild(tr);
+        });
+
+        body.appendChild(fragment);
+
+        count.textContent = `${rows.length} ${rows.length === 1 ? "grade" : "grades"}`;
+        tableWrap.hidden = rows.length === 0;
+        empty.hidden = rows.length !== 0;
+    }
+
+    filters.forEach(button => {
+        button.addEventListener("click", () => {
+            activeCategory = button.dataset.category;
+
+            filters.forEach(filter => {
+                const selected = filter === button;
+                filter.classList.toggle("is-active", selected);
+                filter.setAttribute("aria-pressed", String(selected));
+            });
+
+            render();
+        });
+
+        button.setAttribute(
+            "aria-pressed",
+            String(button.classList.contains("is-active"))
+        );
+    });
+
+    search.addEventListener("input", render);
+
+    document.getElementById("tgReset")?.addEventListener("click", () => {
+        activeCategory = "all";
+        search.value = "";
+
+        filters.forEach(button => {
+            const selected = button.dataset.category === "all";
+            button.classList.toggle("is-active", selected);
+            button.setAttribute("aria-pressed", String(selected));
+        });
+
+        render();
+        search.focus();
+    });
+
+    render();
+})();
+</script>
+
         <link
             href="67ad72477c605912a4af72eb/67d10e22db1df97ca9dc97d8_favicon-small.png"
             rel="shortcut icon"
@@ -1447,6 +2020,89 @@
                 */ ?>
             </div>
         </section>
+
+
+        
+<!-- TOBACCO GRADE CATALOGUE -->
+<section id="tobacco-grade-catalogue" class="tg-catalogue">
+    <div class="tg-container">
+
+        <div class="tg-heading">
+            <span class="tg-eyebrow">PRODUCT SPECIFICATIONS</span>
+            <h2>Tobacco Grade Catalogue<span>.</span></h2>
+            <p>
+                Explore our tobacco varieties, grade descriptions, packing
+                specifications and indicative nicotine and sugar ranges.
+            </p>
+        </div>
+
+        <div class="tg-toolbar">
+            <div class="tg-filters" role="group" aria-label="Filter tobacco varieties">
+                <button class="tg-filter is-active" data-category="all">All Grades</button>
+                <button class="tg-filter" data-category="mysore">Mysore FCV</button>
+                <button class="tg-filter" data-category="trad">TRAD FCV</button>
+                <button class="tg-filter" data-category="nls">NLS FCV</button>
+                <button class="tg-filter" data-category="burley">Vinukonda Burley</button>
+            </div>
+
+            <label class="tg-search">
+                <span aria-hidden="true">⌕</span>
+                <input id="tgSearch" type="search"
+                    placeholder="Search grade, description..."
+                    aria-label="Search tobacco grades">
+            </label>
+        </div>
+
+        <div class="tg-results">
+            <span id="tgResultCount">52 grades</span>
+            <span>Technical specifications · Reference catalogue</span>
+        </div>
+
+        <div class="tg-table-wrap">
+            <table class="tg-table">
+                <thead>
+                    <tr>
+                        <th>GRADE</th>
+                        <th>VARIETY</th>
+                        <th>DESCRIPTION</th>
+                        <th>PACKING / NET WT.</th>
+                        <th>NICOTINE (%)</th>
+                        <th>SUGARS (%)</th>
+                    </tr>
+                </thead>
+                <tbody id="tgTableBody"></tbody>
+            </table>
+        </div>
+
+        <div class="tg-empty" id="tgEmpty" hidden>
+            <span>⌕</span>
+            <h3>No matching grades found</h3>
+            <p>Try another grade code or search term.</p>
+            <button type="button" id="tgReset">Reset filters</button>
+        </div>
+
+        <div class="tg-footer">
+            <div>
+                <span class="tg-footer-mark">TB</span>
+                <div>
+                    <strong>Need detailed grade specifications?</strong>
+                    <p>Contact our team for further product information.</p>
+                </div>
+            </div>
+            <a class="tg-cta" href="contact">
+                REQUEST GRADE SPECS <span>↗</span>
+            </a>
+        </div>
+
+        <p class="tg-disclaimer">
+            Nicotine and sugar ranges are indicative reference values.
+            Confirm applicable specifications with Tabac Enterprises before ordering.
+        </p>
+
+    </div>
+</section>
+
+
         <section id="processing-infrastructure" data-w-id="9e2e38a6-49cc-2f2c-4377-6a033da82ad7" class="preservation">
             <div class="preservation--sticky-height overflow-hidden">
                 <div class="w-layout-blockcontainer container full-container w-container">
