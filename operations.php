@@ -1279,7 +1279,7 @@
         </script>
         
 <script>
-(() => {
+document.addEventListener("DOMContentLoaded", () => {
     const catalog = [
         // MYSORE FCV
         ["MCX1O","mysore","Mysore FCV","1st & 2nd quality Lugs & Cutters, thin to medium bodied, lemon orange, ripe tobacco","C-48 / 200","1.15-1.25","20.00-21.00"],
@@ -1430,7 +1430,7 @@
     });
 
     render();
-})();
+});
 </script>
 
         <link
