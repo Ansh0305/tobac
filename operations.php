@@ -1616,7 +1616,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         class="w-layout-grid home-two-about-us"
                     >
                         <a
-                            href="contact"
+                            href="#tobacco-grade-catalogue"
                             data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7ac"
                             class="service-three-card one w-inline-block"
                             ><div class="service-three-card-image-block">
@@ -1649,7 +1649,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     />
                                 </div></div></a
                         ><a
-                            href="contact"
+                            href="#tobacco-grade-catalogue"
                             data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7ba"
                             class="service-three-card two w-inline-block"
                             ><div class="service-three-card-image-block">
@@ -1682,7 +1682,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     />
                                 </div></div></a
                         ><a
-                            href="contact"
+                            href="#tobacco-grade-catalogue"
                             data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7c8"
                             class="service-three-card three w-inline-block"
                             ><div class="service-three-card-image-block">
@@ -1715,7 +1715,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     />
                                 </div></div></a
                         ><a
-                            href="contact"
+                            href="#tobacco-grade-catalogue"
                             data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7d6"
                             class="service-three-card four w-inline-block"
                             ><div class="service-three-card-image-block">
@@ -1753,6 +1753,87 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             </div>
         </section>
+
+
+        <!-- TOBACCO GRADE CATALOGUE -->
+<section id="tobacco-grade-catalogue" class="tg-catalogue">
+    <div class="tg-container">
+
+        <div class="tg-heading">
+            <span class="tg-eyebrow">PRODUCT SPECIFICATIONS</span>
+            <h2>Tobacco Grade Catalogue<span>.</span></h2>
+            <p>
+                Explore our tobacco varieties, grade descriptions, packing
+                specifications and indicative nicotine and sugar ranges.
+            </p>
+        </div>
+
+        <div class="tg-toolbar">
+            <div class="tg-filters" role="group" aria-label="Filter tobacco varieties">
+                <button class="tg-filter is-active" data-category="all">All Grades</button>
+                <button class="tg-filter" data-category="mysore">Mysore FCV</button>
+                <button class="tg-filter" data-category="trad">TRAD FCV</button>
+                <button class="tg-filter" data-category="nls">NLS FCV</button>
+                <button class="tg-filter" data-category="burley">Vinukonda Burley</button>
+            </div>
+
+            <label class="tg-search">
+                <span aria-hidden="true">⌕</span>
+                <input id="tgSearch" type="search"
+                    placeholder="Search grade, description..."
+                    aria-label="Search tobacco grades">
+            </label>
+        </div>
+
+        <div class="tg-results">
+            <span id="tgResultCount">52 grades</span>
+            <span>Technical specifications · Reference catalogue</span>
+        </div>
+
+        <div class="tg-table-wrap">
+            <table class="tg-table">
+                <thead>
+                    <tr>
+                        <th>GRADE</th>
+                        <th>VARIETY</th>
+                        <th>DESCRIPTION</th>
+                        <th>PACKING / NET WT.</th>
+                        <th>NICOTINE (%)</th>
+                        <th>SUGARS (%)</th>
+                    </tr>
+                </thead>
+                <tbody id="tgTableBody"></tbody>
+            </table>
+        </div>
+
+        <div class="tg-empty" id="tgEmpty" hidden>
+            <span>⌕</span>
+            <h3>No matching grades found</h3>
+            <p>Try another grade code or search term.</p>
+            <button type="button" id="tgReset">Reset filters</button>
+        </div>
+
+        <div class="tg-footer">
+            <div>
+                <span class="tg-footer-mark">TB</span>
+                <div>
+                    <strong>Need detailed grade specifications?</strong>
+                    <p>Contact our team for further product information.</p>
+                </div>
+            </div>
+            <a class="tg-cta" href="contact">
+                REQUEST GRADE SPECS <span>↗</span>
+            </a>
+        </div>
+
+        <p class="tg-disclaimer">
+            Nicotine and sugar ranges are indicative reference values.
+            Confirm applicable specifications with Tabac Enterprises before ordering.
+        </p>
+
+    </div>
+</section>
+
         <section id="processing-machinery" data-w-id="8c7c7b76-c387-43ad-1c1f-8521b7840472" class="three-service-innovation">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="w-layout-hflex over-view-two-wrap two-about-innovation-wrap">
@@ -2023,84 +2104,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         
-<!-- TOBACCO GRADE CATALOGUE -->
-<section id="tobacco-grade-catalogue" class="tg-catalogue">
-    <div class="tg-container">
 
-        <div class="tg-heading">
-            <span class="tg-eyebrow">PRODUCT SPECIFICATIONS</span>
-            <h2>Tobacco Grade Catalogue<span>.</span></h2>
-            <p>
-                Explore our tobacco varieties, grade descriptions, packing
-                specifications and indicative nicotine and sugar ranges.
-            </p>
-        </div>
-
-        <div class="tg-toolbar">
-            <div class="tg-filters" role="group" aria-label="Filter tobacco varieties">
-                <button class="tg-filter is-active" data-category="all">All Grades</button>
-                <button class="tg-filter" data-category="mysore">Mysore FCV</button>
-                <button class="tg-filter" data-category="trad">TRAD FCV</button>
-                <button class="tg-filter" data-category="nls">NLS FCV</button>
-                <button class="tg-filter" data-category="burley">Vinukonda Burley</button>
-            </div>
-
-            <label class="tg-search">
-                <span aria-hidden="true">⌕</span>
-                <input id="tgSearch" type="search"
-                    placeholder="Search grade, description..."
-                    aria-label="Search tobacco grades">
-            </label>
-        </div>
-
-        <div class="tg-results">
-            <span id="tgResultCount">52 grades</span>
-            <span>Technical specifications · Reference catalogue</span>
-        </div>
-
-        <div class="tg-table-wrap">
-            <table class="tg-table">
-                <thead>
-                    <tr>
-                        <th>GRADE</th>
-                        <th>VARIETY</th>
-                        <th>DESCRIPTION</th>
-                        <th>PACKING / NET WT.</th>
-                        <th>NICOTINE (%)</th>
-                        <th>SUGARS (%)</th>
-                    </tr>
-                </thead>
-                <tbody id="tgTableBody"></tbody>
-            </table>
-        </div>
-
-        <div class="tg-empty" id="tgEmpty" hidden>
-            <span>⌕</span>
-            <h3>No matching grades found</h3>
-            <p>Try another grade code or search term.</p>
-            <button type="button" id="tgReset">Reset filters</button>
-        </div>
-
-        <div class="tg-footer">
-            <div>
-                <span class="tg-footer-mark">TB</span>
-                <div>
-                    <strong>Need detailed grade specifications?</strong>
-                    <p>Contact our team for further product information.</p>
-                </div>
-            </div>
-            <a class="tg-cta" href="contact">
-                REQUEST GRADE SPECS <span>↗</span>
-            </a>
-        </div>
-
-        <p class="tg-disclaimer">
-            Nicotine and sugar ranges are indicative reference values.
-            Confirm applicable specifications with Tabac Enterprises before ordering.
-        </p>
-
-    </div>
-</section>
 
 
         <section id="processing-infrastructure" data-w-id="9e2e38a6-49cc-2f2c-4377-6a033da82ad7" class="preservation">
