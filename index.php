@@ -4336,6 +4336,57 @@
     display: block !important;
 }
 
+
+/* Shorter laptop screens adjustment */
+@media (min-width: 992px) and (max-height: 760px) {
+    .service-two-service-section.home-services-sticky .service-two-service-box {
+        grid-column-gap: 40px !important;
+    }
+
+    .service-two-service-section.home-services-sticky .service-two-service-container {
+        max-width: 520px !important;
+    }
+
+    .service-two-service-section.home-services-sticky .sub-heading {
+        margin-bottom: 8px !important;
+    }
+
+    .service-two-service-section.home-services-sticky .service-two-service-heading {
+        margin-top: 6px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .service-two-service-section.home-services-sticky h2 {
+        font-size: 30px !important;
+        line-height: 1.2 !important;
+    }
+
+    .service-two-service-section.home-services-sticky p.color-white {
+        font-size: 13.5px !important;
+        line-height: 1.48 !important;
+    }
+
+    .service-two-service-section.home-services-sticky .service-two-service-list {
+        grid-row-gap: 8px !important;
+        margin-top: 12px !important;
+        margin-bottom: 14px !important;
+    }
+
+    .service-two-service-section.home-services-sticky .service-two-service-list li {
+        font-size: 13px !important;
+        line-height: 1.38 !important;
+    }
+
+    .service-two-service-section.home-services-sticky .key-focus-note {
+        margin-bottom: 14px !important;
+    }
+
+    .service-two-service-section.home-services-sticky .button-style-one {
+        min-height: 44px !important;
+        padding: 10px 22px !important;
+    }
+}
+
 /* Tablet & Mobile Service Cards */
 @media (max-width: 991px) {
     .service-two-service-section.home-services-sticky {
