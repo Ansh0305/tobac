@@ -1,5 +1,107 @@
 <?php $base = isset($base_path) ? $base_path : '/'; ?>
+<script>
+(function() {
+    try {
+        var status = localStorage.getItem('tobac_age_verified');
+        var isUnderagePage = window.location.pathname.indexOf('underage') !== -1;
+        if (status === 'underage' && !isUnderagePage) {
+            window.location.replace('<?php echo isset($base_path) ? $base_path : ""; ?>underage');
+            return;
+        } else if (status !== 'true' && !isUnderagePage) {
+            document.documentElement.classList.add('tobac-age-unverified');
+
+            // Intercept Webflow initialization so animations do NOT start in the background
+            var _wf = window.Webflow;
+            window._tobacPendingAnimations = null;
+            window._tobacPlayAnimations = function() {
+                if (typeof window._tobacPendingAnimations === 'function') {
+                    window._tobacPendingAnimations();
+                    window._tobacPendingAnimations = null;
+                }
+            };
+
+            function patchWebflow(wf) {
+                if (!wf || !wf.define || wf._tobacPatched) return;
+                wf._tobacPatched = true;
+                var origDefine = wf.define;
+                wf.define = function(name, factory, opts) {
+                    if (name === 'ix2') {
+                        return origDefine.call(wf, name, function(c, d, i) {
+                            var ix2Module = factory(c, d, i);
+                            if (ix2Module && typeof ix2Module.init === 'function') {
+                                var origInit = ix2Module.init;
+                                ix2Module.init = function(rawData) {
+                                    var currentStatus = null;
+                                    try { currentStatus = localStorage.getItem('tobac_age_verified'); } catch(e) {}
+                                    if (currentStatus === 'true') {
+                                        return origInit.call(ix2Module, rawData);
+                                    }
+                                    window._tobacPendingAnimations = function() {
+                                        origInit.call(ix2Module, rawData);
+                                    };
+                                };
+                            }
+                            return ix2Module;
+                        }, opts);
+                    }
+                    return origDefine.apply(wf, arguments);
+                };
+            }
+
+            if (_wf && _wf.define) {
+                patchWebflow(_wf);
+            }
+
+            try {
+                Object.defineProperty(window, 'Webflow', {
+                    configurable: true,
+                    enumerable: true,
+                    get: function() { return _wf; },
+                    set: function(val) {
+                        _wf = val;
+                        patchWebflow(_wf);
+                    }
+                });
+            } catch(e) {}
+        }
+    } catch(e) {}
+})();
+</script>
 <style>
+html.tobac-age-unverified body {
+    overflow: hidden !important;
+}
+
+/* Ensure background page content is completely hidden while unverified so nothing loads or flashes behind */
+html.tobac-age-unverified body > *:not(#tobac-age-gate):not(script):not(style) {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+/* Smooth fade-in transition when verified and user enters */
+body > *:not(#tobac-age-gate):not(script):not(style) {
+    transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* =========================================================
+   GLOBAL SCROLLBAR REMOVAL (Clean, Minimalist Look)
+   Hides visual scrollbars across Chrome, Safari, Edge & Firefox
+   while maintaining full scrolling via mouse, touch & keys.
+   ========================================================= */
+html,
+body,
+* {
+    -ms-overflow-style: none !important; /* IE and Edge */
+    scrollbar-width: none !important;    /* Firefox */
+}
+
+::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent !important;
+}
 .tobac-logo {
     width: 185px !important;
     height: auto !important;
