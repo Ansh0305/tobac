@@ -1623,7 +1623,7 @@
 
 <style>
 /* =========================================================
-   OUR PROCESS — COMPACT MODERN LAYOUT
+   OUR PROCESS - COMPACT MODERN LAYOUT
    ========================================================= */
 
 .reliable-construction {
@@ -2527,7 +2527,7 @@
 /* hero section */
 
 /* =========================================================
-   Tabac HERO — PREMIUM HERITAGE HIGHLIGHTS
+   Tabac HERO - PREMIUM HERITAGE HIGHLIGHTS
    ========================================================= */
 
 .hero-quality-highlights {
@@ -3681,13 +3681,13 @@
                                             width="407"
                                             height="573"
                                             alt=""
-                                            src="67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07.webp"
+                                            src="67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08.webp"
                                             loading="lazy"
                                             sizes="(max-width: 479px) 100vw, 407px"
                                             srcset="
-                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07-p-500.webp 500w,
-                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07-p-800.webp 800w,
-                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07.webp       814w"
+                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-500.webp 500w,
+                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-800.webp 800w,
+                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08.webp       814w"
                                             class="full-width border-radius-10 image-effect"
                                         />
                                         <div
@@ -3835,13 +3835,13 @@
                                             width="407"
                                             height="573"
                                             alt=""
-                                            src="67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09.webp"
+                                            src="67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08.webp"
                                             loading="lazy"
                                             sizes="(max-width: 479px) 100vw, 407px"
                                             srcset="
-                                                67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09-p-500.webp 500w,
-                                                67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09-p-800.webp 800w,
-                                                67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09.webp       814w"
+                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-500.webp 500w,
+                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-800.webp 800w,
+                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08.webp       814w"
                                             class="full-width border-radius-10 image-effect"
                                         />
                                         <div
@@ -4047,7 +4047,7 @@
     }
 
     /* =========================================================
-   WHO WE ARE — MOBILE OVERLAP FIX
+   WHO WE ARE - MOBILE OVERLAP FIX
    ========================================================= */
 
 @media (max-width: 767px) {
@@ -5717,6 +5717,10 @@
                     var triggered = false;
                     function popOut() {
                         if (triggered) return;
+                        if (document.documentElement.classList.contains('tobac-age-unverified')) {
+                            window.addEventListener('tobac:entered', popOut, { once: true });
+                            return;
+                        }
                         triggered = true;
                         setTimeout(function() {
                             $anim.addClass('is-visible');

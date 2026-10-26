@@ -971,13 +971,13 @@
                                             width="407"
                                             height="573"
                                             alt="Manoj Bellam - Managing Director"
-                                            src="67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07.webp"
+                                            src="67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08.webp"
                                             loading="lazy"
                                             sizes="(max-width: 479px) 100vw, 407px"
                                             srcset="
-                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07-p-500.webp 500w,
-                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07-p-800.webp 800w,
-                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07.webp       814w
+                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-500.webp 500w,
+                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-800.webp 800w,
+                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08.webp       814w
                                             "
                                             class="full-width border-radius-10 image-effect"
                                         />
@@ -1498,7 +1498,7 @@
                         </div>
                         <div class="overflow-hidden" style="margin-top: 12px; margin-bottom: 20px;">
                             <p class="no-margin color-black">
-                            Tabac Leaf Enterprises operates two dedicated tobacco processing facilities in Tangutur, Prakasam District, Andhra Pradesh—Tabac Leaf Enterprises and B.K. Threshers Private Limited—with a stated combined processing capacity of 100 million.
+                            Tabac Leaf Enterprises operates two dedicated tobacco processing facilities in Tangutur, Prakasam District, Andhra Pradesh-Tabac Leaf Enterprises and B.K. Threshers Private Limited-with a stated combined processing capacity of 100 million.
                             </p>
                         </div>
                         <div
