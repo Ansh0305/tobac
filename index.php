@@ -1623,7 +1623,7 @@
 
 <style>
 /* =========================================================
-   OUR PROCESS — COMPACT MODERN LAYOUT
+   OUR PROCESS - COMPACT MODERN LAYOUT
    ========================================================= */
 
 .reliable-construction {
@@ -2527,7 +2527,7 @@
 /* hero section */
 
 /* =========================================================
-   Tabac HERO — PREMIUM HERITAGE HIGHLIGHTS
+   Tabac HERO - PREMIUM HERITAGE HIGHLIGHTS
    ========================================================= */
 
 .hero-quality-highlights {
@@ -3681,13 +3681,13 @@
                                             width="407"
                                             height="573"
                                             alt=""
-                                            src="67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07.webp"
+                                            src="67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08.webp"
                                             loading="lazy"
                                             sizes="(max-width: 479px) 100vw, 407px"
                                             srcset="
-                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07-p-500.webp 500w,
-                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07-p-800.webp 800w,
-                                                67b56e82f5f2d165f9ff12e4/67c585f79c3acd93449e9920_team-07.webp       814w"
+                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-500.webp 500w,
+                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-800.webp 800w,
+                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08.webp       814w"
                                             class="full-width border-radius-10 image-effect"
                                         />
                                         <div
@@ -3835,13 +3835,13 @@
                                             width="407"
                                             height="573"
                                             alt=""
-                                            src="67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09.webp"
+                                            src="67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08.webp"
                                             loading="lazy"
                                             sizes="(max-width: 479px) 100vw, 407px"
                                             srcset="
-                                                67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09-p-500.webp 500w,
-                                                67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09-p-800.webp 800w,
-                                                67b56e82f5f2d165f9ff12e4/67c7dc24bd4b8853a7cc7ee9_team-09.webp       814w"
+                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-500.webp 500w,
+                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-800.webp 800w,
+                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08.webp       814w"
                                             class="full-width border-radius-10 image-effect"
                                         />
                                         <div
@@ -4047,7 +4047,7 @@
     }
 
     /* =========================================================
-   WHO WE ARE — MOBILE OVERLAP FIX
+   WHO WE ARE - MOBILE OVERLAP FIX
    ========================================================= */
 
 @media (max-width: 767px) {
@@ -4334,6 +4334,57 @@
     width: 8px !important;
     height: 9px !important;
     display: block !important;
+}
+
+
+/* Shorter laptop screens adjustment */
+@media (min-width: 992px) and (max-height: 760px) {
+    .service-two-service-section.home-services-sticky .service-two-service-box {
+        grid-column-gap: 40px !important;
+    }
+
+    .service-two-service-section.home-services-sticky .service-two-service-container {
+        max-width: 520px !important;
+    }
+
+    .service-two-service-section.home-services-sticky .sub-heading {
+        margin-bottom: 8px !important;
+    }
+
+    .service-two-service-section.home-services-sticky .service-two-service-heading {
+        margin-top: 6px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .service-two-service-section.home-services-sticky h2 {
+        font-size: 30px !important;
+        line-height: 1.2 !important;
+    }
+
+    .service-two-service-section.home-services-sticky p.color-white {
+        font-size: 13.5px !important;
+        line-height: 1.48 !important;
+    }
+
+    .service-two-service-section.home-services-sticky .service-two-service-list {
+        grid-row-gap: 8px !important;
+        margin-top: 12px !important;
+        margin-bottom: 14px !important;
+    }
+
+    .service-two-service-section.home-services-sticky .service-two-service-list li {
+        font-size: 13px !important;
+        line-height: 1.38 !important;
+    }
+
+    .service-two-service-section.home-services-sticky .key-focus-note {
+        margin-bottom: 14px !important;
+    }
+
+    .service-two-service-section.home-services-sticky .button-style-one {
+        min-height: 44px !important;
+        padding: 10px 22px !important;
+    }
 }
 
 /* Tablet & Mobile Service Cards */
@@ -5666,6 +5717,10 @@
                     var triggered = false;
                     function popOut() {
                         if (triggered) return;
+                        if (document.documentElement.classList.contains('tobac-age-unverified')) {
+                            window.addEventListener('tobac:entered', popOut, { once: true });
+                            return;
+                        }
                         triggered = true;
                         setTimeout(function() {
                             $anim.addClass('is-visible');

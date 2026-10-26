@@ -819,6 +819,176 @@
     display: none !important;
 }
 
+/* Ensure service card container elements are always fully visible across all screen sizes */
+.service-two-service-container [style*="opacity"],
+.service-two-service-container [data-w-id],
+.service-two-service-box.one [style*="opacity"],
+.service-two-service-box.one [data-w-id] {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/* =========================================================
+   DESKTOP & LAPTOP BALANCED SPACING
+   Maintains premium, spacious typography without crowding
+   ========================================================= */
+@media (min-width: 992px) {
+    .service-two-service-box {
+        grid-column-gap: 55px !important;
+        align-items: center !important;
+        padding-right: 25px !important;
+    }
+
+    .service-two-service-image-box {
+        width: 50% !important;
+    }
+
+    .service-two-service-container {
+        max-width: 540px !important;
+        width: 100% !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    .service-two-service-container .sub-heading {
+        font-size: 13px !important;
+        letter-spacing: 1.5px !important;
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+        margin-bottom: 12px !important;
+        color: var(--yellow) !important;
+    }
+
+    .service-two-service-heading {
+        margin-top: 10px !important;
+        margin-bottom: 16px !important;
+        max-width: 520px !important;
+        width: 100% !important;
+    }
+
+    .service-two-service-heading h2 {
+        font-size: 36px !important;
+        line-height: 1.2 !important;
+        font-weight: 700 !important;
+        letter-spacing: -0.5px !important;
+        margin: 0 !important;
+        color: #ffffff !important;
+    }
+
+    .service-two-service-container p.color-white {
+        font-size: 14.5px !important;
+        line-height: 1.55 !important;
+        margin: 0 !important;
+        color: #ffffff !important;
+    }
+
+    .service-two-service-list {
+        grid-column-gap: 12px !important;
+        grid-row-gap: 12px !important;
+        margin-top: 16px !important;
+        margin-bottom: 18px !important;
+        padding-left: 18px !important;
+        list-style-type: disc !important;
+    }
+
+    .service-two-service-list li {
+        font-size: 14px !important;
+        line-height: 1.45 !important;
+        color: #ffffff !important;
+        margin-bottom: 0 !important;
+    }
+
+    .service-two-service-list li .color-white {
+        color: #ffffff !important;
+    }
+
+    .service-two-service-container div[style*="margin-bottom: 20px"] {
+        margin-bottom: 18px !important;
+    }
+
+    .service-two-service-container div[style*="margin-bottom: 20px"] p {
+        font-size: 13.5px !important;
+        line-height: 1.45 !important;
+        margin-bottom: 6px !important;
+    }
+
+    .service-two-service-container div[style*="margin-bottom: 20px"] div {
+        font-size: 12.5px !important;
+    }
+
+    .service-two-service-container .button-style-one-wrap {
+        display: inline-block !important;
+        margin-top: 4px !important;
+    }
+
+    .service-two-service-container .button-style-one {
+        min-height: 48px !important;
+        height: 48px !important;
+        padding: 0 26px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        border-radius: 8px !important;
+    }
+
+    .service-two-service-container .button-text {
+        font-size: 14px !important;
+        font-weight: 600 !important;
+    }
+}
+
+/* Shorter laptop screens (e.g. 1366x768 or 1280x800 with browser UI ~640px height) */
+@media (min-width: 992px) and (max-height: 760px) {
+    .service-two-service-box {
+        grid-column-gap: 40px !important;
+    }
+
+    .service-two-service-container {
+        max-width: 520px !important;
+    }
+
+    .service-two-service-container .sub-heading {
+        margin-bottom: 8px !important;
+    }
+
+    .service-two-service-heading {
+        margin-top: 6px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .service-two-service-heading h2 {
+        font-size: 30px !important;
+        line-height: 1.2 !important;
+    }
+
+    .service-two-service-container p.color-white {
+        font-size: 13.5px !important;
+        line-height: 1.48 !important;
+    }
+
+    .service-two-service-list {
+        grid-row-gap: 8px !important;
+        margin-top: 12px !important;
+        margin-bottom: 14px !important;
+    }
+
+    .service-two-service-list li {
+        font-size: 13px !important;
+        line-height: 1.38 !important;
+    }
+
+    .service-two-service-container div[style*="margin-bottom: 20px"] {
+        margin-bottom: 14px !important;
+    }
+
+    .service-two-service-container .button-style-one {
+        min-height: 44px !important;
+        height: 44px !important;
+        padding: 0 22px !important;
+    }
+}
 
         </style>
         <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -861,16 +1031,49 @@
         </script>
     
     <style>
+    /* =========================================================
+       HERO VERTICAL CENTERING
+       Vertically centers the hero content in height across desktop/laptop
+       ========================================================= */
+    .service-v2-hero {
+        min-height: 100vh !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        padding-top: 110px !important; /* clearance for top navigation */
+        padding-bottom: 60px !important;
+        box-sizing: border-box !important;
+    }
+
+    .about-hero-content {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+    }
+
+    .service-hero-information {
+        align-items: center !important;
+    }
+
     @media (max-width: 991px) {
         .service-v2-hero {
-            padding-top: 130px !important;
             min-height: auto !important;
+            padding-top: 130px !important;
+            padding-bottom: 50px !important;
+            display: block !important;
         }
         .about-hero-content {
             padding-top: 0 !important;
+            display: block !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
         }
         .service-hero-information {
             margin-top: 0 !important;
+            align-items: flex-start !important;
         }
         .service-hero-subheading-top-gap {
             margin-top: 0 !important;
@@ -1603,24 +1806,14 @@
                         </div>
                         <div class="w-layout-vflex service-two-service-container sd">
                             <div
-                                data-w-id="4b323538-ff11-6b89-cf17-c2661367348c"
-                                style="opacity: 0"
+                                
                                 class="overflow-hidden"
                             >
                                 <div data-wf--sub-heading--variant="base" class="sub-heading">TOBACCO PROCESSING</div>
                             </div>
                             <div class="overflow-hidden heading-two-gap-top-bottom service-two-service-heading">
                                 <h2
-                                    data-w-id="4b323538-ff11-6b89-cf17-c26613673490"
-                                    style="
-                                        -webkit-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
-                                            rotateY(0) rotateZ(0) skew(-19deg, 0);
-                                        -moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                            rotateZ(0) skew(-19deg, 0);
-                                        -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                            rotateZ(0) skew(-19deg, 0);
-                                        transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                            rotateZ(0) skew(-19deg, 0);"
+                                    
                                     class="no-margin"
                                 >
                                     Industrial Processing. Operational Precision.
@@ -1628,8 +1821,7 @@
                             </div>
                             <div class="overflow-hidden">
                                 <p
-                                    data-w-id="4b323538-ff11-6b89-cf17-c26613673493"
-                                    style="opacity: 0"
+                                    
                                     class="no-margin color-white"
                                 >
                                     Tobacco processing is at the core of our business. Our facilities in Tangutur, Prakasam District, Andhra Pradesh, support large-scale processing requirements through established infrastructure and process-focused operations.
@@ -1637,8 +1829,7 @@
                             </div>
                             
                             <ul
-                                data-w-id="4b323538-ff11-6b89-cf17-c26613673495"
-                                style="opacity: 0"
+                                
                                 role="list"
                                 class="service-two-service-list heading-two-gap-top-bottom"
                             >
@@ -1658,10 +1849,10 @@
                                     Key Focus: Processing Capability | Operational Control | Consistent Quality
                                 </div>
                             </div>
-                            <div data-w-id="c26961aa-15be-dd47-dd69-5ae806066419" style="opacity: 0">
+                            <div >
                                 <div
                                     data-wf--button-style-one--variant="base"
-                                    data-w-id="a1dfbf13-2114-c851-1b8e-eda5fda5e771"
+                                    
                                     class="button-style-one-wrap overflow-hidden"
                                 >
                                     <a

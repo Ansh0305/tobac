@@ -840,7 +840,7 @@
             
 /* ==========================================
    TOBACCO GRADE CATALOGUE
-   Scoped styles — existing page-safe
+   Scoped styles - existing page-safe
 ========================================== */
 
 .tg-catalogue {

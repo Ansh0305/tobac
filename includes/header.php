@@ -1,5 +1,131 @@
 <?php $base = isset($base_path) ? $base_path : '/'; ?>
+<script>
+(function() {
+    try {
+        var status = localStorage.getItem('tobac_age_verified');
+        var isUnderagePage = window.location.pathname.indexOf('underage') !== -1;
+        if (status === 'underage' && !isUnderagePage) {
+            window.location.replace('<?php echo isset($base_path) ? $base_path : ""; ?>underage');
+            return;
+        } else if (status !== 'true' && !isUnderagePage) {
+            document.documentElement.classList.add('tobac-age-unverified');
+
+            // Intercept Webflow initialization so animations do NOT start in the background
+            var _wf = window.Webflow;
+            window._tobacPendingAnimations = null;
+            window._tobacPlayAnimations = function() {
+                if (typeof window._tobacPendingAnimations === 'function') {
+                    window._tobacPendingAnimations();
+                    window._tobacPendingAnimations = null;
+                }
+            };
+
+            function patchWebflow(wf) {
+                if (!wf || !wf.define || wf._tobacPatched) return;
+                wf._tobacPatched = true;
+                var origDefine = wf.define;
+                wf.define = function(name, factory, opts) {
+                    if (name === 'ix2') {
+                        return origDefine.call(wf, name, function(c, d, i) {
+                            var ix2Module = factory(c, d, i);
+                            if (ix2Module && typeof ix2Module.init === 'function') {
+                                var origInit = ix2Module.init;
+                                ix2Module.init = function(rawData) {
+                                    var currentStatus = null;
+                                    try { currentStatus = localStorage.getItem('tobac_age_verified'); } catch(e) {}
+                                    if (currentStatus === 'true') {
+                                        return origInit.call(ix2Module, rawData);
+                                    }
+                                    window._tobacPendingAnimations = function() {
+                                        origInit.call(ix2Module, rawData);
+                                    };
+                                };
+                            }
+                            return ix2Module;
+                        }, opts);
+                    }
+                    return origDefine.apply(wf, arguments);
+                };
+            }
+
+            if (_wf && _wf.define) {
+                patchWebflow(_wf);
+            }
+
+            try {
+                Object.defineProperty(window, 'Webflow', {
+                    configurable: true,
+                    enumerable: true,
+                    get: function() { return _wf; },
+                    set: function(val) {
+                        _wf = val;
+                        patchWebflow(_wf);
+                    }
+                });
+            } catch(e) {}
+        }
+    } catch(e) {}
+})();
+</script>
 <style>
+html.tobac-age-unverified body {
+    overflow: hidden !important;
+}
+
+/* Ensure background page content is completely hidden while unverified so nothing loads or flashes behind */
+html.tobac-age-unverified body > *:not(#tobac-age-gate):not(script):not(style) {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+/* Smooth fade-in transition when verified and user enters */
+body > *:not(#tobac-age-gate):not(script):not(style) {
+    transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* =========================================================
+   GLOBAL SCROLLBAR REMOVAL (Clean, Minimalist Look)
+   Hides visual scrollbars across Chrome, Safari, Edge & Firefox
+   while maintaining full scrolling via mouse, touch & keys.
+   ========================================================= */
+html,
+body,
+* {
+    -ms-overflow-style: none !important; /* IE and Edge */
+    scrollbar-width: none !important;    /* Firefox */
+}
+
+::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent !important;
+}
+
+/* =========================================================
+   TOP SCROLL PROGRESS INDICATOR BAR (Option 3)
+   A luxury 3px gold gradient progress line at the viewport top
+   ========================================================= */
+.tobac-scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #9f7833 0%, #ddb969 45%, #f6b61b 80%, #ffe07a 100%);
+    box-shadow: 0 0 10px rgba(221, 185, 105, 0.75), 0 0 3px rgba(246, 182, 27, 0.9);
+    z-index: 9999998;
+    pointer-events: none;
+    border-radius: 0 2px 2px 0;
+    transition: width 0.08s ease-out, opacity 0.3s ease;
+    opacity: 1;
+    will-change: width;
+}
+
+html.tobac-age-unverified .tobac-scroll-progress {
+    opacity: 0 !important;
+}
 .tobac-logo {
     width: 185px !important;
     height: auto !important;
@@ -166,6 +292,38 @@ h1, h2, h3, h4,
     }
 }
 </style>
+<!-- Top Scroll Progress Indicator Bar (Option 3) -->
+<div id="tobac-scroll-progress" class="tobac-scroll-progress" aria-hidden="true"></div>
+<script>
+(function() {
+    var bar = null;
+    var ticking = false;
+
+    function updateProgress() {
+        if (!bar) {
+            bar = document.getElementById('tobac-scroll-progress');
+            if (!bar) return;
+        }
+        var winScroll = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+        bar.style.width = Math.min(100, Math.max(0, scrolled)) + '%';
+        ticking = false;
+    }
+
+    function onScroll() {
+        if (!ticking) {
+            requestAnimationFrame(updateProgress);
+            ticking = true;
+        }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    document.addEventListener('DOMContentLoaded', updateProgress);
+    window.addEventListener('tobac:entered', updateProgress);
+})();
+</script>
 <header data-wf--navbar--variant="base" class="navbar-style-one-wrapper">
     <div
         data-w-id="3f38a0f6-a67a-4f3a-70d6-d412337f0ea8"

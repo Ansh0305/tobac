@@ -526,3 +526,4 @@
 
     </div>
 </footer>
+<?php require __DIR__ . '/age-gate.php'; ?>
