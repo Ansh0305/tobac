@@ -102,6 +102,30 @@ body,
     height: 0 !important;
     background: transparent !important;
 }
+
+/* =========================================================
+   TOP SCROLL PROGRESS INDICATOR BAR (Option 3)
+   A luxury 3px gold gradient progress line at the viewport top
+   ========================================================= */
+.tobac-scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #9f7833 0%, #ddb969 45%, #f6b61b 80%, #ffe07a 100%);
+    box-shadow: 0 0 10px rgba(221, 185, 105, 0.75), 0 0 3px rgba(246, 182, 27, 0.9);
+    z-index: 9999998;
+    pointer-events: none;
+    border-radius: 0 2px 2px 0;
+    transition: width 0.08s ease-out, opacity 0.3s ease;
+    opacity: 1;
+    will-change: width;
+}
+
+html.tobac-age-unverified .tobac-scroll-progress {
+    opacity: 0 !important;
+}
 .tobac-logo {
     width: 185px !important;
     height: auto !important;
@@ -268,6 +292,38 @@ h1, h2, h3, h4,
     }
 }
 </style>
+<!-- Top Scroll Progress Indicator Bar (Option 3) -->
+<div id="tobac-scroll-progress" class="tobac-scroll-progress" aria-hidden="true"></div>
+<script>
+(function() {
+    var bar = null;
+    var ticking = false;
+
+    function updateProgress() {
+        if (!bar) {
+            bar = document.getElementById('tobac-scroll-progress');
+            if (!bar) return;
+        }
+        var winScroll = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+        bar.style.width = Math.min(100, Math.max(0, scrolled)) + '%';
+        ticking = false;
+    }
+
+    function onScroll() {
+        if (!ticking) {
+            requestAnimationFrame(updateProgress);
+            ticking = true;
+        }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    document.addEventListener('DOMContentLoaded', updateProgress);
+    window.addEventListener('tobac:entered', updateProgress);
+})();
+</script>
 <header data-wf--navbar--variant="base" class="navbar-style-one-wrapper">
     <div
         data-w-id="3f38a0f6-a67a-4f3a-70d6-d412337f0ea8"
