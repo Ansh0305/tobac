@@ -443,7 +443,7 @@
                         The future of tobacco processing will increasingly depend on data, automation and process visibility. Industrial facilities can use technology to improve monitoring, optimize equipment performance and strengthen quality-control systems.
                     </p>
                     <p class="article-paragraph">
-                        However, technology should support—not replace—fundamental processing principles.
+                        However, technology should support-not replace-fundamental processing principles.
                     </p>
 
                     <div class="article-formula-box">
