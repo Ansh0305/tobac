@@ -3369,7 +3369,7 @@
                             class="button-style-one-wrap overflow-hidden"
                         >
                             <a
-                                href="javascript:void(0);"
+                                href="/operations.php"
                                 class="button-style-one position-relative overflow-hidden w-inline-block"
                             >
                                 <div
@@ -3536,7 +3536,7 @@
                     around consistency and care.
                 </p>
 
-                <a href="javascript:void(0);" class="tobac-value-link">
+                <a href="/aboutus.php" class="tobac-value-link">
                     <span>Our Heritage</span>
                     <span class="tobac-value-arrow">↗</span>
                 </a>
@@ -3593,7 +3593,7 @@
                     dependable raw material quality.
                 </p>
 
-                <a href="javascript:void(0);" class="tobac-value-link">
+                <a href="/services.php" class="tobac-value-link">
                     <span>Our Approach</span>
                     <span class="tobac-value-arrow">↗</span>
                 </a>
@@ -3638,7 +3638,7 @@
                     performance requirements of global partners.
                 </p>
 
-                <a href="javascript:void(0);" class="tobac-value-link">
+                <a href="/operations.php" class="tobac-value-link">
                     <span>Explore Quality</span>
                     <span class="tobac-value-arrow">↗</span>
                 </a>
@@ -5102,7 +5102,7 @@
                     <a
                         data-w-id="e206662c-7fea-cc5e-dd1c-157bc41b8c2b"
                         style="opacity: 0"
-                        href="javascript:void(0);"
+                        href="/operations.php"
                         class="image-card-four-one position-relative deactive overflow-hidden w-inline-block"
                         ><div class="w-layout-hflex image-card-four-main position-relative">
                             <div class="image-card-four-title-wrap">
@@ -5134,7 +5134,7 @@
                     ><a
                         data-w-id="d73ac930-d64f-a7de-82a3-dfed9906a0c5"
                         style="opacity: 0"
-                        href="javascript:void(0);"
+                        href="/operations.php"
                         class="image-card-four-one position-relative deactive overflow-hidden w-inline-block"
                         ><div class="w-layout-hflex image-card-four-main position-relative">
                             <div class="image-card-four-title-wrap">
@@ -5163,7 +5163,7 @@
                     ><a
                         data-w-id="c366cb1e-9996-958e-3822-b361587c4d80"
                         style="opacity: 0"
-                        href="javascript:void(0);"
+                        href="/operations.php"
                         class="image-card-four-one position-relative deactive overflow-hidden w-inline-block"
                         ><div class="w-layout-hflex image-card-four-main position-relative">
                             <div class="image-card-four-title-wrap">
@@ -5192,7 +5192,7 @@
                     ><a
                         data-w-id="468bc59b-1a3e-3a3b-da0a-bbcdec9434be"
                         style="opacity: 0"
-                        href="javascript:void(0);"
+                        href="/operations.php"  
                         class="image-card-four-one position-relative deactive overflow-hidden w-inline-block"
                         ><div class="w-layout-hflex image-card-four-main position-relative">
                             <div class="image-card-four-title-wrap">
