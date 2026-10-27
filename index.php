@@ -5,6 +5,8 @@
 
         <!-- Primary SEO -->
         <title>Tabac Enterprises | Tobacco Processing & Threshing</title>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
 
         <meta
             name="description"

@@ -9,7 +9,7 @@ $base = '';
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Access Prohibited | Tabac Enterprises</title>
     <meta name="robots" content="noindex, nofollow" />
-    <link rel="shortcut icon" href="67ad72477c605912a4af72eb/67d10e22db1df97ca9dc97d8_favicon-small.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />

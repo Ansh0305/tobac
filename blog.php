@@ -54,11 +54,11 @@
             })(window, document);
         </script>
         <link
-            href="67ad72477c605912a4af72eb/67d10e22db1df97ca9dc97d8_favicon-small.png"
+            href="/favicon.ico"
             rel="shortcut icon"
             type="image/x-icon"
         />
-        <link href="67ad72477c605912a4af72eb/67d10e7396516cb5859d8554_favicon-large.png" rel="apple-touch-icon" />
+        <link href="/favicon.ico" rel="apple-touch-icon" />
         <style>
             .blog-grid-section {
                 padding-top: 100px;
