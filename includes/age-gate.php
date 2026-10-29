@@ -31,7 +31,8 @@ $base = isset($base_path) ? $base_path : '';
         <h2 id="tobac-age-heading" class="tobac-age-title">Are you 18 years of age or older?</h2>
 
         <p class="tobac-age-description">
-            This website contains commercial information regarding tobacco leaf cultivation, threshing facilities, and wholesale export operations. You must be at least 18 years old to enter.
+            Commercial information on tobacco cultivation, processing, and exports.
+            Access is restricted to individuals aged 18 and above.
         </p>
 
         <!-- Action Buttons -->
@@ -49,7 +50,7 @@ $base = isset($base_path) ? $base_path : '';
 
         <!-- Legal Disclaimer -->
         <p class="tobac-age-disclaimer">
-            By clicking "Yes", you confirm that you are of legal age (18+) to view tobacco-related business material in your jurisdiction.
+            By proceeding, you confirm that you meet the legal age requirement in your jurisdiction.
         </p>
     </div>
 </div>
