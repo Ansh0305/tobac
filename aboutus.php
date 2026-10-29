@@ -1092,6 +1092,7 @@
                 }
             }
         </style>
+        <!-- Our Vision section — COMMENTED OUT per client request
         <section class="over-view-one" style="padding-top: 125px;">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="overflow-hidden">
@@ -1169,6 +1170,7 @@
                 </div>
             </div>
         </section>
+-->
         <section class="service-six">
             <div class="w-layout-blockcontainer container w-container">
                 <div data-w-id="2a5bf49e-a915-ce81-044a-9004ac91edf9" style="opacity: 0" class="text-align-center">
