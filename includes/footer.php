@@ -526,4 +526,171 @@
 
     </div>
 </footer>
+
+<!-- =============================================
+     SCROLL-TO-TOP BUTTON
+     ============================================= -->
+<button
+    id="tobac-scroll-top"
+    class="tobac-scroll-top"
+    aria-label="Scroll to top"
+    title="Back to top"
+>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+    >
+        <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+</button>
+
+<style>
+/* =============================================
+   SCROLL-TO-TOP BUTTON
+   ============================================= */
+
+#tobac-scroll-top {
+    /* Positioning */
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 9998;
+
+    /* Size */
+    width: 48px;
+    height: 48px;
+    padding: 0;
+
+    /* Glassmorphism card — matches footer badge / age-gate card language */
+    background: rgba(18, 15, 10, 0.72);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(221, 185, 105, 0.32);
+    border-radius: 14px;
+
+    /* Gold icon */
+    color: #ddb969;
+
+    /* Glow shadow — matches footer glow tones */
+    box-shadow:
+        0 8px 28px rgba(0, 0, 0, 0.55),
+        0 0 0 1px rgba(255, 255, 255, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.07);
+
+    /* Flex centering */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    /* Hidden by default — revealed via JS */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(14px) scale(0.9);
+    pointer-events: none;
+
+    transition:
+        opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+        visibility 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+        background 0.22s ease,
+        box-shadow 0.22s ease,
+        border-color 0.22s ease;
+}
+
+/* Visible state — toggled by JS */
+#tobac-scroll-top.tobac-scroll-top--visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+/* Hover */
+#tobac-scroll-top:hover {
+    background: rgba(221, 185, 105, 0.14);
+    border-color: rgba(221, 185, 105, 0.65);
+    box-shadow:
+        0 10px 32px rgba(0, 0, 0, 0.6),
+        0 0 18px rgba(176, 137, 64, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px) scale(1);
+}
+
+/* Active / press */
+#tobac-scroll-top:active {
+    transform: translateY(0) scale(0.95);
+    box-shadow:
+        0 4px 14px rgba(0, 0, 0, 0.5),
+        0 0 10px rgba(176, 137, 64, 0.18);
+}
+
+/* Focus ring for keyboard users */
+#tobac-scroll-top:focus-visible {
+    outline: 2px solid rgba(221, 185, 105, 0.7);
+    outline-offset: 3px;
+}
+
+/* Mobile — slightly smaller and closer to edge */
+@media (max-width: 768px) {
+    #tobac-scroll-top {
+        bottom: 24px;
+        right: 20px;
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+    }
+}
+</style>
+
+<script>
+(function () {
+    var btn = document.getElementById('tobac-scroll-top');
+    if (!btn) return;
+
+    /* --------------------------------------------------
+       Show/hide logic:
+       - Hidden when the user is within the first viewport
+         height (hero section) or scrolled to the very top.
+       - Visible once they've scrolled past that threshold.
+    -------------------------------------------------- */
+    var THRESHOLD = window.innerHeight * 0.85; // ~85 % of viewport height
+
+    function onScroll() {
+        if (window.scrollY > THRESHOLD) {
+            btn.classList.add('tobac-scroll-top--visible');
+        } else {
+            btn.classList.remove('tobac-scroll-top--visible');
+        }
+    }
+
+    // Recalculate threshold if window is resized
+    window.addEventListener('resize', function () {
+        THRESHOLD = window.innerHeight * 0.85;
+        onScroll();
+    }, { passive: true });
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Run once on page load in case the page is already scrolled
+    onScroll();
+
+    /* --------------------------------------------------
+       Click — smooth scroll to top
+    -------------------------------------------------- */
+    btn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+})();
+</script>
+
 <?php require __DIR__ . '/age-gate.php'; ?>

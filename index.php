@@ -3403,8 +3403,8 @@
                     </div>
                 </div>
 
-                <!-- Heritage / Quality Highlights -->
-                <div
+                <!-- Heritage / Quality Highlights — REMOVED per client request -->
+                <!-- <div
                     class="hero-quality-highlights"
                     data-w-id="80440bbe-eea0-913c-8068-e02ce68efe40"
                     style="opacity: 0"
@@ -3429,7 +3429,7 @@
                         <span>ARTISAN CURED</span>
                     </div>
 
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -3653,6 +3653,7 @@
 
 </section>
 
+<!-- Professional Team section — COMMENTED OUT per client request
 <section class="team-one change-background-color">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="w-layout-vflex team-one-main-wrap">
@@ -3909,6 +3910,7 @@
                 </div>
             </div>
         </section>
+-->
 
 
        <style>
