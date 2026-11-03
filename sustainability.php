@@ -917,7 +917,7 @@
             data-w-id="afa45947-3f92-b7b1-83a4-cf1ba3ff5109"
             class="service-hero position-relative overflow-hidden"
         >
-            <div class="about-hero-bg position-absolute service-bg banner-apearence" style="background-image: linear-gradient(#0f0f0f, #0f0f0f1a 62%, #0f0f0f00), linear-gradient(#0f0f0f00, #0f0f0f5e 44%, #0f0f0ff2), url('assets/images/sustainability-hero-tobacco.jpg'); background-position: 0 0, 0 0, 50%; background-repeat: repeat, repeat, no-repeat; background-size: auto, auto, cover;"></div>
+            <div class="about-hero-bg position-absolute service-bg banner-apearence" style="background-image: linear-gradient(#0f0f0f, #0f0f0f1a 62%, #0f0f0f00), linear-gradient(#0f0f0f00, #0f0f0f5e 44%, #0f0f0ff2), url('assets/images/Original/company-building.jpeg'); background-position: 0 0, 0 0, 50%; background-repeat: repeat, repeat, no-repeat; background-size: auto, auto, cover;"></div>
             <div class="about-hero-content position-relative">
                 <div class="w-layout-blockcontainer container w-container">
                     <div class="service-hero-information">
@@ -945,7 +945,8 @@
                                     "
                                     class="no-margin service-hero-heading"
                                 >
-                                    <span class="heading-line">Responsible Processing.</span><span class="heading-line">Thoughtful Operations.</span>
+                                    <span class="heading-line">Responsible Processing.</span>
+                                    <span class="heading-line">Thoughtful Operations.</span>
                                 </h1>
                             </div>
                         </div>

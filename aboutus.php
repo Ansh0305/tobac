@@ -956,7 +956,7 @@
                 </div>
             </div>
         </section>
-        <section id="leadership" class="team-one change-background-color" style="padding-top: 120px; padding-bottom: 120px; scroll-margin-top: 80px;">
+        <section id="leadership" class="team-one change-background-color" style="padding-top: 100px; padding-bottom: 70px; scroll-margin-top: 80px;">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="w-layout-vflex team-one-main-wrap">
                     <div class="team-one-grid-wrapper w-dyn-list">
@@ -1039,10 +1039,43 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Option 1: Editorial Architectural Split -->
+                    <div class="additional-leadership-wrap" style="width: 100%; max-width: 1100px; margin: 60px auto 0; padding-top: 45px; border-top: 1px solid rgba(0, 0, 0, 0.1);">
+                        <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 36px;">
+                            <div style="flex: 1; height: 1px; background: linear-gradient(90deg, transparent, rgba(176, 137, 64, 0.3));"></div>
+                            <span class="sub-heading" style="color: #b08940; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 0.75rem;">Executive Leadership</span>
+                            <div style="flex: 1; height: 1px; background: linear-gradient(90deg, rgba(176, 137, 64, 0.3), transparent);"></div>
+                        </div>
+                        <div class="additional-leadership-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+                            <div style="text-align: center; padding: 10px 20px;">
+                                <div class="sub-heading" style="color: #b08940; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.82rem; margin-bottom: 8px;">Chief Commercial Officer</div>
+                                <h3 class="heading-style-h3 color-black" style="margin: 0; font-size: 28px; font-weight: 500; letter-spacing: -0.4px;">CJ Simon</h3>
+                            </div>
+                            <div style="text-align: center; padding: 10px 20px; border-left: 1px solid rgba(0, 0, 0, 0.08);">
+                                <div class="sub-heading" style="color: #b08940; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.82rem; margin-bottom: 8px;">Managing Director</div>
+                                <h3 class="heading-style-h3 color-black" style="margin: 0; font-size: 28px; font-weight: 500; letter-spacing: -0.4px;">Dr. Bellam Ravichandar</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <style>
+            @media (max-width: 767px) {
+                .additional-leadership-grid {
+                    grid-template-columns: 1fr !important;
+                    gap: 24px !important;
+                }
+                .additional-leadership-grid > div {
+                    border-left: none !important;
+                    padding: 8px 0 !important;
+                }
+                .additional-leadership-wrap {
+                    margin-top: 40px !important;
+                    padding-top: 30px !important;
+                }
+            }
             .vision-quote-line {
                 display: block;
                 white-space: nowrap;
@@ -1065,30 +1098,15 @@
                 transform-origin: 100% 50%;
                 will-change: transform;
             }
-            .over-view-one {
-                padding-top: 125px;
+            .service-six {
+                padding-top: 45px !important;
             }
             @media (max-width: 991px) {
-                .vision-quote-line {
-                    white-space: normal !important;
-                }
-                .over-view-title-wrapper .over-view-flex.vision-overlay-flex {
-                    display: none !important;
-                }
                 .service-six .service-card-two-bg-image {
                     opacity: 0.35 !important;
                     transform: none !important;
                     display: block !important;
                     visibility: visible !important;
-                }
-            }
-            @media (max-width: 767px) {
-                .over-view-one {
-                    padding-top: 70px;
-                }
-                .vision-quote-line {
-                    display: inline !important;
-                    white-space: normal !important;
                 }
             }
         </style>

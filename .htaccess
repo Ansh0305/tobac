@@ -4,7 +4,8 @@ Options -MultiViews
 # Redirect /index.php, /index, or /home to the root /
 RewriteRule ^(index\.php|index|home)$ / [R=301,L]
 
-# Redirect URLs with .php to extensionless URLs
+# Redirect URLs with .php to extensionless URLs (exclude POST requests to prevent dropping POST payloads)
+RewriteCond %{REQUEST_METHOD} !POST
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
 RewriteRule ^ /%1 [R=301,L,NE]
 
