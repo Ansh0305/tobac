@@ -1742,7 +1742,8 @@
 
 .reliable-construction-subtext-wrapper {
     display: flex !important;
-    gap: 38px !important;
+    gap: 32px !important;
+    justify-content: flex-start !important;
     margin-bottom: 25px !important;
 }
 
@@ -1939,8 +1940,8 @@
     }
 
     .reliable-construction-subtext-wrapper {
-        gap: 0 !important;
-        justify-content: space-between !important;
+        gap: 24px !important;
+        justify-content: flex-start !important;
         margin-bottom: 20px !important;
     }
 
@@ -2532,21 +2533,26 @@
    Tabac HERO - PREMIUM HERITAGE HIGHLIGHTS
    ========================================================= */
 
+.home-two-hero-block.position-relative.margin-auto.text-align-center {
+    max-width: 1060px !important;
+}
+
 .hero-quality-highlights {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 14px;
+    gap: 12px;
     margin-top: 30px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    width: 100%;
 }
 
 .hero-quality-item {
     display: inline-flex;
     align-items: center;
-    gap: 9px;
+    gap: 8px;
 
-    padding: 10px 18px;
+    padding: 8px 14px;
 
     border: 1px solid rgba(255, 255, 255, 0.22);
     border-radius: 4px;
@@ -2557,7 +2563,7 @@
 
     font-size: 11px;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     line-height: 1;
     white-space: nowrap;
 
@@ -2578,6 +2584,7 @@
     width: 1px;
     height: 22px;
     background: rgba(255, 255, 255, 0.35);
+    flex-shrink: 0;
 }
 
 
@@ -2613,16 +2620,17 @@
 
     .hero-quality-highlights {
         margin-top: 25px;
-        gap: 10px;
+        gap: 8px;
+        flex-wrap: wrap;
     }
 
     .hero-quality-item {
-        padding: 9px 14px;
+        padding: 7px 11px;
         font-size: 10px;
     }
 
     .hero-quality-divider {
-        height: 18px;
+        height: 16px;
     }
 
 }
@@ -3403,8 +3411,8 @@
                     </div>
                 </div>
 
-                <!-- Heritage / Quality Highlights — REMOVED per client request -->
-                <!-- <div
+                <!-- Heritage / Quality Highlights -->
+                <div
                     class="hero-quality-highlights"
                     data-w-id="80440bbe-eea0-913c-8068-e02ce68efe40"
                     style="opacity: 0"
@@ -3412,24 +3420,24 @@
 
                     <div class="hero-quality-item">
                         <span class="hero-quality-dot"></span>
-                        <span>EST. 1946</span>
+                        <span>India's Only Bio-Steam Processor</span>
                     </div>
 
                     <div class="hero-quality-divider"></div>
 
                     <div class="hero-quality-item">
                         <span class="hero-quality-dot"></span>
-                        <span>100% NATURAL</span>
+                        <span>Bio-Steam Powered Tobacco Processing</span>
                     </div>
 
                     <div class="hero-quality-divider"></div>
 
                     <div class="hero-quality-item">
                         <span class="hero-quality-dot"></span>
-                        <span>ARTISAN CURED</span>
+                        <span>Bio-Steam &amp; Briquette Fuel</span>
                     </div>
 
-                </div> -->
+                </div>
 
             </div>
         </div>
@@ -5075,6 +5083,24 @@
             </div>
         </section>
        
+        <style>
+            /* =========================================================
+               OUR CAPABILITIES - DISTINCT CARD BACKGROUND IMAGES
+               ========================================================= */
+            .features-one .image-card-four-bg {
+                background-image: linear-gradient(92deg, #0a0a0d, #0a0a0d14), url('/assets/images/Tobacco-Leaf-Processing.webp') !important;
+            }
+            .features-one .image-card-four-bg.two {
+                background-image: linear-gradient(92deg, #0a0a0d, #0a0a0d14), url('/assets/images/OUR-PROCESS.webp') !important;
+            }
+            .features-one .image-card-four-bg.three {
+                background-image: linear-gradient(92deg, #0a0a0d, #0a0a0d14), url('/assets/images/INDUSTRIAL-PROCESSING-CAPABILITY.webp') !important;
+            }
+            .features-one .image-card-four-bg.four {
+                background-image: linear-gradient(92deg, #0a0a0d, #0a0a0d14), url('/assets/images/PROCESSING-EXCELLENCE.webp') !important;
+            }
+        </style>
+
         <section class="features-one" style="padding-top: 35px;">
             <div class="w-layout-blockcontainer container w-container">
                 <div data-w-id="06ee8c47-a083-9d81-2384-b897cc1feb50" style="opacity: 0" class="text-align-center">
@@ -5243,7 +5269,7 @@
                         </div>
                         <div class="overflow-hidden">
                             <div data-w-id="52a55b34-5290-9c20-a95d-49ebb1381fad">
-                                Tabac Leaf Enterprises works with leading tobacco industry partners, including Godfrey Phillips India and Philip Morris. Our facilities support large-scale processing requirements through industrial infrastructure, operational experience, and coordinated execution.
+                                Tabac Leaf Enterprises works with leading tobacco industry partners, including Godfrey Phillips India<!-- and Philip Morris -->. Our facilities support large-scale processing requirements through industrial infrastructure, operational experience, and coordinated execution.
                             </div>
                         </div>
                         <div class="overflow-hidden industrial-subheading-wrap">
@@ -5264,6 +5290,7 @@
                                         style="width: 100%;"
                                     ></div>
                                 </div>
+                                <!-- Philip Morris tab commented out per client request
                                 <div class="position-relative reliable-construction-subtext-bottom-padding tab-nav-item" data-tab="1">
                                     <div class="heading-style-h5 inactive" style="opacity: 0.5;">Philip Morris</div>
                                     <div
@@ -5271,6 +5298,7 @@
                                         style="width: 0%;"
                                     ></div>
                                 </div>
+                                -->
                                 <div class="position-relative reliable-construction-subtext-bottom-padding tab-nav-item" data-tab="2">
                                     <div class="heading-style-h5 inactive" style="opacity: 0.5;">Industrial Scale</div>
                                     <div
@@ -5296,12 +5324,14 @@
                                     >
                                         A major processing partnership supporting tobacco processing operations, consistent grading, and coordinated execution.
                                     </div>
+                                    <!-- Philip Morris content commented out per client request
                                     <div
                                         class="reliable-construction-para tab-pane inactive"
                                         data-tab-content="1"
                                     >
                                         Processing partner supporting specialized requirements, operational compliance, and strict international quality standards.
                                     </div>
+                                    -->
                                     <div
                                         class="reliable-construction-para tab-pane inactive"
                                         data-tab-content="2"
