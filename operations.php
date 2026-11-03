@@ -2149,66 +2149,9 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                     </div>
                     <div
-                        data-w-id="9e2e38a6-49cc-2f2c-4377-6a033da82ae1"
-                        style="opacity: 0"
-                        class="preservation-main-card-wrapper top-border"
-                    >
-                        <div class="preservation-image-one-wrapper">
-                            <div class="preservation-image-wrapper one overflow-hidden border-radius-10">
-                                <img
-                                    src="assets/images/about-footprint-facility-1-wide.jpg?v=<?= filemtime(__DIR__ . '/assets/images/about-footprint-facility-1-wide.jpg') ?>"
-                                    loading="lazy"
-                                    width="630"
-                                    height="330"
-                                    alt="B.K. Threshers Tobacco Processing Facility - Tangutur"
-                                    sizes="(max-width: 767px) 100vw, 630px"
-                                    class="image-full-width image-effect border-radius-10"
-                                    style="object-fit: cover;"
-                                />
-                                <div
-                                    data-wf--image-apearence--variant="base"
-                                    data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
-                                    class="image-effect-wrapper overflow-hidden"
-                                >
-                                    <div class="inside-overlay"></div>
-                                    <div class="outside-overlay"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="preservation-right-wrapper">
-                            <div class="w-layout-hflex preservation-right-top-content">
-                                <div class="preservation-heading-content">
-                                    <div
-                                        data-wf--sub-heading--variant="base"
-                                        class="sub-heading"
-                                    >
-                                        TANGUTUR • FACILITY 01
-                                    </div>
-                                    <div class="heading-style-h3 color-white">B.K. Threshers Private Limited</div>
-                                </div>
-                                <a href="contact" class="preservation-arrow-wrapper one w-inline-block"
-                                    ><img
-                                        src="67ad72477c605912a4af72eb/68749ece601a251f2eb40b39_Group%201597883626.svg"
-                                        loading="lazy"
-                                        width="11"
-                                        height="11"
-                                        alt="Arrow"
-                                /></a>
-                                <div class="preservation-list-item-wrapper overflow-hidden preservation-list">
-                                    <ul role="list" class="color-white preservation-list-item">
-                                        <li>High-capacity tobacco threshing &amp; processing lines</li>
-                                        <li>Lamina &amp; stem aerodynamic separation systems</li>
-                                        <li>Automated PLC / SCADA process-control infrastructure</li>
-                                        <li>Industrial dust collection &amp; fire-protection systems</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div
                         data-w-id="9e2e38a6-49cc-2f2c-4377-6a033da82af9"
                         style="opacity: 0"
-                        class="preservation-main-card-wrapper"
+                        class="preservation-main-card-wrapper top-border"
                     >
                         <div class="preservation-image-two-wrapper">
                             <div class="preservation-image-wrapper two overflow-hidden border-radius-10">
@@ -2239,7 +2182,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                         data-wf--sub-heading--variant="base"
                                         class="sub-heading"
                                     >
-                                        TANGUTUR • FACILITY 02
+                                        TANGUTUR • FACILITY 01
                                     </div>
                                     <div class="heading-style-h3 color-white">Tabac Leaf Enterprises</div>
                                 </div>
@@ -2257,6 +2200,63 @@ document.addEventListener("DOMContentLoaded", () => {
                                         <li>Precision apron drying &amp; automated moisture regulation</li>
                                         <li>Dedicated analytical laboratory &amp; quality-control facilities</li>
                                         <li>Export-standard C-48 carton packing &amp; secure storage</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        data-w-id="9e2e38a6-49cc-2f2c-4377-6a033da82ae1"
+                        style="opacity: 0"
+                        class="preservation-main-card-wrapper"
+                    >
+                        <div class="preservation-image-one-wrapper">
+                            <div class="preservation-image-wrapper one overflow-hidden border-radius-10">
+                                <img
+                                    src="assets/images/about-footprint-facility-1-wide.jpg?v=<?= filemtime(__DIR__ . '/assets/images/about-footprint-facility-1-wide.jpg') ?>"
+                                    loading="lazy"
+                                    width="630"
+                                    height="330"
+                                    alt="B.K. Threshers Tobacco Processing Facility - Tangutur"
+                                    sizes="(max-width: 767px) 100vw, 630px"
+                                    class="image-full-width image-effect border-radius-10"
+                                    style="object-fit: cover;"
+                                />
+                                <div
+                                    data-wf--image-apearence--variant="base"
+                                    data-w-id="81b8d168-24af-ce72-e685-7920d86761c1"
+                                    class="image-effect-wrapper overflow-hidden"
+                                >
+                                    <div class="inside-overlay"></div>
+                                    <div class="outside-overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="preservation-right-wrapper">
+                            <div class="w-layout-hflex preservation-right-top-content">
+                                <div class="preservation-heading-content">
+                                    <div
+                                        data-wf--sub-heading--variant="base"
+                                        class="sub-heading"
+                                    >
+                                        TANGUTUR • FACILITY 02
+                                    </div>
+                                    <div class="heading-style-h3 color-white">B.K. Threshers Private Limited</div>
+                                </div>
+                                <a href="contact" class="preservation-arrow-wrapper one w-inline-block"
+                                    ><img
+                                        src="67ad72477c605912a4af72eb/68749ece601a251f2eb40b39_Group%201597883626.svg"
+                                        loading="lazy"
+                                        width="11"
+                                        height="11"
+                                        alt="Arrow"
+                                /></a>
+                                <div class="preservation-list-item-wrapper overflow-hidden preservation-list">
+                                    <ul role="list" class="color-white preservation-list-item">
+                                        <li>High-capacity tobacco threshing &amp; processing lines</li>
+                                        <li>Lamina &amp; stem aerodynamic separation systems</li>
+                                        <li>Automated PLC / SCADA process-control infrastructure</li>
+                                        <li>Industrial dust collection &amp; fire-protection systems</li>
                                     </ul>
                                 </div>
                             </div>
