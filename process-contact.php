@@ -64,7 +64,7 @@ $headers .= "Reply-To: " . $name . " <" . $email . ">\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-// 5. Send Email
+// 5. Send Email via standard PHP mail()
 $mail_sent = @mail($recipient_email, $email_subject, $email_body, $headers);
 
 // 6. Persistent logging (storage/inquiries.jsonl)
@@ -92,4 +92,3 @@ echo json_encode([
     'message' => 'Thank you! Your inquiry has been received. Our team will get back to you shortly.',
 ]);
 exit;
-
