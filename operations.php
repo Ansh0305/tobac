@@ -838,6 +838,23 @@
                 }
             }
             
+
+/* Service Three Cards - Circular Arrow Button (Reset to original dark & white state) */
+.service-three-card .service-three-arrow-wrapper {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    transition: background-color 0.25s ease, transform 0.25s ease !important;
+}
+.service-three-card:hover .service-three-arrow-wrapper {
+    background-color: var(--yellow, #f6b61b) !important;
+}
+.service-three-card .service-three-arrow {
+    filter: invert(100%) !important;
+    transition: filter 0.25s ease !important;
+}
+.service-three-card:hover .service-three-arrow {
+    filter: invert(0%) !important;
+}
+
 /* ==========================================
    TOBACCO GRADE CATALOGUE
    Scoped styles - existing page-safe
@@ -988,6 +1005,8 @@
 
 .tg-table-wrap {
     overflow-x: auto;
+    overflow-y: auto;
+    max-height: 560px;  /* ~header + 10 rows */
     border: 1px solid var(--tg-border);
     border-radius: 10px;
     background: rgba(255,255,255,.018);
@@ -1004,6 +1023,9 @@
 
 .tg-table thead {
     background: var(--tg-green);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .tg-table th {
@@ -1254,6 +1276,397 @@
     }
 }
 
+        
+/* ==========================================
+   TOBACCO GRADE CATALOGUE POPUP MODAL (OPTION B)
+========================================== */
+
+.tg-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    background: rgba(0, 0, 0, 0.82);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.28s ease;
+    box-sizing: border-box;
+}
+
+.tg-modal-overlay.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.tg-modal-box {
+    background: #0d0f0c;
+    border: 1px solid rgba(246, 182, 27, 0.28);
+    border-radius: 18px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.85), 0 0 50px rgba(246, 182, 27, 0.08);
+    width: min(1120px, 100%);
+    max-height: min(88vh, 850px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transform: scale(0.95) translateY(14px);
+    transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.tg-modal-overlay.is-open .tg-modal-box {
+    transform: scale(1) translateY(0);
+}
+
+.tg-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px 28px 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(180deg, rgba(246, 182, 27, 0.06) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.tg-modal-header-left {
+    min-width: 0;
+}
+
+.tg-modal-eyebrow {
+    color: #f6b61b;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.tg-modal-title {
+    margin: 0 0 6px 0;
+    color: #ffffff;
+    font-size: clamp(20px, 2.4vw, 28px);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.tg-modal-title span.tg-gold-dot {
+    color: #f6b61b;
+}
+
+.tg-modal-subtitle {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.tg-modal-close {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.22s ease;
+    padding: 0;
+}
+
+.tg-modal-close:hover {
+    background: #f6b61b;
+    color: #10100c;
+    border-color: #f6b61b;
+    transform: rotate(90deg);
+}
+
+.tg-modal-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 14px 28px;
+    background: rgba(255, 255, 255, 0.02);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.tg-modal-filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.tg-modal-filter {
+    min-height: 36px;
+    padding: 0 13px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.03);
+    color: #c8cbc4;
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.18s ease;
+}
+
+.tg-modal-filter:hover,
+.tg-modal-filter.is-active {
+    background: #f6b61b;
+    color: #10100c;
+    border-color: #f6b61b;
+}
+
+.tg-modal-search-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 36px;
+    padding: 0 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    width: min(260px, 100%);
+    transition: border-color 0.2s ease;
+}
+
+.tg-modal-search-wrap:focus-within {
+    border-color: #f6b61b;
+    box-shadow: 0 0 0 3px rgba(246, 182, 27, 0.12);
+}
+
+.tg-modal-search-icon {
+    color: #f6b61b;
+    display: flex;
+    align-items: center;
+}
+
+.tg-modal-search-wrap input {
+    width: 100%;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.tg-modal-search-wrap input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.tg-modal-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 28px;
+    background: rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.tg-modal-count {
+    color: #f6b61b;
+    font-weight: 700;
+}
+
+.tg-modal-table-wrap {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: auto;
+    max-height: calc(88vh - 280px);
+    min-height: 280px;
+    scrollbar-width: thin;
+    scrollbar-color: #6d5923 #0d0f0c;
+}
+
+.tg-modal-table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.tg-modal-table thead {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #375b32;
+}
+
+.tg-modal-table th {
+    padding: 13px 16px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.tg-modal-table td {
+    padding: 13px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+    color: #c8cbc4;
+    font-size: 12px;
+    line-height: 1.55;
+    vertical-align: middle;
+}
+
+.tg-modal-table tr:hover td {
+    background: rgba(246, 182, 27, 0.055);
+}
+
+.tg-modal-table td:first-child {
+    color: #f6b61b;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.tg-modal-table td:nth-child(2) {
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.tg-modal-table td:nth-child(4),
+.tg-modal-table td:nth-child(5),
+.tg-modal-table td:nth-child(6) {
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+
+.tg-modal-empty {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.tg-modal-empty[hidden] {
+    display: none !important;
+}
+
+.tg-modal-empty h4 {
+    margin: 12px 0 6px 0;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.tg-modal-empty p {
+    margin: 0 0 14px 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+}
+
+.tg-modal-reset-btn {
+    padding: 8px 18px;
+    border-radius: 6px;
+    border: none;
+    background: #f6b61b;
+    color: #111;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.tg-modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 14px 28px;
+    background: rgba(0, 0, 0, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tg-modal-footer-note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 11.5px;
+}
+
+.tg-modal-footer-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #f6b61b;
+    flex-shrink: 0;
+}
+
+.tg-modal-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 18px;
+    background: #f6b61b;
+    color: #10100c !important;
+    text-decoration: none !important;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.tg-modal-cta-btn:hover {
+    background: #ffd15a;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 767px) {
+    .tg-modal-box {
+        max-height: 94vh;
+    }
+    .tg-modal-header {
+        padding: 18px 20px 14px;
+    }
+    .tg-modal-toolbar {
+        padding: 12px 20px;
+    }
+    .tg-modal-filters {
+        width: 100%;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 4px;
+    }
+    .tg-modal-filter {
+        white-space: nowrap;
+    }
+    .tg-modal-search-wrap {
+        width: 100%;
+    }
+    .tg-modal-meta {
+        padding: 8px 20px;
+    }
+    .tg-modal-table th,
+    .tg-modal-table td {
+        padding: 10px 12px;
+    }
+    .tg-modal-footer {
+        padding: 12px 20px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .tg-modal-cta-btn {
+        justify-content: center;
+    }
+}
+
         </style>
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
@@ -1343,6 +1756,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ["VBX6O","burley","Vinukonda Burley","Primings & lugs, thin bodied, dark in colour, low quality from all plant positions","C48 / 180 Kg","1.20-1.30","0.35-0.45"]
     ];
 
+    let activeCategory = "all";
     const body = document.getElementById("tgTableBody");
     const search = document.getElementById("tgSearch");
     const count = document.getElementById("tgResultCount");
@@ -1350,12 +1764,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const tableWrap = document.querySelector("#tobacco-grade-catalogue .tg-table-wrap");
     const filters = document.querySelectorAll("#tobacco-grade-catalogue .tg-filter");
 
-    if (!body || !search || !count || !empty || !tableWrap) return;
-
-    let activeCategory = "all";
-
-    // Render values as text, never as HTML from the data.
+    // Render values as text, never as HTML from the data (for in-page table if present).
     function render() {
+        if (!body || !search || !count || !empty || !tableWrap) return;
         const term = search.value.trim().toLowerCase();
 
         const rows = catalog.filter(grade => {
@@ -1394,42 +1805,180 @@ document.addEventListener("DOMContentLoaded", () => {
         empty.hidden = rows.length !== 0;
     }
 
-    filters.forEach(button => {
-        button.addEventListener("click", () => {
-            activeCategory = button.dataset.category;
+    if (body && search && count && empty && tableWrap) {
+        filters.forEach(button => {
+            button.addEventListener("click", () => {
+                activeCategory = button.dataset.category;
 
-            filters.forEach(filter => {
-                const selected = filter === button;
-                filter.classList.toggle("is-active", selected);
-                filter.setAttribute("aria-pressed", String(selected));
+                filters.forEach(filter => {
+                    const selected = filter === button;
+                    filter.classList.toggle("is-active", selected);
+                    filter.setAttribute("aria-pressed", String(selected));
+                });
+
+                render();
+            });
+
+            button.setAttribute(
+                "aria-pressed",
+                String(button.classList.contains("is-active"))
+            );
+        });
+
+        search.addEventListener("input", render);
+
+        document.getElementById("tgReset")?.addEventListener("click", () => {
+            activeCategory = "all";
+            search.value = "";
+
+            filters.forEach(button => {
+                const selected = button.dataset.category === "all";
+                button.classList.toggle("is-active", selected);
+                button.setAttribute("aria-pressed", String(selected));
             });
 
             render();
+            search.focus();
         });
 
-        button.setAttribute(
-            "aria-pressed",
-            String(button.classList.contains("is-active"))
-        );
-    });
+        render();
+    }
 
-    search.addEventListener("input", render);
+    // ── POPUP MODAL FUNCTIONALITY (OPTION B HYBRID) ───────────────────────────
+    const modalOverlay = document.getElementById("tg-modal-overlay");
+    const modalCloseBtn = document.getElementById("tgModalClose");
+    const modalBody = document.getElementById("tgModalTableBody");
+    const modalSearch = document.getElementById("tgModalSearch");
+    const modalCount = document.getElementById("tgModalResultCount");
+    const modalEmpty = document.getElementById("tgModalEmpty");
+    const modalTableWrap = document.querySelector(".tg-modal-table-wrap");
+    const modalFilters = document.querySelectorAll(".tg-modal-filter");
+    const modalResetBtn = document.getElementById("tgModalReset");
 
-    document.getElementById("tgReset")?.addEventListener("click", () => {
-        activeCategory = "all";
-        search.value = "";
+    let modalActiveCategory = "all";
 
-        filters.forEach(button => {
-            const selected = button.dataset.category === "all";
+    function renderModal() {
+        if (!modalBody || !modalSearch || !modalCount || !modalEmpty) return;
+        const term = modalSearch.value.trim().toLowerCase();
+
+        const rows = catalog.filter(grade => {
+            const matchesCategory =
+                modalActiveCategory === "all" || grade[1] === modalActiveCategory;
+            const matchesSearch =
+                grade.join(" ").toLowerCase().includes(term);
+            return matchesCategory && matchesSearch;
+        });
+
+        modalBody.replaceChildren();
+        const fragment = document.createDocumentFragment();
+
+        rows.forEach(grade => {
+            const tr = document.createElement("tr");
+            const values = [grade[0], grade[2], grade[3], grade[4], grade[5], grade[6]];
+            values.forEach(value => {
+                const td = document.createElement("td");
+                td.textContent = value;
+                tr.appendChild(td);
+            });
+            fragment.appendChild(tr);
+        });
+
+        modalBody.appendChild(fragment);
+        modalCount.textContent = `${rows.length} ${rows.length === 1 ? "grade" : "grades"}`;
+        if (modalTableWrap) modalTableWrap.hidden = rows.length === 0;
+        modalEmpty.hidden = rows.length !== 0;
+    }
+
+    function openModalWithCategory(category) {
+        if (!modalOverlay) return;
+        modalActiveCategory = category || "all";
+        if (modalSearch) modalSearch.value = "";
+
+        modalFilters.forEach(button => {
+            const selected = button.dataset.modalCategory === modalActiveCategory;
             button.classList.toggle("is-active", selected);
             button.setAttribute("aria-pressed", String(selected));
         });
 
-        render();
-        search.focus();
+        renderModal();
+        modalOverlay.classList.add("is-open");
+        modalOverlay.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+        if (modalTableWrap) modalTableWrap.scrollTop = 0;
+    }
+
+    function closeModal() {
+        if (!modalOverlay) return;
+        modalOverlay.classList.remove("is-open");
+        modalOverlay.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+    }
+
+    modalFilters.forEach(button => {
+        button.addEventListener("click", () => {
+            modalActiveCategory = button.dataset.modalCategory;
+            modalFilters.forEach(f => {
+                const selected = f === button;
+                f.classList.toggle("is-active", selected);
+                f.setAttribute("aria-pressed", String(selected));
+            });
+            renderModal();
+        });
     });
 
-    render();
+    if (modalSearch) modalSearch.addEventListener("input", renderModal);
+
+    if (modalResetBtn) {
+        modalResetBtn.addEventListener("click", () => {
+            modalActiveCategory = "all";
+            modalSearch.value = "";
+            modalFilters.forEach(button => {
+                const selected = button.dataset.modalCategory === "all";
+                button.classList.toggle("is-active", selected);
+                button.setAttribute("aria-pressed", String(selected));
+            });
+            renderModal();
+        });
+    }
+
+    if (modalCloseBtn) modalCloseBtn.addEventListener("click", closeModal);
+
+    if (modalOverlay) {
+        modalOverlay.addEventListener("click", (e) => {
+            if (e.target === modalOverlay) closeModal();
+        });
+    }
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modalOverlay && modalOverlay.classList.contains("is-open")) {
+            closeModal();
+        }
+    });
+
+    // ── Card Click → Opens Modal with that variety pre-filtered ────────────────
+    document.querySelectorAll('a[data-variety]').forEach(function(card) {
+        card.addEventListener('click', function(e) {
+            e.preventDefault();
+            var variety = card.getAttribute('data-variety') || 'all';
+
+            // Open popup modal pre-filtered to the clicked variety
+            openModalWithCategory(variety);
+
+            // Also keep the in-page table synced
+            var target = document.querySelector(
+                '#tobacco-grade-catalogue .tg-filter[data-category="' + variety + '"]'
+            );
+            if (target) {
+                activeCategory = variety;
+                filters.forEach(function(f) {
+                    var selected = f === target;
+                    f.classList.toggle('is-active', selected);
+                    f.setAttribute('aria-pressed', String(selected));
+                });
+                render();
+            }
+        });
+    });
 });
 </script>
 
@@ -1616,8 +2165,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         class="w-layout-grid home-two-about-us"
                     >
                         <a
-                            href="#tobacco-grade-catalogue"
-                            data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7ac"
+                            href="#tobacco-grade-catalogue" data-variety="mysore" data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7ac"
                             class="service-three-card one w-inline-block"
                             ><div class="service-three-card-image-block">
                                 <img
@@ -1649,8 +2197,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     />
                                 </div></div></a
                         ><a
-                            href="#tobacco-grade-catalogue"
-                            data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7ba"
+                            href="#tobacco-grade-catalogue" data-variety="trad" data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7ba"
                             class="service-three-card two w-inline-block"
                             ><div class="service-three-card-image-block">
                                 <img
@@ -1682,8 +2229,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     />
                                 </div></div></a
                         ><a
-                            href="#tobacco-grade-catalogue"
-                            data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7c8"
+                            href="#tobacco-grade-catalogue" data-variety="nls" data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7c8"
                             class="service-three-card three w-inline-block"
                             ><div class="service-three-card-image-block">
                                 <img
@@ -1715,8 +2261,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     />
                                 </div></div></a
                         ><a
-                            href="#tobacco-grade-catalogue"
-                            data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7d6"
+                            href="#tobacco-grade-catalogue" data-variety="burley" data-w-id="8c0c97f9-4110-81fc-3b94-61aa8c35d7d6"
                             class="service-three-card four w-inline-block"
                             ><div class="service-three-card-image-block">
                                 <img
@@ -1755,10 +2300,9 @@ document.addEventListener("DOMContentLoaded", () => {
         </section>
 
 
-        <!-- TOBACCO GRADE CATALOGUE -->
-<section id="tobacco-grade-catalogue" class="tg-catalogue">
+        <!-- TOBACCO GRADE CATALOGUE (IN-PAGE TABLE COMMENTED OUT; POPUP MODAL USED INSTEAD)
+<section id="tobacco-grade-catalogue" class="tg-catalogue" style="display:none;">
     <div class="tg-container">
-
         <div class="tg-heading">
             <span class="tg-eyebrow">PRODUCT SPECIFICATIONS</span>
             <h2>Tobacco Grade Catalogue<span>.</span></h2>
@@ -1830,9 +2374,92 @@ document.addEventListener("DOMContentLoaded", () => {
             Nicotine and sugar ranges are indicative reference values.
             Confirm applicable specifications with Tabac Enterprises before ordering.
         </p>
-
     </div>
 </section>
+-->
+
+<!-- TOBACCO GRADE CATALOGUE POPUP MODAL (OPTION B) -->
+<div id="tg-modal-overlay" class="tg-modal-overlay" aria-hidden="true">
+    <div class="tg-modal-box" role="dialog" aria-modal="true" aria-labelledby="tgModalTitle">
+        <!-- Modal Header -->
+        <div class="tg-modal-header">
+            <div class="tg-modal-header-left">
+                <span class="tg-modal-eyebrow">TECHNICAL SPECIFICATIONS</span>
+                <h3 id="tgModalTitle" class="tg-modal-title">Tobacco Grade Catalogue<span class="tg-gold-dot">.</span></h3>
+                <p class="tg-modal-subtitle">Variety-wise grade descriptions, packing specifications, and indicative chemistry values.</p>
+            </div>
+            <button type="button" id="tgModalClose" class="tg-modal-close" aria-label="Close catalogue modal">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Modal Toolbar -->
+        <div class="tg-modal-toolbar">
+            <div class="tg-modal-filters" role="group" aria-label="Filter varieties in modal">
+                <button type="button" class="tg-modal-filter is-active" data-modal-category="all">All Grades</button>
+                <button type="button" class="tg-modal-filter" data-modal-category="mysore">Mysore FCV</button>
+                <button type="button" class="tg-modal-filter" data-modal-category="trad">TRAD FCV</button>
+                <button type="button" class="tg-modal-filter" data-modal-category="nls">NLS FCV</button>
+                <button type="button" class="tg-modal-filter" data-modal-category="burley">Vinukonda Burley</button>
+            </div>
+            <div class="tg-modal-search-wrap">
+                <span aria-hidden="true" class="tg-modal-search-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </span>
+                <input id="tgModalSearch" type="search" placeholder="Search grade, description..." aria-label="Search tobacco grades">
+            </div>
+        </div>
+
+        <!-- Result count bar -->
+        <div class="tg-modal-meta">
+            <span id="tgModalResultCount" class="tg-modal-count">52 grades</span>
+            <span>Technical specifications · Reference catalogue</span>
+        </div>
+
+        <!-- Scrollable Table Container -->
+        <div class="tg-modal-table-wrap">
+            <table class="tg-modal-table">
+                <thead>
+                    <tr>
+                        <th>GRADE</th>
+                        <th>VARIETY</th>
+                        <th>DESCRIPTION</th>
+                        <th>PACKING / NET WT.</th>
+                        <th>NICOTINE (%)</th>
+                        <th>SUGARS (%)</th>
+                    </tr>
+                </thead>
+                <tbody id="tgModalTableBody"></tbody>
+            </table>
+            <div id="tgModalEmpty" class="tg-modal-empty" hidden>
+                <h4>No matching grades found</h4>
+                <p>Try clearing your search keyword or switching variety tab.</p>
+                <button type="button" id="tgModalReset" class="tg-modal-reset-btn">Reset Filters</button>
+            </div>
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="tg-modal-footer">
+            <div class="tg-modal-footer-note">
+                <span class="tg-modal-footer-dot"></span>
+                <span>Indicative chemistry ranges based on standard harvest seasons. Custom grading available.</span>
+            </div>
+            <a href="contact" class="tg-modal-cta-btn">
+                <span>Request Detailed Specs</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
 
         <section id="processing-machinery" data-w-id="8c7c7b76-c387-43ad-1c1f-8521b7840472" class="three-service-innovation">
             <div class="w-layout-blockcontainer container w-container">
