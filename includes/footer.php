@@ -229,6 +229,34 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
+
+.tobac-facility-address {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 3px;
+}
+
+.tobac-addr-title {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: -0.1px;
+}
+
+.tobac-addr-line {
+    font-size: 0.80rem;
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.45;
+}
+
+.tobac-addr-sub {
+    font-size: 0.78rem;
+    color: #ddb969;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
 .tobac-footer-contact-val {
     font-size: 0.90rem;
     color: rgba(255, 255, 255, 0.88);
@@ -500,7 +528,12 @@
                         </div>
                         <div class="tobac-footer-contact-text">
                             <div class="tobac-footer-contact-label">Facility Address</div>
-                            <div class="tobac-footer-contact-val">Prakasam District, Andhra Pradesh, India</div>
+                            <div class="tobac-footer-contact-val tobac-facility-address">
+                                <span class="tobac-addr-title">Tabac Leaf Enterprises LLP</span>
+                                <span class="tobac-addr-line">Sy. No. 758/1,2, 753/B &amp; 755/C 1A</span>
+                                <span class="tobac-addr-line">NH-16, Near Toll Plaza, Tangutur – 523274</span>
+                                <span class="tobac-addr-sub">Prakasam District, Andhra Pradesh</span>
+                            </div>
                         </div>
                     </div>
 
