@@ -945,7 +945,8 @@
                                     "
                                     class="no-margin service-hero-heading"
                                 >
-                                    <span class="heading-line">Responsible Processing.</span><span class="heading-line">Thoughtful Operations.</span>
+                                    <span class="heading-line">Responsible Processing.</span>
+                                    <span class="heading-line">Thoughtful Operations.</span>
                                 </h1>
                             </div>
                         </div>
