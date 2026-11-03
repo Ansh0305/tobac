@@ -486,6 +486,96 @@
                     padding: 24px 18px !important;
                 }
             }
+
+            /* =========================================================
+               FORM SUCCESS & ERROR STATES (High-Contrast Dark Theme)
+               ========================================================= */
+            .form-success-message.w-form-done,
+            .w-form-done {
+                background: transparent !important;
+                background-color: transparent !important;
+                padding: 0 !important;
+                border: none !important;
+            }
+
+            .form-error-message.w-form-fail,
+            .w-form-fail {
+                background: transparent !important;
+                background-color: transparent !important;
+                padding: 0 !important;
+                border: none !important;
+            }
+
+            .inquiry-success-card {
+                padding: 38px 30px !important;
+                background: rgba(18, 18, 20, 0.95) !important;
+                border: 1px solid rgba(255, 185, 55, 0.45) !important;
+                border-radius: 16px !important;
+                text-align: center !important;
+                box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5) !important;
+            }
+
+            .inquiry-success-icon-wrap {
+                width: 58px;
+                height: 58px;
+                margin: 0 auto 18px;
+                background: rgba(255, 185, 55, 0.12);
+                border: 1.5px solid #ffb937;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #ffb937;
+            }
+
+            .inquiry-success-title {
+                color: #ffffff !important;
+                margin: 0 0 10px 0 !important;
+                font-size: 22px !important;
+                font-weight: 600 !important;
+                letter-spacing: -0.3px !important;
+            }
+
+            .inquiry-success-text {
+                margin: 0 0 20px 0 !important;
+                line-height: 1.6 !important;
+                color: rgba(255, 255, 255, 0.82) !important;
+                font-size: 14.5px !important;
+                max-width: 440px !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            .inquiry-success-badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                padding: 7px 16px;
+                background: rgba(255, 185, 55, 0.08);
+                border: 1px solid rgba(255, 185, 55, 0.28);
+                border-radius: 6px;
+                font-size: 13px;
+                color: #ffb937;
+                margin-bottom: 22px;
+            }
+
+            .inquiry-reset-btn {
+                background: transparent !important;
+                border: 1px solid rgba(255, 255, 255, 0.25) !important;
+                color: #ffffff !important;
+                padding: 10px 22px !important;
+                border-radius: 7px !important;
+                font-size: 13px !important;
+                font-weight: 500 !important;
+                cursor: pointer !important;
+                transition: all 0.2s ease !important;
+            }
+
+            .inquiry-reset-btn:hover {
+                border-color: #ffb937 !important;
+                color: #ffb937 !important;
+                background: rgba(255, 185, 55, 0.08) !important;
+            }
         </style>
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
@@ -714,7 +804,7 @@
                             <div class="w-form">
                                 <form
                                     id="contact-inquiry-form"
-                                    action="/process-contact"
+                                    action="process-contact.php"
                                     method="POST"
                                     class="contact-one-form"
                                 >
@@ -846,6 +936,10 @@
                     var $successBox = $(".form-success-message");
                     var $errorBox = $(".form-error-message");
 
+                    function escapeHtml(str) {
+                        return $("<div>").text(str || "").html();
+                    }
+
                     $form.on("submit", function (e) {
                         e.preventDefault();
 
@@ -860,27 +954,41 @@
                         $errorBox.hide();
 
                         $.ajax({
-                            url: "/process-contact",
+                            url: "process-contact.php",
                             type: "POST",
                             data: $form.serialize(),
                             dataType: "json",
                             success: function (response) {
                                 if (response && response.success) {
                                     $form.slideUp(280, function () {
+                                        var messageText = escapeHtml(response.message || "Thank you! Your inquiry has been received. Our team will get back to you shortly.");
                                         $successBox
                                             .html(
-                                                '<div style="padding: 24px 28px; background: rgba(176, 137, 64, 0.12); border: 1px solid #b08940; border-radius: 12px; color: #ffffff;">' +
-                                                '<h4 style="color: #ffb937; margin: 0 0 8px 0; font-size: 20px;">Inquiry Sent Successfully</h4>' +
-                                                '<p style="margin: 0; line-height: 1.5; color: rgba(255, 255, 255, 0.85); font-size: 14.5px;">' + response.message + '</p>' +
+                                                '<div class="inquiry-success-card">' +
+                                                '  <div class="inquiry-success-icon-wrap">' +
+                                                '    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffb937" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">' +
+                                                '      <polyline points="20 6 9 17 4 12"></polyline>' +
+                                                '    </svg>' +
+                                                '  </div>' +
+                                                '  <h4 class="inquiry-success-title">Inquiry Sent Successfully</h4>' +
+                                                '  <p class="inquiry-success-text">' + messageText + '</p>' +
+                                                '  <div class="inquiry-success-badge">' +
+                                                '    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>' +
+                                                '    <span>Inquiry logged &amp; routed to our operations desk</span>' +
+                                                '  </div>' +
+                                                '  <div>' +
+                                                '    <button type="button" class="inquiry-reset-btn">Send Another Inquiry</button>' +
+                                                '  </div>' +
                                                 '</div>'
                                             )
                                             .fadeIn(300);
                                     });
                                 } else {
+                                    var errMsg = (response && response.message) ? response.message : "Something went wrong while submitting the form. Please try again.";
                                     $errorBox
                                         .html(
-                                            '<div style="padding: 16px 20px; background: rgba(220, 53, 69, 0.2); border: 1px solid #dc3545; border-radius: 8px; color: #ffffff; font-size: 14px;">' +
-                                            (response.message || "Something went wrong while submitting the form. Please try again.") +
+                                            '<div style="padding: 16px 20px; background: rgba(220, 53, 69, 0.18); border: 1px solid #dc3545; border-radius: 8px; color: #ffffff; font-size: 14px; margin-top: 14px;">' +
+                                            escapeHtml(errMsg) +
                                             '</div>'
                                         )
                                         .fadeIn(250);
@@ -894,13 +1002,22 @@
                                 }
                                 $errorBox
                                     .html(
-                                        '<div style="padding: 16px 20px; background: rgba(220, 53, 69, 0.2); border: 1px solid #dc3545; border-radius: 8px; color: #ffffff; font-size: 14px;">' +
-                                        msg +
+                                        '<div style="padding: 16px 20px; background: rgba(220, 53, 69, 0.18); border: 1px solid #dc3545; border-radius: 8px; color: #ffffff; font-size: 14px; margin-top: 14px;">' +
+                                        escapeHtml(msg) +
                                         '</div>'
                                     )
                                     .fadeIn(250);
                                 $submitBtn.prop("disabled", false).css("opacity", "1").html(originalBtnHtml);
                             }
+                        });
+                    });
+
+                    // Reset button handler to easily submit another inquiry
+                    $successBox.on("click", ".inquiry-reset-btn", function () {
+                        $successBox.fadeOut(200, function () {
+                            $form[0].reset();
+                            $submitBtn.prop("disabled", false).css("opacity", "1").html(originalBtnHtml);
+                            $form.slideDown(280);
                         });
                     });
                 });
