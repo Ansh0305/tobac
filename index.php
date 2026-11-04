@@ -2552,7 +2552,7 @@
     align-items: center;
     gap: 8px;
 
-    padding: 8px 14px;
+    padding: 12px 30px;
 
     border: 1px solid rgba(255, 255, 255, 0.22);
     border-radius: 4px;
@@ -3423,9 +3423,9 @@
                         <span>India's Only Bio-Steam Processor</span>
                     </div>
 
-                    <div class="hero-quality-divider"></div>
+                    <!-- <div class="hero-quality-divider"></div> -->
 
-                    <div class="hero-quality-item">
+                    <!-- <div class="hero-quality-item">
                         <span class="hero-quality-dot"></span>
                         <span>Bio-Steam Powered Tobacco Processing</span>
                     </div>
@@ -3435,7 +3435,7 @@
                     <div class="hero-quality-item">
                         <span class="hero-quality-dot"></span>
                         <span>Bio-Steam &amp; Briquette Fuel</span>
-                    </div>
+                    </div> -->
 
                 </div>
 
