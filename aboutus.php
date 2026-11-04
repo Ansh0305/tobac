@@ -1049,12 +1049,14 @@
                         </div>
                         <div class="additional-leadership-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
                             <div style="text-align: center; padding: 10px 20px;">
-                                <div class="sub-heading" style="color: #b08940; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.82rem; margin-bottom: 8px;">Chief Commercial Officer</div>
                                 <h3 class="heading-style-h3 color-black" style="margin: 0; font-size: 28px; font-weight: 500; letter-spacing: -0.4px;">CJ Simon</h3>
+                                <div class="sub-heading" style="color: #b08940; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.82rem; margin-bottom: 8px; padding-top: 8px;">Chief Commercial Officer</div>
+                                
                             </div>
                             <div style="text-align: center; padding: 10px 20px; border-left: 1px solid rgba(0, 0, 0, 0.08);">
-                                <div class="sub-heading" style="color: #b08940; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.82rem; margin-bottom: 8px;">Managing Director</div>
-                                <h3 class="heading-style-h3 color-black" style="margin: 0; font-size: 28px; font-weight: 500; letter-spacing: -0.4px;">Dr. Bellam Ravichandar</h3>
+                                 <h3 class="heading-style-h3 color-black" style="margin: 0; font-size: 28px; font-weight: 500; letter-spacing: -0.4px;">Dr. Bellam Ravichandar</h3>
+                                <div class="sub-heading" style="color: #b08940; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.82rem; margin-bottom: 8px; padding-top: 8px;">Managing Director</div>
+                               
                             </div>
                         </div>
                     </div>

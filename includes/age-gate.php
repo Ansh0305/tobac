@@ -28,10 +28,10 @@ $base = isset($base_path) ? $base_path : '';
         </div>
 
         <!-- Heading & Question -->
-        <h2 id="tobac-age-heading" class="tobac-age-title">Are you 18 years of age or older?</h2>
+        
 
-        <p class="tobac-age-description">
-            Commercial information on tobacco cultivation, processing, and exports.
+        <p class="tobac-age-disclaimer" style="padding-bottom: 8px;">
+            Commercial information on tobacco cultivation, processing, and exports. <br>
             Access is restricted to individuals aged 18 and above.
         </p>
 
