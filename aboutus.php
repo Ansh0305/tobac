@@ -699,6 +699,10 @@
             type="image/x-icon"
         />
         <link href="/favicon.ico" rel="apple-touch-icon" />
+        <!-- Google Fonts: Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
         <script type="text/javascript">
             window.__WEBFLOW_CURRENCY_SETTINGS = {
                 currencyCode: "USD",
@@ -767,7 +771,33 @@
                 max-height: 340px !important;
             }
         }
-    </style>
+    
+/* =========================================================
+   HERO HEADING TYPOGRAPHY (Poppins SemiBold, Upright)
+   ========================================================= */
+.about-hero .about-hero-heading h1,
+.about-hero h1 {
+    font-family: 'Poppins', sans-serif !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    letter-spacing: -1.5px !important;
+    line-height: 1.18 !important;
+}
+
+@media (max-width: 767px) {
+    .about-hero .about-hero-heading h1,
+.about-hero h1 {
+        letter-spacing: -0.8px !important;
+    }
+}
+
+@media (max-width: 479px) {
+    .about-hero .about-hero-heading h1,
+.about-hero h1 {
+        letter-spacing: -0.6px !important;
+    }
+}
+</style>
     </head>
     <body>
         <?php require __DIR__ . "/includes/header.php"; ?>
@@ -1111,7 +1141,16 @@
                     visibility: visible !important;
                 }
             }
-        </style>
+        
+
+
+@media (max-width: 479px) {
+    .about-hero .about-hero-heading h1,
+.about-hero h1 {
+        letter-spacing: -0.6px !important;
+    }
+}
+</style>
         <!-- Our Vision section — COMMENTED OUT per client request
         <section class="over-view-one" style="padding-top: 125px;">
             <div class="w-layout-blockcontainer container w-container">
