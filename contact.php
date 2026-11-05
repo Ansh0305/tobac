@@ -576,7 +576,33 @@
                 color: #ffb937 !important;
                 background: rgba(255, 185, 55, 0.08) !important;
             }
-        </style>
+        
+/* =========================================================
+   HERO HEADING TYPOGRAPHY (Poppins SemiBold, Upright)
+   ========================================================= */
+.inner-pages-hero .about-hero-information h1,
+.inner-pages-hero h1 {
+    font-family: 'Poppins', sans-serif !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    letter-spacing: -1.5px !important;
+    line-height: 1.18 !important;
+}
+
+@media (max-width: 767px) {
+    .inner-pages-hero .about-hero-information h1,
+.inner-pages-hero h1 {
+        letter-spacing: -0.8px !important;
+    }
+}
+
+@media (max-width: 479px) {
+    .inner-pages-hero .about-hero-information h1,
+.inner-pages-hero h1 {
+        letter-spacing: -0.6px !important;
+    }
+}
+</style>
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
         <script src="ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -605,6 +631,10 @@
             type="image/x-icon"
         />
         <link href="/favicon.ico" rel="apple-touch-icon" />
+        <!-- Google Fonts: Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
         <script type="text/javascript">
             window.__WEBFLOW_CURRENCY_SETTINGS = {
                 currencyCode: "USD",

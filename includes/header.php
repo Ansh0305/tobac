@@ -292,7 +292,7 @@ h1, h2, h3, h4,
     }
 }
 </style>
-<!-- Top Scroll Progress Indicator Bar (Option 3) -->
+<!-- Top Scroll Progress Indicator Bar -->
 <div id="tobac-scroll-progress" class="tobac-scroll-progress" aria-hidden="true"></div>
 <script>
 (function() {
