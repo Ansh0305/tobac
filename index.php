@@ -71,6 +71,10 @@
             rel="stylesheet"
             type="text/css"
         />
+        <!-- Google Fonts: Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
         <style>
             @media (min-width: 992px) {
                 html.w-mod-js:not(.w-mod-ix) [data-w-id="d3e8c70d-9056-3db0-9265-2f016fd144f4"] {
@@ -2537,68 +2541,74 @@
     max-width: 1060px !important;
 }
 
-.hero-quality-highlights {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 30px;
-    flex-wrap: nowrap;
-    width: 100%;
-}
-
-.hero-quality-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-
-    padding: 12px 30px;
-
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    border-radius: 4px;
-
-    background: rgba(255, 255, 255, 0.08);
-
-    color: #ffffff;
-
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.8px;
-    line-height: 1;
-    white-space: nowrap;
-
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-}
-
-.hero-quality-dot {
-    width: 7px;
-    height: 7px;
-    flex: 0 0 7px;
-
-    border-radius: 50%;
-    background: #f6b61b;
-}
-
-.hero-quality-divider {
-    width: 1px;
-    height: 22px;
-    background: rgba(255, 255, 255, 0.35);
-    flex-shrink: 0;
-}
-
-
 /* =========================================================
-   HERO HEADING
+   HERO FLAGSHIP BADGE (India's Only Bio-Steam Processor)
    ========================================================= */
 
-.home-two-hero-section
-.hero-three-title-text {
-    max-width: 850px;
-    margin-left: auto;
-    margin-right: auto;
+/* Pulsing Live Radar Dot */
+.hero-pulse-dot {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #f6b61b;
+    flex-shrink: 0;
+}
+.hero-pulse-ping {
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    border: 1.5px solid #f6b61b;
+    animation: tobac-radar-ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+    opacity: 0.75;
+}
+@keyframes tobac-radar-ping {
+    0% { transform: scale(0.8); opacity: 0.9; }
+    70%, 100% { transform: scale(2.4); opacity: 0; }
 }
 
+.hero-badge-pill-opt1 {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 28px;
+    border-radius: 50px;
+    background: rgba(18, 15, 8, 0.88);
+    border: 1.5px solid rgba(246, 182, 27, 0.65);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6), 0 0 30px rgba(246, 182, 27, 0.25);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+.hero-badge-pill-opt1:hover {
+    border-color: #f6b61b;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6), 0 0 35px rgba(246, 182, 27, 0.4);
+    transform: translateY(-1px);
+}
+.hero-steam-highlight {
+    color: #f6b61b;
+    font-weight: 700;
+}
+
+/* =========================================================
+   HERO HEADING TYPOGRAPHY (Poppins SemiBold, Upright)
+   ========================================================= */
+.home-two-hero-block .hero-three-title-text {
+    font-family: 'Poppins', sans-serif !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    letter-spacing: -1.5px !important;
+    line-height: 1.18 !important;
+}
 
 /* =========================================================
    HERO DESCRIPTION
@@ -2606,9 +2616,15 @@
 
 .home-two-hero-section
 .hero-text-gap-top-bottom {
-    max-width: 650px;
+    max-width: 820px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 767px) {
+    .hero-desc-br {
+        display: none;
+    }
 }
 
 
@@ -2642,6 +2658,39 @@
 
 @media (max-width: 767px) {
 
+    .home-one-button-banner.one {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .hero-badge-pill-opt1 {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: auto !important;
+        max-width: fit-content !important;
+        white-space: nowrap !important;
+        flex-shrink: 0 !important;
+        padding: 6px 14px !important;
+        gap: 6px !important;
+        font-size: 10px !important;
+        letter-spacing: 0.4px !important;
+        box-sizing: border-box !important;
+    }
+
+    .hero-pulse-dot {
+        width: 5px !important;
+        height: 5px !important;
+        flex: 0 0 5px !important;
+    }
+
+    .hero-pulse-ping {
+        inset: -2px !important;
+    }
+
     .home-two-hero-section
     .hero-three-title-text {
         max-width: 100%;
@@ -2673,6 +2722,15 @@
         display: none;
     }
 
+}
+
+@media (max-width: 380px) {
+    .hero-badge-pill-opt1 {
+        padding: 5px 10px !important;
+        gap: 5px !important;
+        font-size: 8.5px !important;
+        letter-spacing: 0.2px !important;
+    }
 }
 
 
@@ -3322,17 +3380,15 @@
 
             <div class="home-two-hero-block position-relative margin-auto text-align-center">
 
-                <!-- Eyebrow -->
+                <!-- Eyebrow: India's Only Bio-Steam Processor Badge (Option 1) -->
                 <div
                     data-w-id="80440bbe-eea0-913c-8068-e02ce68efe40"
                     style="opacity: 0"
                     class="home-one-button-banner one"
                 >
-                    <div
-                        data-wf--sub-heading--variant="base"
-                        class="sub-heading"
-                    >
-                        PREMIUM INDIAN TOBACCO
+                    <div class="hero-badge-pill-opt1">
+                        <span class="hero-pulse-dot"><span class="hero-pulse-ping"></span></span>
+                        <span class="hero-steam-pill-text">India's Only <span class="hero-steam-highlight">Bio-Steam</span> Processor</span>
                     </div>
                 </div>
 
@@ -3355,14 +3411,14 @@
                     </h1>
                 </div>
 
-                <!-- Description -->
+                <!-- Description (Balanced 2 Lines) -->
                 <div class="overflow-hidden">
                     <p
                         data-w-id="6b976423-c5ad-08a1-cb07-5c4fc93b4ec1"
                         style="opacity: 0"
                         class="hero-text-gap-top-bottom color-white one"
                     >
-                    From tobacco growing to processing and exports, Tabac Leaf Enterprises brings together five decades of industry experience, integrated infrastructure, and large-scale processing capabilities.
+                    From tobacco growing to processing and exports, Tabac Leaf Enterprises brings together<br class="hero-desc-br"> five decades of industry experience, integrated infrastructure, and large-scale processing capabilities.
                     </p>
                 </div>
 
@@ -3411,38 +3467,10 @@
                     </div>
                 </div>
 
-                <!-- Heritage / Quality Highlights -->
-                <div
-                    class="hero-quality-highlights"
-                    data-w-id="80440bbe-eea0-913c-8068-e02ce68efe40"
-                    style="opacity: 0"
-                >
-
-                    <div class="hero-quality-item">
-                        <span class="hero-quality-dot"></span>
-                        <span>India's Only Bio-Steam Processor</span>
-                    </div>
-
-                    <!-- <div class="hero-quality-divider"></div> -->
-
-                    <!-- <div class="hero-quality-item">
-                        <span class="hero-quality-dot"></span>
-                        <span>Bio-Steam Powered Tobacco Processing</span>
-                    </div>
-
-                    <div class="hero-quality-divider"></div>
-
-                    <div class="hero-quality-item">
-                        <span class="hero-quality-dot"></span>
-                        <span>Bio-Steam &amp; Briquette Fuel</span>
-                    </div> -->
-
-                </div>
-
             </div>
         </div>
 
-        <!-- Existing Webflow Curtain Animation -->
+        <!-- Existing Webflow Curtain Animation (5 Curtains Intact) -->
         <div class="hero-three-slider-overlay">
             <div class="hero-three-curton one"></div>
             <div class="hero-three-curton two"></div>
@@ -3453,7 +3481,7 @@
 
     </div>
 
-    <!-- Existing Bottom Animation Lines -->
+    <!-- Existing Bottom Animation Lines (Intact) -->
     <div
         style="height: 0%"
         class="w-layout-hflex inner-page-banner-line-wrap position-absolute margin-auto z-index-top"
@@ -5793,5 +5821,6 @@
                 })();
             });
         </script>
-    </body>
+
+        </body>
 </html>
