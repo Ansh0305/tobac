@@ -4956,7 +4956,7 @@
                                 width="629"
                                 height="676"
                                 alt="Bio-Steam Powered Tobacco Processing - Tabac Enterprises"
-                                src="assets/images/home-A Bio-Steam-Powered Processing Operation.png"
+                                src="assets/images/Original/product.jpeg" style="object-fit: cover;"
                                 loading="lazy"
                                 sizes="(max-width: 767px) 100vw, 629px"
                                 class="responsiv-full-height responsive-full-width image-effect border-radius-10"
@@ -5032,7 +5032,7 @@
                                 width="630"
                                 height="676"
                                 alt="Our Approach - Tabac Enterprises"
-                                src="assets/images/home-OUR APPROACH.png"
+                                src="assets/images/Original/product-3.jpeg" style="object-fit: cover;"
                                 loading="lazy"
                                 sizes="(max-width: 767px) 100vw, 630px"
                                 class="responsive-full-width image-effect border-radius-10 responsiv-full-height"
@@ -5414,14 +5414,14 @@
             height: 100%;
             overflow: hidden;
             z-index: 0;
-            background-image: url('https://img.youtube.com/vi/n91nMszHV5c/maxresdefault.jpg');
+            background-image: url('https://img.youtube.com/vi/07fDEtNDe2c/maxresdefault.jpg');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;"
     >
 
         <iframe
-    src="https://www.youtube.com/embed/n91nMszHV5c?autoplay=1&mute=1&loop=1&playlist=n91nMszHV5c&controls=0&rel=0&modestbranding=1&playsinline=1&cc_load_policy=0"
+    src="https://www.youtube.com/embed/07fDEtNDe2c?autoplay=1&mute=1&loop=1&playlist=07fDEtNDe2c&controls=0&rel=0&modestbranding=1&playsinline=1&cc_load_policy=0"
     title="Tobac Enterprises Industrial Tobacco Processing"
     frameborder="0"
     allow="autoplay; encrypted-media; picture-in-picture"
@@ -5477,7 +5477,7 @@
                 >
 
                     <a
-                        href="https://www.youtube.com/watch?v=n91nMszHV5c"
+                        href="https://www.youtube.com/watch?v=07fDEtNDe2c"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Watch Tobac Enterprises video on YouTube"
