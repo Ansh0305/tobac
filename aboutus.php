@@ -1177,7 +1177,7 @@
                     <div class="over-view-card-one border-radius-10 overflow-hidden">
                         <img
                             class="full-width full-height image-effect border-radius-10"
-                            src="assets/images/about-vision-tobacco.jpg"
+                            src="assets/images/Original/facility-4.jpeg"
                             width="410"
                             height="415"
                             alt="Tabac Leaf Enterprises - Engineering Excellence in Tobacco Processing"
@@ -1459,20 +1459,14 @@
                             class="service-card-two-bg-image position-absolute deactive"
                         >
                             <img
-                                src="67ad72477c605912a4af72eb/68876e3e0b6d7f44d8f850ec_men-on-a-construction-field-19643543.webp"
+                                src="assets/images/Original/facility-3.jpeg"
                                 loading="lazy"
                                 width="740"
                                 height="141"
-                                alt="Kontix-about-one-rennovation and remodeling-image-webflow-ecommerce-template"
-                                srcset="
-                                    67ad72477c605912a4af72eb/68876e3e0b6d7f44d8f850ec_men-on-a-construction-field-19643543-p-500.webp   500w,
-                                    67ad72477c605912a4af72eb/68876e3e0b6d7f44d8f850ec_men-on-a-construction-field-19643543-p-800.webp   800w,
-                                    67ad72477c605912a4af72eb/68876e3e0b6d7f44d8f850ec_men-on-a-construction-field-19643543-p-1080.webp 1080w,
-                                    67ad72477c605912a4af72eb/68876e3e0b6d7f44d8f850ec_men-on-a-construction-field-19643543-p-1600.webp 1600w,
-                                    67ad72477c605912a4af72eb/68876e3e0b6d7f44d8f850ec_men-on-a-construction-field-19643543.webp        1927w
-                                "
+                                alt="Tabac Leaf Enterprises Processing Infrastructure"
                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 740px"
                                 class="full-width full-height"
+                                style="object-fit: cover;"
                             />
                             <div class="service-card-two-bg position-absolute two"></div></div></a
                     > -->
@@ -1664,7 +1658,7 @@
             height: 100%;
             overflow: hidden;
             z-index: 0;
-            background-image: url('https://img.youtube.com/vi/n91nMszHV5c/maxresdefault.jpg');
+            background-image: url('https://img.youtube.com/vi/07fDEtNDe2c/maxresdefault.jpg');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -1672,7 +1666,7 @@
     >
 
         <iframe
-    src="https://www.youtube.com/embed/n91nMszHV5c?autoplay=1&mute=1&loop=1&playlist=n91nMszHV5c&controls=0&rel=0&modestbranding=1&playsinline=1&cc_load_policy=0"
+    src="https://www.youtube.com/embed/07fDEtNDe2c?autoplay=1&mute=1&loop=1&playlist=07fDEtNDe2c&controls=0&rel=0&modestbranding=1&playsinline=1&cc_load_policy=0"
     title="Tobac Enterprises Industrial Tobacco Processing"
     frameborder="0"
     allow="autoplay; encrypted-media; picture-in-picture"
@@ -1730,7 +1724,7 @@
                 >
 
                     <a
-                        href="https://www.youtube.com/watch?v=n91nMszHV5c"
+                        href="https://www.youtube.com/watch?v=07fDEtNDe2c"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Watch Tobac Enterprises video on YouTube"
