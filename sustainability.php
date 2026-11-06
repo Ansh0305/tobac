@@ -1161,10 +1161,10 @@
                     <div data-w-id="524d328f-6574-81a3-bd10-3646bddadb6f" class="our-story-one-image border-radius-10">
                         <img
                             class="full-width full-height image-effect border-radius-10"
-                            src="assets/images/sustainability-biosteam.jpg"
+                            src="assets/images/Original/product.jpeg" style="object-fit: cover;"
                             width="588"
                             height="750"
-                            alt="Bio-Steam Tobacco Processing Facility - Tabac Leaf Enterprises"
+                            alt="Bio-Steam Processed Tobacco Product - Tabac Leaf Enterprises"
                             sizes="(max-width: 767px) 100vw, 588px"
                             data-w-id="524d328f-6574-81a3-bd10-3646bddadb70"
                             loading="lazy"
@@ -1302,10 +1302,10 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="assets/images/sustainability-briquette-fuel.jpg"
+                                src="assets/images/Original/facility-5.jpeg" style="object-fit: cover;"
                                 width="302"
                                 height="289"
-                                alt="Agricultural Biomass Fuel Briquettes for Bio-Steam Generation"
+                                alt="Clean Bio-Steam Generation Boiler and Piping System"
                                 sizes="(max-width: 479px) 100vw, 302px"
                                 data-w-id="524d328f-6574-81a3-bd10-3646bddadbb7"
                                 loading="lazy"
@@ -1323,10 +1323,10 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="assets/images/sustainability-biosteam.jpg"
+                                src="assets/images/Original/farm.jpeg" style="object-fit: cover;"
                                 width="302"
                                 height="289"
-                                alt="Clean Bio-Steam Generation Boiler System"
+                                alt="Agricultural Biomass Fuel Source for Sustainable Briquettes"
                                 sizes="(max-width: 479px) 100vw, 302px"
                                 data-w-id="60ea14cd-b95c-ed97-41c8-e648eafd8133"
                                 loading="lazy"
@@ -1447,7 +1447,7 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="assets/images/services-tobacco-transport.jpg"
+                                src="assets/images/Original/facility-6.jpeg" style="object-fit: cover;"
                                 width="302"
                                 height="289"
                                 alt="Tobacco Transportation Fleet"
@@ -1538,10 +1538,10 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="assets/images/Original/facility.jpeg"
+                                src="assets/images/Original/facility-3.jpeg"
                                 width="302"
                                 height="289"
-                                alt="Resource-Conscious Industrial Infrastructure"
+                                alt="Resource-Conscious Processing Infrastructure and Material Flow"
                                 sizes="(max-width: 479px) 100vw, 302px"
                                 data-w-id="524d328f-6574-81a3-bd10-3646bddadbb7"
                                 loading="lazy"
@@ -1559,10 +1559,10 @@
                         <div class="border-radius-10 position-relative overflow-hidden tab-image-full-width">
                             <img
                                 class="border-radius-10 image-effect tab-image-full-width"
-                                src="assets/images/Original/company-building.jpeg"
+                                src="assets/images/Original/facility-4.jpeg"
                                 width="302"
                                 height="289"
-                                alt="Planned Facility Coordination and Environmental Care"
+                                alt="Clean and Disciplined Facility Coordination and Environmental Care"
                                 sizes="(max-width: 479px) 100vw, 302px"
                                 data-w-id="60ea14cd-b95c-ed97-41c8-e648eafd8133"
                                 loading="lazy"
@@ -2754,14 +2754,14 @@
                         height: 100%;
                         overflow: hidden;
                         z-index: 0;
-                        background-image: url('https://img.youtube.com/vi/n91nMszHV5c/maxresdefault.jpg');
+                        background-image: url('https://img.youtube.com/vi/07fDEtNDe2c/maxresdefault.jpg');
                         background-position: center;
                         background-size: cover;
                         background-repeat: no-repeat;
                     "
                 >
                     <iframe
-                        src="https://www.youtube.com/embed/n91nMszHV5c?autoplay=1&mute=1&loop=1&playlist=n91nMszHV5c&controls=0&rel=0&modestbranding=1&playsinline=1&cc_load_policy=0"
+                        src="https://www.youtube.com/embed/07fDEtNDe2c?autoplay=1&mute=1&loop=1&playlist=07fDEtNDe2c&controls=0&rel=0&modestbranding=1&playsinline=1&cc_load_policy=0"
                         title="Tabac Leaf Enterprises Industrial Tobacco Processing"
                         frameborder="0"
                         allow="autoplay; encrypted-media; picture-in-picture"
@@ -2804,7 +2804,7 @@
                                 style="z-index: 5;"
                             >
                                 <a
-                                    href="https://www.youtube.com/watch?v=n91nMszHV5c"
+                                    href="https://www.youtube.com/watch?v=07fDEtNDe2c"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="Watch Tabac Leaf Enterprises video on YouTube"

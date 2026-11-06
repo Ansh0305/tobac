@@ -135,7 +135,7 @@
 
             .contact-box-grid {
                 display: grid !important;
-                grid-template-columns: repeat(3, 1fr) !important;
+                grid-template-columns: repeat(2, 1fr) !important;
                 gap: 24px !important;
                 background: transparent !important;
                 border: none !important;
@@ -654,7 +654,7 @@
             data-w-id="f96aab72-3b6d-159a-79bc-c22c77209b8f"
             class="inner-pages-hero position-relative overflow-hidden"
         >
-            <div class="about-hero-bg position-absolute contact-one-bg banner-apearence" style="background-image: linear-gradient(#0f0f0f, #0f0f0f1a 62%, #0f0f0f00), linear-gradient(#0f0f0f00, #0f0f0f5e 44%, #0f0f0ff2), url('assets/images/contact-hero-tobacco.jpg'); background-position: 0 0, 0 0, 50%; background-repeat: repeat, repeat, no-repeat; background-size: auto, auto, cover;"></div>
+            <div class="about-hero-bg position-absolute contact-one-bg banner-apearence" style="background-image: linear-gradient(#0f0f0f, #0f0f0f1a 62%, #0f0f0f00), linear-gradient(#0f0f0f00, #0f0f0f5e 44%, #0f0f0ff2), url('assets/images/Original/farm.jpeg'); background-position: 0 0, 0 0, 50%; background-repeat: repeat, repeat, no-repeat; background-size: auto, auto, cover;"></div>
             <div class="about-hero-content position-relative">
                 <div class="w-layout-blockcontainer container w-container">
                     <div class="about-hero-information text-align-center">
@@ -697,7 +697,7 @@
                     style="opacity: 0"
                     class="contact-box-grid"
                 >
-                    <div class="contact-box-card">
+                                        <div class="contact-box-card">
                         <div class="contact-box-icon-wrap">
                             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
@@ -709,18 +709,6 @@
                             <div class="heading-style-h5">info@tabacenterprises.com</div>
                         </a>
                         <div class="contact-box-subtext">Direct corporate &amp; partner inquiries</div>
-                    </div>
-                    <div class="contact-box-card">
-                        <div class="contact-box-icon-wrap">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                            </svg>
-                        </div>
-                        <div class="sub-heading">Phone</div>
-                        <a href="tel:+918592252000" class="contact-box-one-link">
-                            <div class="heading-style-h5">+91 99999 99000</div>
-                        </a>
-                        <div class="contact-box-subtext">Mon – Sat: 9:00 AM – 6:00 PM IST</div>
                     </div>
                     <div class="contact-box-card">
                         <div class="contact-box-icon-wrap">
@@ -871,33 +859,18 @@
                                             />
                                         </div>
                                     </div>
-                                    <div class="contact-form-grid-row">
-                                        <div class="contact-form-field-group">
-                                            <label for="phone" class="contact-form-label">Phone Number <span class="req">*</span></label>
-                                            <input
-                                                class="contact-one-form-input w-input"
-                                                maxlength="256"
-                                                name="phone"
-                                                data-name="phone"
-                                                placeholder="+91 00000 00000"
-                                                type="tel"
-                                                id="phone"
-                                                required=""
-                                            />
-                                        </div>
-                                        <div class="contact-form-field-group">
-                                            <label for="Subject" class="contact-form-label">Inquiry Subject <span class="req">*</span></label>
-                                            <input
-                                                class="contact-one-form-input w-input"
-                                                maxlength="256"
-                                                name="Subject"
-                                                data-name="Subject"
-                                                placeholder="e.g. Processing Capacity & Schedules"
-                                                type="text"
-                                                id="Subject"
-                                                required=""
-                                            />
-                                        </div>
+                                    <div class="contact-form-field-group">
+                                        <label for="Subject" class="contact-form-label">Inquiry Subject <span class="req">*</span></label>
+                                        <input
+                                            class="contact-one-form-input w-input"
+                                            maxlength="256"
+                                            name="Subject"
+                                            data-name="Subject"
+                                            placeholder="e.g. Processing Capacity & Schedules"
+                                            type="text"
+                                            id="Subject"
+                                            required=""
+                                        />
                                     </div>
                                     <div class="contact-form-field-group">
                                         <label for="Message" class="contact-form-label">Message Details</label>

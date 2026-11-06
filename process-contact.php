@@ -31,9 +31,6 @@ if (empty($name)) {
 if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $errors[] = 'Please provide a valid email address.';
 }
-if (empty($phone)) {
-    $errors[] = 'Please enter your phone number.';
-}
 if (empty($subject)) {
     $errors[] = 'Please provide a subject for your inquiry.';
 }
@@ -52,7 +49,9 @@ $email_body  = "You have received a new inquiry from the Tabac Leaf Enterprises 
 $email_body .= "--------------------------------------------------------\n";
 $email_body .= "Name:    " . $name . "\n";
 $email_body .= "Email:   " . $email . "\n";
-$email_body .= "Phone:   " . $phone . "\n";
+if (!empty($phone)) {
+    $email_body .= "Phone:   " . $phone . "\n";
+}
 $email_body .= "Subject: " . $subject . "\n";
 $email_body .= "Date:    " . date('Y-m-d H:i:s T') . "\n";
 $email_body .= "IP:      " . ($_SERVER['REMOTE_ADDR'] ?? 'Unknown') . "\n";

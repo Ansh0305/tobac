@@ -2036,7 +2036,7 @@ document.addEventListener("DOMContentLoaded", () => {
             data-w-id="946540d6-7db4-cb7c-6098-d09d7629aa3a"
             class="service-hero position-relative overflow-hidden"
         >
-            <div class="about-hero-bg position-absolute service-three-bg banner-apearence" style="background-image: linear-gradient(#0f0f0f, #0f0f0f1a 62%, #0f0f0f00), linear-gradient(#0f0f0f00, #0f0f0f5e 44%, #0f0f0ff2), url('assets/images/operations-hero-tobacco.jpg'); background-position: 0 0, 0 0, 50%; background-repeat: repeat, repeat, no-repeat; background-size: auto, auto, cover;"></div>
+            <div class="about-hero-bg position-absolute service-three-bg banner-apearence" style="background-image: linear-gradient(#0f0f0f, #0f0f0f1a 62%, #0f0f0f00), linear-gradient(#0f0f0f00, #0f0f0f5e 44%, #0f0f0ff2), url('assets/images/Original/product-2.jpeg'); background-position: 0 0, 0 0, 50%; background-repeat: repeat, repeat, no-repeat; background-size: auto, auto, cover;"></div>
             <div class="about-hero-content position-relative">
                 <div class="w-layout-blockcontainer container w-container">
                     <div class="service-hero-information">
@@ -2812,8 +2812,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div class="preservation-image-two-wrapper">
                             <div class="preservation-image-wrapper two overflow-hidden border-radius-10">
                                 <img
-                                    src="assets/images/about-footprint-facility-2-wide.jpg?v=<?= filemtime(__DIR__ . '/assets/images/about-footprint-facility-2-wide.jpg') ?>"
-                                    loading="lazy"
+                                    src="assets/images/Original/company-building.jpeg" loading="lazy"
                                     width="630"
                                     height="330"
                                     alt="Tabac Leaf Enterprises Processing Facility - Tangutur"
@@ -2869,8 +2868,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div class="preservation-image-one-wrapper">
                             <div class="preservation-image-wrapper one overflow-hidden border-radius-10">
                                 <img
-                                    src="assets/images/about-footprint-facility-1-wide.jpg?v=<?= filemtime(__DIR__ . '/assets/images/about-footprint-facility-1-wide.jpg') ?>"
-                                    loading="lazy"
+                                    src="assets/images/Original/facility-3.jpeg" loading="lazy"
                                     width="630"
                                     height="330"
                                     alt="B.K. Threshers Tobacco Processing Facility - Tangutur"
@@ -2967,14 +2965,14 @@ document.addEventListener("DOMContentLoaded", () => {
                         height: 100%;
                         overflow: hidden;
                         z-index: 0;
-                        background-image: url('https://img.youtube.com/vi/n91nMszHV5c/maxresdefault.jpg');
+                        background-image: url('https://img.youtube.com/vi/07fDEtNDe2c/maxresdefault.jpg');
                         background-position: center;
                         background-size: cover;
                         background-repeat: no-repeat;
                     "
                 >
                     <iframe
-                        src="https://www.youtube.com/embed/n91nMszHV5c?autoplay=1&mute=1&loop=1&playlist=n91nMszHV5c&controls=0&rel=0&modestbranding=1&playsinline=1&cc_load_policy=0"
+                        src="https://www.youtube.com/embed/07fDEtNDe2c?autoplay=1&mute=1&loop=1&playlist=07fDEtNDe2c&controls=0&rel=0&modestbranding=1&playsinline=1&cc_load_policy=0"
                         title="Tobac Enterprises Industrial Tobacco Processing"
                         frameborder="0"
                         allow="autoplay; encrypted-media; picture-in-picture"
@@ -3017,7 +3015,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 style="z-index: 5;"
                             >
                                 <a
-                                    href="https://www.youtube.com/watch?v=n91nMszHV5c"
+                                    href="https://www.youtube.com/watch?v=07fDEtNDe2c"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="Watch Tobac Enterprises video on YouTube"
