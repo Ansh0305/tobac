@@ -1005,9 +1005,9 @@
                                             loading="lazy"
                                             sizes="(max-width: 479px) 100vw, 407px"
                                             srcset="
-                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-500.webp 500w,
-                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08-p-800.webp 800w,
-                                                67b56e82f5f2d165f9ff12e4/67c7e5f0a728717d139e1518_team-08.webp       814w
+                                                assets/images/manoj-bellam.jpeg 500w,
+                                                assets/images/manoj-bellam.jpeg 800w,
+                                                assets/images/manoj-bellam.jpeg 814w
                                             "
                                             class="full-width border-radius-10 image-effect"
                                         />
