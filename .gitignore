@@ -1,0 +1,13 @@
+# Security & Private Credentials
+includes/smtp-config.php
+.env
+.env.*
+
+# Customer Inquiry Records & Private Logs
+storage/*.jsonl
+
+# Local Tooling & Notes
+.idea/
+.vscode/
+*.log
+

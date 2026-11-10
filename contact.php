@@ -961,6 +961,7 @@
                             type: "POST",
                             data: $form.serialize(),
                             dataType: "json",
+                            timeout: 12000,
                             success: function (response) {
                                 if (response && response.success) {
                                     $form.slideUp(280, function () {
