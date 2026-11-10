@@ -3,19 +3,19 @@
     <head>
         <meta charset="utf-8" />
         <link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous" />
-        <title>Tobacco Processing Operations | Tabac Enterprises</title>
+        <title>Tobacco Processing Operations | Tabac Leaf Enterprises</title>
         <meta
-            content="Learn about Tabac Enterprises' tobacco processing operations, including leaf conditioning, threshing, separation, drying, quality checks, packing and storage."
+            content="Learn about Tabac Leaf Enterprises' tobacco processing operations, including leaf conditioning, threshing, separation, drying, quality checks, packing and storage."
             name="description"
         />
-        <meta content="Tobacco Processing Operations | Tabac Enterprises" property="og:title" />
+        <meta content="Tobacco Processing Operations | Tabac Leaf Enterprises" property="og:title" />
         <meta
-            content="Learn about Tabac Enterprises' tobacco processing operations, including leaf conditioning, threshing, separation, drying, quality checks, packing and storage."
+            content="Learn about Tabac Leaf Enterprises' tobacco processing operations, including leaf conditioning, threshing, separation, drying, quality checks, packing and storage."
             property="og:description"
         />
-        <meta content="Tobacco Processing Operations | Tabac Enterprises" name="twitter:title" />
+        <meta content="Tobacco Processing Operations | Tabac Leaf Enterprises" name="twitter:title" />
         <meta
-            content="Learn about Tabac Enterprises' tobacco processing operations, including leaf conditioning, threshing, separation, drying, quality checks, packing and storage."
+            content="Learn about Tabac Leaf Enterprises' tobacco processing operations, including leaf conditioning, threshing, separation, drying, quality checks, packing and storage."
             name="twitter:description"
         />
         <meta property="og:type" content="website" />
@@ -2401,7 +2401,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         <p class="tg-disclaimer">
             Nicotine and sugar ranges are indicative reference values.
-            Confirm applicable specifications with Tabac Enterprises before ordering.
+            Confirm applicable specifications with Tabac Leaf Enterprises before ordering.
         </p>
     </div>
 </section>

@@ -3,19 +3,19 @@
     <head>
         <meta charset="utf-8" />
         <link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous" />
-        <title>Tobacco Processing Services | Tabac Enterprises</title>
+        <title>Tobacco Processing Services | Tabac Leaf Enterprises</title>
         <meta
-            content="Explore tobacco leaf processing and threshing services from Tabac Enterprises, including conditioning, separation, drying, quality control, packing and storage."
+            content="Explore tobacco leaf processing and threshing services from Tabac Leaf Enterprises, including conditioning, separation, drying, quality control, packing and storage."
             name="description"
         />
-        <meta content="Tobacco Processing Services | Tabac Enterprises" property="og:title" />
+        <meta content="Tobacco Processing Services | Tabac Leaf Enterprises" property="og:title" />
         <meta
-            content="Explore tobacco leaf processing and threshing services from Tabac Enterprises, including conditioning, separation, drying, quality control, packing and storage."
+            content="Explore tobacco leaf processing and threshing services from Tabac Leaf Enterprises, including conditioning, separation, drying, quality control, packing and storage."
             property="og:description"
         />
-        <meta content="Tobacco Processing Services | Tabac Enterprises" name="twitter:title" />
+        <meta content="Tobacco Processing Services | Tabac Leaf Enterprises" name="twitter:title" />
         <meta
-            content="Explore tobacco leaf processing and threshing services from Tabac Enterprises, including conditioning, separation, drying, quality control, packing and storage."
+            content="Explore tobacco leaf processing and threshing services from Tabac Leaf Enterprises, including conditioning, separation, drying, quality control, packing and storage."
             name="twitter:description"
         />
         <meta property="og:type" content="website" />

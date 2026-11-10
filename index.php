@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
 
         <!-- Primary SEO -->
-        <title>Tabac Enterprises | Tobacco Processing & Threshing</title>
+        <title>Tabac Leaf Enterprises | Tobacco Processing & Threshing</title>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
 
@@ -19,7 +19,7 @@
         />
         <!-- Open Graph -->
         <meta
-            content="Tabac Enterprises | Tobacco Processing & Threshing"
+            content="Tabac Leaf Enterprises | Tobacco Processing & Threshing"
             property="og:title"
         />
         <meta
@@ -36,7 +36,7 @@
             name="twitter:card"
         />
         <meta
-            content="Tabac Enterprises | Tobacco Processing & Threshing"
+            content="Tabac Leaf Enterprises | Tobacco Processing & Threshing"
             name="twitter:title"
         />
         <meta
@@ -54,11 +54,11 @@
             content="#000000"
         />
         <meta
-            content="Tabac Enterprises"
+            content="Tabac Leaf Enterprises"
             name="author"
         />
         <meta
-            content="Tabac Enterprises"
+            content="Tabac Leaf Enterprises"
             property="og:site_name"
         />
         <link
@@ -322,7 +322,7 @@
 <style>
 
     /* =========================================================
-   HERO HEADING -  MATCH"WHY TABAC ENTERPRISES" TYPOGRAPHY
+   HERO HEADING -  MATCH"WHY Tabac Leaf Enterprises" TYPOGRAPHY
    ========================================================= */
 
 .home-two-hero-section .hero-three-title-text {
@@ -375,7 +375,7 @@
 }
 
 /* =========================================================
-   Tabac ENTERPRISES
+   Tabac Leaf Enterprises
    INDUSTRIAL PROCESSING CAPABILITY
    COMPACT PREMIUM LAYOUT
    ========================================================= */
@@ -891,7 +891,7 @@
 </style>
 <style>
 /* =========================================================
-   Tabac ENTERPRISES
+   Tabac Leaf Enterprises
    ADVANCED PROCESSING SECTION
    COMPACT PREMIUM LAYOUT
    ========================================================= */
@@ -2761,7 +2761,7 @@
 }
 
 /* =========================================================
-   Tabac ENTERPRISES
+   Tabac Leaf Enterprises
    PREMIUM BRAND VALUES SECTION
    ========================================================= */
 
@@ -3507,7 +3507,7 @@
         <div class="tobac-values-intro">
 
             <div class="tobac-values-eyebrow">
-                WHY TABAC ENTERPRISES
+                WHY Tabac Leaf Enterprises
             </div>
 
             <h2>
@@ -3951,7 +3951,7 @@
 
        <style>
     /* =========================================
-       tabac ENTERPRISES - WHO WE ARE
+       Tabac Leaf Enterprises - WHO WE ARE
        Compact / Premium Layout
        ========================================= */
 
@@ -4955,7 +4955,7 @@
                             <img
                                 width="629"
                                 height="676"
-                                alt="Bio-Steam Powered Tobacco Processing - Tabac Enterprises"
+                                alt="Bio-Steam Powered Tobacco Processing - Tabac Leaf Enterprises"
                                 src="assets/images/Original/product.jpeg" style="object-fit: cover;"
                                 loading="lazy"
                                 sizes="(max-width: 767px) 100vw, 629px"
@@ -5031,7 +5031,7 @@
                             <img
                                 width="630"
                                 height="676"
-                                alt="Our Approach - Tabac Enterprises"
+                                alt="Our Approach - Tabac Leaf Enterprises"
                                 src="assets/images/Original/product-3.jpeg" style="object-fit: cover;"
                                 loading="lazy"
                                 sizes="(max-width: 767px) 100vw, 630px"
@@ -5379,7 +5379,7 @@
                                 src="assets/images/Original/product-3.jpeg"
                                 width="603"
                                 height="696"
-                                alt="Processing Partnerships - Tabac Enterprises"
+                                alt="Processing Partnerships - Tabac Leaf Enterprises"
                                 sizes="(max-width: 767px) 100vw, 603px"
                                 data-w-id="5ba2e318-d75c-ffff-da4f-78dff1ee332f"
                                 loading="lazy"

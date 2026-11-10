@@ -2,19 +2,19 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Contact Tabac Enterprises | Tobacco Processing &amp; Threshing</title>
+        <title>Contact Tabac Leaf Enterprises | Tobacco Processing &amp; Threshing</title>
         <meta
-            content="Contact Tabac Enterprises to discuss tobacco leaf processing, threshing, conditioning, separation, drying, quality control, packing and storage."
+            content="Contact Tabac Leaf Enterprises to discuss tobacco leaf processing, threshing, conditioning, separation, drying, quality control, packing and storage."
             name="description"
         />
-        <meta content="Contact Tabac Enterprises | Tobacco Processing &amp; Threshing" property="og:title" />
+        <meta content="Contact Tabac Leaf Enterprises | Tobacco Processing &amp; Threshing" property="og:title" />
         <meta
-            content="Contact Tabac Enterprises to discuss tobacco leaf processing, threshing, conditioning, separation, drying, quality control, packing and storage."
+            content="Contact Tabac Leaf Enterprises to discuss tobacco leaf processing, threshing, conditioning, separation, drying, quality control, packing and storage."
             property="og:description"
         />
-        <meta content="Contact Tabac Enterprises | Tobacco Processing &amp; Threshing" name="twitter:title" />
+        <meta content="Contact Tabac Leaf Enterprises | Tobacco Processing &amp; Threshing" name="twitter:title" />
         <meta
-            content="Contact Tabac Enterprises to discuss tobacco leaf processing, threshing, conditioning, separation, drying, quality control, packing and storage."
+            content="Contact Tabac Leaf Enterprises to discuss tobacco leaf processing, threshing, conditioning, separation, drying, quality control, packing and storage."
             name="twitter:description"
         />
         <meta property="og:type" content="website" />

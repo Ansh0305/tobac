@@ -6,19 +6,19 @@
     <head>
         <meta charset="utf-8" />
         <link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous" />
-        <title>Sustainability | Tabac Enterprises</title>
+        <title>Sustainability | Tabac Leaf Enterprises</title>
         <meta
-            content="Explore sustainability topics at Tabac Enterprises, including responsible resource use and long-term practices across tobacco processing operations."
+            content="Explore sustainability topics at Tabac Leaf Enterprises, including responsible resource use and long-term practices across tobacco processing operations."
             name="description"
         />
-        <meta content="Sustainability | Tabac Enterprises" property="og:title" />
+        <meta content="Sustainability | Tabac Leaf Enterprises" property="og:title" />
         <meta
-            content="Explore sustainability topics at Tabac Enterprises, including responsible resource use and long-term practices across tobacco processing operations."
+            content="Explore sustainability topics at Tabac Leaf Enterprises, including responsible resource use and long-term practices across tobacco processing operations."
             property="og:description"
         />
-        <meta content="Sustainability | Tabac Enterprises" name="twitter:title" />
+        <meta content="Sustainability | Tabac Leaf Enterprises" name="twitter:title" />
         <meta
-            content="Explore sustainability topics at Tabac Enterprises, including responsible resource use and long-term practices across tobacco processing operations."
+            content="Explore sustainability topics at Tabac Leaf Enterprises, including responsible resource use and long-term practices across tobacco processing operations."
             name="twitter:description"
         />
         <meta property="og:type" content="website" />

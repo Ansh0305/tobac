@@ -4,19 +4,19 @@
         <meta charset="utf-8" />
 
         <link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous" />
-        <title>About Tabac Enterprises | Tobacco Processing Expertise</title>
+        <title>About Tabac Leaf Enterprises | Tobacco Processing Expertise</title>
         <meta
-            content="Learn about Tabac Enterprises and our work in tobacco leaf processing, threshing, quality control and related services."
+            content="Learn about Tabac Leaf Enterprises and our work in tobacco leaf processing, threshing, quality control and related services."
             name="description"
         />
-        <meta content="About Tabac Enterprises | Tobacco Processing Expertise" property="og:title" />
+        <meta content="About Tabac Leaf Enterprises | Tobacco Processing Expertise" property="og:title" />
         <meta
-            content="Learn about Tabac Enterprises and our work in tobacco leaf processing, threshing, quality control and related services."
+            content="Learn about Tabac Leaf Enterprises and our work in tobacco leaf processing, threshing, quality control and related services."
             property="og:description"
         />
-        <meta content="About Tabac Enterprises | Tobacco Processing Expertise" name="twitter:title" />
+        <meta content="About Tabac Leaf Enterprises | Tobacco Processing Expertise" name="twitter:title" />
         <meta
-            content="Learn about Tabac Enterprises and our work in tobacco leaf processing, threshing, quality control and related services."
+            content="Learn about Tabac Leaf Enterprises and our work in tobacco leaf processing, threshing, quality control and related services."
             name="twitter:description"
         />
         <meta property="og:type" content="website" />
